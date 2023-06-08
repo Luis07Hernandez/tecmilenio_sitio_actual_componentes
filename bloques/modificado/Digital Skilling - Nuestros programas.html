@@ -1,0 +1,622 @@
+<style>
+    /* ==============================
+    START - DECLARE FONT FAMILIES
+    ================================= */
+
+    /* Font are imported in Block: Digital Skilling - Banner */
+
+    .digitalSkillingNuestrosProgramas h1 {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    .digitalSkillingNuestrosProgramas h5 {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+        text-transform: initial;
+        font-weight: 700;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .digitalSkillingNuestrosProgramas p {
+        font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    }
+
+
+    /* ==============================
+    END - DECLARE FONT FAMILIES
+    ================================= */
+
+    /* ==============================
+    START - GENERAL STYLES
+    ================================= */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .tecmi-btn {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+            border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    a.tecmi-btn:hover {
+        text-decoration: none;
+        border: 1px solid;
+    }
+
+    .tecmi-btn-c-first {
+        background: #00534c;
+        border-color: #00534c;
+        color: white;
+    }
+
+    .tecmi-btn-c-first:hover {
+        background: #6BCABA;
+        border-color: #6BCABA;
+        color: white;
+    }
+
+    .tecmi-btn-c-first:focus {
+        background: #007864;
+        border-color: #007864;
+        color: white;
+    }
+
+    .tecmi-btn-c-first:disabled {
+        background: #007864;
+        border-color: #007864;
+        color: white;
+        opacity: 0.4;
+    }
+
+    .tecmilenio-first-bg {
+        background: #00534c !important;
+    }
+
+    .tecmilenio-third-bg {
+        background: #00a499 !important;
+    }
+
+    .tecmilenio-fifth-bg {
+        background: #26d07c !important;
+    }
+
+    .tecmilenio-first-color {
+        color: #00534c !important;
+    }
+
+    .tecmilenio-third-color {
+        color: #00a499 !important;
+    }
+
+    .tecmilenio-fifth-color {
+        color: #26d07c !important;
+    }
+
+    /*==========  Mobile First Method  ==========*/
+
+    .digitalSkillingNuestrosProgramas-cardsContainer {
+        display: block;
+        width: 100%;
+    }
+
+    .digitalSkillingNuestrosProgramas-cardsContainer .benha__card-1 {
+        width: 100%;
+    }
+
+    .digitalSkillingNuestrosProgramas-img {
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        justify-content: center;
+    }
+
+    .digitalSkillingNuestrosProgramasBody {
+        width: 100%;
+        display: block;
+    }
+
+    .digitalSkillingNuestrosProgramas h1 {
+        font-size: 26px;
+    }
+
+    .digitalSkillingNuestrosProgramas h5 {
+        font-size: 16px;
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+        .digitalSkillingNuestrosProgramas h1 {
+            font-size: 26px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+        .digitalSkillingNuestrosProgramas h1 {
+            font-size: 36px;
+            padding: 0 10%;
+        }
+
+        .digitalSkillingNuestrosProgramas h5 {
+            font-size: 20px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .digitalSkillingNuestrosProgramas h1 {
+            font-size: 48px;
+            padding: 0 16%;
+        }
+
+        .digitalSkillingNuestrosProgramas h5 {
+            font-size: 24px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .digitalSkillingNuestrosProgramas-cardsContainer {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            width: 67%;
+            flex-wrap: wrap;
+        }
+
+        .digitalSkillingNuestrosProgramas-cardsContainer .benha__card-1 {
+            width: 50%;
+            padding: 0 100px 0 0;
+        }
+
+        .digitalSkillingNuestrosProgramas-img {
+            width: 33%;
+            display: block;
+        }
+
+        .digitalSkillingNuestrosProgramasBody {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+        }
+
+        .digitalSkillingNuestrosProgramas h1 {
+            font-size: 30px;
+        }
+
+        .digitalSkillingNuestrosProgramas h5 {
+            font-size: 27px;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+        .digitalSkillingNuestrosProgramas h1 {
+            font-size: 42px;
+        }
+
+        .digitalSkillingNuestrosProgramas h5 {
+            font-size: 30px;
+        }
+    }
+
+    /* ==============================
+    END - GENERAL STYLES
+    ================================= */
+
+    /* ==============================
+    START - BENHA CARD SECTION
+    ================================= */
+
+    .benha__card-1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .benha__card-1 .benha__card-1__header {
+        color: #00a499;
+        fill: #00a499;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        border: 1px solid #00a499;
+        border-radius: 15px;
+    }
+
+    .benha__card-1 .benha__card-1__header .icon-card {
+        padding: 20px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .benha__card-1 .benha__card-1__header .title-card {
+        margin-top: 20px;
+        word-wrap: normal;
+        width: calc(100% - 160px);
+    }
+
+    .benha__card-1 .benha__card-1__header .title-card a {
+        color: #00534c;
+    }
+
+    .benha__card-1 .benha__card-1__header .title-card a:hover {
+        color: #00534c;
+    }
+
+    .benha__card-1 .benha__card-1__header .button-collapse-card {
+        display: block;
+        width: 80px;
+        text-align: center;
+    }
+
+    .benha__card-1 .benha__card-1__header .button-collapse-card .open-collapse-card {
+        font-size: 50px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .benha__card-1 .benha__card-1__body {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .benha__card-1.benha__card-1__header-active {
+        background: #00a499;
+        border-radius: 15px;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+    .benha__card-1__header-active .benha__card-1__header {
+        background: #00a499;
+        color: white;
+        fill: white;
+    }
+
+    .benha__card-1__header-active .benha__card-1__header .title-card a {
+        color: white;
+    }
+
+    .benha__card-1__header-active .benha__card-1__body {
+        display: block !important;
+        padding: 0px 20px;
+        margin-top: 0px;
+    }
+
+    .benha__card-1__header-active .benha__card-1__body .read-more {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        justify-content: end;
+    }
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {}
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {}
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {}
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .benha__card-1 .benha__card-1__header {
+            color: #00534c;
+            fill: #00534c;
+            display: block;
+            border: 0px;
+            border-radius: 0px;
+        }
+
+        .benha__card-1 .benha__card-1__header .icon-card {
+            width: 100px;
+            padding: 20px;
+            text-align: center;
+            background-color: #6BCABA;
+        }
+
+        .benha__card-1 .benha__card-1__body {
+            display: block;
+        }
+
+        .benha__card-1 .benha__card-1__header .title-card {
+            width: 100%
+        }
+
+        .benha__card-1 .benha__card-1__header .button-collapse-card {
+            display: none;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {}
+
+    /* ==============================
+    END - BENHA CARD SECTION
+    ================================= */
+</style>
+
+<section class="digitalSkillingNuestrosProgramas">
+    <div class="row container py-5">
+        <h1 class="tecmilenio-first-color text-center">
+            &iexcl;Sigues t&uacute;! Elige uno de nuestros programas
+        </h1>
+        <div class="digitalSkillingNuestrosProgramasBody py-lg-5">
+            <div class="digitalSkillingNuestrosProgramas-cardsContainer">
+                <!-- CARD ITEM - Note: You need to add a unique id -->
+                <div class="benha__card-1 my-4" id="FdW1">
+                    <div class="benha__card-1__header">
+                        <div class="icon-card">
+                            <!-- SVG Icon -->
+                            <svg width="40" height="40" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.5 70V66.5H38.5V59.5H16.1538C14.5429 59.5 13.1979 58.9604 12.1187 57.8812C11.0396 56.8021 10.5 55.4571 10.5 53.8462V19.6538C10.5 18.0429 11.0396 16.6979 12.1187 15.6188C13.1979 14.5396 14.5429 14 16.1538 14H67.8462C69.4571 14 70.8021 14.5396 71.8812 15.6188C72.9604 16.6979 73.5 18.0429 73.5 19.6538V53.8462C73.5 55.4571 72.9604 56.8021 71.8812 57.8812C70.8021 58.9604 69.4571 59.5 67.8462 59.5H45.5V66.5H52.5V70H31.5ZM16.1538 56H67.8462C68.3846 56 68.8782 55.7756 69.327 55.3269C69.7757 54.8782 70 54.3846 70 53.8462V19.6538C70 19.1154 69.7757 18.6218 69.327 18.173C68.8782 17.7243 68.3846 17.5 67.8462 17.5H16.1538C15.6154 17.5 15.1218 17.7243 14.673 18.173C14.2243 18.6218 14 19.1154 14 19.6538V53.8462C14 54.3846 14.2243 54.8782 14.673 55.3269C15.1218 55.7756 15.6154 56 16.1538 56Z" />
+                                <path
+                                    d="M19 43V31H21.4V35.45H26.8V31H29.2V43H26.8V37.85H21.4V43H19ZM34.8 43V33.4H31.3V31H40.7V33.4H37.2V43H34.8ZM42.8 43V32.7C42.8 32.2 42.9583 31.7917 43.275 31.475C43.5917 31.1583 44 31 44.5 31H54.5C55 31 55.4083 31.1583 55.725 31.475C56.0417 31.7917 56.2 32.2 56.2 32.7V43H53.8V33.4H50.7V40.9H48.3V33.4H45.2V43H42.8ZM59.1 43V31H61.5V40.6H67V43H59.1Z" />
+                            </svg>
+                        </div>
+                        <div class="title-card">
+                            <!-- Title -->
+                            <h5>Fundamentos de desarrollo web</h5>
+                        </div>
+                        <div class="button-collapse-card">
+                            <!-- Add id of card as data-id -->
+                            <a class="open-collapse-card" data-id="FdW1">+</a>
+                        </div>
+                    </div>
+                    <div class="benha__card-1__body">
+                        <!-- Description -->
+                        <p>
+                            Obtén conocimientos esenciales en desarrollo web, aprende a maquetar en HTML y Bootstrap
+                            para simplificar tu proceso de desarrollo.
+                        </p>
+                        <!-- Read more button -->
+                        <div class="read-more">
+                            <a href="https://cdc.tecmilenio.mx/certificado-fundamentos-de-desarrollo-web"
+                                class="button-read-more tecmi-btn tecmi-btn-c-first" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM - Note: You need to add a unique id -->
+                <div class="benha__card-1 my-4" id="FdDUX1">
+                    <div class="benha__card-1__header">
+                        <div class="icon-card">
+                            <!-- SVG Icon -->
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.2083 23L26.4808 14.7692L25.2917 13.5801L18.2083 20.6635L14.6667 17.1218L13.4872 18.3013L18.2083 23ZM2.94871 32.4359V30.7693H37.0513V32.4359H2.94871ZM7.69229 29.1026C6.92521 29.1026 6.28472 28.8456 5.77083 28.3318C5.25694 27.8179 5 27.1774 5 26.4103V10.1282C5 9.3611 5.25694 8.7206 5.77083 8.20671C6.28472 7.69282 6.92521 7.43587 7.69229 7.43587H32.3077C33.0748 7.43587 33.7153 7.69282 34.2292 8.20671C34.7431 8.7206 35 9.3611 35 10.1282V26.4103C35 27.1774 34.7431 27.8179 34.2292 28.3318C33.7153 28.8456 33.0748 29.1026 32.3077 29.1026H7.69229ZM7.69229 27.4359H32.3077C32.5641 27.4359 32.7991 27.329 33.0128 27.1154C33.2265 26.9017 33.3333 26.6667 33.3333 26.4103V10.1282C33.3333 9.87179 33.2265 9.63675 33.0128 9.42308C32.7991 9.20939 32.5641 9.10254 32.3077 9.10254H7.69229C7.4359 9.10254 7.20086 9.20939 6.98717 9.42308C6.7735 9.63675 6.66667 9.87179 6.66667 10.1282V26.4103C6.66667 26.6667 6.7735 26.9017 6.98717 27.1154C7.20086 27.329 7.4359 27.4359 7.69229 27.4359Z" />
+                            </svg>
+                        </div>
+                        <div class="title-card">
+                            <!-- Title -->
+                            <h5>Fundamentos de diseño UX / UI</h5>
+                        </div>
+                        <div class="button-collapse-card">
+                            <!-- Add id of card as data-id -->
+                            <a class="open-collapse-card" data-id="FdDUX1">+</a>
+                        </div>
+                    </div>
+                    <div class="benha__card-1__body">
+                        <!-- Description -->
+                        <p>
+                            Descubre los fundamentos, técnicas de identificación de necesidades y aplicación de
+                            principios clave para la creación de experiencias digitales.
+                        </p>
+                        <!-- Read more button -->
+                        <div class="read-more">
+                            <a href="https://cdc.tecmilenio.mx/certificado-fundamentos-de-diseno"
+                                class="button-read-more tecmi-btn tecmi-btn-c-first" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM - Note: You need to add a unique id -->
+                <div class="benha__card-1 my-4" id="APMC1">
+                    <div class="benha__card-1__header">
+                        <div class="icon-card">
+                            <!-- SVG Icon -->
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.6934 31.6667C21.4325 31.6667 18.6706 30.5351 16.4075 28.272C14.1443 26.0089 13.0128 23.247 13.0128 19.9861C13.0128 16.7497 14.1443 13.9984 16.4075 11.7324C18.6706 9.46635 21.4325 8.33333 24.6934 8.33333C27.9298 8.33333 30.6811 9.46635 32.9471 11.7324C35.2132 13.9984 36.3462 16.7497 36.3462 19.9861C36.3462 23.247 35.2132 26.0089 32.9471 28.272C30.6811 30.5351 27.9298 31.6667 24.6934 31.6667ZM24.6795 30C27.4573 30 29.8184 29.0278 31.7628 27.0833C33.7073 25.1389 34.6795 22.7778 34.6795 20C34.6795 17.2222 33.7073 14.8611 31.7628 12.9167C29.8184 10.9722 27.4573 10 24.6795 10C21.9017 10 19.5406 10.9722 17.5962 12.9167C15.6517 14.8611 14.6795 17.2222 14.6795 20C14.6795 22.7778 15.6517 25.1389 17.5962 27.0833C19.5406 29.0278 21.9017 30 24.6795 30ZM28.7917 25.343L29.9808 24.1538L25.5128 19.6859V13.8462H23.8462V20.3558L28.7917 25.343ZM5.3205 14.1667V12.5H11.3461V14.1667H5.3205ZM3.65383 20.8333V19.1667H11.3461V20.8333H3.65383ZM5.3205 27.5V25.8333H11.3461V27.5H5.3205Z" />
+                            </svg>
+                        </div>
+                        <div class="title-card">
+                            <!-- Title -->
+                            <h5>Agile project management certificate</h5>
+                        </div>
+                        <div class="button-collapse-card">
+                            <!-- Add id of card as data-id -->
+                            <a class="open-collapse-card" data-id="APMC1">+</a>
+                        </div>
+                    </div>
+                    <div class="benha__card-1__body">
+                        <!-- Description -->
+                        <p>
+                            Exploraremos el ciclo SCRUM y su adaptabilidad a las necesidades de los clientes. Mejora tu
+                            enfoque de desarrollo con Agile.
+                        </p>
+                        <!-- Read more button -->
+                        <div class="read-more">
+                            <a href="https://cdc.tecmilenio.mx/agile-project-management-certificate-cdc-asu"
+                                class="button-read-more tecmi-btn tecmi-btn-c-first" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM - Note: You need to add a unique id -->
+                <div class="benha__card-1 my-4" id="PMFC1">
+                    <div class="benha__card-1__header">
+                        <div class="icon-card">
+                            <!-- SVG Icon -->
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.69229 33.3333C6.92521 33.3333 6.28472 33.0764 5.77083 32.5625C5.25694 32.0486 5 31.4081 5 30.641V14.359C5 13.5919 5.25694 12.9514 5.77083 12.4375C6.28472 11.9236 6.92521 11.6667 7.69229 11.6667H15V9.35896C15 8.59187 15.2569 7.95139 15.7708 7.4375C16.2847 6.92361 16.9252 6.66667 17.6923 6.66667H22.3077C23.0748 6.66667 23.7153 6.92361 24.2292 7.4375C24.7431 7.95139 25 8.59187 25 9.35896V11.6667H32.3077C33.0748 11.6667 33.7153 11.9236 34.2292 12.4375C34.7431 12.9514 35 13.5919 35 14.359V21.3558C34.7351 21.1869 34.469 21.04 34.2019 20.915C33.9348 20.79 33.6453 20.6731 33.3333 20.5641V14.359C33.3333 14.0598 33.2372 13.8141 33.0449 13.6218C32.8526 13.4295 32.6068 13.3333 32.3077 13.3333H7.69229C7.39315 13.3333 7.14743 13.4295 6.95513 13.6218C6.76282 13.8141 6.66667 14.0598 6.66667 14.359V30.641C6.66667 30.9402 6.76282 31.1859 6.95513 31.3782C7.14743 31.5705 7.39315 31.6667 7.69229 31.6667H20.125C20.187 31.9722 20.2532 32.2585 20.3237 32.5256C20.3942 32.7927 20.4797 33.062 20.5801 33.3333H7.69229ZM16.6667 11.6667H23.3333V9.35896C23.3333 9.05982 23.2372 8.8141 23.0449 8.62179C22.8526 8.42949 22.6068 8.33333 22.3077 8.33333H17.6923C17.3932 8.33333 17.1474 8.42949 16.9551 8.62179C16.7628 8.8141 16.6667 9.05982 16.6667 9.35896V11.6667ZM30 36.6667C28.1432 36.6667 26.5678 36.0198 25.274 34.726C23.9802 33.4322 23.3333 31.8568 23.3333 30C23.3333 28.1432 23.9802 26.5678 25.274 25.274C26.5678 23.9802 28.1432 23.3333 30 23.3333C31.8568 23.3333 33.4322 23.9802 34.726 25.274C36.0198 26.5678 36.6667 28.1432 36.6667 30C36.6667 31.8568 36.0198 33.4322 34.726 34.726C33.4322 36.0198 31.8568 36.6667 30 36.6667ZM32.75 33.6602L33.6602 32.75L30.641 29.7308V25.1923H29.359V30.2692L32.75 33.6602Z" />
+                            </svg>
+                        </div>
+                        <div class="title-card">
+                            <!-- Title -->
+                            <h5>Project management fundamentals certificate</h5>
+                        </div>
+                        <div class="button-collapse-card">
+                            <!-- Add id of card as data-id -->
+                            <a class="open-collapse-card" data-id="PMFC1">+</a>
+                        </div>
+                    </div>
+                    <div class="benha__card-1__body">
+                        <!-- Description -->
+                        <p>
+                            Sumérgete en la gestión de proyectos con este programa de certificación. Aprende habilidades
+                            fundamentales, ética de liderazgo, diferencias entre Agile y Waterfall.
+                        </p>
+                        <!-- Read more button -->
+                        <div class="read-more">
+                            <a href="https://cdc.tecmilenio.mx/project-management-certificate-cdc-asu"
+                                class="button-read-more tecmi-btn tecmi-btn-c-first" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM - Note: You need to add a unique id -->
+                <div class="benha__card-1 my-4" id="MP1">
+                    <div class="benha__card-1__header">
+                        <div class="icon-card">
+                            <!-- SVG Icon -->
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.35896 35C8.59188 35 7.95139 34.7431 7.4375 34.2292C6.92361 33.7153 6.66667 33.0748 6.66667 32.3077V11.0256C6.66667 10.2585 6.92361 9.61806 7.4375 9.10417C7.95139 8.59028 8.59188 8.33333 9.35896 8.33333H12.3077V4.61538H14.1025V8.33333H26.0256V4.61538H27.6923V8.33333H30.641C31.4081 8.33333 32.0486 8.59028 32.5625 9.10417C33.0764 9.61806 33.3333 10.2585 33.3333 11.0256V32.3077C33.3333 33.0748 33.0764 33.7153 32.5625 34.2292C32.0486 34.7431 31.4081 35 30.641 35H9.35896ZM9.35896 33.3333H30.641C30.8974 33.3333 31.1325 33.2265 31.3462 33.0128C31.5598 32.7991 31.6667 32.5641 31.6667 32.3077V17.6923H8.33333V32.3077C8.33333 32.5641 8.44017 32.7991 8.65383 33.0128C8.86753 33.2265 9.10257 33.3333 9.35896 33.3333ZM8.33333 16.0256H31.6667V11.0256C31.6667 10.7692 31.5598 10.5342 31.3462 10.3205C31.1325 10.1068 30.8974 10 30.641 10H9.35896C9.10257 10 8.86753 10.1068 8.65383 10.3205C8.44017 10.5342 8.33333 10.7692 8.33333 11.0256V16.0256ZM20 23.5898C19.656 23.5898 19.3563 23.4621 19.101 23.2067C18.8456 22.9514 18.718 22.6517 18.718 22.3077C18.718 21.9637 18.8456 21.664 19.101 21.4087C19.3563 21.1533 19.656 21.0256 20 21.0256C20.344 21.0256 20.6437 21.1533 20.899 21.4087C21.1544 21.664 21.282 21.9637 21.282 22.3077C21.282 22.6517 21.1544 22.9514 20.899 23.2067C20.6437 23.4621 20.344 23.5898 20 23.5898ZM13.3333 23.5898C12.9893 23.5898 12.6896 23.4621 12.4343 23.2067C12.179 22.9514 12.0513 22.6517 12.0513 22.3077C12.0513 21.9637 12.179 21.664 12.4343 21.4087C12.6896 21.1533 12.9893 21.0256 13.3333 21.0256C13.6774 21.0256 13.977 21.1533 14.2324 21.4087C14.4877 21.664 14.6154 21.9637 14.6154 22.3077C14.6154 22.6517 14.4877 22.9514 14.2324 23.2067C13.977 23.4621 13.6774 23.5898 13.3333 23.5898ZM26.6667 23.5898C26.3226 23.5898 26.023 23.4621 25.7676 23.2067C25.5123 22.9514 25.3846 22.6517 25.3846 22.3077C25.3846 21.9637 25.5123 21.664 25.7676 21.4087C26.023 21.1533 26.3226 21.0256 26.6667 21.0256C27.0107 21.0256 27.3104 21.1533 27.5657 21.4087C27.821 21.664 27.9487 21.9637 27.9487 22.3077C27.9487 22.6517 27.821 22.9514 27.5657 23.2067C27.3104 23.4621 27.0107 23.5898 26.6667 23.5898ZM20 30C19.656 30 19.3563 29.8723 19.101 29.617C18.8456 29.3616 18.718 29.062 18.718 28.718C18.718 28.3739 18.8456 28.0743 19.101 27.8189C19.3563 27.5636 19.656 27.4359 20 27.4359C20.344 27.4359 20.6437 27.5636 20.899 27.8189C21.1544 28.0743 21.282 28.3739 21.282 28.718C21.282 29.062 21.1544 29.3616 20.899 29.617C20.6437 29.8723 20.344 30 20 30ZM13.3333 30C12.9893 30 12.6896 29.8723 12.4343 29.617C12.179 29.3616 12.0513 29.062 12.0513 28.718C12.0513 28.3739 12.179 28.0743 12.4343 27.8189C12.6896 27.5636 12.9893 27.4359 13.3333 27.4359C13.6774 27.4359 13.977 27.5636 14.2324 27.8189C14.4877 28.0743 14.6154 28.3739 14.6154 28.718C14.6154 29.062 14.4877 29.3616 14.2324 29.617C13.977 29.8723 13.6774 30 13.3333 30ZM26.6667 30C26.3226 30 26.023 29.8723 25.7676 29.617C25.5123 29.3616 25.3846 29.062 25.3846 28.718C25.3846 28.3739 25.5123 28.0743 25.7676 27.8189C26.023 27.5636 26.3226 27.4359 26.6667 27.4359C27.0107 27.4359 27.3104 27.5636 27.5657 27.8189C27.821 28.0743 27.9487 28.3739 27.9487 28.718C27.9487 29.062 27.821 29.3616 27.5657 29.617C27.3104 29.8723 27.0107 30 26.6667 30Z" />
+                            </svg>
+                        </div>
+                        <div class="title-card">
+                            <!-- Title -->
+                            <h5>Managing Procecess</h5>
+                        </div>
+                        <div class="button-collapse-card">
+                            <!-- Add id of card as data-id -->
+                            <a class="open-collapse-card" data-id="MP1">+</a>
+                        </div>
+                    </div>
+                    <div class="benha__card-1__body">
+                        <!-- Description -->
+                        <p>
+                            Gestiona procesos y enfréntate al desafío de coordinar y optimizar múltiples aspectos como:
+                            planificación, programación, tecnología, logística y control de calidad.
+                        </p>
+                        <!-- Read more button -->
+                        <div class="read-more">
+                            <a href="https://cdc.tecmilenio.mx/curso-managing-processes-cdc-asu"
+                                class="button-read-more tecmi-btn tecmi-btn-c-first" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM - Note: You need to add a unique id -->
+                <div class="benha__card-1 my-4" id="ADDP1">
+                    <div class="benha__card-1__header">
+                        <div class="icon-card">
+                            <!-- SVG Icon -->
+                            <svg width="40" height="40" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.5 70V66.5H38.5V59.5H16.1538C14.5429 59.5 13.1979 58.9604 12.1187 57.8812C11.0396 56.8021 10.5 55.4571 10.5 53.8462V19.6538C10.5 18.0429 11.0396 16.6979 12.1187 15.6188C13.1979 14.5396 14.5429 14 16.1538 14H67.8462C69.4571 14 70.8021 14.5396 71.8812 15.6188C72.9604 16.6979 73.5 18.0429 73.5 19.6538V53.8462C73.5 55.4571 72.9604 56.8021 71.8812 57.8812C70.8021 58.9604 69.4571 59.5 67.8462 59.5H45.5V66.5H52.5V70H31.5ZM16.1538 56H67.8462C68.3846 56 68.8782 55.7756 69.327 55.3269C69.7757 54.8782 70 54.3846 70 53.8462V19.6538C70 19.1154 69.7757 18.6218 69.327 18.173C68.8782 17.7243 68.3846 17.5 67.8462 17.5H16.1538C15.6154 17.5 15.1218 17.7243 14.673 18.173C14.2243 18.6218 14 19.1154 14 19.6538V53.8462C14 54.3846 14.2243 54.8782 14.673 55.3269C15.1218 55.7756 15.6154 56 16.1538 56Z" />
+                                <path
+                                    d="M44.2489 28.4702L45.5972 28.8782L40.6945 45.0797L39.3463 44.6717L44.2489 28.4702Z" />
+                                <path
+                                    d="M51.6092 45.7817L50.2944 44.4435L58.3471 36.3909L50.2944 28.3382L51.6092 27L61 36.3909L51.6092 45.7817Z" />
+                                <path
+                                    d="M33.3908 27L34.7056 28.3382L26.6529 36.3909L34.7056 44.4435L33.3908 45.7817L24 36.3909L33.3908 27Z" />
+                            </svg>
+                        </div>
+                        <div class="title-card">
+                            <!-- Title -->
+                            <h5>Análisis de datos Python</h5>
+                        </div>
+                        <div class="button-collapse-card">
+                            <!-- Add id of card as data-id -->
+                            <a class="open-collapse-card" data-id="ADDP1">+</a>
+                        </div>
+                    </div>
+                    <div class="benha__card-1__body">
+                        <!-- Description -->
+                        <p>
+                            Maneja datos para crear estrategias de negocio, revelar tendencias, tomar decisiones,
+                            generar reportes, crear visualizaciones y resolver problemas sobre bases de datos con los
+                            lenguajes R y Python.
+                        </p>
+                        <!-- Read more button -->
+                        <div class="read-more">
+                            <a href="https://cdc.tecmilenio.mx/certificado-analisis-de-datos-con-python"
+                                class="button-read-more tecmi-btn tecmi-btn-c-first" target="_blank">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="digitalSkillingNuestrosProgramas-img">
+                <img class="img-fluid py-4" alt=" "
+                    src="https://tecmilenio.mx/sites/default/files/2023-05/MM1_1310%201.jpg" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    /* ==============================
+    START - CARD SCRIPT SECTION
+    ================================= */
+
+    // Wait for the DOM content to be loaded
+    document.addEventListener('DOMContentLoaded', function () {
+        // Define constant for the active card class
+        const CARD_ACTIVE_CLASS = 'benha__card-1__header-active';
+
+        // Event listener for elements with class 'open-collapse-card'
+        document.querySelectorAll('.open-collapse-card').forEach(function (element) {
+            // Add click event listener to each element
+            element.addEventListener('click', function () {
+                // Get the data-id attribute value
+                let id = this.getAttribute('data-id');
+                // Find the card element with the specified id
+                let card = document.getElementById(id);
+
+                if (card.classList.contains(CARD_ACTIVE_CLASS)) {
+                    // If the card is already active, disable it
+                    this.innerHTML = '+';
+                    card.classList.remove(CARD_ACTIVE_CLASS);
+                } else {
+                    // If the card is not active, enable it
+                    this.innerHTML = '-';
+                    card.classList.add(CARD_ACTIVE_CLASS);
+                }
+            });
+        });
+    });
+
+</script>

@@ -1,0 +1,85 @@
+<div data-db="_json/identidad-nuevo.json" data-dom="ourInformation" data-path="Tecmilenio/Code/drupalsite" data-url="api/home/identidad/[lang]">
+    <div class="templates hidden">
+    <div data-block="_firstLink">
+    <p>&nbsp;</p>
+    
+    <div class="iconPlay"><a class="videoElement" href="{{link}}" target="_blank">{{_videocta}}</a></div>
+    
+    <div class="title {{posicion}}"><a class="videoElement" href="{{link}}" target="_blank">{{titulo_descritivo}}</a></div>
+    
+    <div class="imageVideo"><a class="videoElement" href="{{link}}" target="_blank"><img alt="#" src="{{imagen}}" /></a></div>
+    
+    <p>&nbsp;</p>
+    </div>
+    
+    <div data-block="_firstMedia">
+    <p>&nbsp;</p>
+    
+    <div class="iconPlay"><a class="videoElement callVideoShow" data-video="{{videoid}}" href="#" target="_blank">{{_videocta}}</a></div>
+    
+    <div class="title {{posicion}}"><a class="videoElement callVideoShow" data-video="{{videoid}}" href="#" target="_blank">{{titulo_descritivo}}</a></div>
+    
+    <div class="imageVideo"><a class="videoElement callVideoShow" data-video="{{videoid}}" href="#" target="_blank"><img alt="#" src="{{imagen}}" /></a></div>
+    
+    <p>&nbsp;</p>
+    </div>
+    
+    <div data-block="_videocta"><span class="icon icon-videoPlya">&nbsp; Conócelo</span></div>
+    
+    <div data-block="_item">
+    <div class="eleCarouselElement">
+    <div class="eachCarouselItem"><a href="{{link}}"><img alt="#" src="{{image}}" /></a>
+    
+    <p>&nbsp;</p>
+    <a href="{{link}}"> </a>
+    
+    <div class="containerInfo">
+    <div class="infoBlock {{posicion}}"><a href="{{link}}">{{description}}</a></div>
+    </div>
+    <a href="{{link}}"> </a>
+    
+    <p>&nbsp;</p>
+    </div>
+    </div>
+    </div>
+    
+    <div data-block="_itemmedia">
+    <div class="eleCarouselElement">
+    <div class="eachCarouselItem">
+    <p>&nbsp;</p>
+    
+    <div class="iconPlay"><a class="callVideoShow" data-video="{{videoid}}" href="{{link}}" target="_self"><span class="icon icon-videoPlya">&nbsp; Conócelo</span></a></div>
+    
+    <p><a class="callVideoShow" data-video="{{videoid}}" href="{{link}}" target="_self"><img alt="#" src="{{image}}" /></a></p>
+    
+    <div class="containerInfo">
+    <div class="infoBlock {{posicion}}"><a class="callVideoShow" data-video="{{videoid}}" href="{{link}}" target="_self">{{description}}</a></div>
+    </div>
+    
+    <p>&nbsp;</p>
+    </div>
+    </div>
+    </div>
+    
+    <div data-block="_boxesCarouselElement">
+    <div class="boxCarouselElement" data-index="{{index}}">{{_item}} {{_itemmedia}}</div>
+    </div>
+    </div>
+    
+    <div class="HTMLOut">
+    <div class="ourInformation">
+    <div class="container">
+    <div class="block">
+    <div class="b-half ourInformationLeft">{{firstCta}} {{_firstLink}} {{_firstMedia}}</div>
+    
+    <div class="b-half ourInformationRight">
+    <div class="carouselElement">{{_boxesCarouselElement}}</div>
+    
+    <p><a class="arrowButton nextSlide hidden"><span class="icon icon-rightArrow">&nbsp;</span></a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    

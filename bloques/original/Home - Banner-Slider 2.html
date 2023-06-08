@@ -1,0 +1,409 @@
+<style>
+	.sliderPrincipal .caption-banner {
+		display: flex !important;
+		align-items: center;
+		width: 100%;
+		left: 0;
+		transform: none;
+		padding: 0;
+		margin: 0 auto !important;
+		justify-content: center;
+		border-radius: 0;
+		top: unset;
+		bottom: 0;
+		position: relative;
+	}
+
+	.bannerHero .navsArrows {
+		/* display: none; */
+		height: 0;
+	}
+
+	.sliderPrincipal .eachSilerElement {
+		position: relative;
+	}
+
+	.sliderPrincipal .eachSilerElement::after {
+		display: none;
+	}
+
+	.bannerHero .eachSilerElement .containerInfo {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		transform: unset;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.eachSilerElement .containerInfo .infoBlock {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		left: 0 !important;
+		right: 0 !important;
+		top: 0 !important;
+		bottom: 0 !important;
+	}
+
+	.eachSilerElement .containerInfo .btn {
+		background: transparent;
+		border: 0;
+		font-size: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0 !important;
+		border-radius: 0 !important;
+		bottom: 0;
+		margin-bottom: 0px;
+		transition: unset;
+	}
+
+	.eachSilerElement .containerInfo .btn:hover {
+		background: transparent;
+	}
+
+	.eachSilerElement .containerInfo .btn::after,
+	.eachSilerElement .containerInfo .btn::before {
+		display: none !important;
+	}
+
+	.sliderPrincipal .eachSilerElement img {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+
+	@media (min-width: 979px) and (max-width: 1200px) {
+		.caption-banner a {
+			padding: 10px 20px !important;
+		}
+
+		.caption-banner .col-md-5 {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	@media (max-width: 978px) {
+		.sliderPrincipal #caption-banner-home.caption-banner {
+			display: flex !important;
+			flex-wrap: wrap;
+			padding: 30px 0;
+		}
+
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-1 {
+			width: 100%;
+			max-width: 100%;
+			padding: 10px !important;
+		}
+
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-6 {
+			padding: 0 !important;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-5 {
+			width: 100%;
+			max-width: 100%;
+			padding: 0;
+			display: flex;
+			flex: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-5 a {
+			margin: 0 10px 0px;
+		}
+
+	}
+
+	@media (max-width: 950px) {
+		.bannerHero {
+			padding-top: 70px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		#tecmilenio-click .imagen-left-container {
+			display: none !important;
+		}
+
+		.sliderPrincipal .eachSilerElement {
+			height: auto;
+		}
+
+		.sliderPrincipal .eachSilerElement img {
+			position: relative;
+		}
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-6{
+			text-align: center;
+		}
+	}
+	@media (max-width: 480px) {
+		.sliderPrincipal #caption-banner-home.caption-banner{
+			padding: 10px 0 20px;
+		}
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-1 i{
+			font-size: 2.5rem!important;
+		}
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-6 h3{
+			font-size: 18px;
+		}
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-6 p{
+			font-size: 14px;
+			padding: 0 10px;
+		}
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-5 a{
+			margin: 0 10px 0px;
+			padding: 10px 0;
+			display: flex;
+			align-items: center;
+			font-size: 13px;
+			width: 100%;
+			justify-content: center;
+			max-width: 165px;
+		}
+		.sliderPrincipal #caption-banner-home.caption-banner .col-md-5 a i{
+			margin-right: 5px;
+		}
+		.bannerHero .navsArrows .owl-prev, 
+		.bannerHero .navsArrows .owl-next{
+			top: 40%;
+		}
+	}
+
+	/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+	@media (min-width: 1281px) {
+		.icon-text-slide {
+			font-size: 1.3rem;
+		}
+
+		.caption-banner {
+			display: flex !important;
+			background: #fff;
+			border-radius: 15px;
+			z-index: 1;
+			position: absolute;
+			width: 80%;
+			left: 8%;
+			top: 77%;
+		}
+
+	}
+
+	/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+	@media (min-width: 1025px) and (max-width: 1280px) {
+
+		.caption-banner {
+			display: flex !important;
+			background: #fff;
+			border-radius: 15px;
+			z-index: 1;
+			position: absolute;
+			width: 80%;
+			left: 8%;
+			top: 58%;
+		}
+
+	}
+
+	/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+
+		.caption-banner {
+			display: flex !important;
+			background: #fff;
+			border-radius: 15px;
+			z-index: 1;
+			position: absolute;
+			width: -webkit-fill-available;
+			top: 55%;
+		}
+
+		.icon-text-slide {
+			font-size: .76rem;
+		}
+
+	}
+
+	/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+		.icon-text-slide {
+			font-size: .97rem;
+		}
+
+		.caption-banner {
+			display: flex !important;
+			background: #fff;
+			border-radius: 15px;
+			z-index: 1;
+			position: absolute;
+			width: -webkit-fill-available;
+			top: 47%;
+		}
+
+	}
+
+	/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+	@media (min-width: 481px) and (max-width: 767px) {
+
+		.caption-banner {
+			display: flex !important;
+			background: #fff;
+			border-radius: 15px;
+			z-index: 1;
+			position: initial;
+			width: -webkit-fill-available;
+			top: 75%;
+		}
+
+		.icon-text-slide {
+			font-size: .7rem;
+		}
+
+	}
+
+	/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+	@media (min-width: 320px) and (max-width: 480px) {
+
+
+		.caption-banner {
+			display: flex !important;
+			background: #fff;
+			border-radius: 15px;
+			z-index: 1;
+			position: initial;
+			width: -webkit-fill-available;
+			top: 80%;
+		}
+
+		.icon-text-slide {
+			font-size: .7rem;
+		}
+
+	}
+</style>
+<div class="sliderPrincipal">
+	<div class="bannerHero">
+		<div class="principalSlider owl-carousel"></div>
+		<div class="navsArrows"></div>
+		<!-- <div class="allDots"></div> -->
+		<div class="container">
+			<div id="caption-banner-home" class="row m-5 caption-banner" style=" display:flex ;">
+				<div class="col-md-1 text-center p-3">
+					<i class="fa fa-bell text-success" aria-hidden="true" style="font-size: 4rem;"></i>
+				</div>
+				<div class="col-md-6 p-3">
+					<h3 class="color-success">Próximo inicio de Clases</h3>
+					<p>
+						Tetramestral: Mayo 2023 <br>
+						Semestral: Agosto 2023
+					</p>
+				</div>
+				<div class="col-md-5">
+					<a href="/solicitar-informacion" class="links-banner-home"><i class="fa fa-file-text-o"
+							aria-hidden="true"></i> Información</a>
+					<a href="/proceso-de-admision" class="links-banner-home"><i class="fa fa-comment-o"
+							aria-hidden="true"></i> Admisiones</a>
+				</div>
+				<!--                 <div class="col-md-2 mt-4 text-info p-3">
+                    <p class="icon-text-slide">
+                    	<a href="" class="links-banner-home"><i class="fa fa-phone" aria-hidden="true"></i> ¡Llámame!</a>
+                    </p>
+                </div> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	setTimeout(function () {
+		const url = 'https://test.tecmilenio.mx/es/api/home/banner/es/all';
+
+		const options = {
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		};
+
+		fetch(url, options)
+			.then(response => response.json())
+			.then(data => {
+				let elements = $('div[class^="owl-item"]').not('.cloned');
+
+				data.forEach(function (element, index) {
+					elements[index].innerHTML = `
+                                        <div>
+                                            <div class="eachSilerElement ${element.titulo[0].posicion_class}">
+                                                <img src="${element.video[0].imagen}" alt="${element.link[0].link.text}" data-mobile="${element.video[0].imagen_mobile}" data-desktop="${element.video[0].imagen}"/>
+                                                <div class="containerInfo">
+                                                    <div class="infoBlock">
+                                                        <div class="txtInfoBlockBanner"></div>
+                                                        <a class="btn shortBtn whiteGreenBtn" href="${element.link[0].link.url}">
+                                                            <span>${element.link[0].link.text}</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>`;
+					console.log("elemento" + index);
+				});
+
+				$(window).resize(function () {
+					if ($('header').width() <= 661) {
+						data.forEach(function (element, index) {
+							elements[index].innerHTML = `
+                                                <div>
+                                                    <div class="eachSilerElement ${element.titulo[0].posicion_class}">
+                                                        <img src="${element.video[0].imagen_mobile}" alt="${element.link[0].link.text}" data-mobile="${element.video[0].imagen_mobile}" data-desktop="${element.video[0].imagen}"/>
+                                                        <div class="containerInfo">
+                                                            <div class="infoBlock">
+                                                                <div class="txtInfoBlockBanner"></div>
+                                                                <a class="btn shortBtn whiteGreenBtn" href="${element.link[0].link.url}">
+                                                                    <span>${element.link[0].link.text}</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>`;
+						});
+					}
+				});
+			}).catch(error => console.log('Request failed', error));
+	}, 1500);           
+</script>

@@ -1,0 +1,156 @@
+<style>
+    /* Font are imported in Block: Digital Skilling - Banner */
+
+    /* ==============================
+    START - DECLARE FONT FAMILIES
+    ================================= */
+
+    /* Font are imported in Block: Digital Skilling - Banner */
+
+    .digitalSkillingTestimoniales h1 {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    .digitalSkillingTestimoniales p {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+    }
+
+
+    /* ==============================
+    END - DECLARE FONT FAMILIES
+    ================================= */
+
+    /* ==============================
+    START - GENERAL STYLES
+    ================================= */
+
+    /*==========  Mobile First Method  ==========*/
+
+    .tecmilenio-first-color {
+        color: #00534C !important;
+    }
+
+    .tecmilenio-third-color {
+        color: #00A499 !important;
+    }
+
+    .tecmilenio-fifth-color {
+        color: #26D07C !important
+    }
+
+    .digitalSkillingTestimoniales {
+        background: #EDEDED;
+    }
+
+    .videoDigitalSkillingTestimoniales {
+        display: block;
+        width: 100%;
+    }
+
+    .videoDigitalSkillingTestimoniales .video-column iframe {
+        width: 100%;
+        height: 315px;
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+        .digitalSkillingTestimoniales h1 {
+            font-size: 26px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+        .digitalSkillingTestimoniales h1 {
+            font-size: 36px;
+        }
+
+        .videoDigitalSkillingTestimoniales .video-column iframe {
+            width: 100%;
+            height: 315px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .digitalSkillingTestimoniales h1 {
+            font-size: 48px;
+        }
+
+        .videoDigitalSkillingTestimoniales .video-column iframe {
+            height: 500px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .videoDigitalSkillingTestimoniales {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            justify-content: space-between;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .digitalSkillingTestimoniales h1 {
+            font-size: 30px;
+        }
+
+        .videoDigitalSkillingTestimoniales .video-column {
+            flex: 1;
+        }
+
+        .videoDigitalSkillingTestimoniales .video-column iframe {
+            width: 100%;
+            height: 220px;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        .digitalSkillingTestimoniales h1 {
+            font-size: 42px;
+        }
+
+        .videoDigitalSkillingTestimoniales .video-column {
+            flex: 1;
+        }
+    }
+
+    /* ==============================
+    END - GENERAL STYLES
+    ================================= */
+</style>
+
+<section class="digitalSkillingTestimoniales">
+    <div class="row container py-5">
+        <h1 class="tecmilenio-first-color text-center">
+            Testimoniales
+        </h1>
+        <div class="videoDigitalSkillingTestimoniales py-5">
+            <div class="video-column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lSoLmclUqjw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pQkgfHRG3-g"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yD-yJsxO7xw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,225 @@
+<style>
+    /* Font are imported in Block: Digital Skilling - Banner */
+
+    /* ==============================
+    START - DECLARE FONT FAMILIES
+    ================================= */
+
+    /* Font are imported in Block: Digital Skilling - Banner */
+
+    .digitalSkillingPreparate h1 {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    .digitalSkillingPreparate h5 {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-transform: initial;
+        letter-spacing: 0px;
+    }
+
+    .digitalSkillingPreparate p {
+        font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    }
+
+
+    /* ==============================
+    END - DECLARE FONT FAMILIES
+    ================================= */
+
+    /* ==============================
+    START - GENERAL STYLES
+    ================================= */
+
+    /*==========  Mobile First Method  ==========*/
+
+    .digitalSkillingPreparate {
+        background: #ededed;
+    }
+
+    .digitalSkillingPreparate h1 {
+        font-size: 26px;
+    }
+
+    .tecmilenio-first-bg {
+        background: #00534C !important;
+    }
+
+    .tecmilenio-third-bg {
+        background: #00A499 !important;
+    }
+
+    .tecmilenio-fifth-bg {
+        background: #26D07C !important
+    }
+
+    .tecmilenio-first-color {
+        color: #00534C !important;
+    }
+
+    .tecmilenio-third-color {
+        color: #00A499 !important;
+    }
+
+    .tecmilenio-fifth-color {
+        color: #26D07C !important
+    }
+
+    .cardsDigitalSkillingPreparate {
+        display: block;
+        width: 100%;
+    }
+
+    .cardsDigitalSkillingPreparate .card {
+        max-width: 100%;
+        flex: 0 1 30%;
+        border: none;
+        color: white;
+        height: auto;
+        margin: 0px 0px 20px 0px;
+        padding: 0;
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+        .digitalSkillingPreparate h1 {
+            font-size: 26px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+        .digitalSkillingPreparate h1 {
+            font-size: 36px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .digitalSkillingPreparate h1 {
+            font-size: 48px;
+        }
+
+        .digitalSkillingPreparate h5 {
+            font-size: 24px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .cardsDigitalSkillingPreparate {
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            justify-content: space-between;
+        }
+
+        .cardsDigitalSkillingPreparate .card {
+            margin: 0;
+            padding: 30px 20px;
+        }
+
+        .digitalSkillingPreparate h1 {
+            font-size: 30px;
+        }
+
+        .digitalSkillingPreparate h5 {
+            font-size: 24px;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        .digitalSkillingPreparate h1 {
+            font-size: 42px;
+        }
+
+        .digitalSkillingPreparate h5 {
+            font-size: 28px;
+        }
+    }
+
+    /* ==============================
+    END - GENERAL STYLES
+    ================================= */
+</style>
+
+<section class="digitalSkillingPreparate">
+    <div class="row container py-md-5">
+        <h1 class="tecmilenio-first-color text-center">
+            S&eacute; parte del futuro digital
+        </h1>
+        <div class="cardsDigitalSkillingPreparate py-lg-5">
+            <div class="card tecmilenio-third-bg">
+                <div class="card-body">
+                    <h5 class="card-title"><span class="digitalSkillingPreparateContador" data-total="80">0</span>%</h5>
+                    <p class="card-text">
+                        De las empresas en el mundo adelantaron su transformaci&oacute;n digital despu&eacute;s de la
+                        pandemia.&nbsp;
+                    </p>
+                </div>
+            </div>
+            <div class="card tecmilenio-fifth-bg">
+                <div class="card-body">
+                    <h5 class="card-title"><span class="digitalSkillingPreparateContador" data-total="97">0</span>
+                        millones</h5>
+                    <p class="card-text">
+                        De vacantes surgir&aacute;n en el 2025 que requerir&aacute;n de habilidades digitales.&nbsp;
+                    </p>
+                </div>
+            </div>
+            <div class="card tecmilenio-first-bg">
+                <div class="card-body">
+                    <h5 class="card-title">+<span class="digitalSkillingPreparateContador" data-total="270">0</span>
+                        programas</h5>
+                    <p class="card-text">
+                        Con trayectorias personalizadas para los puestos más demandados del mercado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    // Seleccionar el elemento con la clase "digitalSkillingPreparate"
+    const cardTecmilenioThirdBg = document.querySelector('.tecmilenio-third-bg');
+
+    // Seleccionar todos los elementos con la clase "digitalSkillingPreparateContador"
+    const animadoDigitalSkillingPreparateContador = document.querySelectorAll('.digitalSkillingPreparateContador');
+
+    // Crear un observador utilizando la API Intersection Observer
+    // La función anónima se ejecuta cuando se observa una entrada
+    const observer = new IntersectionObserver(entries => {
+        // Recorrer las entradas recibidas
+        entries.forEach(entry => {
+            // Verificar si el elemento está visible en el viewport
+            if (entry.intersectionRatio > 0) {
+                // Iterar sobre los elementos con la clase "digitalSkillingPreparateContador"
+                animadoDigitalSkillingPreparateContador.forEach(element => {
+                    // Configurar un intervalo que se ejecuta cada 10 ms
+                    setInterval(function () {
+                        // Obtener el contador actual y el valor final del contador desde el atributo "data-total"
+                        let contador = parseInt(element.innerHTML);
+                        let finalizarContador = parseInt(element.dataset.total);
+                        // Incrementar el contador si no se ha alcanzado el valor final
+                        if (contador <= finalizarContador) {
+                            element.innerHTML = contador + 1;
+                        }
+                    }, 10);
+                });
+                // Dejar de observar el elemento una vez que se haya animado
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    // Observar el elemento "cardTecmilenioThirdBg" para activar la animación
+    observer.observe(cardTecmilenioThirdBg);
+
+</script>

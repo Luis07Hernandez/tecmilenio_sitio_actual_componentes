@@ -1,0 +1,264 @@
+<style>
+    ul.learnList.certificadosPrepaList {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    ul.learnList.certificadosPrepaList li {
+        display: flex;
+        padding: 0 15px;
+    }
+
+    ul.learnList.certificadosPrepaList li .learnSquare {
+        width: 100%;
+        padding: 15px 30px 30px;
+        margin: 0;
+    }
+
+    ul.learnList.certificadosPrepaList li .learnSquare .headerlearnSquare {
+        display: none;
+    }
+
+    ul.learnList.certificadosPrepaList li .learnSquare .bodylearnSquare strong,
+    ul.learnList.certificadosPrepaList li .learnSquare .bodylearnSquare>p {
+        width: 100%;
+        height: auto;
+        padding: 7px 0 7px 0px;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+    }
+
+    ul.learnList.certificadosPrepaList li .learnSquare .bodylearnSquare .description::before {
+        margin-bottom: 20px;
+    }
+
+    ul.learnList.certificadosPrepaList li .learnSquare .bodylearnSquare .description p {
+        font-size: 14px;
+    }
+
+    @media (min-width: 1100px) {
+        .modelSquare .headerSquare {
+            display: flex;
+            flex-flow: column-reverse;
+        }
+
+        .modelSquare .headerSquare img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .modelSquare .headerSquare span,
+        .modelSquare .headerSquare p {
+            position: relative;
+        }
+
+        .modelSquare .headerSquare p {
+            padding: 0;
+            width: 100%;
+            max-width: calc(100% - 20px);
+            height: auto;
+            min-height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10px;
+            margin: 0;
+        }
+
+        .modelSquare .bodySquare p {
+            width: calc(100% - 40px);
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        ul.learnList.certificadosPrepaList {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        ul.learnList.certificadosPrepaList li {
+            width: 48%;
+            float: none;
+            margin-bottom: 20px;
+        }
+
+        ul.learnList.certificadosPrepaList li .learnSquare {
+            padding: 15px;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+
+        ul.learnList.certificadosPrepaList {
+            flex-wrap: wrap;
+        }
+
+        ul.learnList.certificadosPrepaList li {
+            width: 100%;
+            float: none;
+            margin-bottom: 20px;
+        }
+
+        ul.learnList.certificadosPrepaList li .learnSquare {
+            padding: 15px;
+        }
+
+        ul.learnList.certificadosPrepaList li .learnSquare .bodylearnSquare .description p {
+            font-size: 13px;
+        }
+
+        .modeloPrepa .modelSquare .headerSquare span,
+        .modelSquare .headerSquare p {
+            width: 120px;
+            height: 95px;
+        }
+
+        .modeloPrepa .modelSquare {
+            margin: 15px auto;
+
+        }
+
+        .modeloPrepa .modelSquare .headerSquare span,
+        .modeloPrepa .modelSquare .headerSquare {
+            position: relative;
+        }
+
+        .modeloPrepa .modelSquare .headerSquare span,
+        .modeloPrepa .modelSquare .headerSquare {
+            position: relative;
+        }
+
+        .modeloPrepa .modelSquare .headerSquare p {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            height: auto;
+            bottom: 0;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .modeloPrepa .modelSquare .bodySquare p {
+            width: 100%;
+            padding: 11px 0 0;
+            font-size: 13px;
+            text-align: center;
+            box-shadow: unset;
+            height: auto;
+            min-height: 0;
+        }
+
+        .modeloPrepa .modelSquare img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<div data-namecontent="contenido_2">
+    <div class="templates hidden">
+        <div data-block="_sliderFinal">
+            <div class="eachPurpose">
+                <div class="eachSide"><img src="#" data-src="{{imagen}}" alt="purpose_tecMilenio_futuro_alumno"></div>
+                <div class="eachSide">
+                    <div class="lifePurposeSliderContenido">
+                        <div class="firstTitle">{{titulo_descritivo}}</div>
+                        <div class="contentBlock">{{descripcion}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="HTMLOut">
+        <div class="modeloPrepa">
+            <div class="superTitle blueBg" style="display: none">
+                <h2 style="font-size: 28px;">Prepa intercultural con 3 certificaciones​</h2>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="superTitle">
+                <h2 style="font-size: 28px;">Prepa Intercultural con 3 certificaciones​</h2>
+            </div>
+
+            <ul class="learnList certificadosPrepaList ">
+                <li>
+                    <div class="learnSquare">
+                        <div class="headerlearnSquare">
+                            <div class="icon"><img src="/sites/default/files/2020-04/profesores-con-experiencia.png"
+                                    data-src="/sites/default/files/2020-04/profesores-con-experiencia.png"
+                                    alt="Tecmilenio"></div>
+                        </div>
+                        <div class="bodylearnSquare">
+                            <p><strong>Certificación Tecnológica en <i>Python</i>. </strong></p>
+
+                            <div class="description">
+                                <p>Uno de los lenguajes de programación de alto nivel con mayor crecimiento y que
+                                    permite desarrollar una amplia gama de aplicaciones incluso con desarrollos de
+                                    inteligencia artificial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="learnSquare">
+                        <div class="headerlearnSquare">
+                            <div class="icon"><img src="/sites/default/files/2020-04/profesores-con-experiencia.png"
+                                    data-src="/sites/default/files/2020-04/profesores-con-experiencia.png"
+                                    alt="Tecmilenio"></div>
+                        </div>
+                        <div class="bodylearnSquare">
+                            <p><strong>Certificación en Creatividad e Innovación.</strong></p>
+
+                            <div class="description">
+                                <p>En esta certificación el estudiante desarrolla una de las 10 habilidades que el Foro
+                                    Económico Mundial menciona en el reporte de futuros del trabajo para el año 2025 y
+                                    que se refiere a la creatividad, la originalidad e iniciativa. Por medio de un
+                                    proyecto profesional, cada estudiante llevará una idea a la innovación aplicada.​
+
+                                    ​</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="learnSquare">
+                        <div class="headerlearnSquare">
+                            <div class="icon"><img src="/sites/default/files/2020-04/profesores-con-experiencia.png"
+                                    data-src="/sites/default/files/2020-04/profesores-con-experiencia.png"
+                                    alt="Tecmilenio"></div>
+                        </div>
+                        <div class="bodylearnSquare">
+                            <p><strong>Certificación en <i>Educación Financiera</i>. </strong></p>
+
+                            <div class="description">
+                                <p>Brinda las bases para una buena gestión de los recursos económicos de tal forma que
+                                    se tomen decisiones con los conocimientos necesarios. Durante tercer año en diversas
+                                    asignaturas y en co-creación con una institución bancaria internacional los
+                                    estudiantes obtendrán el certificado de bases en herramientas financieras.​</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+
+            <div class="lifePurpose">
+                <div class="lifePurposeSlider">{{_sliderFinal}}</div>
+                <div class="navsWrap">
+                    <div class="navsArrows"></div>
+                    <div class="allDots"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,618 @@
+<style>
+   .bodylabs3d{
+      display: none;
+   }
+   .bodylabs3d.visible-labs{
+      display: block!important;
+      position: relative;
+      z-index: 3;
+   }
+   .menu-content {
+      display: flex;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      justify-content: space-evenly;
+      height: 100vh;
+   }
+
+   .manu-see {
+      display: inline-block;
+   }
+
+   .button-model {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      margin-right: 80px;
+      text-decoration: none;
+   }
+
+   .button-model:hover {
+      color: white;
+   }
+
+   .verlabs {
+      display: block !important;
+   }
+
+   @media only screen and (min-width: 1000px) {
+      .menu-content {
+         display: flex;
+         justify-content: center;
+         display: flex;
+         align-items: center;
+         background-color: #ffffff;
+         justify-content: space-evenly;
+         height: 100vh;
+      }
+
+      .item-content {
+         width: 19%;
+         height: 500px;
+         margin: 0 8px;
+      }
+
+      .item-content img {
+         width: 100%;
+         height: 190px;
+         transition: all 0.3s;
+         display: block;
+         transform: scale(1);
+         height: auto;
+      }
+
+      .item-content img:hover {
+         transform: scale(1.08);
+      }
+
+      .item-content p {
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 15px;
+
+         color: #000000;
+      }
+
+      .item-content p,
+      a {
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         color: #000000;
+         margin: 0 7px;
+         text-align: left;
+      }
+
+      .item-content .min-item-content {
+         display: -webkit-box;
+         -webkit-line-clamp: 4;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         margin: 0;
+         margin-bottom: 10px;
+         width: 190px;
+      }
+
+      .item-content .max-item-content {
+         line-height: 2.5ex;
+         height: 25ex;
+         /* 2.5ex for each visible line */
+         overflow: scroll;
+         margin-bottom: 10px;
+      }
+
+      a {
+         cursor: pointer;
+      }
+
+      a:hover {
+         color: #282364;
+      }
+
+      .item-title {
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 20px;
+         height: 30px;
+         color: #282364;
+         margin: 25px 7px 17px 0px;
+      }
+
+      .button-model {
+         height: 40px;
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 700;
+         font-size: 12px;
+         line-height: 15px;
+         /* identical to box height */
+
+         text-align: center;
+
+         color: #ffffff;
+
+         /* Inside auto layout */
+
+         flex: none;
+         flex-grow: 0;
+         background: #2da546;
+         border-radius: 1px;
+         border: none;
+         margin-top: 20px;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         transition: all 0.3s;
+         text-align: left;
+         padding-left: 16px;
+      }
+
+      .button-model:hover {
+         background: rgba(45, 165, 70, 0.8);
+         padding-left: 26px;
+      }
+   }
+
+   body {
+      margin: 0;
+   }
+
+   @media only screen and (min-width: 901px) and (max-width: 999px) {
+      .menu-content {
+         width: 100%;
+      }
+
+      .item-content {
+         width: 19%;
+         height: 500px;
+         margin: 0 8px;
+      }
+
+      .item-content img {
+         width: 100%;
+         transition: all 0.3s;
+         display: block;
+         transform: scale(1);
+         height: auto;
+      }
+
+      .item-content img:hover {
+         transform: scale(1.01);
+      }
+
+      .item-content .min-item-content {
+         display: -webkit-box;
+         -webkit-line-clamp: 4;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         margin-bottom: 10px;
+         width: 150px !important;
+      }
+
+      .button-model {
+         width: 100% !important;
+         height: 40px;
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 700;
+         font-size: 12px;
+         line-height: 15px;
+         /* identical to box height */
+
+         text-align: center;
+
+         color: #ffffff;
+
+         /* Inside auto layout */
+
+         flex: none;
+         flex-grow: 0;
+         background: #2da546;
+         border-radius: 1px;
+         border: none;
+         margin-top: 20px;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         transition: all 0.3s;
+         text-align: left;
+         padding-left: 16px;
+      }
+
+      .item-title {
+         font-size: 12px !important;
+      }
+
+      .item-content p,
+      a {
+         font-size: 10px !important;
+      }
+   }
+
+   @media only screen and (max-width: 900px) {
+      .menu-content {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         height: 100%;
+      }
+
+      .item-content {
+         width: 100%;
+         margin: 30px 0;
+      }
+
+      .item-content img {
+         transition: all 0.3s;
+         display: block;
+         transform: scale(1);
+         height: auto;
+         width: 100%;
+         height: 335px;
+         object-fit: scale-down;
+      }
+
+      .item-content img:hover {
+         transform: scale(1.1);
+      }
+
+      .item-content p {
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 15px;
+
+         color: #000000;
+      }
+
+      .item-content p,
+      a {
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         color: #000000;
+         margin: 0 7px;
+      }
+
+      a {
+         display: none;
+      }
+
+      .item-title {
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 20px;
+
+         color: #282364;
+         margin: 25px 7px 17px 7px;
+      }
+
+      .button-model {
+         width: calc(100% - 32px);
+         height: 40px;
+         /* font-family: "Montserrat"; */
+         font-style: normal;
+         font-weight: 700;
+         font-size: 12px;
+         line-height: 15px;
+         /* identical to box height */
+         border-radius: 120px;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         color: #ffffff;
+         margin: 0 16px;
+         flex: none;
+         flex-grow: 0;
+         background: #2da546;
+         border: none;
+         margin-top: 20px;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         transition: all 0.3s;
+      }
+   }
+</style>
+<div data-dom="tabsRegionContenido">
+   <div class="HTMLOut">
+      <div class="productDescription campus-region">
+         <div class="block selectTab">
+            <div class="container">
+               <div class="b-full">
+                  <div class="showTab">
+                     <div class="itemContains-title">
+                        <h2>Todos los campus</h2>
+                     </div>
+                     <div class="itemContains-filter onlyViewInAll">
+                        <form class="filterState" method="get" action="#" data-url="api/taxonomia/estados/[lang]"
+                           data-node="all" data-db="../_json/campus_region_estados.json" autocomplete="off">
+                           <fieldset>
+                              <div class="combo">
+                                 <p>Fltrar por Estado:</p>
+                                 <div class="input">
+                                    <select name="STATE">
+                                       <option value="all">Todos</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </fieldset>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="b-full">
+                  <div class="showTab">
+                     <div class="container animator-on">
+                        <div class="emptyItemsMessage hidden">
+                           <div class="boxMessage">
+                              <div class="bind">
+                                 <div class="superTitle">
+                                    <div class="container animator-on">
+                                       <div class="subtitle">
+                                          <strong>
+                                             <i class="llavesTitle">
+                                                En este estado aún no existen campus, te invitamos a visitar otros campus cercanos a tu estado y aprovechar todo lo que Tecmilenio te ofrece
+                                             </i>
+                                          </strong>
+                                          <p style="display: none!important;">
+                                             Hola 
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bodyAccordion">
+                           {{_bodyAccordionContents}}
+                        </div>
+
+                        <div class="bodylabs3d" id="laboratoriosvirtuales" >
+                           <div class="tarjetas-laboratorios">
+                              <div class="menu-content">
+                                 <div class="item-content">
+                                    <img
+                                       src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/manufactura.png" />
+                                    <h4 class="item-title">Manufactura</h4>
+                                    <p id="manu-content" class="min-item-content">
+                                       La práctica en el laboratorio consiste en utilizar el equipo
+                                       como una estación de trabajo independiente o se puede programar
+                                       en
+                                       varias configuraciones a través del sistema en distintos
+                                       niveles de la pirámide de automatización.
+                                       <br />
+                                       <br />
+                                       <b>Fresadora: </b> Equipo de corte con herramienta de corte
+                                       vertical y posicionamiento de pieza de forma horizontal.
+                                       Podemos
+                                       trabajar con piezas hasta de mediana dureza o moldeables. Es de
+                                       las máquinas básicas en el área de ingeniería mecánica, dentro
+                                       de
+                                       la industria metal mecánica.
+                                       <br />
+                                       <br />
+                                       <b>Brazo robótico: </b>
+                                       Equipo que tiene la función de manipular y montar piezas y
+                                       módulos en muchas aplicaciones industriales. Empleando
+                                       programación de
+                                       tres formas; mendiate el CPU o cerebro del equipo, mediante el
+                                       dispositivo Teach Pendal y mediante el software CIROS. Con la
+                                       integración de sensores, actuadores y la programación de
+                                       aplicaciones multitarea.
+                                    </p>
+                                    <a id="manu-see">Ver más</a>
+                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-manufactura">Ver Modelo 3D</a>
+                                 </div>
+                                 <div class="item-content">
+                                    <img
+                                       src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/cocina.png" />
+                                    <h4 class="item-title">Gastronomía</h4>
+                                    <p id="gast-content" class="min-item-content">
+                                       Espacio equipado para que tú cómo aprendedor de Universidad
+                                       Tecmilenio puedas desarrollar las competencias de nutrimentales
+                                       de la
+                                       preparación de alimentos e innovaciones en la preparación
+                                       tecnológica alimentaria.
+                                       <br />
+                                       <br />
+                                       Un beneficio que tendrás al estar en la carrera de gastronomía
+                                       y utilizar este laboratorio es que serás capáz de crear menús
+                                       para
+                                       diferentes servicios alimentarios, (restaurantes, escuelas,
+                                       hospitales, comedores industriales) con diferentes
+                                       presupuestos,
+                                       requerimientos dietéticos y volúmenes de producción.
+                                       <br />
+                                       <br />
+                                       Además utilizarás metodos y técnicas apropiadas para la
+                                       preparación y conservación de alimentos, así cómo para la
+                                       elaboración de
+                                       innovadores conceptos culinarios.
+                                    </p>
+                                    <a id="gast-see">Ver más</a>
+                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-gastronomia">Ver Modelo 3D</a>
+                                 </div>
+                                 <div class="item-content">
+                                    <img
+                                       src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/control_automatizacion.png" />
+                                    <h4 class="item-title">Control Automático</h4>
+                                    <p id="cont-content" class="min-item-content">
+                                       Estación con tecnología de punta y completamnete industrial,
+                                       conformado por dos secciones:
+                                       <br />
+                                       <br />
+                                       <b>I. Sistema de control Hidráulico.</b>
+                                       <br />
+                                       <br />
+                                       <b>II. Sistema de control de motor.</b>
+                                       <br />
+                                       <br />
+                                       Cuenta con la capacidad para ser operado y visualizado
+                                       remotamente desde un portal en internet al que tú como
+                                       aprendedor de
+                                       Universidad Tecmilenio tendrás acceso a reservar el día y hora
+                                       en que desean hacer uso de la estación.
+                                       <br />
+                                       <br />
+                                       Durante su práctica podrás realizar pruebas gracias a la
+                                       combinación de los distintos sistemas con que cuenta el equipo,
+                                       hidráulicos, eléctricos y neumáticos, controlados desde una
+                                       aplicación desarrollada compartiendo la experiencia tecnológica
+                                       y
+                                       académica con compañeros a nivel nacional.
+                                    </p>
+                                    <a id="cont-see">Ver más</a>
+                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-control">Ver
+                                       Modelo 3D</a>
+                                 </div>
+                                 <div class="item-content">
+                                    <img
+                                       src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/electronica.png" />
+                                    <h4 class="item-title">Electrónica</h4>
+                                    <p id="elec-content" class="min-item-content">
+                                       Espacio equipado donde tu como aprendedor de Universidad
+                                       Tecmilenio podrás realizar actividades de medición, análisis y
+                                       generación
+                                       de señales y circuitos eléctrico/electrónicos.
+                                       <br />
+                                       <br />
+                                       Trabajando en el desarrollo y construcción de diferentes
+                                       circuitos y mecanismos eléctricos; analizando su fncionamiento
+                                       con
+                                       instrumentación industrial como; osciloscopios, generadores de
+                                       funciones, fuentes de poder, multímetros, voltímetros, entre
+                                       otros
+                                       equipos.
+                                    </p>
+                                    <a id="elec-see">Ver más</a>
+                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-electronica">Ver Modelo 3D</a>
+                                 </div>
+                                 <div class="item-content">
+                                    <img
+                                       src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/juicios.png" />
+                                    <h4 class="item-title">Juicios Orales</h4>
+                                    <p id="juic-content" class="min-item-content">
+                                       Espacio en el que tu como aprendedor de Universidad Tecmilenio
+                                       aplicarás los conocimientos teóricos para desarrollar las
+                                       habilidades requeridas para llevar a cabo juicios orales de
+                                       acuerdo a las legislaciones vigentes.
+                                       <br />
+                                       <br />
+                                       Los beneficios que tendrás cómo egresado al utilizar esta sala
+                                       en la carrera de derecho son:
+                                       <br />
+                                       <br />
+                                       Serás capáz de litigar en las áreas civil, penal, mercantil y
+                                       familiar, de manera independiente o para firmas legales.
+                                       <br />
+                                       <br />
+                                       Realizarás consejería y consultoría legal corporativa, podrás
+                                       desarrollar estrategias legales dentro de la administración
+                                       pública,
+                                       aplicar el derecho internacionalen el ordenamiento legal
+                                       nacional y trabajar en órganos involucrados con la impartición
+                                       de
+                                       justicia.
+                                    </p>
+                                    <a id="juic-see">Ver más</a>
+                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-juicios">Ver Modelo 3D</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+   const elements = ["manu", "gast", "cont", "juic", "elec"];
+   const seeMoreText = "Ver más";
+   const seeLessText = "Ver menos";
+
+   elements.map((element) => {
+      const textElement = document.getElementById(`${element}-see`);
+      textElement.addEventListener("click", () => {
+         const isMore = textElement.textContent.normalize() === seeMoreText.normalize();
+         textElement.textContent = textElement.textContent === "Ver menos" ? seeMoreText : seeLessText;
+         changeClass(element, isMore);
+      });
+   });
+
+   const changeClass = (element, isMore) => {
+      const text = document.getElementById(`${element}-content`);
+      if (!text) return;
+      text.className = isMore ? "max-item-content" : "min-item-content";
+   };   
+
+</script>
+
+<script>
+
+   window.addEventListener('load', function(){
+      // JQUERY
+      const btnLabs = $('#btnlaboratorios3d .btnol');
+      
+      if ( window.location.href.includes('campus#laboratoriosvirtuales') ){
+         $('.bodyAccordion').hide();
+         $('.onlyViewInAll ').css('opacity','0');
+         $('.showTab .itemContains-title').hide();
+         $('.bodylabs3d').addClass('visible-labs');
+
+         $('#btnlaboratorios3d .card-container').addClass('active');
+         $('#btnlaboratorios3d .card-container .card').addClass('active');
+
+         $('.overlapTabsItems li').removeClass('active');
+         $('.overlapTabsItems li .card-container').removeClass('active');
+      }
+
+      // Click a labs
+      btnLabs.on('click', function(){
+         $('.bodyAccordion').hide();
+         $('.onlyViewInAll ').css('opacity','0');
+         $('.showTab .itemContains-title').hide();
+         $('.bodylabs3d').addClass('visible-labs');
+
+         $('#btnlaboratorios3d .card-container').addClass('active');
+         $('#btnlaboratorios3d .card-container .card').addClass('active');
+
+         $('.overlapTabsItems li').removeClass('active');
+         $('.overlapTabsItems li .card-container').removeClass('active');
+      });
+
+      // click a otros lk
+      $('.overlapTabsItems li').on('click', function(){
+         $('.bodyAccordion').show();
+         $('.onlyViewInAll ').css('opacity','1');
+         $('.showTab .itemContains-title').show();
+         $('.bodylabs3d').removeClass('visible-labs');
+         $('#btnlaboratorios3d .card-container').removeClass('active');
+         $('#btnlaboratorios3d .card-container .card').removeClass('active');
+      })
+
+   });
+
+</script>

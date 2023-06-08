@@ -1,0 +1,594 @@
+<style>
+    /* ==============================
+    START - DECLARE FONT FAMILIES
+    ================================= */
+
+    @import url('https://fonts.googleapis.com/css?family=Cairo');
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+    .tecmilenioBanner h1 {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    .tecmilenioBanner h5 {
+        font-family: 'Cairo', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    .tecmilenioBanner p {
+        font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    }
+
+    /* ==============================
+    END - DECLARE FONT FAMILIES
+    ================================= */
+
+    /* ==============================
+    START - GENERAL STYLES
+    ================================= */
+
+    /* MOBILE FIRST METHOD */
+
+    .tecmilenioBanner {
+        position: relative;
+    }
+
+    .tecmilenioBanner::after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000000;
+        opacity: 0.3;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+        filter: alpha(opacity=30);
+    }
+
+    .tecmilenioBanner .breadcrumbs a {
+        color: #fff;
+    }
+
+    .tecmilenioBanner .imgBannerTop {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        font-size: 0;
+    }
+
+    .tecmilenioBanner .imgBannerTop img {
+        min-height: 100%;
+        min-width: 100%;
+        max-width: none !important;
+        width: auto !important;
+    }
+
+    .banner_desktop {
+        display: none !important;
+    }
+
+    .banner_mobile {
+        display: block !important;
+    }
+
+    .tecmilenioBanner .imgBannerTop+.container {
+        height: 750px;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .tecmilenioBanner .contentBanner {
+        position: relative;
+    }
+
+    .tecmilenioBanner .titleBanner h1 {
+        font-size: 48px;
+        margin: 90px 0px 40px 0px;
+    }
+
+    .tecmilenioBanner .summaryBanner p {
+        font-size: 16px;
+    }
+
+    .digitalSkillingContentBanner {
+        padding: 10% 0px;
+    }
+
+    .digitalSkillingContentBanner {
+        top: 0;
+    }
+
+    .container {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+
+    .tecmilenioBanner .imgBannerTop+.container {
+        display: block;
+    }
+
+    .digitalSkillingBannerInsignia {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -o-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .digitalSkillingBannerInsignia svg {
+        width: 120px;
+        height: auto;
+    }
+
+    /* Custom, iPhone Retina - More than 320px */
+    @media only screen and (min-width : 320px) {
+        .tecmilenioBanner .titleBanner h1 {
+            font-size: 52px;
+            margin: 40px 0px 40px 0px;
+        }
+
+        .tecmilenioBanner .summaryBanner p {
+            font-size: 18px;
+        }
+
+        .digitalSkillingBannerInsignia svg {
+            width: 140px;
+        }
+    }
+
+    /* Extra Small Devices, Phones - More than 480px */
+    @media only screen and (min-width : 480px) {
+        .tecmilenioBanner .titleBanner h1 {
+            font-size: 62px;
+            margin: 40px 0px 40px 0px;
+        }
+
+        .tecmilenioBanner .summaryBanner p {
+            font-size: 20px;
+        }
+    }
+
+    /* Small Devices, Tablets - More than 768px */
+    @media only screen and (min-width : 768px) {
+
+        .tecmilenioBanner .titleBanner h1 {
+            font-size: 72px;
+            margin: 0px 0px 40px 0px;
+        }
+
+        .banner_desktop {
+            display: block !important;
+        }
+
+        .banner_mobile {
+            display: none !important;
+        }
+
+        .tecmilenioBanner .imgBannerTop img {
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+            top: 65%;
+            left: 30%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -o-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            max-width: none !important;
+            width: auto !important;
+        }
+
+        .digitalSkillingBannerInsignia svg {
+            width: 160px;
+        }
+    }
+
+    /* Medium Devices, Desktops - More than 992px */
+    @media only screen and (min-width : 992px) {
+        .tecmilenioBanner .titleBanner h1 {
+            font-size: 48px;
+            margin-top: 80px;
+        }
+
+        .tecmilenioBanner .summaryBanner p {
+            font-size: 18px;
+        }
+
+        .digitalSkillingBannerInsignia svg {
+            width: 180px;
+        }
+
+        .benha__slider-cards-1 {
+            margin-top: 100px;
+        }
+    }
+
+    /* Large Devices, Wide Screens - More than 1200px */
+    @media only screen and (min-width : 1200px) {
+        .tecmilenioBanner .titleBanner h1 {
+            font-size: 60px;
+            margin-top: 40px;
+        }
+
+        .tecmilenioBanner .summaryBanner p {
+            font-size: 20px;
+        }
+
+        .tecmilenioBanner .imgBannerTop img {
+            top: 65%;
+            left: 50%;
+        }
+
+        .digitalSkillingBannerInsignia svg {
+            width: 200px;
+        }
+    }
+
+    /* ==============================
+    END - GENERAL STYLES
+    ================================= */
+
+    /* ==============================
+    START - BENHA SLIDER CARDS 
+    ================================= */
+
+    /* MOBILE FIRST METHOD */
+
+    .benha__slider-cards-1 {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 24px;
+        margin: 0 0;
+        gap: 12px;
+        padding: 0 0 24px 0;
+    }
+
+    .benha__slider-cards-1 .item {
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #00534C;
+        color: #26D07C;
+        background: #00534C;
+        scroll-snap-align: start;
+        flex: 0 0 80%;
+    }
+
+    .benha__slider-cards-1 .item h5 {
+        text-align: left;
+        text-transform: initial;
+        font-size: 16px;
+    }
+
+    .benha__slider-cards-1 .item p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .benha__slider-cards-1 .item:hover {
+        background-color: #26D07C;
+        border-color: #26D07C;
+        color: #00534C;
+        text-decoration: none;
+    }
+
+    .benha__slider-cards-1__overflow-arrows {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .benha__slider-cards-1__overflow-arrows button {
+        border: 0px solid transparent;
+        background: transparent;
+    }
+
+    .benha__slider-cards-1__overflow-arrows button:focus {
+        outline: 0px;
+    }
+
+
+    /* Custom, iPhone Retina - More than 320px */
+    @media only screen and (min-width : 320px) {
+
+        .benha__slider-cards-1 .item h5 {
+            font-size: 18px;
+        }
+
+        .benha__slider-cards-1 .item p {
+            font-size: 14px;
+        }
+    }
+
+    /* Extra Small Devices, Phones - More than 480px */
+    @media only screen and (min-width : 480px) {
+        .benha__slider-cards-1 .item h5 {
+            font-size: 20px;
+        }
+    }
+
+    /* Small Devices, Tablets - More than 768px */
+    @media only screen and (min-width : 768px) {
+        .benha__slider-cards-1 .item p {
+            font-size: 16px;
+        }
+    }
+
+    /* Medium Devices, Desktops - More than 992px */
+    @media only screen and (min-width : 992px) {
+
+        .benha__slider-cards-1 {
+            overflow: hidden;
+            margin-top: 100px;
+        }
+
+        .benha__slider-cards-1 .item {
+            border-radius: 5px;
+            padding: 24px;
+            border: 1px solid #00534C;
+            color: #26D07C;
+            background: #00534C;
+            scroll-snap-align: start;
+            flex: 0 0 30%;
+        }
+
+        .benha__slider-cards-1 .item h5 {
+            font-size: 18px;
+        }
+
+        .benha__slider-cards-1 .item p {
+            font-size: 14px;
+        }
+
+        .benha__slider-cards-1__overflow-arrows {
+            display: none;
+        }
+    }
+
+    /* Large Devices, Wide Screens - More than 1200px */
+    @media only screen and (min-width : 1200px) {
+        .benha__slider-cards-1 .item h5 {
+            font-size: 20px;
+        }
+    }
+
+    /* ==============================
+    END - BENHA SLIDER CARDS 
+    ================================= */
+</style>
+
+<section class="tecmilenioBanner" id="digitalSkillingBanner">
+    <div class="imgBannerTop">
+        <img alt="Tecmilenio" class="banner_desktop"
+            src="https://tecmilenio.mx/sites/default/files/2023-05/MM1_0885%201.jpg" />
+        <img alt="Tecmilenio" class="banner_mobile"
+            src="https://tecmilenio.mx/sites/default/files/2023-05/MM1_0885%204.jpg">
+    </div>
+
+    <div class="container">
+        <div class="contentBanner animator-on digitalSkillingContentBanner">
+            <div class="mb-5">
+                <div class="col-md-8 p-0">
+                    <div class="titleBanner">
+                        <h1 class="text-white">Aprende habilidades digitales</h1>
+                    </div>
+                    <div class="summaryBanner text-white">
+                        <p>
+                            <strong>Prep&aacute;rate hoy para un futuro</strong> laboral en el
+                            que, m&aacute;s que nunca, el factor humano aprovecha el
+                            conocimiento de herramientas <strong>digitales</strong> y
+                            <strong>tecnol&oacute;gicas</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==============================
+            START - BENHA SLIDER CARDS SECTION
+            ================================= -->
+
+            <div class="benha__slider-cards-1">
+                <a href="https://cdc.tecmilenio.mx/busqueda?area_interes=14" class="item" target="_blank">
+                    <h5 class="font-weight-bold">Skilling Center</h5>
+                    <p>
+                        Cientos de certificados, cursos y credenciales: desde conocimientos b&aacute;sicos de
+                        software hasta programaci&oacute;n avanzada.&nbsp;&nbsp;
+                    </p>
+                </a>
+                <a href="https://nowisnao.com/" class="item" target="_blank">
+                    <h5 class="font-weight-bold">Digital NAO</h5>
+                    <p>
+                        Todas las especialidades de alta demanda en el mercado laboral, como Java, Python y Full Stack,
+                        están ahora disponibles en nuestros programas.
+                    </p>
+                </a>
+                <a href="https://itesm.co1.qualtrics.com/jfe/form/SV_0NbIUfonN7DZKOa" class="item" target="_blank">
+                    <h5 class="font-weight-bold">Diagnóstico de Competencias</h5>
+                    <p>
+                        Identifica tus conocimientos y habilidades digitales para encontrar el programa
+                        acad&eacute;mico a tu medida.&nbsp;
+                    </p>
+                </a>
+            </div>
+
+            <div class="benha__slider-cards-1__overflow-arrows">
+                <button class="btnLeft">
+                    <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.939335 10.9393C0.353548 11.5251 0.353548 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807609 11.0711 0.807609 10.4853 1.3934L0.939335 10.9393ZM30.2353 10.5L1.99999 10.5L1.99999 13.5L30.2353 13.5L30.2353 10.5Z"
+                            fill="#26D07C" />
+                    </svg>
+                </button>
+                <button class="btnRight">
+                    <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.0604 13.0607C30.6462 12.4749 30.6462 11.5251 30.0604 10.9393L20.5145 1.3934C19.9287 0.807611 18.9789 0.807611 18.3932 1.3934C17.8074 1.97919 17.8074 2.92893 18.3932 3.51472L26.8784 12L18.3932 20.4853C17.8074 21.0711 17.8074 22.0208 18.3932 22.6066C18.9789 23.1924 19.9287 23.1924 20.5145 22.6066L30.0604 13.0607ZM0.764465 13.5H28.9998V10.5H0.764465V13.5Z"
+                            fill="#26D07C" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- ==============================
+            END - SLIDER CARDS SECTION
+            ================================= -->
+        </div>
+    </div>
+
+    <div class="digitalSkillingBannerInsignia">
+        <!-- ==============================
+        START - BADGE
+        ================================= -->
+
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 35 1230 330" height="363.80399" width="1275.2947"
+            xml:space="preserve" id="svg2" version="1.1">
+            <metadata id="metadata8">
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <defs id="defs6">
+                <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+                    <path id="path16" d="M 0,272.853 H 956.471 V 0 H 0 Z" />
+                </clipPath>
+            </defs>
+            <g transform="matrix(1.3333333,0,0,-1.3333333,0,363.804)" id="g10">
+                <g id="g12">
+                    <g clip-path="url(#clipPath18)" id="g14">
+                        <g transform="translate(14.8946,257.5588)" id="g20">
+                            <path id="path22" style="fill:#00c87c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="m 0,0 v -88.421 c 0,-87.02 70.544,-157.564 157.564,-157.564 H 927.858 V 0 Z" />
+                        </g>
+                        <g transform="translate(146.0783,155.4552)" id="g24">
+                            <path id="path26" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="m 0,0 -7.043,-0.314 v -38.481 c 1.887,-0.262 3.955,-0.392 6.201,-0.392 5.818,0 10.424,1.636 13.819,4.909 3.393,3.271 5.09,8.179 5.09,14.724 0,6.387 -1.467,11.242 -4.401,14.568 C 10.73,-1.663 6.175,0 0,0 m -1.684,-46.49 c -2.45,0 -4.951,0.03 -7.503,0.088 -2.552,0.059 -4.62,0.109 -6.201,0.148 V 6.675 c 1.378,0 4.159,0.052 8.345,0.158 4.184,0.104 6.737,0.156 7.655,0.156 8.472,0 14.979,-2.092 19.523,-6.274 4.542,-4.181 6.813,-10.742 6.813,-19.681 0,-8.835 -2.603,-15.632 -7.809,-20.389 -5.205,-4.757 -12.147,-7.135 -20.823,-7.135" />
+                        </g>
+                        <path id="path28" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                            d="m 182.213,162.209 h 8.345 v -53.008 h -8.345 z" />
+                        <g transform="translate(241.1608,152.7066)" id="g30">
+                            <path id="path32" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="m 0,0 c -4.543,1.832 -9.137,2.749 -13.78,2.749 -5.41,0 -9.889,-1.767 -13.436,-5.301 -3.548,-3.534 -5.321,-8.442 -5.321,-14.724 0,-6.126 1.582,-10.891 4.747,-14.293 3.164,-3.404 7.553,-5.105 13.168,-5.105 2.756,0 5.409,0.419 7.962,1.257 v 19.24 h 8.345 v -24.894 c -5.411,-2.148 -11.178,-3.22 -17.303,-3.22 -8.013,0 -14.329,2.316 -18.947,6.95 -4.62,4.633 -6.929,11.033 -6.929,19.2 0,8.325 2.552,15.13 7.656,20.418 5.103,5.288 12.019,7.932 20.747,7.932 5.001,0 9.799,-0.759 14.393,-2.277 z" />
+                        </g>
+                        <path id="path34" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                            d="m 254.557,162.209 h 8.345 v -53.008 h -8.345 z" />
+                        <g transform="translate(292.7585,154.984)" id="g36">
+                            <path id="path38" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 V -45.783 H -8.345 V 0 H -22.508 V 7.225 H 14.24 L 14.24,0 Z" />
+                        </g>
+                        <g transform="translate(333.9743,144.3936)" id="g40">
+                            <path id="path42" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 C -0.931,2.509 -1.706,5.229 -2.325,8.156 -3.096,5.121 -3.942,2.321 -4.866,-0.242 l -5.82,-16.418 16.578,0.01 z m 12.049,-35.2 -3.981,11.708 h -20.897 l -4.003,-11.687 -8.381,-0.015 18.524,53.009 h 9.263 l 18.757,-53.008 z" />
+                        </g>
+                        <g transform="translate(361.736,109.2008)" id="g44">
+                            <path id="path46" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 V 53.008 H 8.345 V 7.46 H 26.106 V 0 Z" />
+                        </g>
+                        <g transform="translate(420.2233,108.4156)" id="g48">
+                            <path id="path50" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="m 0,0 c -3.777,0 -7.248,0.419 -10.412,1.257 l 0.46,8.088 c 1.581,-0.628 3.304,-1.113 5.167,-1.453 1.863,-0.341 3.713,-0.51 5.551,-0.51 3.062,0 5.537,0.667 7.426,2.002 1.888,1.335 2.832,3.389 2.832,6.165 0,2.984 -1.875,5.352 -5.627,7.107 -3.751,1.753 -7.439,3.494 -11.062,5.222 -3.931,2.67 -5.895,6.413 -5.895,11.23 0,4.659 1.685,8.403 5.053,11.23 3.368,2.827 8.012,4.241 13.933,4.241 1.633,0 3.126,-0.079 4.479,-0.233 1.351,-0.155 2.972,-0.388 4.861,-0.699 l -0.459,-7.628 c -3.165,1.046 -6.278,1.57 -9.34,1.57 -3.165,0 -5.577,-0.668 -7.235,-2.006 -1.659,-1.337 -2.488,-3.159 -2.488,-5.466 0,-2.832 1.876,-5.154 5.627,-6.963 3.752,-1.808 7.438,-3.552 11.063,-5.229 3.929,-2.675 5.895,-6.372 5.895,-11.092 0,-4.93 -1.8,-8.968 -5.398,-12.114 C 10.833,1.573 6.022,0 0,0" />
+                        </g>
+                        <g transform="translate(476.7468,109.2213)" id="g52">
+                            <path id="path54" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 -18.781,25.95 V -0.021 h -8.345 v 53.009 h 8.345 V 28.437 L 0.023,53.012 10.311,52.988 -10.208,27.388 11.076,-0.021 Z" />
+                        </g>
+                        <path id="path56" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                            d="m 494.79,162.209 h 8.345 v -53.008 h -8.345 z" />
+                        <g transform="translate(515.1535,109.2008)" id="g58">
+                            <path id="path60" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 V 53.008 H 8.345 V 7.46 h 17.76 V 0 Z" />
+                        </g>
+                        <g transform="translate(547.842,109.2008)" id="g62">
+                            <path id="path64" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 V 53.008 H 8.345 V 7.46 h 17.76 V 0 Z" />
+                        </g>
+                        <path id="path66" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                            d="m 580.531,162.209 h 8.345 v -53.008 h -8.345 z" />
+                        <g transform="translate(631.9767,109.2008)" id="g68">
+                            <path id="path70" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="m 0,0 -17.685,30.156 c -1.224,2.042 -2.233,3.834 -3.024,5.379 -0.792,1.544 -1.697,3.468 -2.718,5.772 0,-3.09 0.077,-7.683 0.23,-13.782 0.153,-6.1 0.23,-9.333 0.23,-9.698 V 0 h -8.115 v 53.008 h 10.947 L -3.063,24.109 c 0.969,-1.676 1.838,-3.259 2.604,-4.751 0.766,-1.492 1.99,-3.915 3.675,-7.264 0,1.047 -0.09,4.79 -0.269,11.23 C 2.768,29.763 2.68,34.422 2.68,37.302 v 15.706 h 8.115 V 0 Z" />
+                        </g>
+                        <g transform="translate(693.3752,152.7066)" id="g72">
+                            <path id="path74" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="m 0,0 c -4.544,1.832 -9.137,2.749 -13.78,2.749 -5.411,0 -9.89,-1.767 -13.437,-5.301 -3.548,-3.534 -5.32,-8.442 -5.32,-14.724 0,-6.126 1.581,-10.891 4.746,-14.293 3.164,-3.404 7.554,-5.105 13.168,-5.105 2.756,0 5.409,0.419 7.962,1.257 v 19.24 h 8.345 v -24.894 c -5.411,-2.148 -11.177,-3.22 -17.302,-3.22 -8.014,0 -14.329,2.316 -18.948,6.95 -4.62,4.633 -6.928,11.033 -6.928,19.2 0,8.325 2.552,15.13 7.655,20.418 5.104,5.288 12.02,7.932 20.747,7.932 5.002,0 9.8,-0.759 14.393,-2.277 z" />
+                        </g>
+                        <path id="path76" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                            d="m 791.22,158.366 h 45.319 V 111.878 H 791.22 Z" />
+                        <g transform="translate(745.9006,204.8541)" id="g78">
+                            <path id="path80" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 H 45.319 V -46.488 H 0 Z" />
+                        </g>
+                        <g transform="translate(745.7776,111.8789)" id="g82">
+                            <path id="path84" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                d="M 0,0 H 45.442 V -46.614 H 0 Z" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <!-- ==============================
+        END - BADGE
+        ================================= -->
+    </div>
+</section>
+
+<script>
+    /* ==============================
+    START - BENHA SLIDER CARDS SECTION
+    ================================= */
+
+    // Get the reference to the container element that holds the cards
+    const cardsContainer = document.querySelector('.benha__slider-cards-1');
+
+    // Get the reference to the left scroll button
+    const scrollLeftButton = document.querySelector('.benha__slider-cards-1__overflow-arrows .btnLeft');
+
+    // Get the reference to the right scroll button
+    const scrollRightButton = document.querySelector('.benha__slider-cards-1__overflow-arrows .btnRight');
+
+    // Add a click event listener to the left scroll button
+    scrollLeftButton.addEventListener('click', function () {
+        // Scroll the cards container towards the left by 100 pixels with smooth scrolling behavior
+        cardsContainer.scrollBy({ left: -100, behavior: 'smooth' });
+    });
+
+    // Add a click event listener to the right scroll button
+    scrollRightButton.addEventListener('click', function () {
+        // Scroll the cards container towards the right by 100 pixels with smooth scrolling behavior
+        cardsContainer.scrollBy({ left: cardsContainer.scrollLeft + 100, behavior: 'smooth' });
+    });
+
+    /* ==============================
+    END - SLIDER CARDS SECTION
+    ================================= */
+</script>

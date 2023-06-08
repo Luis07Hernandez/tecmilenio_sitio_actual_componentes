@@ -1,0 +1,796 @@
+<link href="https://use.fontawesome.com/f87f365d38.css" media="all" rel="stylesheet">
+<style>
+  .hs-revalidacion input {
+    display: block !important;
+    height: auto !important;
+    width: 0px !important;
+    top: 20px;
+  }
+
+  .hs-revalidacion span {
+    display: block !important;
+    font-size: small;
+    margin-left: 15px;
+  }
+
+  .tooltipover {
+    position: fixed;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltipover .tooltiptext {
+    visibility: visible;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-size: larger;
+    text-shadow: #cec5c5 2px 2px;
+  }
+
+  .hs_nivel_de_interes.hs-nivel_de_interes.hs-fieldtype-select.field.hs-form-field {
+    display: block;
+  }
+
+  #hbspt-form-1610386427642-4043875215 .hs-modalidad_ {
+    display: block !important;
+  }
+
+  .tabsw small {
+    font-size: .3em;
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .tabsw a {
+    color: #fff;
+  }
+
+  .cover-back-body {
+    background-image: linear-gradient(#7da4ff, #4161c8);
+  }
+
+  .cover-back-tabs {
+    background-color: #7E82EC;
+  }
+
+  .tabsw {
+    position: fixed;
+    margin: 15px;
+    z-index: 1000;
+    bottom: 0;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+
+    width: 400px;
+    overflow: hidden;
+
+    border-radius: 293px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, .30);
+    transition: all .4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+
+  .tabs-container {
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+
+    height: 60px;
+    background-image: linear-gradient(-225deg, rgb(80, 204, 204) 35%, rgb(69, 174, 202) 100%);
+  }
+
+  .tab-item {
+    width: 60px;
+    height: 60px;
+    margin: 0 17.5px;
+
+    color: #E9E9E9;
+    opacity: 0;
+    transform: scale(0);
+
+    font-size: 32px;
+    text-align: center;
+    line-height: 60px;
+
+    transition: all .9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .tab-item:nth-child(1) {
+    transition-delay: .3s;
+  }
+
+  .tab-item:nth-child(2) {
+    transition-delay: .5s;
+  }
+
+  .tab-item:nth-child(4) {
+    transition-delay: .7s;
+  }
+
+  .tab-item:nth-child(5) {
+    transition-delay: .9s;
+  }
+
+  .tab-item {
+    cursor: pointer;
+  }
+
+  .tab-item--middle {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 50%;
+    color: #ffffff;
+    background-image: linear-gradient(-225deg, rgb(80, 204, 204) 35%, rgb(69, 174, 202) 100%);
+    width: 130px;
+  }
+
+  /* Animations */
+
+  @keyframes show-tab-items {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes hide-tab-items {
+    to {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+  @keyframes add-background {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes remove-background {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  /* Javascript part */
+
+  .js-tabs-init {
+    width: 130px;
+    margin: 15px;
+    right: 0px;
+  }
+
+  .js-cover-back-animate {
+    opacity: 0;
+    transition: all 5s;
+    animation: add-background linear 2s forwards;
+  }
+
+  .js-tab-item-show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  ;
+
+  .js-tab-item-active {
+    position: relative;
+  }
+
+  .js-tab-item-active:after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 4px;
+    border: 3px solid #ff5252;
+    background-color: white;
+    opacity: .6;
+  }
+
+  /* CSS Multiple Whatsapp Chat */
+  #whatsapp-chat {
+    position: fixed;
+    background: #fff;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, .28);
+    bottom: 90px;
+    right: 30px;
+    overflow: hidden;
+    z-index: 99;
+    animation-name: showchat;
+    animation-duration: 1s;
+    transform: scale(1)
+  }
+
+  #zoom-chat {
+    position: fixed;
+    background: #fff;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, .28);
+    bottom: 90px;
+    right: 30px;
+    overflow: hidden;
+    z-index: 99;
+    animation-name: showchat;
+    animation-duration: 1s;
+    transform: scale(1)
+  }
+
+  a.blantershow-chat {
+    color: #fff;
+    position: fixed;
+    z-index: 98;
+    bottom: 0px;
+    right: 80px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+
+  a.blantershow-chat i {
+    transform: scale(1.2);
+    margin: 0 10px 0 0
+  }
+
+  .header-chat {
+    background: linear-gradient(to right top, #67ad6a, #1e8822);
+    color: #fff;
+    padding: 20px
+  }
+
+  .header-chat h3 {
+    margin: 0 0 10px
+  }
+
+  .header-chat p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0
+  }
+
+  .home-chat {
+    padding: 8px;
+  }
+
+  .home-chat input {
+    margin: 5px;
+  }
+
+  .home-chat .hs-error-msg {
+    font-size: xx-small;
+  }
+
+  .home-chat .hs-button.primary.large {
+    background: #2da546;
+    border: 0 none;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 18px 8px;
+    border-radius: 30px;
+    -webkit-transition: width 1s, color 2.5s;
+    -moz-transition: width 1s, color 2.5s;
+    -o-transition: width 1s, color 2.5s;
+    -ms-transition: width 1s, color 2.5s;
+    transition: width 1s, color 2.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    transition-timing-function: ease;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    -webkit-box-shadow: 0px 8px 45px rgba(20, 29, 82, 0.08);
+    box-shadow: 0px 8px 45px rgba(20, 29, 82, 0.08);
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .info-avatar {
+    position: relative
+  }
+
+  .info-avatar img {
+    border-radius: 100%;
+    width: 50px;
+    float: left;
+    margin: 0 10px 0 0
+  }
+
+  .info-avatar:before {
+    content: '\f232';
+    z-index: 1;
+    font-family: "Font Awesome 5 Brands";
+    background: #23ab23;
+    color: #fff;
+    padding: 4px 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    left: 30px
+  }
+
+  a.informasi {
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+    animation-name: showhide;
+    animation-duration: 2.5s
+  }
+
+  a.informasi:hover {
+    background: #f1f1f1
+  }
+
+  .info-chat span {
+    display: block
+  }
+
+  #get-label,
+  span.chat-label {
+    font-size: 12px;
+    color: #888
+  }
+
+  #get-nama,
+  span.chat-nama {
+    margin: 5px 0 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222
+  }
+
+  #get-label,
+  #get-nama {
+    color: #fff
+  }
+
+  span.my-number {
+    display: none
+  }
+
+  .blanter-msg {
+    color: #444;
+    padding: 20px;
+    font-size: 12.5px;
+    text-align: center;
+    border-top: 1px solid #ddd
+  }
+
+  textarea#chat-input {
+    border: none;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 20px;
+    outline: none;
+    resize: none
+  }
+
+  a#send-it {
+    color: #555;
+    width: 40px;
+    margin: -5px 0 0 5px;
+    font-weight: 700;
+    padding: 8px;
+    background: #eee;
+    border-radius: 10px
+  }
+
+  .first-msg {
+    background: #f5f5f5;
+    padding: 30px;
+    text-align: center
+  }
+
+  .first-msg span {
+    background: #e2e2e2;
+    color: #333;
+    font-size: 14.2px;
+    line-height: 1.7;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: inline-block
+  }
+
+  .start-chat .blanter-msg {
+    display: flex
+  }
+
+  #get-number {
+    display: none
+  }
+
+  a.close-chat {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px
+  }
+
+  @keyframes showhide {
+    from {
+      transform: scale(.5);
+      opacity: 0
+    }
+  }
+
+  @keyframes showchat {
+    from {
+      transform: scale(0);
+      opacity: 0
+    }
+  }
+
+  @media screen and (max-width:480px) {
+    #whatsapp-chat {
+      width: auto;
+      left: 5%;
+      right: 5%;
+      font-size: 80%
+    }
+  }
+
+  .hide {
+    display: none;
+    animation-name: showhide;
+    animation-duration: 1.5s;
+    transform: scale(1);
+    opacity: 1
+  }
+
+  .show {
+    display: block;
+    animation-name: showhide;
+    animation-duration: 1.5s;
+    transform: scale(1);
+    opacity: 1
+  }
+</style>
+<div class="tabsw js-tabs">
+  
+  <div class="cover-back cover-back-tabs js-cover-back-tabs"></div>
+
+  <div class="tabs-container">
+
+    <div class="tab-item js-tab-item" data-gradient-start="FF7DC2" data-gradient-stop="B7C841" data-tab-color="ECB57E"
+      style="opacity: 0 ; z-index: -1;">
+      <!-- <a href="tel:*83264" data-link="tel:*83264"><i class="fa fa-mobile"><small>*TECMI</small></i></a> -->
+    </div>
+    <div class="tab-item js-tab-item js-tab-item-active " data-gradient-start="7DA4FF" data-gradient-stop="4161C8"
+      data-tab-color="7E82EC">
+      <a href="tel:8004444020" data-link="tel:8004444020"> <i class="fa fa-phone"></i></a>
+    </div>
+
+    <div id="controlWidget" class="tab-item tab-item--middle js-tab-item js-tab-item-main-control">
+      <i class="fa fa-plus"></i>
+    </div>
+
+    <div onclick="openModalZ()" class="tab-item js-tab-item" data-gradient-start="7DC2FF" data-gradient-stop="C8419F"
+      data-tab-color="B97EEC">
+      <i class="fa fa-video-camera"><small>ZOOM</small></i>
+    </div>
+
+    <div onclick="openModalW()" class="tab-item js-tab-item" data-gradient-start="B1FF7D" data-gradient-stop="41B5C8"
+      data-tab-color="7EECAE">
+      <i class="fa fa-whatsapp"></i>
+    </div>
+
+    <div class="tab-item js-tab-item" data-gradient-start="B1FF7D" data-gradient-stop="41B5C8" data-tab-color="7EECAE">
+      <i class="fa fa-whatsapp"></i>
+    </div>
+  </div>
+</div>
+<div id='whatsapp-chat' class='hide'>
+  <div class='header-chat'>
+    <div class='head-home'>
+      <h3>¿Tienes dudas de admisiones?</h3>
+      <p>
+        ¡Escríbenos por WhatsApp! <br>
+        Y resuelve todas tus dudas con nosotros.
+      </p>
+    </div>
+    <div class='get-new hide'>
+      <div id='get-label'></div>
+      <div id='get-nama'></div>
+    </div>
+  </div>
+  <div class='home-chat'>
+    <!-- Info Contact Start -->
+    <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "2429099",
+        formId: "4f65b734-c924-4bfc-941d-5b165be058c0",
+        onFormSubmit: function ($form) {
+          var nombre = $('.home-chat input[name="firstname"]').val();
+          var apellido = $('.home-chat input[name="lastname"]').val();
+          var email = $('.home-chat input[name="email"]').val();
+          var telefono = $('.home-chat input[name="phone"]').val();
+          var modalidad = $('.home-chat select[name="nuevas_modalidades"]').val();
+          if (modalidad == 2) {
+            window.location.href = 'https://wa.me/5215641594637?text=Hola, soy ' + nombre + ', mi correo es ' + email + '  y estoy interesado en Programas online';
+
+          } else if (modalidad == 3) {
+            window.location.href = 'https://wa.me/528134133349?text=Hola, soy ' + nombre + ', mi correo es ' + email + ', y estoy interesado en Programas presenciales';
+          } else {
+            //Remplazar para certificados e idiomas
+            window.location.href = 'https://wa.me/5218182809711?text=Hola, soy ' + nombre + ', mi correo es ' + email + ', y estoy interesado en cursos, certificados e idiomas - CDC';
+            $('[data-form-id="4f65b734-c924-4bfc-941d-5b165be058c0"] .hs-input[name="educacion_continua_certificados"]').val(503).change();
+
+          }
+        }
+      });
+    </script>
+    <!-- Info Contact End -->
+  </div>
+  <div class='start-chat hide'></div>
+  <div id='get-number'></div><a class='close-chat' onclick="closeModalW()">×</a>
+</div>
+
+
+<div id='zoom-chat' class='hide'>
+  <div class='header-chat'>
+    <div class='head-home'>
+      <h3>¿Tienes dudas de admisiones? </h3>
+      <p>¡Conéctate con nosotros! Ten una videollamada al instante y resuelve tus dudas de admisiones. Horario de
+        atención de lunes a viernes 9:00 am a 6:30 pm y sábados 9:00 am a 1:00 pm.
+      </p>
+    </div>
+    <div class='get-new hide'>
+      <div id='get-label'></div>
+      <div id='get-nama'></div>
+    </div>
+  </div>
+  <div class='home-chat' id="zoomFormBlock">
+    <!-- Info Contact Start -->
+    <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "2429099",
+        formId: "3ffde726-eb87-44c9-b5c2-40f2f9ec6a82",
+        onFormReady($form, ctx) {
+          $('.hs-modalidad_').show();
+
+
+
+          // Para que se mape el nivel con el nvl academ
+          const meInteresa = document.querySelector('#zoomFormBlock select[name="nivel_de_interes_2"]');
+          const nvlOculto = document.querySelector('#zoomFormBlock select[name="nivel_de_interes"]');
+          // Ocultar nivel de interes sf
+          nvlOculto.parentElement.parentElement.style.display = "none";
+          nvlOculto.style.display = "none";
+          meInteresa.addEventListener('change', function (e) {
+            let caseEval = e.currentTarget.value;
+            switch (caseEval) {
+              case '1':
+                habilitarTodoZoom(nvlOculto.id);
+                prenderOpcionZoom(nvlOculto.id, '1');
+                break;
+              case '2':
+                habilitarTodoZoom(nvlOculto.id);
+                prenderOpcionZoom(nvlOculto.id, '2');
+                break;
+              case '5':
+                habilitarTodoZoom(nvlOculto.id);
+                prenderOpcionZoom(nvlOculto.id, '2');
+                break;
+              case '3':
+                habilitarTodoZoom(nvlOculto.id);
+                prenderOpcionZoom(nvlOculto.id, '3');
+                break;
+              case '4':
+                habilitarTodoZoom(nvlOculto.id);
+                prenderOpcionZoom(nvlOculto.id, '4');
+                break;
+              default:
+                break;
+            }
+          });
+
+
+          // Resetea todas las opciones para cambios
+          function habilitarTodoZoom(opcioninput) {
+            const input = document.querySelectorAll(`#${opcioninput}`);
+            for (let i = 0; i < input.length; i++) {
+              for (let j = 0; j < input[i].options.length; j++) {
+                input[i].options[j].removeAttribute('disabled');
+                input[i].options[j].removeAttribute('hidden');
+                input[i].options[0].setAttribute('disabled', true);
+              }
+            }
+          }
+          // Prende una opcion especifica por valor
+          function prenderOpcionZoom(opcioninput, valorprender) {
+            const input = $(`#${opcioninput}`);
+            if (input[0].options.length > 0) {
+              const inputOptions = $(`#${opcioninput} option`);
+              for (let i = 0; i < inputOptions.length; i++) {
+                inputOptions.eq(i).removeAttr('selected');
+                if (inputOptions.eq(i).val() == valorprender) {
+                  inputOptions.eq(i).attr('selected', 'selected');
+                  inputOptions.eq(i).change();
+                }
+              }
+            }
+            input.change();
+          }
+
+
+
+        }
+      });
+    </script>
+    <!-- Info Contact End -->
+  </div>
+  <div class='start-chat hide'></div>
+  <div id='get-number'></div><a class='close-chat' onclick="closeModalZ()">×</a>
+</div>
+
+<script>
+  /**
+   * The tab element
+   * @type {Element}
+   */
+  var tabs = document.querySelector('.js-tabs');
+
+  /**
+   * All tabs items execept the one that animates the tab
+   * @type {Element}
+   */
+  var tabItems = document.querySelectorAll('.js-tab-item:not(.js-tab-item-main-control)');
+
+  /**
+   * The tab element that animates the tab
+   * @type {Element}
+   */
+  var tabItemMainControl = document.querySelector('.js-tab-item-main-control');
+
+  /**
+   * The background of the body
+   * @type {Element}
+   */
+  var coverBackBody = document.querySelector('.js-cover-back-body');
+
+  /**
+   * The background of the tabs menu
+   * @type {Element}
+   */
+  var coverBackTabs = document.querySelector('.js-cover-back-tabs');
+
+  /*
+    Trigger the animation of the tabs
+      Open the tab and show all tabs items
+   */
+  tabItemMainControl.addEventListener('click', function () {
+    if (tabs.classList.contains('js-tabs-init')) {
+      tabs.classList.remove('js-tabs-init');
+      tabItemMainControl.style.transform = 'rotate(45deg)';
+      for (var i = 0; i < tabItems.length; i++) {
+        tabItems[i].classList.add('js-tab-item-show');
+      }
+    } else {
+      for (var i = 0; i < tabItems.length; i++) {
+        tabItems[i].classList.remove('js-tab-item-show');
+      }
+      setTimeout(function () {
+        tabItemMainControl.style.transform = 'rotate(0deg)';
+        tabs.classList.add('js-tabs-init');
+      }, 2000);
+    }
+  });
+
+  /*
+    Browse all tabs button
+      - To change background
+   */
+  for (var i = 0; i < tabItems.length; i++) {
+
+    tabItems[0].classList.add('js-tab-item-active');
+
+    tabItems[i].addEventListener('click', function () {
+
+      //Toggle the active tab item
+      var tabActive = document.querySelector('.js-tab-item-active');
+      tabActive.classList.remove('js-tab-item-active');
+      this.classList.add('js-tab-item-active');
+
+      //Remove the body's background
+      coverBackBody.style.animationName = 'remove-background';
+      coverBackBody.style.animationDuration = '1s';
+      coverBackBody.style.animationTimingFunction = 'linear';
+      coverBackBody.style.animationFillMode = 'forwards';
+
+      //Remove the tabs background
+      coverBackTabs.style.width = 0;
+
+      var self = this;
+      window.setTimeout(function () {
+
+        //Change the body's background
+        coverBackBody.style.animationName = 'add-background';
+        coverBackBody.style.backgroundImage = 'linear-gradient(#' + self.dataset.gradientStart + ', #' + self.dataset.gradientStop + ')';
+        coverBackBody.classList.add('js-cover-back-animate');
+
+        //Change the tabs background
+        coverBackTabs.style.backgroundColor = '#' + self.dataset.tabColor;
+        coverBackTabs.style.width = '100%';
+
+
+      }, 1200);
+    })
+  }
+
+  //Initial state of the tab
+  tabs.classList.add('js-tabs-init');
+  setTimeout(function () { document.getElementById('controlWidget').click(); }, 3000);
+
+  setTimeout(function () { document.getElementById('controlWidget').click(); }, 18000);
+
+
+  function openModalW() {
+    document.getElementById("whatsapp-chat").classList.add("show");
+    document.getElementById("whatsapp-chat").classList.remove("hide");
+    document.getElementById("zoom-chat").classList.add("hide");
+    document.getElementById("zoom-chat").classList.remove("show");
+  }
+
+  function openModalZ() {
+    document.getElementById("zoom-chat").classList.add("show");
+    document.getElementById("zoom-chat").classList.remove("hide");
+    document.getElementById("whatsapp-chat").classList.add("hide");
+    document.getElementById("whatsapp-chat").classList.remove("show");
+  }
+
+  function closeModalW() {
+    document.getElementById("whatsapp-chat").classList.add("hide");
+    document.getElementById("whatsapp-chat").classList.remove("show");
+  }
+  function closeModalZ() {
+    document.getElementById("zoom-chat").classList.add("hide");
+    document.getElementById("zoom-chat").classList.remove("show");
+  }
+</script>

@@ -1,0 +1,409 @@
+/* ==============================
+START - NOT IMPORTANT STYLES
+================================= */
+
+p {
+    margin: 20px 20px;
+}
+
+/* ==============================
+END - NOT IMPORTANT STYLES
+================================= */
+
+/* ==============================
+START - MENU
+================================= */
+
+/* TECMILENIO NAV REGION */
+
+.tecmilenio__nav__region {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    width: 100%;
+}
+
+/* TECMILENIO NAV TOP REGION */
+
+.tecmilenio__nav__top {
+    height: 42px;
+    width: 100%;
+    background-color: #00A499;
+    display: none;
+    position: relative;
+}
+
+.tn__activo.tecmilenio__nav__top{
+    display: block;
+}
+
+.tecmilenio__nav__top .container-xl {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.tecmilenio__nav__top .tecmilenio__nav__top-menu {
+    margin: 0px 0px;
+    list-style-type: none;
+}
+
+.tecmilenio__nav__top .tecmilenio__nav__top-menu .tnh-menu-item {
+    float: left;
+    margin-right: 20px;
+}
+
+/* TECMILENIO NAV MAIN REGION */
+
+.tecmilenio__nav__main {
+    background-color: #00534C;
+    position: relative;
+    height: 81px;    
+}
+
+.tn__activo.tecmilenio__nav__main {    
+    height: calc(100vh - 42px);    
+}
+
+.tecmilenio__nav__main .container-xl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 81px;
+    flex-wrap: wrap;
+}
+
+.tecmilenio__nav__main__container{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 81px;
+    height: calc(100vh - 123px);
+    left: 0;
+    background-color: #00433D;    
+    padding: 40px;
+}
+
+.tn__activo .tecmilenio__nav__main__container{
+    display: block;        
+}
+
+.tecmilenio__nav__main__container > *:nth-child(-n+3){
+    margin-bottom: 40px;
+}
+
+.tecmilenio__nav__main__logo {
+    max-width: 250px;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: 81px;
+}
+
+.tecmilenio__nav__main__logo img {
+    width: 100%;
+}
+
+.tecmilenio__nav__main__menu__container {
+    display: block;
+    align-self: flex-end;
+    width: 100%;
+    z-index: 1;    
+}
+
+.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 46px;    
+}
+
+.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__menu__item_btn,
+.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__submenu1__item__btn {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #00A499;
+}
+
+.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__menu__item_btn::after path{
+    fill: #26D07C;
+}
+
+.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__submenu1{
+    display: none;
+}
+
+.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__activo.tn__submenu1{
+    display: block;
+}
+
+.tn__menu__submenu__container {
+    display: none
+}
+
+/* HAMBURGUESA */
+
+.tecmilenio__burger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    height: 81px;
+}
+
+.tecmilenio__burger .bar1,
+.tecmilenio__burger .bar2,
+.tecmilenio__burger .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate tecmilenio__burger */
+.tn__activo.tecmilenio__burger .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.tn__activo.tecmilenio__burger .bar2 {
+    opacity: 0;
+}
+
+.tn__activo.tecmilenio__burger .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (min-width : 960px) {
+    /* TECMILENIO NAV REGION */
+
+    .tecmilenio__nav__region {
+        display: block;        
+        position: relative;        
+    }
+
+    /* TECMILENIO NAV TOP REGION */
+
+    .tecmilenio__nav__top {
+        height: 64px;
+        width: 100%;
+        background-color: #00A499;
+        display: block;
+    }
+
+    .tecmilenio__nav__top .container-xl {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+    }
+
+    .tecmilenio__nav__top .tecmilenio__nav__top-menu {
+        margin: 0px 0px;
+        list-style-type: none;
+    }
+
+    .tecmilenio__nav__top .tecmilenio__nav__top-menu .tnh-menu-item {
+        float: left;
+        margin-right: 20px;
+    }
+
+    /* TECMILENIO NAV MAIN REGION */
+
+    .tecmilenio__nav__main {
+        height: 81px;
+        width: 100%;
+        background-color: #00534C;
+        position: relative;
+        top: 0;
+    }
+
+    .tn__activo.tecmilenio__nav__main {    
+        height: 81px;    
+    }
+
+    .tecmilenio__nav__sticky.tecmilenio__nav__main {
+        position: fixed;
+        top: 0px;
+    }
+
+    .tecmilenio__nav__main .container-xl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .tecmilenio__nav__main__container{
+        display: flex;
+        width: auto;        
+        position: initial;
+        top: initial;
+        height: auto;
+        left: initial;
+        padding: initial;
+        background-color: transparent;
+    }
+
+    .tecmilenio__nav__main__container > *:nth-child(-n+3){
+        margin-bottom: 0;
+    }    
+
+    .tn__activo .tecmilenio__nav__main__container{
+        display: flex;        
+    }
+
+    .tecmilenio__nav__main__logo {
+        max-width: 250px;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: box;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -o-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        padding: 0 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        max-height: 81px;
+    }
+
+    .tecmilenio__nav__main__logo img {
+        width: 100%;
+    }
+
+    .tecmilenio__nav__main__menu__container {
+        display: block;        
+        width: auto;
+        z-index: 0;
+        padding: 0;
+    }
+
+    .tecmilenio__nav__main .tecmilenio__nav__main__menu {
+        margin: 0px 0px;
+        list-style-type: none;
+    }
+
+    .tecmilenio__nav__main .tecmilenio__nav__main__menu .tn__menu__item {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .tecmilenio__nav__main .tecmilenio__nav__main__menu .tn__menu__item_btn {
+        display: flex;
+        align-items: center;
+        height: 81px;
+    }
+
+    .tn__menu__submenu__container {
+        display: none;
+    }
+
+    .tn__activo.tn__menu__submenu__container {
+        width: 100%;
+        min-height: 350px;
+        height: 100%;
+        background-color: #00433D;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 81px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        border-radius: 0px;
+        -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna {
+        flex: 1;
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna {
+        padding: 40px;
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2) {
+        overflow-y: auto;
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna:last-child {
+        margin: 40px;
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna ul {
+        list-style-type: none;
+        padding: 0px;
+        line-height: 46px;
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna .tn__submenu1 li {
+        border-bottom: 1px solid #00A499;
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna.submenu_imagen {
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+    .tecmilenio__burger {
+        display: none;
+    }
+}
+
+@media (min-width : 1300px) {
+    .tn__activo.tn__menu__submenu__container {
+        width: 1300px;
+        min-height: 350px;
+        height: 100%;
+        background-color: #00433D;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 81px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        border-radius: 0px 0px 10px 10px;
+        -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna:last-child {
+        margin: 40px;
+    }
+}
+
+/* ==============================
+END - MENU
+================================= */
