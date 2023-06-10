@@ -33,7 +33,7 @@ START - MENU
     position: relative;
 }
 
-.tn__activo.tecmilenio__nav__top{
+.tn__activo .tecmilenio__nav__top{
     display: block;
 }
 
@@ -63,7 +63,7 @@ START - MENU
     height: 81px;    
 }
 
-.tn__activo.tecmilenio__nav__main {    
+.tn__activo .tecmilenio__nav__main {    
     height: calc(100vh - 42px);    
 }
 
@@ -127,30 +127,30 @@ START - MENU
     z-index: 1;    
 }
 
-.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu {
+.tecmilenio__nav__main .siu_mobile .tecmilenio__nav__main__menu {
     margin: 0;
     padding: 0;
     list-style-type: none;
     line-height: 46px;    
 }
 
-.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__menu__item_btn,
-.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__submenu1__item__btn {
+.tecmilenio__nav__main .siu_mobile .tecmilenio__nav__main__menu .tn__menu__item_btn,
+.tecmilenio__nav__main .siu_mobile .tecmilenio__nav__main__menu .tn__submenu1__item__btn {
     width: 100%;
     height: 100%;
     display: inline-block;
     border-bottom: 1px solid #00A499;
 }
 
-.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__menu__item_btn::after path{
+.tecmilenio__nav__main .siu_mobile .tecmilenio__nav__main__menu .tn__menu__item_btn::after path{
     fill: #26D07C;
 }
 
-.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__submenu1{
+.tecmilenio__nav__main .siu_mobile .tecmilenio__nav__main__menu .tn__submenu1{
     display: none;
 }
 
-.tecmilenio__nav__main .siu_mobile.tecmilenio__nav__main__menu .tn__activo.tn__submenu1{
+.tecmilenio__nav__main .siu_mobile .tecmilenio__nav__main__menu .tn__activo.tn__submenu1{
     display: block;
 }
 
