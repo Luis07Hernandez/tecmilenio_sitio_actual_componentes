@@ -33,7 +33,7 @@ END - GLOBAL VARIABLES AND CONST
 ================================= */
 
 /* ==============================
-START - TECMILENIO NAV REGION FUNCTIONS
+START - TECMILENIO NAVBAR REGION
 ================================= */
 
 $(document).ready(function () {
@@ -46,13 +46,13 @@ $(document).ready(function () {
          * Represents the top navigation bar element in the DOM.
          * @type {jQuery}
          */
-        let tecmilenio__nav__top = $(".tecmilenio__nav__top");
+        let tecmilenio__navbar__top = $(".tecmilenio__navbar__top");
 
         /**
          * Represents the main navigation bar element in the DOM.
          * @type {jQuery}
          */
-        let tecmilenio__nav__main = $(".tecmilenio__nav__main");
+        let tecmilenio__navbar__main = $(".tecmilenio__navbar__main");
 
         /**
          * Intersection observer to control the position of the main navigation bar.
@@ -62,16 +62,16 @@ $(document).ready(function () {
             entries.forEach((entry) => {
                 if (!entry.isIntersecting) {
                     // If the element is not intersecting, fix it to the top of the window.
-                    tecmilenio__nav__main.addClass("tecmilenio__nav__sticky");
+                    tecmilenio__navbar__main.addClass("tecmilenio__nav__sticky");
                 } else {
                     // If the element is intersecting, set it back to relative position.
-                    tecmilenio__nav__main.removeClass("tecmilenio__nav__sticky");
+                    tecmilenio__navbar__main.removeClass("tecmilenio__nav__sticky");
                 }
             });
         });
 
-        // Observe changes in the intersection of the tecmilenio__nav__top element.
-        observer.observe(tecmilenio__nav__top[0]);
+        // Observe changes in the intersection of the tecmilenio__navbar__top element.
+        observer.observe(tecmilenio__navbar__top[0]);
     }
 
     /* ==============================
@@ -94,7 +94,7 @@ $(document).ready(function () {
      * Represents the main navigation region element in the DOM.
      * @type {jQuery}
      */
-    let tecmilenio__nav__region = $('.tecmilenio__nav__region')
+    let tecmilenio__navbar__region = $('.tecmilenio__navbar__region')
 
     /**
     * @type {JQuery}
@@ -105,7 +105,7 @@ $(document).ready(function () {
     // If the size in which the screen is loaded is mobile, it is loaded
     // the 'siu_mobile' class by default
     if (window.innerWidth < MOBILE_BREAKPOINT) {
-        tecmilenio__nav__region.addClass(mobile_class);
+        tecmilenio__navbar__region.addClass(mobile_class);
     }
 
     // We execute the function to make the navigation bar sticky when scrolling.
@@ -115,7 +115,7 @@ $(document).ready(function () {
     // In case you click again, the classes are eliminated, in this way
     // we control whether to show or hide the menu.
     tecmilenio__burger.click(function () {
-        tecmilenio__nav__region.toggleClass(active_class);
+        tecmilenio__navbar__region.toggleClass(active_class);
         $(this).toggleClass(active_class);
     });
 
@@ -130,14 +130,14 @@ $(document).ready(function () {
 
         if (isMobile) {
             // Mobile
-            if (!tecmilenio__nav__region.hasClass(mobile_class)) {
-                tecmilenio__nav__region.addClass(mobile_class);
+            if (!tecmilenio__navbar__region.hasClass(mobile_class)) {
+                tecmilenio__navbar__region.addClass(mobile_class);
             }
         } else {
             // Desktop
-            if (tecmilenio__nav__region.hasClass(mobile_class)) {
-                tecmilenio__nav__region.removeClass(mobile_class);
-                tecmilenio__nav__region.removeClass(active_class);
+            if (tecmilenio__navbar__region.hasClass(mobile_class)) {
+                tecmilenio__navbar__region.removeClass(mobile_class);
+                tecmilenio__navbar__region.removeClass(active_class);
                 tecmilenio__burger.removeClass(active_class)
             }
         }
@@ -145,7 +145,7 @@ $(document).ready(function () {
 });
 
 /* ==============================
-END - TECMILENIO NAV REGION FUNCTIONS
+END - TECMILENIO NAVBAR REGION
 ================================= */
 
 /* ==============================
@@ -153,8 +153,7 @@ START - TECMILENIO NAV MAIN MENU
 ================================= */
 
 $(document).ready(function () {
-    const DEFAULT_IMAGE =
-        "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Nuevos%20logotipos%20web%20mailing%20-%202022/WEB_Logotipo_Negativo_RGB-01-1.png";
+    const SVG_ICON = '<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m320.231-107.692-42.539-42.539L607.461-480 277.692-809.769l42.539-42.539L692.539-480 320.231-107.692Z"/></svg>';
 
     /**
     * Represents the active class.
@@ -181,11 +180,14 @@ $(document).ready(function () {
     function createItemMenuLi(item) {
         // Create the link element
         let link = $("<a>")
-            .addClass(item.a.class)
-            .attr({
+            .addClass(item.a.class)            
+            .html(item.a.text);
+
+        if (item.a.url){
+            link.attr({
                 href: item.a.url
             })
-            .html(item.a.text);
+        }
 
         if (item.a.data) {
             item.a.data.forEach((element) => {
@@ -202,7 +204,7 @@ $(document).ready(function () {
         // Create the list item element
         let li = $("<li>").addClass(item.li.class).append(link);
 
-        return li[0];
+        return li;
     }
 
     function rebuildMainMenu() {
@@ -220,6 +222,10 @@ $(document).ready(function () {
                             key: "id",
                             value: item.id,
                         },
+                        {
+                            key: "image",
+                            value: item.id,
+                        }
                     ],
                 },
                 li: {
@@ -230,15 +236,17 @@ $(document).ready(function () {
             ul.append(li);
         });
 
-        return ul[0];
+        return ul;
     }
 
     function loadSubmenu_imagen(node) {
-        // Get the image URL from the 'data-image' attribute of the node
-        const item_image = node.data('image') ? node.data('image') : DEFAULT_IMAGE;
+        if (node.data('image')){
+            // Get the image URL from the 'data-image' attribute of the node
+            const item_image = node.data('image');
 
-        // Set the background image of the submenu_imagen element with the URL of the current item link.
-        submenu_imagen.css('background', 'url("' + item_image + '")');
+            // Set the background image of the submenu_imagen element with the URL of the current item link.
+            submenu_imagen.css('background', 'url("' + item_image + '")');
+        }                
     }
 
     function hasHref(node) {
@@ -298,12 +306,18 @@ $(document).ready(function () {
         // Asignamos el nodo actual a la variable currentNode
         let currentNode = $(this);
 
+        // Eliminamos las clases activas de todos los elementos con la clase 'tn__menu__item_btn'
+        $('.tn__menu__item_btn').removeClass(active_class);
+
         // Si el nodo tiene un link (atributo href) 
         if (hasHref(currentNode)) {
             //Se elimina la clase active_class, de esta manera ocultamos el contenedor de submenus, ya que no es necesario mostrarlo si esta vacio.
             tn__menu__submenu__container.removeClass(active_class);
             return;
         }
+
+        // Agregamos la clase activa al boton 'tn__menu__item_btn'
+        currentNode.addClass(active_class)
 
         // Obtenemos el id del nodo actual para hacer la busqueda para obtener los datos del item seleccionado
         const tn__menu__item_id = currentNode.data("id");
@@ -348,7 +362,7 @@ $(document).ready(function () {
                             },
                             {
                                 key: "image",
-                                value: item.imagen ? item.imagen : DEFAULT_IMAGE,
+                                value: item.imagen,
                             },
                         ],
                         events: [
@@ -373,7 +387,7 @@ $(document).ready(function () {
         });
 
         // Verificamos si existen elementos en el objeto jQuery
-        if (liElements.first().length) {
+        if (liElements.length > 1) {
             // Agregamos los item li creados al elemento tn__submenu1
             tn__submenu1.append(liElements);
 
@@ -391,20 +405,22 @@ $(document).ready(function () {
         // Asignamos el nodo actual a la variable currentNode
         let currentNode = $(this);
 
-        // Obtenemos el objeto json que contiene toda la informacion del item con la cual
-        // se construye el submenu.    
-        const tn__submenu1__item = currentNode.data('json');
-
-        // Load the item image in submenu_imagen container       
-        loadSubmenu_imagen(currentNode);
+        // Eliminamos las clases activas de todos los elementos con la clase 'tn__submenu1__item__btn'
+        $('.tn__submenu1__item__btn').removeClass(active_class);
 
         // Clear the tn__submenu2
         tn__submenu2.html('');
-
+        
         // Si el nodo tiene un link (atributo href), no hacemos nada.
         if (hasHref(currentNode)) {
             return;
         }
+
+        currentNode.addClass(active_class)
+
+        // Obtenemos el objeto json que contiene toda la informacion del item con la cual
+        // se construye el submenu.    
+        const tn__submenu1__item = currentNode.data('json');
 
         // Check if tn__menu__item.enlaces_menu is empty or undefined
         if (
@@ -413,6 +429,9 @@ $(document).ready(function () {
         ) {
             return;
         }
+
+        // Load the item image in submenu_imagen container       
+        loadSubmenu_imagen(currentNode);
 
         // Crear un objeto jQuery vacío para almacenar los elementos
         let liElements = $();
@@ -429,7 +448,7 @@ $(document).ready(function () {
                         data: [
                             {
                                 key: "image",
-                                value: item.imagen ? item.imagen : DEFAULT_IMAGE,
+                                value: item.imagen,
                             },
                         ]
                     },
@@ -438,7 +457,7 @@ $(document).ready(function () {
                     },
                 });
 
-                // Agregar el elemnto li generado al objeto jQuery
+                // Agregar el elemento li generado al objeto jQuery
                 liElements = liElements.add(li);
             }
         });
@@ -448,10 +467,165 @@ $(document).ready(function () {
     }
 
     function stopRedirectionItemBtnMouseClickAction(event) {
+        // Asignamos el nodo actual a la variable currentNode
         let currentNode = $(this);
+
+        // Si el nodo <a> NO tiene un link (atributo href), entonces deten el evento click que redirige al link
         if (!hasHref(currentNode)) {
             event.preventDefault();
         }
+    }
+
+    function mobileTnMenuItemBtnMouseClickAction(event) {
+    
+        // Asignamos el nodo actual a la variable currentNode
+        let currentNode = $(this);
+    
+        // Si el elemento tiene un link (atributo href), entonces deten la funcion y
+        // redirige al link. Esto se hace por que los items del menu que contienen
+        // una URL deben de funcionar como enlace directo, en caso de que no tengan
+        // una URL funcionara como un contenedor de submenu.
+        if (hasHref(currentNode)) {
+            return;
+        }
+    
+        // Detenemos la redireccion del evento click del elemento <a>
+        event.preventDefault()
+    
+        // Obtenemos el id del nodo actual para hacer la busqueda para obtener los datos del item seleccionado
+        const tn__menu__item_id = currentNode.data("id");
+
+        const tn__menu__item = menu_items.find(
+            (item) => item.id == tn__menu__item_id
+        );
+    
+        if (
+            !tn__menu__item.enlaces_menu ||
+            tn__menu__item.enlaces_menu.length === 0 ||
+            !tn__menu__item.link
+        ) {
+            return;
+        }
+    
+        // Crear un objeto jQuery vacío para almacenar los elementos
+        let liElements = $();
+    
+        // This section of code is responsible for constructing a navigation menu.
+        // The structure of the menu is a list (`<ul>`) where each list item (`<li>`) represents a menu item.
+        // Each menu item may contain a link (`<a>`) and may act as a parent for nested sub-menu items.
+    
+        // The first list item is created, which acts as a main menu item and parent of subsequent list items.
+        let li = createItemMenuLi({
+            a: {
+                class: "tn__menu__item_btn",
+                url: tn__menu__item.link.url,
+                text: tn__menu__item.link.text,
+                events: [
+                    {
+                        event: "click",
+                        func: MobileTnSubmenu1ParentItemBtnMouseClickAction,
+                    }
+                ],
+            },
+            li: {
+                class: "tn__submenu1__item",
+            },
+        });
+    
+        // Agregar el elemento li generado al objeto jQuery
+        liElements = liElements.add(li);
+    
+        // For each 'enlaces_menu' item, a corresponding list item is created and appended to the menu.
+        // This loop iterates over each 'enlaces_menu' item.
+        // For each item, it checks if the link is available to be shown.
+        // If so, a list item is created and added to the liElements jQuery object.
+        // If the item has 'subenlaces', these are processed as nested list items and added to the current list item.
+        tn__menu__item.enlaces_menu.forEach((item) => {
+            // Check if link is available to show
+            if (item.show_link) {
+                // A list item element created for each 'enlaces_menu' item.
+                let li = createItemMenuLi({
+                    a: {
+                        class: "tn__submenu1__item__btn",
+                        url: item.link.url,
+                        text: item.link.text,
+                        events: [
+                            { event: 'click', func: mobileTnSubmenu1ItemBtnMouseClickAction }
+                        ]
+                    },
+                    li: {
+                        class: "tn__submenu1__item",
+                    },
+                });
+    
+                // If 'subenlaces' exist, create a nested list for them.
+                if (item.subenlaces) {
+                    // An unordered list element that holds the 'subenlaces' as list items.
+                    let ul = $("<ul>").addClass("tn__submenu1");
+                        
+                    item.subenlaces.forEach((subitem) => {
+                        // Check if link is available to show
+                        if (subitem.show_link) {
+                            // A list item element created for each 'subenlaces' item.
+                            let li = createItemMenuLi({
+                                a: {
+                                    class: "tn__submenu2__item__btn",
+                                    url: subitem.link.url,
+                                    text: subitem.link.text,
+                                },
+                                li: {
+                                    class: "tn__submenu2__item",
+                                },
+                            });
+    
+                            ul.append(li);
+                        }
+                    });
+    
+                    li.append(ul);
+                }
+    
+                // Agregar el elemento li generado al objeto jQuery
+                liElements = liElements.add(li);
+            }
+        });
+    
+        // Verificar si hay más de un elemento en liElements
+
+        if (liElements.length > 1) {            
+            // Remover todos los elementos hijos de tecmilenio__nav__main__menu
+            tecmilenio__nav__main__menu.empty();
+            
+            // Agregamos la clase activa
+            tecmilenio__nav__main__menu.addClass(active_class)
+
+            // Agregar los elementos de liElements a tecmilenio__nav__main__menu
+            tecmilenio__nav__main__menu.append(liElements);
+        }
+        
+    }
+    
+    function MobileTnSubmenu1ParentItemBtnMouseClickAction(event) {
+        // Detenemos la redireccion del evento click del elemento <a>
+        event.preventDefault();
+        // Reconstruimos el menu principal
+        rebuildAndLoadMainMenu();
+        // Establecemos los eventos para movil
+        setMobileListeners();
+    }
+    
+    function mobileTnSubmenu1ItemBtnMouseClickAction(event) {
+        
+        // Asignamos el nodo actual a la variable currentNode
+        let currentNode = $(this);
+
+        if (hasHref(currentNode)) {
+            return;
+        }
+    
+        event.preventDefault();
+    
+        currentNode.parent().toggleClass(active_class);
     }
 
     /* ==============================
@@ -462,6 +636,9 @@ $(document).ready(function () {
     tn__menu__submenu__container.on("mouseleave", function () {
         // Limpiamos el contenedor de submenu
         clearTnMenuSubmenuContainer();
+
+        // Eliminamos la clase activa del elemento 'tn__menu__item_btn' que es el padre 
+        $('.tn__menu__item_btn').removeClass(active_class);
 
         // Eliminamos la clase active_class
         tn__menu__submenu__container.removeClass(active_class);
@@ -492,6 +669,7 @@ $(document).ready(function () {
                 tecmilenio__nav__main__menu__container.removeClass(mobile_class);
                 rebuildAndLoadMainMenu();
                 setDesktopListeners();
+                clearMobileListeners();
             }
         }
     });
@@ -504,4 +682,3 @@ $(document).ready(function () {
 /* ==============================
 END - TECMILENIO NAV MAIN MENU
 ================================= */
-
