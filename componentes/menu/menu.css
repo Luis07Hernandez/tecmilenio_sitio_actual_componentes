@@ -55,17 +55,17 @@ START - TECMILENIO NAVBAR REGION
     margin-right: 20px;
 }
 
-.tecmilenio__navbar__top .tecmilenio__navbar__top__menu .tnt__menu__item a{
+.tecmilenio__navbar__top .tecmilenio__navbar__top__menu .tnt__menu__item a {
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 27px;
-    letter-spacing: 0em;    
+    letter-spacing: 0em;
     color: white;
     transition: color 0.3s ease;
 }
 
-.tecmilenio__navbar__top .tecmilenio__navbar__top__menu .tnt__menu__item a:hover{
+.tecmilenio__navbar__top .tecmilenio__navbar__top__menu .tnt__menu__item a:hover {
     text-decoration: none;
     color: #00534C;
 }
@@ -224,7 +224,7 @@ START - TECMILENIO NAVBAR REGION
     }
 
     .tecmilenio__navbar__main__logo {
-        max-width: 250px;        
+        max-width: 250px;
     }
 
     .tecmilenio__navbar__main__logo img {
@@ -310,9 +310,9 @@ START - BUTTONS SECTION
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
-    line-height: 46px;
+    /* line-height: 46px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left; */
 }
 
 .tecmilenio__navbar__main .tecmilenio__nav__main__menu li a:hover {
@@ -420,18 +420,22 @@ END - BUTTONS SECTION
 
     .tecmilenio__navbar__main .tecmilenio__nav__main__menu {
         margin: 0px 0px;
+        padding: 0px;
         list-style-type: none;
+        display: flex;
+        align-items: center;
     }
 
     .tecmilenio__navbar__main .tecmilenio__nav__main__menu .tn__menu__item {
         float: left;
-        margin-right: 20px;
     }
 
     .tecmilenio__navbar__main .tecmilenio__nav__main__menu .tn__menu__item_btn {
         display: flex;
         align-items: center;
         height: 81px;
+        padding-right: 20px;
+        text-align: center;
     }
 
     .tecmilenio__navbar__main .tecmilenio__nav__main__menu .tn__menu__item_btn.tn__activo {
@@ -470,6 +474,23 @@ END - BUTTONS SECTION
 
     .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2) {
         overflow-y: auto;
+        scrollbar-width: thin; /* Grosor de la barra de desplazamiento */
+        scrollbar-color: #00A499 #f1f1f1; /* Color de la barra y del fondo */
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2)::-webkit-scrollbar {
+        width: 8px;
+        /* Ancho de la barra de desplazamiento */
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2)::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        /* Color del fondo de la barra de desplazamiento */
+    }
+
+    .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2)::-webkit-scrollbar-thumb {
+        background-color: #00A499;
+        /* Color de la barra de desplazamiento */
     }
 
     .tn__menu__submenu__container .tn__submenu-columna:last-child {
@@ -478,8 +499,7 @@ END - BUTTONS SECTION
 
     .tn__menu__submenu__container .tn__submenu-columna ul {
         list-style-type: none;
-        padding: 0px;
-        line-height: 46px;
+        padding: 0px;        
     }
 
     .tn__menu__submenu__container .tn__submenu-columna ul li a {
@@ -490,11 +510,12 @@ END - BUTTONS SECTION
         font-family: "Source Sans Pro", Arial, sans-serif;
         font-size: 18px;
         font-weight: 600;
-        line-height: 46px;
+        /* line-height: 46px; */
         letter-spacing: 0em;
         text-align: left;
         width: 100%;
         display: inline-block;
+        padding: 8px  0px;
     }
 
     .tn__menu__submenu__container .tn__submenu-columna ul li a:hover,

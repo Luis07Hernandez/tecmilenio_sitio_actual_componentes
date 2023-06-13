@@ -153,8 +153,6 @@ START - TECMILENIO NAV MAIN MENU
 ================================= */
 
 $(document).ready(function () {
-    const SVG_ICON = '<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m320.231-107.692-42.539-42.539L607.461-480 277.692-809.769l42.539-42.539L692.539-480 320.231-107.692Z"/></svg>';
-
     /**
     * Represents the active class.
     * @type {string}
@@ -166,6 +164,8 @@ $(document).ready(function () {
     * @type {string}
     */
     const mobile_class = 'siu_mobile';
+
+    const default_image = '';
 
     let tecmilenio__nav__main__menu__container = $('.tecmilenio__nav__main__menu__container');
     let tecmilenio__nav__main__menu = $('.tecmilenio__nav__main__menu');
@@ -212,28 +212,31 @@ $(document).ready(function () {
 
         // Rebuilding main menu.
         menu_items.forEach((item) => {
-            let li = createItemMenuLi({
-                a: {
-                    class: "tn__menu__item_btn",
-                    url: item.link.url,
-                    text: item.link.text,
-                    data: [
-                        {
-                            key: "id",
-                            value: item.id,
-                        },
-                        {
-                            key: "image",
-                            value: item.id,
-                        }
-                    ],
-                },
-                li: {
-                    class: "tn__menu__item",
-                },
-            });
 
-            ul.append(li);
+            if (item.show_item){
+                let li = createItemMenuLi({
+                    a: {
+                        class: "tn__menu__item_btn",
+                        url: item.link.url,
+                        text: item.link.text,
+                        data: [
+                            {
+                                key: "id",
+                                value: item.id,
+                            },
+                            {
+                                key: "image",
+                                value: item.imagen ? item.imagen.media_image : default_image,
+                            }
+                        ],
+                    },
+                    li: {
+                        class: "tn__menu__item",
+                    },
+                });
+    
+                ul.append(li);
+            }
         });
 
         return ul;
@@ -362,7 +365,7 @@ $(document).ready(function () {
                             },
                             {
                                 key: "image",
-                                value: item.imagen,
+                                value: item.imagen_multimedia ? item.imagen_multimedia.media_image : default_image,
                             },
                         ],
                         events: [
@@ -411,6 +414,9 @@ $(document).ready(function () {
         // Clear the tn__submenu2
         tn__submenu2.html('');
         
+        // Load the item image in submenu_imagen container       
+        loadSubmenu_imagen(currentNode);
+
         // Si el nodo tiene un link (atributo href), no hacemos nada.
         if (hasHref(currentNode)) {
             return;
@@ -430,9 +436,6 @@ $(document).ready(function () {
             return;
         }
 
-        // Load the item image in submenu_imagen container       
-        loadSubmenu_imagen(currentNode);
-
         // Crear un objeto jQuery vacío para almacenar los elementos
         let liElements = $();
 
@@ -444,13 +447,7 @@ $(document).ready(function () {
                     a: {
                         class: "tn__submenu2__item__btn",
                         url: item.link.url,
-                        text: item.link.text,
-                        data: [
-                            {
-                                key: "image",
-                                value: item.imagen,
-                            },
-                        ]
+                        text: item.link.text
                     },
                     li: {
                         class: "tn__submenu2__item",
