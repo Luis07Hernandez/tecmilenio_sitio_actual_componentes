@@ -15,16 +15,17 @@ START - TECMILENIO NAVBAR REGION
 ================================= */
 
 /* TECMILENIO NAV REGION */
-
 .tecmilenio__navbar__region {
     display: flex;
+    /* Fallback for older browsers */
+    display: -webkit-flex;
     flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
     position: fixed;
     width: 100%;
 }
 
 /* TECMILENIO NAVBAR TOP REGION */
-
 .tecmilenio__navbar__top {
     height: 42px;
     width: 100%;
@@ -39,10 +40,14 @@ START - TECMILENIO NAVBAR REGION
 
 .tecmilenio__navbar__top .container-xl {
     display: flex;
+    display: -webkit-flex;
     justify-content: end;
+    -webkit-justify-content: flex-end;
     align-items: center;
+    -webkit-align-items: center;
     height: 100%;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
 }
 
 .tecmilenio__navbar__top .tecmilenio__navbar__top__menu {
@@ -63,6 +68,8 @@ START - TECMILENIO NAVBAR REGION
     letter-spacing: 0em;
     color: white;
     transition: color 0.3s ease;
+    /* Fallback for older browsers */
+    -webkit-transition: color 0.3s ease;
 }
 
 .tecmilenio__navbar__top .tecmilenio__navbar__top__menu .tnt__menu__item a:hover {
@@ -70,9 +77,7 @@ START - TECMILENIO NAVBAR REGION
     color: #00534C;
 }
 
-
 /* TECMILENIO NAVBAR MAIN REGION */
-
 .tecmilenio__navbar__main {
     background-color: #00534C;
     position: relative;
@@ -85,10 +90,14 @@ START - TECMILENIO NAVBAR REGION
 
 .tecmilenio__navbar__main .container-xl {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     align-items: center;
+    -webkit-align-items: center;
     height: 81px;
     flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
 }
 
 .tecmilenio__navbar__main .tecmilenio__navbar__main__logo {
@@ -118,7 +127,6 @@ START - TECMILENIO NAVBAR REGION
 }
 
 /* HAMBURGUESA */
-
 .tecmilenio__burger {
     display: inline-block;
     cursor: pointer;
@@ -134,6 +142,8 @@ START - TECMILENIO NAVBAR REGION
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
+    /* Fallback for older browsers */
+    -webkit-transition: all 0.4s;
 }
 
 /* Rotate tecmilenio__burger */
@@ -166,15 +176,14 @@ START - TECMILENIO NAVBAR REGION
 
 /* Mobile breakpoint by Tecmilenio */
 @media (min-width : 960px) {
-    /* TECMILENIO NAV REGION */
 
+    /* TECMILENIO NAV REGION */
     .tecmilenio__navbar__region {
         display: block;
         position: relative;
     }
 
     /* TECMILENIO NAV TOP REGION */
-
     .tecmilenio__navbar__top {
         height: 64px;
         width: 100%;
@@ -184,8 +193,12 @@ START - TECMILENIO NAVBAR REGION
 
     .tecmilenio__navbar__top .container-xl {
         display: flex;
+        /* Fallback for older browsers */
+        display: -webkit-flex;
         justify-content: end;
+        -webkit-justify-content: flex-end;
         align-items: center;
+        -webkit-align-items: center;
         height: 100%;
     }
 
@@ -200,9 +213,7 @@ START - TECMILENIO NAVBAR REGION
     }
 
     /* TECMILENIO NAV MAIN REGION */
-
     .tecmilenio__navbar__main {
-        /* height: 81px; */
         height: auto;
         width: 100%;
         background-color: #00534C;
@@ -217,10 +228,14 @@ START - TECMILENIO NAVBAR REGION
 
     .tecmilenio__navbar__main .container-xl {
         display: flex;
+        display: -webkit-flex;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
         align-items: center;
+        -webkit-align-items: center;
         height: 100%;
         flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
     }
 
     .tecmilenio__navbar__main__logo {
@@ -261,6 +276,8 @@ START - TECMILENIO NAV MAIN MENU
     width: 100%;
     position: absolute;
     top: 81px;
+    /* Fallback for browsers that don't support calc() */
+    height: 100%;
     height: calc(100vh - 123px);
     left: 0;
     background-color: #00433D;
@@ -293,7 +310,7 @@ START - TECMILENIO NAV MAIN MENU
 START - BUTTONS SECTION
 ================================= */
 
-/* No activos */
+/* Not active */
 
 .tecmilenio__navbar__main .siu_mobile .tecmilenio__nav__main__menu li a {
     width: 100%;
@@ -310,9 +327,6 @@ START - BUTTONS SECTION
     font-family: "Source Sans Pro", Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
-    /* line-height: 46px;
-    letter-spacing: 0em;
-    text-align: left; */
 }
 
 .tecmilenio__navbar__main .tecmilenio__nav__main__menu li a:hover {
@@ -323,7 +337,7 @@ START - BUTTONS SECTION
     border-bottom: 1px solid #00A499;
 }
 
-/* Mientras el menu no este activo y solo los que no tengan href */
+/* While the menu is not active and only those that do not have href */
 .tecmilenio__navbar__main .siu_mobile .tecmilenio__nav__main__menu:not(.tn__activo) a:not([href]).tn__menu__item_btn::after {
     content: var(--arrow-forward-green-2);
     position: absolute;
@@ -331,7 +345,7 @@ START - BUTTONS SECTION
     top: 5px;
 }
 
-/* Solo los que no tenga href */
+/* Only those that do not have href */
 .tecmilenio__navbar__main .siu_mobile .tecmilenio__nav__main__menu .tn__submenu1__item .tn__submenu1__item__btn:not([href])::after {
     content: var(--arrow-forward-white);
     position: absolute;
@@ -357,7 +371,7 @@ START - BUTTONS SECTION
     padding-left: 20px;
 }
 
-/* Activos */
+/* Actives */
 
 .tecmilenio__navbar__main .siu_mobile .tecmilenio__nav__main__menu.tn__activo .tn__submenu1__item .tn__menu__item_btn {
     border-color: #26D07C;
@@ -392,12 +406,15 @@ END - BUTTONS SECTION
 /* Mobile breakpoint by Tecmilenio */
 @media (min-width : 960px) {
 
-    .tecmilenio__nav__main__container {
+    .tecmilenio__nav__main__container,
+    .tn__activo .tecmilenio__nav__main__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        width: auto;
         position: initial;
-        top: initial;
+        width: auto;
         height: auto;
+        top: initial;
         left: initial;
         padding: initial;
         background-color: transparent;
@@ -407,22 +424,22 @@ END - BUTTONS SECTION
         margin-bottom: 0;
     }
 
-    .tn__activo .tecmilenio__nav__main__container {
-        display: flex;
-    }
-
     .tecmilenio__nav__main__menu__container {
         display: block;
         width: auto;
-        z-index: 0;
         padding: 0;
+        z-index: 0;
     }
 
     .tecmilenio__navbar__main .tecmilenio__nav__main__menu {
-        margin: 0px 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -431,7 +448,11 @@ END - BUTTONS SECTION
     }
 
     .tecmilenio__navbar__main .tecmilenio__nav__main__menu .tn__menu__item_btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         height: 81px;
         padding-right: 20px;
@@ -447,50 +468,43 @@ END - BUTTONS SECTION
     }
 
     .tn__activo.tn__menu__submenu__container {
+        display: -ms-grid;
+        display: grid;
+        position: absolute;
         width: 100%;
         min-height: 350px;
         height: 100%;
         background-color: #00433D;
-        position: absolute;
         left: 50%;
-        transform: translate(-50%, 0%);
+        transform: translate(-50.05%, 0%);
         top: 100%;
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0;
-        border-radius: 0px;
-        -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 0;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     }
 
     .tn__menu__submenu__container .tn__submenu-columna {
         flex: 1;
-    }
-
-    .tn__menu__submenu__container .tn__submenu-columna {
         padding: 40px;
     }
 
     .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2) {
         overflow-y: auto;
-        scrollbar-width: thin; /* Grosor de la barra de desplazamiento */
-        scrollbar-color: #00A499 #f1f1f1; /* Color de la barra y del fondo */
+        scrollbar-width: thin;
+        scrollbar-color: #00A499 #f1f1f1;
     }
 
     .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2)::-webkit-scrollbar {
         width: 8px;
-        /* Ancho de la barra de desplazamiento */
     }
 
     .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2)::-webkit-scrollbar-track {
         background-color: #f1f1f1;
-        /* Color del fondo de la barra de desplazamiento */
     }
 
     .tn__menu__submenu__container .tn__submenu-columna:nth-child(-n+2)::-webkit-scrollbar-thumb {
         background-color: #00A499;
-        /* Color de la barra de desplazamiento */
     }
 
     .tn__menu__submenu__container .tn__submenu-columna:last-child {
@@ -499,23 +513,23 @@ END - BUTTONS SECTION
 
     .tn__menu__submenu__container .tn__submenu-columna ul {
         list-style-type: none;
-        padding: 0px;        
+        padding: 0;
     }
 
     .tn__menu__submenu__container .tn__submenu-columna ul li a {
-        cursor: pointer;
         color: white;
+        -webkit-transition: 0.3s ease;
         transition: 0.3s ease;
         text-decoration: none;
         font-family: "Source Sans Pro", Arial, sans-serif;
         font-size: 18px;
         font-weight: 600;
-        /* line-height: 46px; */
         letter-spacing: 0em;
         text-align: left;
         width: 100%;
         display: inline-block;
-        padding: 8px  0px;
+        padding: 8px 0;
+        cursor: pointer;
     }
 
     .tn__menu__submenu__container .tn__submenu-columna ul li a:hover,
@@ -529,12 +543,13 @@ END - BUTTONS SECTION
 
     .tn__menu__submenu__container .tn__submenu-columna.submenu_imagen {
         background-repeat: no-repeat !important;
-        background-position: center center !important;
+        background-position: center !important;
+        -webkit-background-size: cover !important;
         background-size: cover !important;
     }
 }
 
-@media (min-width : 1300px) {
+@media (min-width: 1300px) {
     .tn__activo.tn__menu__submenu__container {
         width: 1300px;
         min-height: 350px;
@@ -542,6 +557,7 @@ END - BUTTONS SECTION
         background-color: #00433D;
         position: absolute;
         left: 50%;
+        -webkit-transform: translate(-50%, 0%);
         transform: translate(-50%, 0%);
         top: 100%;
         display: grid;
