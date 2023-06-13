@@ -9,8 +9,13 @@
 
     .digitalSkillingVideo {
         width: 100%;
-        background: #26D07C;
+        background: #00534C;
         padding: 80px 0px;
+    }
+
+    .digitalSkillingVideo iframe {
+        height: 315px;
+        width: 560px;
     }
 
     .digitalSkillingVideo .container {
@@ -45,14 +50,20 @@
     } */
 
     /* Small Devices, Tablets - More than 768px */
-    /* @media only screen and (min-width : 768px) {
-        
-    } */
+    @media only screen and (min-width : 768px) {
+        .digitalSkillingVideo iframe {
+            height: 330px;
+            width: 610px;
+        }
+    }
 
     /* Medium Devices, Desktops - More than 992px */
-    /* @media only screen and (min-width : 992px) {
-        
-    } */
+    @media only screen and (min-width : 992px) {
+        .digitalSkillingVideo iframe {
+            height: 560px;
+            width: 805px;
+        }
+    }
 
     /* Large Devices, Wide Screens - More than 1200px */
     /* @media only screen and (min-width : 1200px) {
@@ -66,6 +77,9 @@
 
 <section class="digitalSkillingVideo">
     <div class="container">
-        <img src="https://tecmilenio.mx/sites/default/files/2023-05/Rectangle%20%281%29.jpg" alt="Video Tecmilenio">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/biz4xrs8LgA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
     </div>
 </section>
