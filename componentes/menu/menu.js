@@ -419,6 +419,9 @@ $(document).ready(function () {
 
         // Si el nodo tiene un link (atributo href), no hacemos nada.
         if (hasHref(currentNode)) {
+            currentNode.on('mouseleave', function(){
+                submenu_imagen.css('background','')
+            })
             return;
         }
 
