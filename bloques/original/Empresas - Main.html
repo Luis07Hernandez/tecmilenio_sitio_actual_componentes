@@ -1,0 +1,1049 @@
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+<!-- GENERAL -->
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Cairo");
+    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Cairo";
+    }
+
+    .displayNone {
+        display: none;
+    }
+
+    .width-50 {
+        width: 50%;
+        height: 100%;
+    }
+
+    .height-100 {
+        height: 100%;
+    }
+</style>
+
+<!-- BANNER -->
+<style>
+    .tec2023__bannerSection {
+        width: 100%;
+        height: 850px;
+        position: relative;
+        background-color: #6bcaba;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionBackground {
+        top: 50%;
+        right: 0;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        background-image: url("https://tecmilenio.mx/sites/default/files/2023-07/Rectangle%20%283%29%20%281%29.jpg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: top;
+        background-size: 100% 100%;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionBackground .tec2023-bannerSectionBackgroundPlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer {
+        height: 50%;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex {
+        height: 100%;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo {
+        padding-right: 15px;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo h1 {
+        /* padding-right: 15px; */
+        color: #00534c;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 15px;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo a {
+        border: solid 1px #00736c;
+        border-radius: 2px;
+        background-color: #00a499;
+        color: white;
+        padding: 10px 25px;
+        text-decoration: none;
+        display: block !important;
+        width: 140px;
+    }
+</style>
+
+<!-- STATISTICS -->
+<style>
+    /* Statistics section */
+    .tec2023__statisticsSection {
+        display: flex;
+        width: 100%;
+        background-color: #00534c;
+        padding: 15px 0;
+    }
+
+    .tec2023__statisticsSection .tec2023-statistics {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        color: white;
+    }
+
+    .tec2023__statisticsSection .tec2023-statistics .tec2023-statistics-item {
+        width: 100%;
+    }
+
+    .tec2023__statisticsSection .tec2023-statistics .tec2023-statistics-item .tec2023-s-i-quantity {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
+        margin: 10px 0;
+        color: #6bcaba;
+    }
+
+    .tec2023__statisticsSection .tec2023-statistics .tec2023-statistics-item .tec2023-s-i-text {
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 10px 0;
+        color: #6bcaba;
+    }
+</style>
+
+<!-- BUSINESS SUCCESS -->
+<style>
+    /* Business success section */
+    .tec2023__businessSuccessSection {
+        width: 100%;
+    }
+
+    .tec2023-heading-1 {
+        width: 100%;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-heading-1 h2 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        padding: 0 20%;
+        color: #00534c;
+        margin-top: 0;
+        padding: 15px 0;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-heading-1 h5 {
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 5%;
+        color: #6bcaba;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cS-heading {
+        color: #26d07c;
+        font-size: 20px;
+        font-family: "Cairo";
+        font-weight: 700;
+        line-height: 64px;
+        margin: 0;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cS-text {
+        width: 80%;
+        font-family: "Source Sans Pro";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: 40px 0;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card {
+        width: 100%;
+        margin: 10px 0;
+        padding: 25px;
+        min-height: 100px;
+        border: solid 2px #00534c;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card .tec2023-c-2-heading {
+        margin: 0;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #26d07c;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card .tec2023-c-2-description {
+        padding-bottom: 10px;
+        font-family: "Source Sans Pro";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card:hover {
+        background-color: #00534c;
+        color: #26d07c;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card:hover .tec2023-c-2-description {
+        color: white;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-container-button {
+        width: 100%;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+    }
+
+    .tec2023-button-right {
+        border: solid 1px #26d07c;
+        border-radius: 2px;
+        background-color: #26d07c;
+        padding: 10px 25px;
+    }
+
+    .tec2023-button-right>a {
+        text-decoration: none;
+        color: white;
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+</style>
+
+<!-- OFFER -->
+<style>
+    /* Offer section */
+    .tec2023__offerSection {
+        display: flex;
+        width: 100%;
+        background-color: #efefef;
+        padding: 0 0 25px;
+    }
+
+    .tec2023__offerSection .tec2023-offer-container {
+        margin: 25px 0;
+    }
+
+    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info h5 {
+        color: #00534c;
+        font-size: 20px;
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+        line-height: 28px;
+        margin-top: 0;
+    }
+
+    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info p {
+        color: #000000;
+        font-size: 16px;
+        font-family: "Source Sans Pro";
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+
+    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner {
+        border-radius: 5px;
+        border: solid 1px #00534c;
+        background-color: #00534c;
+        padding: 5px 15px;
+        margin: 10px 0;
+    }
+
+    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner>h1 {
+        color: #26d07c;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px 0;
+    }
+
+    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner>p {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-banner-controller {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .tec2023-offer-banner-controller div {
+        margin: 0 15px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- BENEFITS -->
+<style>
+    /* Benefits section */
+    .tec2023__benefitsSection {
+        width: 100%;
+        /* min-height: 736px; */
+        background-color: #00534c;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .tec2023__benefitsSection .tec2023-benefits-container {
+        width: 100%;
+        background-color: #00534c;
+        padding: 25px 0;
+        color: white;
+    }
+
+    .tec2023__benefitsSection .tec2023-benefits-title h1 {
+        color: #6bcaba;
+        font-family: "Cairo";
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .tec2023__benefitsSection .tec2023-benefits-container .tec2023-benefits-items-container .tec2023-benefits-item {
+        margin: 25px 0;
+        border: solid 1px white;
+        border-radius: 5px;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    .tec2023-benefits-item h2 {
+        padding-top: 10px;
+        color: #6bcaba;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .tec2023-benefits-item p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .tec2023__benefitsSection .tec2023-benefits-container .tec2023-benefits-items-container .tec2023-benefits-item .tec2023-benefits-item-span {
+        color: white;
+        position: absolute;
+        top: -15px;
+        right: 5%;
+        font-weight: 900;
+        font-size: 40px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- BEPART -->
+<style>
+    /* Be part section */
+    .tec2023__bepartSection {
+        width: 100%;
+        min-height: 554px;
+        background-color: #6bcaba;
+        display: flex;
+    }
+
+    .tec2023-tec2023__bepartSection-container {
+        padding: 25px 0 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tec2023-tec2023__bepartSection-container .tec2023-tec2023__bepartSection-item {
+        color: #00534c;
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+
+    .tec2023-tec2023__bepartSection-container .tec2023-tec2023__bepartSection-item-2 {
+        min-height: 400px;
+        background-color: white;
+        /* border: solid 1px white; */
+        border-radius: 5px;
+        width: 100%;
+    }
+</style>
+
+<!-- FUTURE -->
+<style>
+    /* tec2023__futureSection */
+    .tec2023__futureSection {
+        width: 100%;
+        background-color: #efefef;
+    }
+
+    .tec2023_futureSection .tec2023-tec2023_futureSection-container .container {
+        /* height: 100%; */
+        width: calc(100% - 30px);
+        display: flex;
+        padding: 25px 15px 50px 15px;
+        flex-wrap: wrap;
+    }
+
+    .tec2023__futureSection .tec2023-tec2023__futureSection-container .tec2023-tec2023__futureSection-img {
+        background-image: url("foto.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    .tec2023__futureSection .tec2023-tec2023__futureSection-container .tec2023-tec2023__futureSection-item {
+        width: calc(100% - 30px);
+    }
+
+    .tec2023__futureSection .tec2023-tec2023__futureSection-container .tec2023-tec2023__futureSection-item .tec2023-tec2023__futureSection-info h4 {
+        color: #00534c;
+        padding-top: 24px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    .tec2023__futureSection .tec2023-tec2023__futureSection-container .tec2023-tec2023__futureSection-item .tec2023-tec2023__futureSection-info p {
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+    }
+</style>
+
+<!-- MEDIA -->
+<style>
+    /* Styles for small and larger screens */
+    @media (min-width: 576px) {
+        .tec2023__bannerSection .tec2023-bannerSectionBackground {
+            background-size: cover;
+        }
+    }
+
+    /* Styles for medium and larger screens */
+    @media (min-width: 768px) {
+        /* Add your styles here */
+    }
+
+    /* Styles for large and larger screens */
+    @media (min-width: 992px) {
+
+        /* BANNER */
+        .tec2023__bannerSection {
+            height: 750px;
+        }
+
+        .tec2023__bannerSection .tec2023-bannerSectionBackground {
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+        }
+
+        .tec2023__bannerSection .tec2023-bannerSectionContainer {
+            height: 100%;
+        }
+
+        .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex {
+            width: 50%;
+            height: 100%;
+        }
+
+        .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo h1 {
+            font-size: 56px;
+            line-height: 60px;
+        }
+
+        /* STATISTICS */
+        .tec2023__statisticsSection .tec2023-statistics .tec2023-statistics-item {
+            width: 25%;
+        }
+
+        /* BUSINESS SUCCESS */
+        .tec2023__businessSuccessSection .tec2023-customSolutions {
+            /* min-height: 600px; */
+            /* width: calc(100% - 100px); */
+            /* padding: 15px 50px; */
+        }
+
+        .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card {
+            width: auto;
+            flex: 1;
+            margin: 10px;
+        }
+
+        .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cS-heading {
+            font-size: 24px;
+        }
+
+        .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card .tec2023-c-2-heading {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .tec2023__businessSuccessSection .tec2023-heading-1 h2 {
+            font-size: 56px;
+            line-height: 60px;
+        }
+
+        .tec2023__businessSuccessSection .tec2023-heading-1 h5 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        /* OFFER */
+        .tec2023__offerSection {
+            position: relative;
+            z-index: 0;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container {
+            margin: 25px 0 0 40%;
+            padding-bottom: 0;
+            z-index: 1;
+        }
+
+        .tec2023-offer-info {
+            padding-left: 25%;
+        }
+
+        .tec2023__offerSection .tec2023-background-image-0 {
+            position: absolute;
+            top: 5%;
+            left: 0;
+            width: 50%;
+            height: 90%;
+            background-image: url("https://tecmilenio.mx/sites/default/files/2023-07/Rectangle%20%281%29%20%281%29%20%281%29.jpg");
+            background-position-x: left;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner {
+            margin: 10px;
+            width: 50%;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner>h1 {
+            font-size: 24px;
+            line-height: 32px;
+            padding: 10px 0;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info {
+            padding-top: 40px;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info h5 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        /* BENEFITS */
+        .tec2023__benefitsSection {
+            background-color: #26d07c;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .tec2023__benefitsSection .container {
+            position: relative;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-container {
+            width: 70%;
+            background-color: #00534c;
+            margin: 25px 0 25px;
+            padding-bottom: 25px;
+            color: white;
+        }
+
+        .tec2023__benefitsSection .tec2023-background-image-1 {
+            position: absolute;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-image: url("https://tecmilenio.mx/sites/default/files/2023-07/Rectangle%20%282%29%20%281%29%20%281%29.jpg");
+            background-position-x: left;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-container {
+            z-index: 1;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-title {
+            padding: 15px;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-title h1 {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 64px;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-container .tec2023-benefits-items-container .tec2023-benefits-item {
+            margin: 25px 15px;
+        }
+
+        /* BEPART */
+        .tec2023_bepartSection .tec2023-tec2023_bepartSection-container {
+            padding: 25px 0 50px 0;
+            /* width: 100%; */
+            height: 100%;
+            flex-wrap: nowrap;
+        }
+
+        .tec2023-tec2023__bepartSection-item,
+        .tec2023-tec2023__bepartSection-item-2 {
+            width: 50% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tec2023-tec2023__bepartSection-container .tec2023-tec2023__bepartSection-item h1 {
+            font-size: 60px;
+            padding: calc(30% - 120px) 0;
+            margin: 0;
+        }
+
+        /* FUTURE */
+        .tec2023__futureSection .tec2023-tec2023__futureSection-container .container {
+            flex-wrap: nowrap;
+        }
+
+        .tec2023__futureSection .tec2023-tec2023__futureSection-container .container .tec2023-tec2023__futureSection-item {
+            display: flex;
+        }
+
+        .tec2023__futureSection .tec2023-tec2023__futureSection-container .container .tec2023-tec2023__futureSection-item .tec2023-tec2023__futureSection-info h4 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            font-weight: 700;
+            line-height: 32px;
+        }
+
+        .tec2023__futureSection .tec2023-tec2023__futureSection-container .container .tec2023-tec2023__futureSection-item .tec2023-tec2023__futureSection-info {
+            margin: 0;
+            padding: 0 25px;
+        }
+
+        .tec2023__futureSection .tec2023-tec2023__futureSection-container .container .tec2023-tec2023__futureSection-img {
+            background-image: url("foto.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 170px;
+            height: 160px;
+            border-radius: 5px;
+        }
+    }
+
+    /* Styles for extra large and larger screens */
+    @media (min-width: 1200px) {
+        /* Add your styles here */
+    }
+</style>
+
+<!-- HTML SECTION -->
+<!-- ==============================
+START - BANNER - SECTION
+================================= -->
+
+<section class="tec2023__bannerSection">
+    <div class="tec2023-bannerSectionBackground">
+        <div class="tec2023-bannerSectionBackgroundPlay">
+            <a class="tec2023-bTC-sC-playVideoBtn" href="#tec2023__toVideoTecmilenion">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z"
+                        fill="#00534C" />
+                    <path d="M53 40L33 51V29L53 40Z" fill="white" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="tec2023-bannerSectionContainer container">
+        <div class="tec2023-bannerSectionContainerFlex">
+            <div class="tec2023-bannerSectionContainerInfo">
+                <h1>
+                    <!-- Title -->
+                    Certifica y fortalece las habilidades de tus colaboradores
+                </h1>
+                <!-- Button -->
+                <a href="http://" class="tec2023-bannerSectionButton"> Me interesa </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+    START - STATISTICS - SECTION
+================================= -->
+
+<section class="tec2023__statisticsSection">
+    <div class="container">
+        <div class="tec2023-statistics">
+            <div class="tec2023-statistics-item">
+                <h2 class="tec2023-s-i-quantity">
+                    +
+                    <span class="amountCounter" data-total="300">
+                        <!-- Amount -->
+                        0
+                    </span>
+                </h2>
+                <h5 class="tec2023-s-i-text">
+                    <!-- Label -->
+                    Empresas atendidas
+                </h5>
+            </div>
+            <div class="tec2023-statistics-item">
+                <h2 class="tec2023-s-i-quantity">
+                    +
+                    <span class="amountCounter" data-total="1000">
+                        <!-- Amount -->
+                        0
+                    </span>
+                </h2>
+                <h5 class="tec2023-s-i-text">
+                    <!-- Label -->
+                    Colaboradores capacitados
+                </h5>
+            </div>
+            <div class="tec2023-statistics-item">
+                <h2 class="tec2023-s-i-quantity">
+                    +
+                    <span class="amountCounter" data-total="10">
+                        <!-- Amount -->
+                        0
+                    </span>
+                </h2>
+                <h5 class="tec2023-s-i-text">
+                    <!-- Label -->
+                    Empresas transansionales
+                </h5>
+            </div>
+            <div class="tec2023-statistics-item">
+                <h2 class="tec2023-s-i-quantity">
+                    +
+                    <span class="amountCounter" data-total="50">
+                        <!-- Amount -->
+                        0
+                    </span>
+                </h2>
+                <h5 class="tec2023-s-i-text">
+                    <!-- Label -->
+                    Programas codise&ntilde;ados
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+    START - BUSINESS SUCCESS - SECTION
+================================= -->
+
+<section class="tec2023__businessSuccessSection">
+    <!-- Block - Heading 1 -->
+    <div class="container">
+        <div class="tec2023-heading-1">
+            <h2>
+                <!-- Title -->
+                Tu equipo es la clave del éxito de tu empresa
+            </h2>
+            <h5>
+                <!-- Label -->
+                Invierte en su capacitaci&oacute;n y convi&eacute;rtelos en las y los
+                l&iacute;deres que tu empresa necesita.
+            </h5>
+        </div>
+
+        <div class="tec2023-customSolutions">
+            <h5 class="tec2023-cS-heading">
+                <!-- Title -->
+                Soluciones a la medida
+            </h5>
+            <p class="tec2023-cS-text">
+                <!-- Text -->
+                Nuestros programas de desarrollo cocreados y alineados están diseñados
+                para abordar los desafíos particulares de tu empresa y lograr resultados
+                reales.
+            </p>
+
+            <!-- Block - Card Section 1 -->
+            <div class="tec2023-cardsSection1">
+                <div class="tec2023-card">
+                    <h5 class="tec2023-c-2-heading">
+                        <!-- Title -->
+                        Soluciones a la medida, apilables y modulares.
+                    </h5>
+                    <div class="tec2023-c-2-description">
+                        <!-- Description -->
+                        Entendimiento y Co-diseño:
+                        <li>Certificados</li>
+                        <li>Programas especiales</li>
+                    </div>
+                </div>
+
+                <div class="tec2023-card">
+                    <h5 class="tec2023-c-2-heading">
+                        <!-- Title -->
+                        Portafolio empresarial y digital skillings
+                    </h5>
+                    <div class="tec2023-c-2-description">
+                        <!-- Description -->
+                        <li>Certificados</li>
+                        <li>Certificaciones</li>
+                        <li>Micro credenciales</li>
+                    </div>
+                </div>
+
+                <div class="tec2023-card">
+                    <h5 class="tec2023-c-2-heading">
+                        <!-- Title -->
+                        Soluciones de bienestar y salud
+                    </h5>
+                    <div class="tec2023-c-2-description">
+                        <!-- Description -->
+                        <li>Organizaciones positivas</li>
+                        <li>Gestión del bienestar</li>
+                        <li>Liderazgo positivo</li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block - Button Right -->
+            <div class="tec2023-container-button">
+                <div class="tec2023-button-right">
+                    <a href="" class="button">
+                        <!-- Text -->
+                        Descarga aqu&iacute;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+    START - OFFER SECTION
+================================= -->
+
+<section class="tec2023__offerSection">
+    <!-- Block - Heading 1 -->
+    <div class="tec2023-background-image-0"></div>
+
+    <div class="container">
+        <div class="tec2023-offer-container">
+            <div class="tec2023-offer-info">
+                <h5>
+                    Hemos desarrollado una oferta de formación orientada a las necesidades
+                    actuales y del futuro.
+                </h5>
+                <p>
+                    Nuestros programas están diseñados para ayudar a tus colaboradores a
+                    desarrollar habilidades y conocimientos permanentes que mejorarán su
+                    desempeño y les permitá crecer profesionalmente.
+                </p>
+            </div>
+
+            <div class="tec2023-offer-container-banners">
+                <div class="tec2023-offer-banner">
+                    <h1>Prepa Go</h1>
+                    <p>
+                        Un programa flexible corto, avalado por CENEVAL, donde todos los
+                        colaboradores podrán aprender a su ritmo para certificarse y
+                        acreditar sus estudios de nivel de bachillerato (Educación Media
+                        Superior).
+                    </p>
+                </div>
+
+                <div class="tec2023-offer-banner">
+                    <h1>Profesional Asociado</h1>
+                    <p>
+                        Carreras cortas de dos años de duración, con certificados enfocados
+                        en el desarrollo de competencias para la empleabilidad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tec2023-offer-banner-controller">
+                <div>Anterior</div>
+                <div>Siguiente</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+    START - BENEFITS SECTION
+================================= -->
+
+<section class="tec2023__benefitsSection">
+    <!-- Block - Heading 1 -->
+    <div class="tec2023-background-image-1"></div>
+
+    <div class="container">
+        <div class="tec2023-benefits-container">
+            <div class="tec2023-benefits-title">
+                <h1>Beneficios a nuestros aliados</h1>
+                <p>
+                    Las y los colaboradores que están involucrados en la capacitación
+                    pueden sentirse más comprometidos y valorados, aumentando la retención
+                    de trabajadores y mejorando el clima organizacional. Asimismo, ayudan
+                    a las empresas a reducir costos importantes y consolidar una cultura
+                    positiva a través del compromiso de la fuerza laboral.
+                </p>
+            </div>
+
+            <div class="tec2023-benefits-items-container">
+                <div class="tec2023-benefits-item">
+                    <h2>Empresas</h2>
+                    <p>
+                        Mayor retorno a la inversión en la capacitación. <br />
+                        Alto impacto en los indicadores. <br />
+                        Programas diseñados para adultos que trabajan. <br />
+                        Método de acompañamiento para asegurar el éxito de la capacitación.
+                        <br />
+                        Aumento del compromiso en los colaboradores. <br />
+                    </p>
+                    <span class="tec2023-benefits-item-span">-</span>
+                </div>
+
+                <div class="tec2023-benefits-item">
+                    <h2>Empresas</h2>
+                    <p class="displayNone">
+                        Mayor retorno a la inversión en la capacitación. <br />
+                        Alto impacto en los indicadores. <br />
+                        Programas diseñados para adultos que trabajan. <br />
+                        Método de acompañamiento para asegurar el éxito de la capacitación.
+                        <br />
+                        Aumento del compromiso en los colaboradores. <br />
+                    </p>
+                    <span class="tec2023-benefits-item-span">+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+    START - BEPART SECTION
+================================= -->
+
+<section class="tec2023__bepartSection">
+    <!-- Block - Heading 1 -->
+    <div class="container">
+        <div class="tec2023-tec2023__bepartSection-container">
+            <div class="tec2023-tec2023__bepartSection-item">
+                <h1>Sé parte de las empresas más competitivas del futuro.</h1>
+            </div>
+            <div class="tec2023-tec2023__bepartSection-item-2">Formulario</div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+    START - FUTURE SECTION
+================================= -->
+
+<section class="tec2023__futureSection">
+    <!-- Block - Heading 1 -->
+    <div class="tec2023-tec2023__futureSection-container">
+        <div class="container">
+            <div class="tec2023-tec2023__futureSection-item">
+                <div class="tec2023-tec2023__futureSection-img"></div>
+                <div class="tec2023-tec2023__futureSection-info">
+                    <h4>Future of customer support</h4>
+                    <p>
+                        Similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas
+                        platonem eos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tec2023-tec2023__futureSection-item">
+                <div class="tec2023-tec2023__futureSection-img"></div>
+                <div class="tec2023-tec2023__futureSection-info">
+                    <h4>Future of customer support</h4>
+                    <p>
+                        Similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas
+                        platonem eos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

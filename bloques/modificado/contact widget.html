@@ -485,7 +485,7 @@
   }
 </style>
 <div class="tabsw js-tabs">
-  
+
   <div class="cover-back cover-back-tabs js-cover-back-tabs"></div>
 
   <div class="tabs-container">
@@ -539,28 +539,38 @@
 <![endif]-->
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
     <script>
-      hbspt.forms.create({
-        portalId: "2429099",
-        formId: "4f65b734-c924-4bfc-941d-5b165be058c0",
-        onFormSubmit: function ($form) {
-          var nombre = $('.home-chat input[name="firstname"]').val();
-          var apellido = $('.home-chat input[name="lastname"]').val();
-          var email = $('.home-chat input[name="email"]').val();
-          var telefono = $('.home-chat input[name="phone"]').val();
-          var modalidad = $('.home-chat select[name="nuevas_modalidades"]').val();
-          if (modalidad == 2) {
-            window.location.href = 'https://wa.me/5215641594637?text=Hola, soy ' + nombre + ', mi correo es ' + email + '  y estoy interesado en Programas online';
+      function runMyScript05() {
+        if (window.jQuery) {
+          hbspt.forms.create({
+            portalId: "2429099",
+            formId: "4f65b734-c924-4bfc-941d-5b165be058c0",
+            onFormSubmit: function ($form) {
+              var nombre = jQuery('.home-chat input[name="firstname"]').val();
+              var apellido = jQuery('.home-chat input[name="lastname"]').val();
+              var email = jQuery('.home-chat input[name="email"]').val();
+              var telefono = jQuery('.home-chat input[name="phone"]').val();
+              var modalidad = jQuery('.home-chat select[name="nuevas_modalidades"]').val();
+              if (modalidad == 2) {
+                window.location.href = 'https://wa.me/5218118448631?text=Hola, soy ' + nombre + ', mi correo es ' + email + '  y estoy interesado en Programas online';
 
-          } else if (modalidad == 3) {
-            window.location.href = 'https://wa.me/528134133349?text=Hola, soy ' + nombre + ', mi correo es ' + email + ', y estoy interesado en Programas presenciales';
-          } else {
-            //Remplazar para certificados e idiomas
-            window.location.href = 'https://wa.me/5218182809711?text=Hola, soy ' + nombre + ', mi correo es ' + email + ', y estoy interesado en cursos, certificados e idiomas - CDC';
-            $('[data-form-id="4f65b734-c924-4bfc-941d-5b165be058c0"] .hs-input[name="educacion_continua_certificados"]').val(503).change();
+              } else if (modalidad == 3) {
+                window.location.href = 'https://wa.me/528134133349?text=Hola, soy ' + nombre + ', mi correo es ' + email + ', y estoy interesado en Programas presenciales';
+              } else {
+                //Remplazar para certificados e idiomas
+                window.location.href = 'https://wa.me/5218182809711?text=Hola, soy ' + nombre + ', mi correo es ' + email + ', y estoy interesado en cursos, certificados e idiomas - CDC';
+                jQuery('[data-form-id="4f65b734-c924-4bfc-941d-5b165be058c0"] .hs-input[name="educacion_continua_certificados"]').val(503).change();
 
-          }
+              }
+            }
+          });
+        } else {
+          // Si jQuery aún no está cargado, intenta nuevamente en 100 milisegundos.
+          setTimeout(runMyScript05, 100);
         }
-      });
+      }
+
+      // Inicia la verificación.
+      runMyScript05();     
     </script>
     <!-- Info Contact End -->
   </div>
@@ -589,80 +599,86 @@
 <![endif]-->
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
     <script>
-      hbspt.forms.create({
-        portalId: "2429099",
-        formId: "3ffde726-eb87-44c9-b5c2-40f2f9ec6a82",
-        onFormReady($form, ctx) {
-          $('.hs-modalidad_').show();
+      function runMyScript06() {
+        if (window.jQuery) {
+          hbspt.forms.create({
+            portalId: "2429099",
+            formId: "3ffde726-eb87-44c9-b5c2-40f2f9ec6a82",
+            onFormReady($form, ctx) {
+              jQuery('.hs-modalidad_').show();
+
+              // Para que se mape el nivel con el nvl academ
+              const meInteresa = document.querySelector('#zoomFormBlock select[name="nivel_de_interes_2"]');
+              const nvlOculto = document.querySelector('#zoomFormBlock select[name="nivel_de_interes"]');
+              // Ocultar nivel de interes sf
+              nvlOculto.parentElement.parentElement.style.display = "none";
+              nvlOculto.style.display = "none";
+              meInteresa.addEventListener('change', function (e) {
+                let caseEval = e.currentTarget.value;
+                switch (caseEval) {
+                  case '1':
+                    habilitarTodoZoom(nvlOculto.id);
+                    prenderOpcionZoom(nvlOculto.id, '1');
+                    break;
+                  case '2':
+                    habilitarTodoZoom(nvlOculto.id);
+                    prenderOpcionZoom(nvlOculto.id, '2');
+                    break;
+                  case '5':
+                    habilitarTodoZoom(nvlOculto.id);
+                    prenderOpcionZoom(nvlOculto.id, '2');
+                    break;
+                  case '3':
+                    habilitarTodoZoom(nvlOculto.id);
+                    prenderOpcionZoom(nvlOculto.id, '3');
+                    break;
+                  case '4':
+                    habilitarTodoZoom(nvlOculto.id);
+                    prenderOpcionZoom(nvlOculto.id, '4');
+                    break;
+                  default:
+                    break;
+                }
+              });
 
 
-
-          // Para que se mape el nivel con el nvl academ
-          const meInteresa = document.querySelector('#zoomFormBlock select[name="nivel_de_interes_2"]');
-          const nvlOculto = document.querySelector('#zoomFormBlock select[name="nivel_de_interes"]');
-          // Ocultar nivel de interes sf
-          nvlOculto.parentElement.parentElement.style.display = "none";
-          nvlOculto.style.display = "none";
-          meInteresa.addEventListener('change', function (e) {
-            let caseEval = e.currentTarget.value;
-            switch (caseEval) {
-              case '1':
-                habilitarTodoZoom(nvlOculto.id);
-                prenderOpcionZoom(nvlOculto.id, '1');
-                break;
-              case '2':
-                habilitarTodoZoom(nvlOculto.id);
-                prenderOpcionZoom(nvlOculto.id, '2');
-                break;
-              case '5':
-                habilitarTodoZoom(nvlOculto.id);
-                prenderOpcionZoom(nvlOculto.id, '2');
-                break;
-              case '3':
-                habilitarTodoZoom(nvlOculto.id);
-                prenderOpcionZoom(nvlOculto.id, '3');
-                break;
-              case '4':
-                habilitarTodoZoom(nvlOculto.id);
-                prenderOpcionZoom(nvlOculto.id, '4');
-                break;
-              default:
-                break;
-            }
-          });
-
-
-          // Resetea todas las opciones para cambios
-          function habilitarTodoZoom(opcioninput) {
-            const input = document.querySelectorAll(`#${opcioninput}`);
-            for (let i = 0; i < input.length; i++) {
-              for (let j = 0; j < input[i].options.length; j++) {
-                input[i].options[j].removeAttribute('disabled');
-                input[i].options[j].removeAttribute('hidden');
-                input[i].options[0].setAttribute('disabled', true);
-              }
-            }
-          }
-          // Prende una opcion especifica por valor
-          function prenderOpcionZoom(opcioninput, valorprender) {
-            const input = $(`#${opcioninput}`);
-            if (input[0].options.length > 0) {
-              const inputOptions = $(`#${opcioninput} option`);
-              for (let i = 0; i < inputOptions.length; i++) {
-                inputOptions.eq(i).removeAttr('selected');
-                if (inputOptions.eq(i).val() == valorprender) {
-                  inputOptions.eq(i).attr('selected', 'selected');
-                  inputOptions.eq(i).change();
+              // Resetea todas las opciones para cambios
+              function habilitarTodoZoom(opcioninput) {
+                const input = document.querySelectorAll(`#${opcioninput}`);
+                for (let i = 0; i < input.length; i++) {
+                  for (let j = 0; j < input[i].options.length; j++) {
+                    input[i].options[j].removeAttribute('disabled');
+                    input[i].options[j].removeAttribute('hidden');
+                    input[i].options[0].setAttribute('disabled', true);
+                  }
                 }
               }
+              // Prende una opcion especifica por valor
+              function prenderOpcionZoom(opcioninput, valorprender) {
+                const input = jQuery(`#${opcioninput}`);
+                if (input[0].options.length > 0) {
+                  const inputOptions = jQuery(`#${opcioninput} option`);
+                  for (let i = 0; i < inputOptions.length; i++) {
+                    inputOptions.eq(i).removeAttr('selected');
+                    if (inputOptions.eq(i).val() == valorprender) {
+                      inputOptions.eq(i).attr('selected', 'selected');
+                      inputOptions.eq(i).change();
+                    }
+                  }
+                }
+                input.change();
+              }
             }
-            input.change();
-          }
-
-
-
+          });
+        } else {
+          // Si jQuery aún no está cargado, intenta nuevamente en 100 milisegundos.
+          setTimeout(runMyScript06, 100);
         }
-      });
+      }
+
+      // Inicia la verificación.
+      runMyScript06();
+
     </script>
     <!-- Info Contact End -->
   </div>
