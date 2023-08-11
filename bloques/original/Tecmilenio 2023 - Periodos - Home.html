@@ -1,0 +1,203 @@
+<!-- CODIGO IMPORTANTE DEL BLOQUE - PERIODOS - HOME -->
+
+<!-- quitar cuando se agregue al proyecto drupal -->
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<style>
+    .tec2023__home__periods {
+        min-height: 150px;
+        padding: 40px;
+    }
+
+    .tec2023__home__periods .row {
+        display: flex !important;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    .tec2023__home__periods .nextPeriod h5 {
+        font-family: 'Source Sans 3';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        color: #00534C;
+        margin-left: 10px;
+        margin-bottom: 0;
+        text-transform: initial;
+    }
+
+    .tec2023__home__periods .nextPeriod .nextPeriod__icon__container span {
+        font-size: 40px;
+        color: #00534C;
+    }
+
+    .tec2023__home__periods .nextPeriod .nextPeriod__icon__container,
+    .tec2023__home__periods .yearPeriods {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tec2023__home__periods .yearPeriods .line {
+        height: 60px;
+        width: 2px;
+        background: #26D07C;
+        margin: 0px 30px 0px 30px;
+        display: block;
+    }
+
+    .tec2023__home__periods .yearPeriods h5,
+    .tec2023__home__periods .yearPeriods h6 {
+        font-family: 'Source Sans 3';
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0em;
+        color: #00534C;
+        text-transform: initial;
+    }
+
+    .tec2023__home__periods .yearPeriods h5 {
+        font-weight: 700;
+    }
+
+    .tec2023__home__periods .yearPeriods h6 {
+        font-weight: 400;
+    }
+
+    .tec2023__home__periods .buttonsPeriods {
+        flex-direction: row-reverse;
+        gap: 20px;
+        height: 100%;
+        align-items: center;
+    }
+
+    .tec2023__btn {
+        padding: 5px 10px;
+        border: 1px solid #00A499;
+        color: #00A499;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Source Sans 3';
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-decoration: none;
+    }
+
+    .tec2023__btn:hover {
+        color: white;
+        background-color: #00a499;
+        text-decoration: none;
+    }
+
+    .tec2023__btn:active,
+    .tec2023__btn:focus {
+        color: white;
+        background-color: #007864;
+        text-decoration: none;
+    }
+
+    /* Styles for small and larger screens */
+    @media (min-width: 576px) {
+
+        .tec2023__home__periods .yearPeriods h5,
+        .tec2023__home__periods .yearPeriods h6 {
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        .tec2023__btn {
+            font-size: 17px;
+        }
+    }
+
+    /* Styles for medium and larger screens */
+    @media (min-width: 768px) {
+        /* Add your styles here */
+    }
+
+    /* Styles for large and larger screens */
+    @media (min-width: 992px) {
+        .tec2023__home__periods .row {
+            justify-content: initial;
+            padding: initial;
+        }
+    }
+
+    /* Styles for extra large and larger screens */
+    @media (min-width: 1200px) {
+        /* Add your styles here */
+    }
+</style>
+
+<section class="tec2023__home__periods">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row nextPeriod">
+                    <div class="nextPeriod__icon__container">
+                        <!-- icono -->
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                    </div>
+                    <h5>
+                        <!-- text -->
+                        Próximo <br>inicio de clases
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row yearPeriods">
+                    <div class="tetramestral">
+                        <h5>
+                            <!-- nombre del periodo -->
+                            Tetramestral
+                        </h5>
+                        <h6>
+                            <!-- periodo -->
+                            Septiembre 2023
+                        </h6>
+                    </div>
+                    <div class="line"></div>
+                    <div class="semestral">
+                        <h5>
+                            <!-- nombre del periodo -->
+                            Semestral
+                        </h5>
+                        <h6>
+                            <!-- periodo -->
+                            Agosto 2023
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row buttonsPeriods">
+                    <a href="/solicitar-informacion" class="tec2023__btn">
+                        <!-- icono -->
+                        <span class="material-symbols-outlined">
+                            description
+                        </span>
+
+                        <!-- texto -->
+                        Información
+                    </a>
+                    <a href="/proceso-de-admision" class="tec2023__btn">
+                        <!-- icono -->
+                        <span class="material-symbols-outlined">
+                            mode_comment
+                        </span>
+
+                        <!-- texto -->
+                        Admisiones
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
