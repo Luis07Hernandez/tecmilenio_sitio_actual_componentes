@@ -1,9 +1,3 @@
-<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
 <!-- GENERAL -->
 <style>
     @import url("https://fonts.googleapis.com/css?family=Cairo");
@@ -16,7 +10,7 @@
     }
 
     .displayNone {
-        display: none;
+        display: none !important;
     }
 
     .width-50 {
@@ -59,6 +53,20 @@
         justify-content: center;
     }
 
+    .tec2023-bTC-sC-playVideoBtn {
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .tec2023-bTC-sC-playVideoBtn>svg {
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .tec2023-bTC-sC-playVideoBtn>svg:hover path:first-child {
+        fill: #00736c;
+    }
+
     .tec2023__bannerSection .tec2023-bannerSectionContainer {
         height: 50%;
     }
@@ -86,14 +94,25 @@
     }
 
     .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo a {
-        border: solid 1px #00736c;
-        border-radius: 2px;
-        background-color: #00a499;
+        border-radius: 3px;
+        background-color: #00433D;
         color: white;
         padding: 10px 25px;
         text-decoration: none;
-        display: block !important;
-        width: 140px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo a:hover {
+        background-color: #00a499;
+        text-decoration: none;
+    }
+
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo a:active,
+    .tec2023__bannerSection .tec2023-bannerSectionContainer .tec2023-bannerSectionContainerFlex .tec2023-bannerSectionContainerInfo a:focus {
+        background-color: #007864;
+        text-decoration: none;
     }
 </style>
 
@@ -104,7 +123,7 @@
         display: flex;
         width: 100%;
         background-color: #00534c;
-        padding: 15px 0;
+        padding: 35px 0;
     }
 
     .tec2023__statisticsSection .tec2023-statistics {
@@ -151,6 +170,7 @@
     }
 
     .tec2023__businessSuccessSection .tec2023-heading-1 h2 {
+        font-family: "Cairo";
         font-weight: 700;
         font-size: 35px;
         line-height: 40px;
@@ -167,6 +187,7 @@
         line-height: 20px;
         padding: 0 5%;
         color: #6bcaba;
+        text-transform: initial;
     }
 
     .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cS-heading {
@@ -194,15 +215,16 @@
         flex-wrap: wrap;
         align-content: flex-start;
         margin: 40px 0;
+        gap: 10px;
     }
 
     .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card {
         width: 100%;
-        margin: 10px 0;
+        /* margin: 10px 0; */
         padding: 25px;
         min-height: 100px;
         border: solid 2px #00534c;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
     }
 
@@ -212,7 +234,7 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 25px;
-        color: #26d07c;
+        color: #00534c;
     }
 
     .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card .tec2023-c-2-description {
@@ -225,11 +247,14 @@
 
     .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card:hover {
         background-color: #00534c;
-        color: #26d07c;
     }
 
     .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card:hover .tec2023-c-2-description {
         color: white;
+    }
+
+    .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card:hover .tec2023-c-2-heading {
+        color: #26d07c;
     }
 
     .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-container-button {
@@ -289,29 +314,6 @@
         padding-bottom: 15px;
     }
 
-    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner {
-        border-radius: 5px;
-        border: solid 1px #00534c;
-        background-color: #00534c;
-        padding: 5px 15px;
-        margin: 10px 0;
-    }
-
-    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner>h1 {
-        color: #26d07c;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
-        padding: 10px 0;
-    }
-
-    .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner>p {
-        color: white;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
     .tec2023__offerSection .tec2023-offer-container .tec2023-offer-banner-controller {
         display: flex;
         justify-content: flex-end;
@@ -339,6 +341,7 @@
         background-color: #00534c;
         padding: 25px 0;
         color: white;
+        border-radius: 5px;
     }
 
     .tec2023__benefitsSection .tec2023-benefits-title h1 {
@@ -353,16 +356,38 @@
         margin: 25px 0;
         border: solid 1px white;
         border-radius: 5px;
-        padding: 0 15px;
+        padding: 15px;
         position: relative;
     }
 
-    .tec2023-benefits-item h2 {
+    .tec2023-benefits-item .tec2023__benefits__item__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tec2023-benefits-item .tec2023__benefits__item__header h5 {
         padding-top: 10px;
         color: #6bcaba;
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
+    }
+
+    .tec2023-benefits-item .tec2023__icon {
+        font-size: 50px;
+        font-weight: 700;
+        padding: 0 10px;
+        line-height: 0;
+        cursor: pointer;
+    }
+
+    .tec2023-benefits-item .tec2023__icon:hover {
+        color: #26D07C;
+    }
+
+    .tec2023-benefits-item .tec2023__benefits__item__body {
+        padding: 10px 0 0 0;
     }
 
     .tec2023-benefits-item p {
@@ -387,22 +412,23 @@
     /* Be part section */
     .tec2023__bepartSection {
         width: 100%;
-        min-height: 554px;
         background-color: #6bcaba;
         display: flex;
     }
 
     .tec2023-tec2023__bepartSection-container {
-        padding: 25px 0 50px 0;
+        padding: 50px 0;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .tec2023-tec2023__bepartSection-container .tec2023-tec2023__bepartSection-item {
+    .tec2023-tec2023__bepartSection-container .tec2023-tec2023__bepartSection-item h1 {
         color: #00534c;
         font-size: 35px;
         line-height: 40px;
-        font-weight: 400;
+        font-weight: 700;
+        padding-right: 10%;
+        margin-bottom: 15px;
     }
 
     .tec2023-tec2023__bepartSection-container .tec2023-tec2023__bepartSection-item-2 {
@@ -411,6 +437,7 @@
         /* border: solid 1px white; */
         border-radius: 5px;
         width: 100%;
+        padding: 30px;
     }
 </style>
 
@@ -457,6 +484,68 @@
         line-height: 24px;
         font-weight: 400;
         color: #999999;
+    }
+</style>
+
+<!-- START VIDEO BANNER -->
+
+<style>
+    .tec2023__videoYTModal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 99999;
+    }
+
+    .tec2023_videoYTModal_content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .tec2023_videoYTModalcontent_close {
+        color: white;
+        position: absolute;
+        margin: -35px 0px 0px 0px;
+        right: 0px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .tec2023_videoYTModalcontent_close:hover {
+        color: #000;
+        background-color: white;
+        text-decoration: none;
+    }
+
+    .tec2023_videoYTModalcontent_iframe-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    .tec2023_videoYTModalcontent_iframe-container iframe {
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 </style>
 
@@ -518,7 +607,7 @@
         .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cardsSection1 .tec2023-card {
             width: auto;
             flex: 1;
-            margin: 10px;
+            /* margin: 10px; */
         }
 
         .tec2023__businessSuccessSection .tec2023-customSolutions .tec2023-cS-heading {
@@ -533,6 +622,8 @@
         .tec2023__businessSuccessSection .tec2023-heading-1 h2 {
             font-size: 56px;
             line-height: 60px;
+            margin-left: 50%;
+            transform: translateX(-50%);
         }
 
         .tec2023__businessSuccessSection .tec2023-heading-1 h5 {
@@ -569,22 +660,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             z-index: -1;
-        }
-
-        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners {
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner {
-            margin: 10px;
-            width: 50%;
-        }
-
-        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-container-banners .tec2023-offer-banner>h1 {
-            font-size: 24px;
-            line-height: 32px;
-            padding: 10px 0;
         }
 
         .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info {
@@ -674,6 +749,8 @@
             font-size: 60px;
             padding: calc(30% - 120px) 0;
             margin: 0;
+            font-weight: 700;
+            line-height: 70px;
         }
 
         /* FUTURE */
@@ -715,136 +792,42 @@
     }
 </style>
 
+<!-- TEC2023 LOADER SPINNER -->
+<style>
+    .tec2023__loader {
+        border: 4px solid rgba(0, 0, 0, 0.3);
+        border-top: 4px solid #00534C;
+        /* Color del spinner */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
 <!-- HTML SECTION -->
 <!-- ==============================
 START - BANNER - SECTION
 ================================= -->
 
-<!-- START VIDEO BANNER -->
-
-<style>
-    .tec2023__videoYTModal {
-        display: none;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 99999;
-    }
-
-    .tec2023__videoYTModal__content {
-        position: relative;
-        margin: auto;
-        padding: 0;
-        width: 80%;
-        max-width: 1200px;
-    }
-
-    .tec2023__videoYTModal__content__close {
-        color: white;
-        position: absolute;
-        margin: -35px 0px 0px 0px;
-        right: 0px;
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        background-color: transparent;
-        border: 1px solid white;
-        padding: 5px;
-        cursor: pointer;
-    }
-
-    .tec2023__videoYTModal__content__close:hover {
-        color: #000;
-        background-color: white;
-        text-decoration: none;
-    }
-
-    .tec2023__videoYTModal__content__iframe-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 56.25%;
-    }
-
-    .tec2023__videoYTModal__content__iframe-container iframe {
-        border: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
-
-<div id="tec2023__videoYTBannerEmpresasModal" class="tec2023__videoYTModal">
-    <div class="tec2023__videoYTModal__content">
-        <button class="tec2023__videoYTModal__content__close">X CERRAR</button>
-        <div class="tec2023__videoYTModal__content__iframe-container">
-            <div id='ytplayer'></div>
-        </div>
-    </div>
-</div>
-
-<script>
-
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('ytplayer', {
-            height: '100%',
-            width: '100%',
-            videoId: 'ZzkgsmNxLz4',
-            playerVars: {
-                'autoplay': 0,
-                'controls': 1
-            },
-            events: {
-                'onReady': onPlayerReady,
-            }
-        });
-    }
-
-    function onPlayerReady(event) {
-        var tec2023__videoYTBannerEmpresasModal = document.getElementById('tec2023__videoYTBannerEmpresasModal');
-        var playVideoBtn = document.getElementById('playVideoBtn');
-        var closeBtn = document.querySelector('.tec2023__videoYTModal__content__close');
-
-        playVideoBtn.onclick = function () {
-            tec2023__videoYTBannerEmpresasModal.style.display = "flex";
-            player.playVideo();
-        }
-
-        closeBtn.onclick = function () {
-            tec2023__videoYTBannerEmpresasModal.style.display = "none";
-            player.stopVideo();
-        }
-
-        window.onclick = function (event) {
-            if (event.target == tec2023__videoYTBannerEmpresasModal) {
-                tec2023__videoYTBannerEmpresasModal.style.display = "none";
-                player.stopVideo();
-            }
-        }
-    }
-</script>
-
-<!-- END VIDEO BANNER -->
-
 <section class="tec2023__bannerSection">
     <div class="tec2023-bannerSectionBackground">
         <div class="tec2023-bannerSectionBackgroundPlay">
             <a class="tec2023-bTC-sC-playVideoBtn" id="playVideoBtn">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="tec2023__loader"></div>
+                <svg class="displayNone" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z"
                         fill="#00534C" />
@@ -862,14 +845,14 @@ START - BANNER - SECTION
                     Certifica y fortalece las habilidades de tus colaboradores
                 </h1>
                 <!-- Button -->
-                <a href="http://" class="tec2023-bannerSectionButton"> Me interesa </a>
+                <a href="#empresas-formulario" class="tec2023-bannerSectionButton"> Me interesa </a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- ==============================
-    START - STATISTICS - SECTION
+START - STATISTICS - SECTION
 ================================= -->
 
 <section class="tec2023__statisticsSection">
@@ -878,7 +861,7 @@ START - BANNER - SECTION
             <div class="tec2023-statistics-item">
                 <h2 class="tec2023-s-i-quantity">
                     +
-                    <span class="amountCounter" data-total="300">
+                    <span class="amountCounter" data-total="300" data-increment="25">
                         <!-- Amount -->
                         0
                     </span>
@@ -891,7 +874,7 @@ START - BANNER - SECTION
             <div class="tec2023-statistics-item">
                 <h2 class="tec2023-s-i-quantity">
                     +
-                    <span class="amountCounter" data-total="1000">
+                    <span class="amountCounter" data-total="1000" data-increment="10">
                         <!-- Amount -->
                         0
                     </span>
@@ -931,8 +914,57 @@ START - BANNER - SECTION
     </div>
 </section>
 
+<script>
+
+    function runCounterAnimation() {
+        // Seleccionar el elemento con la clase "tec2023-statistics"
+        const statisticsContainer = document.querySelector('.tec2023-statistics');
+
+        // Seleccionar todos los elementos con la clase "amountCounter"
+        const amountCounter = document.querySelectorAll('.amountCounter');
+
+        // Crear un observador utilizando la API Intersection Observer
+        // La función anónima se ejecuta cuando se observa una entrada
+        const observer = new IntersectionObserver(entries => {
+            // Recorrer las entradas recibidas
+            entries.forEach(entry => {
+                // Verificar si el elemento está visible en el viewport
+                if (entry.intersectionRatio > 0) {
+                    // Iterar sobre los elementos con la clase "digitalSkillingPreparateContador"
+                    amountCounter.forEach(element => {
+                        // Configurar un intervalo que se ejecuta cada 10 ms
+                        setInterval(function () {
+                            // Obtener el contador actual y el valor final del contador desde el atributo "data-total"
+                            let contador = parseInt(element.innerText);
+                            let finalizarContador = parseInt(element.dataset.total);
+                            let increment = parseInt(element.dataset.increment ? element.dataset.increment : '1');
+
+                            // Incrementar el contador si no se ha alcanzado el valor final
+                            if (contador <= finalizarContador) {
+                                element.innerText = contador + increment;
+                            }
+
+                            if (element.innerText >= finalizarContador) {
+                                element.innerText = finalizarContador;
+                            }
+                        }, 10);
+                    });
+                    // Dejar de observar el elemento una vez que se haya animado
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        // Observar el elemento "statisticsContainer" para activar la animación
+        observer.observe(statisticsContainer);
+    }
+
+    runCounterAnimation();
+
+</script>
+
 <!-- ==============================
-    START - BUSINESS SUCCESS - SECTION
+START - BUSINESS SUCCESS - SECTION
 ================================= -->
 
 <section class="tec2023__businessSuccessSection">
@@ -1005,20 +1037,20 @@ START - BANNER - SECTION
             </div>
 
             <!-- Block - Button Right -->
-            <div class="tec2023-container-button">
+            <!-- <div class="tec2023-container-button">
                 <div class="tec2023-button-right">
                     <a href="" class="button">
-                        <!-- Text -->
+                        !-- Text --
                         Descarga aqu&iacute;
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
 
 <!-- ==============================
-    START - OFFER SECTION
+START - OFFER SECTION
 ================================= -->
 
 <section class="tec2023__offerSection">
@@ -1039,36 +1071,297 @@ START - BANNER - SECTION
                 </p>
             </div>
 
-            <div class="tec2023-offer-container-banners">
-                <div class="tec2023-offer-banner">
-                    <h1>Prepa Go</h1>
-                    <p>
-                        Un programa flexible corto, avalado por CENEVAL, donde todos los
-                        colaboradores podrán aprender a su ritmo para certificarse y
-                        acreditar sus estudios de nivel de bachillerato (Educación Media
-                        Superior).
-                    </p>
-                </div>
+            <!-- ==============================
+        START - TEC2023 SLIDER CARDS SECTION
+        ================================= -->
 
-                <div class="tec2023-offer-banner">
-                    <h1>Profesional Asociado</h1>
+            <!-- STYLES -->
+            <style>
+                /* MOBILE FIRST METHOD */
+
+                .tec2023__slider-cards-2 {
+                    display: flex;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -o-flex;
+                    display: -ms-flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    overflow-x: scroll;
+                    scroll-snap-type: x mandatory;
+                    margin: 0 0;
+                    padding: 0 0 24px 0;
+                }
+
+                .tec2023__slider-cards-2 .item {
+                    border-radius: 5px;
+                    padding: 10px;
+                    border: 2px solid #00534C;
+                    color: white;
+                    background: #00534C;
+                    scroll-snap-align: start;
+                    flex: 0 0 100%;
+                    margin: 0 12px;
+                }
+
+                .tec2023__slider-cards-2 .item:last-child {
+                    margin: 0 0 0 12px;
+                }
+
+                .tec2023__slider-cards-2 .item:hover {
+                    background-color: #26D07C;
+                    border-color: #26D07C;
+                    color: #00534C;
+                    text-decoration: none;
+                }
+
+                .tec2023__slider-cards-2 .item:hover h5 {
+                    color: #00534C;
+                }
+
+                .tec2023__slider-cards-2 .item h5 {
+                    text-align: left;
+                    text-transform: initial;
+                    font-size: 16px;
+                    color: #26D07C;
+                }
+
+                .tec2023__slider-cards-2 .item p {
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+
+                .tec2023__slider-cards-2__overflow-arrows {
+                    display: block;
+                    padding-bottom: 20px;
+                    float: right;
+                }
+
+                .tec2023__slider-cards-2__overflow-arrows button {
+                    border: 0px solid transparent;
+                    background: transparent;
+                }
+
+                .tec2023__slider-cards-2__overflow-arrows button:focus {
+                    outline: 0px;
+                }
+
+
+                /* Custom, iPhone Retina - More than 320px */
+                @media only screen and (min-width : 320px) {
+
+                    .tec2023__slider-cards-2 .item h5 {
+                        font-size: 18px;
+                    }
+
+                    .tec2023__slider-cards-2 .item p {
+                        font-size: 14px;
+                    }
+                }
+
+                /* Extra Small Devices, Phones - More than 480px */
+                @media only screen and (min-width : 480px) {
+                    .tec2023__slider-cards-2 .item h5 {
+                        font-size: 20px;
+                    }
+                }
+
+                /* Small Devices, Tablets - More than 768px */
+                @media only screen and (min-width : 768px) {
+                    .tec2023__slider-cards-2 .item p {
+                        font-size: 16px;
+                    }
+                }
+
+                /* Medium Devices, Desktops - More than 992px */
+                @media only screen and (min-width : 992px) {
+
+                    .tec2023__slider-cards-2 {
+                        overflow: hidden;
+                    }
+
+                    .tec2023__slider-cards-2 .item {
+                        border-radius: 5px;
+                        padding: 24px;
+                        border: 2px solid #00534C;
+                        color: black;
+                        background: white;
+                        scroll-snap-align: start;
+                        flex: 0 0 calc(50% - 12px);
+                    }
+
+                    .tec2023__slider-cards-2 .item:hover {
+                        background-color: #00534C;
+                        border-color: #00534C;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    .tec2023__slider-cards-2 .item:hover h5 {
+                        color: #26D07C;
+                    }
+
+                    .tec2023__slider-cards-2 .item h5 {
+                        font-size: 18px;
+                        color: #00534C;
+                    }
+
+                    .tec2023__slider-cards-2 .item p {
+                        font-size: 14px;
+                    }
+                }
+
+                /* Large Devices, Wide Screens - More than 1200px */
+                @media only screen and (min-width : 1200px) {
+                    .tec2023__slider-cards-2 .item h5 {
+                        font-size: 20px;
+                    }
+                }
+            </style>
+
+            <!-- HTML -->
+            <!-- cards -->
+            <div class="tec2023__slider-cards-2">
+                <!-- item card 1 -->
+                <a href="#" class="item" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <!-- title -->
+                        Prepa Go
+                    </h5>
                     <p>
-                        Carreras cortas de dos años de duración, con certificados enfocados
-                        en el desarrollo de competencias para la empleabilidad.
+                        <!-- description -->
+                        Un programa flexible corto, avalado por CENEVAL, donde todos los colaboradores podr&aacute;n
+                        aprender a su ritmo para certificarse y acreditar sus estudios de nivel de bachillerato
+                        (Educaci&oacute;n Media Superior).
                     </p>
-                </div>
+                </a>
+                <!-- item card 2 -->
+                <a href="#" class="item" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <!-- title -->
+                        Profesional Asociado
+                    </h5>
+                    <p>
+                        <!-- description -->
+                        Carreras cortas con certificados enfocados en el desarrollo de competencias.
+                    </p>
+                </a>
+                <!-- item card 3 -->
+                <a href="#" class="item" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <!-- title -->
+                        Carreras Profesionales
+                    </h5>
+                    <p>
+                        <!-- description -->
+                        Personaliza parte de tu plan de estudios y obt&eacute;n certificados en competencias para
+                        anticipar y asegurar tu inserci&oacute;n laboral de forma exitosa.
+                    </p>
+                </a>
+                <!-- item card 4 -->
+                <a href="#" class="item" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <!-- title -->
+                        Carreras Ejecutivas
+                    </h5>
+                    <p>
+                        <!-- description -->
+                        Dise&ntilde;a tu carrera para conseguir un perfil profesional &uacute;nico, para personas
+                        que trabajan y desean aumentar su valor laboral, gradu&aacute;ndose en 3 a&ntilde;os.
+                    </p>
+                </a>
+                <!-- item card 5 -->
+                <a href="#" class="item" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <!-- title -->
+                        Posgrados
+                    </h5>
+                    <p>
+                        <!-- description -->
+                        Desarrolla competencias para potenciar tu desarrollo profesional. Con caracter&iacute;sticas
+                        &uacute;nicas que se ajustan a tus necesidades.
+                    </p>
+                </a>
+                <!-- item card 6 -->
+                <a href="#" class="item" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <!-- title -->
+                        Skilling Center
+                    </h5>
+                    <p>
+                        <!-- description -->
+                        Programas dise&ntilde;ados para personas que est&aacute;n dispuestas a Adquirir, Actualizar
+                        y Aumentar sus competencias por el deseo, la necesidad y/o el amor por el aprendizaje
+                        convirti&eacute;ndose en aprendedores para toda la vida.
+                    </p>
+                </a>
+                <!-- item card 7 -->
+                <a href="#" class="item" target="_blank">
+                    <h5 class="font-weight-bold">
+                        <!-- title -->
+                        Instituto de Ciencias del Bienestar Integral
+                    </h5>
+                    <p>
+                        <!-- description -->
+                        Programas para una vida plena, proposici&oacute;n de pr&aacute;cticas positivas para la
+                        promoci&oacute;n de la felicidad.
+                    </p>
+                </a>
             </div>
 
-            <div class="tec2023-offer-banner-controller">
-                <div>Anterior</div>
-                <div>Siguiente</div>
+            <!-- arrows -->
+            <div class="tec2023__slider-cards-2__overflow-arrows">
+                <button class="btnLeft">
+                    <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.939335 10.9393C0.353548 11.5251 0.353548 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807609 11.0711 0.807609 10.4853 1.3934L0.939335 10.9393ZM30.2353 10.5L1.99999 10.5L1.99999 13.5L30.2353 13.5L30.2353 10.5Z"
+                            fill="#26D07C" />
+                    </svg>
+                </button>
+                <button class="btnRight">
+                    <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.0604 13.0607C30.6462 12.4749 30.6462 11.5251 30.0604 10.9393L20.5145 1.3934C19.9287 0.807611 18.9789 0.807611 18.3932 1.3934C17.8074 1.97919 17.8074 2.92893 18.3932 3.51472L26.8784 12L18.3932 20.4853C17.8074 21.0711 17.8074 22.0208 18.3932 22.6066C18.9789 23.1924 19.9287 23.1924 20.5145 22.6066L30.0604 13.0607ZM0.764465 13.5H28.9998V10.5H0.764465V13.5Z"
+                            fill="#26D07C" />
+                    </svg>
+                </button>
             </div>
+
+            <!-- SCRIPTS -->
+            <script>
+
+                // Get the reference to the container element that holds the cards
+                const cardsContainer = document.querySelector('.tec2023__slider-cards-2');
+
+                // Get the reference to the left scroll button
+                const scrollLeftButton = document.querySelector('.tec2023__slider-cards-2__overflow-arrows .btnLeft');
+
+                // Get the reference to the right scroll button
+                const scrollRightButton = document.querySelector('.tec2023__slider-cards-2__overflow-arrows .btnRight');
+
+                // Add a click event listener to the left scroll button
+                scrollLeftButton.addEventListener('click', function () {
+                    // Scroll the cards container towards the left by 100 pixels with smooth scrolling behavior
+                    cardsContainer.scrollBy({ left: -100, behavior: 'smooth' });
+                });
+
+                // Add a click event listener to the right scroll button
+                scrollRightButton.addEventListener('click', function () {
+                    // Scroll the cards container towards the right by 100 pixels with smooth scrolling behavior
+                    cardsContainer.scrollBy({ left: cardsContainer.scrollLeft + 100, behavior: 'smooth' });
+                });
+
+            </script>
+
+            <!-- ==============================
+        END - TEC2023 SLIDER CARDS SECTION
+        ================================= -->
         </div>
     </div>
 </section>
 
 <!-- ==============================
-    START - BENEFITS SECTION
+START - BENEFITS SECTION
 ================================= -->
 
 <section class="tec2023__benefitsSection">
@@ -1088,59 +1381,228 @@ START - BANNER - SECTION
                 </p>
             </div>
 
+            <!-- ==============================
+        START - TEC2023 CARDS 
+        ================================= -->
+
+            <!-- STYLES -->
+            <!-- styles are in the top of the page -->
+
+            <!-- HTML -->
+            <!-- cards -->
             <div class="tec2023-benefits-items-container">
                 <div class="tec2023-benefits-item">
-                    <h2>Empresas</h2>
-                    <p>
-                        Mayor retorno a la inversión en la capacitación. <br />
-                        Alto impacto en los indicadores. <br />
-                        Programas diseñados para adultos que trabajan. <br />
-                        Método de acompañamiento para asegurar el éxito de la capacitación.
-                        <br />
-                        Aumento del compromiso en los colaboradores. <br />
-                    </p>
-                    <span class="tec2023-benefits-item-span">-</span>
+                    <div class="tec2023__benefits__item__header">
+                        <h5>
+                            <!-- title -->
+                            Empresas
+                        </h5>
+                        <span class="tec2023__icon" data-id="CDP2">
+                            -
+                        </span>
+                    </div>
+                    <div class="tec2023__benefits__item__body" id="CDP2">
+                        <!-- description -->
+                        <p>
+                            Mayor retorno a la inversi&oacute;n en la
+                            capacitaci&oacute;n
+                        </p>
+                        <p>
+                            Alto impacto en los indicadores
+                        </p>
+                        <p>
+                            Programas dise&ntilde;ados para adultos que
+                            trabajan
+                        </p>
+                        <p>
+                            M&eacute;todo de acompa&ntilde;amiento para asegurar el
+                            &eacute;xito de la&nbsp; capacitaci&oacute;n
+                        </p>
+                        <p>
+                            Aumento del compromiso en los colaboradores
+                        </p>
+                    </div>
                 </div>
 
                 <div class="tec2023-benefits-item">
-                    <h2>Empresas</h2>
-                    <p class="displayNone">
-                        Mayor retorno a la inversión en la capacitación. <br />
-                        Alto impacto en los indicadores. <br />
-                        Programas diseñados para adultos que trabajan. <br />
-                        Método de acompañamiento para asegurar el éxito de la capacitación.
-                        <br />
-                        Aumento del compromiso en los colaboradores. <br />
-                    </p>
-                    <span class="tec2023-benefits-item-span">+</span>
+                    <div class="tec2023__benefits__item__header">
+                        <h5>
+                            <!-- title -->
+                            Colaborador
+                        </h5>
+                        <span class="tec2023__icon" data-id="CDP1">
+                            +
+                        </span>
+                    </div>
+                    <div class="tec2023__benefits__item__body displayNone" id="CDP1">
+                        <!-- description -->
+                        <p>
+                            Crecimiento y desarrollo profesional
+                        </p>
+                        <p>
+                            Desarrollo de competencias alineadas a los objetivos estrat&eacute;gicos
+                        </p>
+                        <p>
+                            Ingreso a una comunidad acad&eacute;mica y educativa que lo apoyar&aacute; en su
+                            formaci&oacute;n para toda la vida
+                        </p>
+                        <p>
+                            Contribuci&oacute;n en su autorrealizaci&oacute;n y metas personales
+                        </p>
+                        <p>
+                            Formaci&oacute;n centrada en el prop&oacute;sito y bienestar del colaborador
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <!-- SCRIPT -->
+            <script>
+                function startBenefitsCards() {
+                    let btnCards = document.querySelectorAll('.tec2023__icon');
+
+                    btnCards.forEach(element => {
+                        element.addEventListener('click', function (e) {
+                            let idCard = this.getAttribute('data-id');
+
+                            let bodyCard = document.querySelector(`#${idCard}`);
+
+                            if (bodyCard.classList.contains('displayNone')) {
+                                bodyCard.classList.remove('displayNone');
+                                this.innerText = '-';
+                            } else {
+                                bodyCard.classList.add('displayNone');
+                                this.innerText = '+';
+                            }
+
+
+                        })
+                    })
+                }
+
+                startBenefitsCards()
+            </script>
+
+            <!-- ==============================
+        START - TEC2023 CARDS 
+        ================================= -->
         </div>
     </div>
 </section>
 
 <!-- ==============================
-    START - BEPART SECTION
+START - BEPART SECTION
 ================================= -->
 
-<section class="tec2023__bepartSection">
-    <!-- Block - Heading 1 -->
+<section class="tec2023__bepartSection" id="empresas-formulario">
     <div class="container">
         <div class="tec2023-tec2023__bepartSection-container">
             <div class="tec2023-tec2023__bepartSection-item">
                 <h1>Sé parte de las empresas más competitivas del futuro.</h1>
             </div>
-            <div class="tec2023-tec2023__bepartSection-item-2">Formulario</div>
+            <div class="tec2023-tec2023__bepartSection-item-2">
+                <!-- ==============================
+            START - HUBSPOT FORM
+            ================================= -->
+
+                <!-- STYLES -->
+                <style>
+                    .hs-form-field {
+                        padding: 0 0 10px 0;
+                    }
+
+                    .hs-form-field .hs-input {
+                        background: white !important;
+                        border: 1px solid #ccc !important;
+                        color: rgba(0, 0, 0, 0.3);
+                    }
+
+                    .hs-button {
+                        width: 100%;
+                        /* max-width: 200px; */
+                        height: 40px;
+                        /* border-radius: 13px; */
+                        display: block;
+                        margin: 20px auto 0;
+                        background: #74DEAA;
+                        border: 1px solid #74DEAA;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+
+                    /* Estilo base para todos los inputs de tipo time */
+                    input[type="time"] {
+                        /* Ajusta el tamaño y el espaciado según sea necesario */
+                        width: 150px;
+                        padding: 8px;
+                        font-size: 16px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+
+                    /* Cambia el color del borde y el fondo cuando el input está enfocado */
+                    input[type="time"]:focus {
+                        border-color: #3498db;
+                        outline: none;
+                    }
+
+                    /* Estilo para la flecha del input time (solo funciona en algunos navegadores) */
+                    input[type="time"]::-webkit-calendar-picker-indicator {
+                        /* Cambia el color de la flecha según tus preferencias */
+                        filter: invert(25%);
+                    }
+
+                    /* Estilo para el texto en el input time (hora y minutos) */
+                    input[type="time"]::before {
+                        content: 'Hora de posible contacto: ';
+                        /* Puedes personalizar este texto según tus necesidades */
+                    }
+                </style>
+
+                <!-- SCRIPTS -->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+
+                    function loadFormEmpresas() {
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "2429099",
+                            formId: "e1c7ad56-4b3f-44a6-bdcc-0d8bf0424b9d"
+                        });
+                        const form_id = [
+                            'e1c7ad56-4b3f-44a6-bdcc-0d8bf0424b9d',
+                        ];
+                        window.addEventListener('message', (event) => {
+                            if (
+                                event.data.type === 'hsFormCallback' &&
+                                event.data.eventName === 'onFormReady' &&
+                                form_id.includes(event.data.id)
+                            ) {
+                                document.querySelector(`.hs-input[name="hora_de_posible_contacto_empresas"]`).type = 'time';
+                            }
+                        });
+
+                    }
+
+                    loadFormEmpresas();
+
+                </script>
+
+                <!-- ==============================
+            END - 
+            ================================= -->
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ==============================
-    START - FUTURE SECTION
+START - FUTURE SECTION
 ================================= -->
 
-<section class="tec2023__futureSection">
-    <!-- Block - Heading 1 -->
+<!-- <section class="tec2023__futureSection">
     <div class="tec2023-tec2023__futureSection-container">
         <div class="container">
             <div class="tec2023-tec2023__futureSection-item">
@@ -1166,4 +1628,52 @@ START - BANNER - SECTION
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
+<!-- ==============================
+START - MODAL VIDEO SECTION
+================================= -->
+
+<div id="tec2023_videoYTBannerEmpresasModal" class="tec2023__videoYTModal">
+    <div class="tec2023_videoYTModal_content">
+        <button class="tec2023_videoYTModalcontent_close">X CERRAR</button>
+        <div class="tec2023_videoYTModalcontent_iframe-container">
+            <iframe id="ytplayerEmpresas" width="560" height="315" src="" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    document.querySelector('.tec2023__loader').classList.add('displayNone');
+    document.querySelector('svg.displayNone').classList.remove('displayNone');
+
+    let url = 'https://www.youtube.com/embed/ZzkgsmNxLz4';
+
+    var modal = document.getElementById(
+        "tec2023_videoYTBannerEmpresasModal"
+    );
+    var playVideoBtn = document.getElementById("playVideoBtn");
+    var closeBtn = document.querySelector(".tec2023_videoYTModalcontent_close");
+    let player = document.getElementById("ytplayerEmpresas");
+
+    playVideoBtn.onclick = function () {
+        modal.style.display = "flex";
+        player.src = url + '?autoplay=true';
+    };
+
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+        player.src = '';
+    };
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            player.src = '';
+        }
+    };
+</script>
