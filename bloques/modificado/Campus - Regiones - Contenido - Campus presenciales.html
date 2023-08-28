@@ -1,14 +1,14 @@
-<!-- IN BLOCK - Campus - Regiones - Contenido / Campus presenciales -->
-
 <style>
-   .bodylabs3d{
+   .bodylabs3d {
       display: none;
    }
-   .bodylabs3d.visible-labs{
-      display: block!important;
+
+   .bodylabs3d.visible-labs {
+      display: block !important;
       position: relative;
       z-index: 3;
    }
+
    .menu-content {
       display: flex;
       justify-content: center;
@@ -371,11 +371,13 @@
                                        <div class="subtitle">
                                           <strong>
                                              <i class="llavesTitle">
-                                                En este estado aún no existen campus, te invitamos a visitar otros campus cercanos a tu estado y aprovechar todo lo que Tecmilenio te ofrece
+                                                En este estado aún no existen campus, te invitamos a visitar otros
+                                                campus cercanos a tu estado y aprovechar todo lo que Tecmilenio te
+                                                ofrece
                                              </i>
                                           </strong>
                                           <p style="display: none!important;">
-                                             Hola 
+                                             Hola
                                           </p>
                                        </div>
                                     </div>
@@ -387,7 +389,7 @@
                            {{_bodyAccordionContents}}
                         </div>
 
-                        <div class="bodylabs3d" id="laboratoriosvirtuales" >
+                        <div class="bodylabs3d" id="laboratoriosvirtuales">
                            <div class="tarjetas-laboratorios">
                               <div class="menu-content">
                                  <div class="item-content">
@@ -421,7 +423,8 @@
                                        aplicaciones multitarea.
                                     </p>
                                     <a id="manu-see">Ver más</a>
-                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-manufactura">Ver Modelo 3D</a>
+                                    <a class="button-model"
+                                       href="https://tecmilenio.mx/es/laboratorio-de-manufactura">Ver Modelo 3D</a>
                                  </div>
                                  <div class="item-content">
                                     <img
@@ -450,7 +453,8 @@
                                        innovadores conceptos culinarios.
                                     </p>
                                     <a id="gast-see">Ver más</a>
-                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-gastronomia">Ver Modelo 3D</a>
+                                    <a class="button-model"
+                                       href="https://tecmilenio.mx/es/laboratorio-de-gastronomia">Ver Modelo 3D</a>
                                  </div>
                                  <div class="item-content">
                                     <img
@@ -505,7 +509,8 @@
                                        equipos.
                                     </p>
                                     <a id="elec-see">Ver más</a>
-                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-electronica">Ver Modelo 3D</a>
+                                    <a class="button-model"
+                                       href="https://tecmilenio.mx/es/laboratorio-de-electronica">Ver Modelo 3D</a>
                                  </div>
                                  <div class="item-content">
                                     <img
@@ -535,7 +540,8 @@
                                        justicia.
                                     </p>
                                     <a id="juic-see">Ver más</a>
-                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-juicios">Ver Modelo 3D</a>
+                                    <a class="button-model" href="https://tecmilenio.mx/es/laboratorio-de-juicios">Ver
+                                       Modelo 3D</a>
                                  </div>
                               </div>
                            </div>
@@ -550,77 +556,71 @@
    </div>
 </div>
 
-<!-- IN TECMILENIO THEME SETTINGS - Footer Scripts -->
-
-<!-- START - Campus - Regiones - Contenido / Campus presenciales -->
-
 <script>
-   const elements = ["manu", "gast", "cont", "juic", "elec"];
-   const seeMoreText = "Ver más";
-   const seeLessText = "Ver menos";
+   document.addEventListener('DOMContentLoaded', function () {
+      const elements = ["manu", "gast", "cont", "juic", "elec"];
+      const seeMoreText = "Ver más";
+      const seeLessText = "Ver menos";
 
-   elements.map((element) => {
-      const textElement = document.getElementById(`${element}-see`);
-      textElement.addEventListener("click", () => {
-         const isMore = textElement.textContent.normalize() === seeMoreText.normalize();
-         textElement.textContent = textElement.textContent === "Ver menos" ? seeMoreText : seeLessText;
-         changeClass(element, isMore);
+      elements.forEach(element => {
+         const textElement = document.getElementById(`${element}-see`);
+         textElement.addEventListener("click", function () {
+            const isMore = textElement.textContent.normalize() === seeMoreText.normalize();
+            textElement.textContent = textElement.textContent === "Ver menos" ? seeMoreText : seeLessText;
+            changeClass(element, isMore);
+         });
       });
-   });
 
-   const changeClass = (element, isMore) => {
-      const text = document.getElementById(`${element}-content`);
-      if (!text) return;
-      text.className = isMore ? "max-item-content" : "min-item-content";
-   };   
-
-</script>
-
-<script>
-
-   window.addEventListener('load', function(){
-      // JQUERY
-      const btnLabs = $('#btnlaboratorios3d .btnol');
-      
-      if ( window.location.href.includes('campus#laboratoriosvirtuales') ){
-         $('.bodyAccordion').hide();
-         $('.onlyViewInAll ').css('opacity','0');
-         $('.showTab .itemContains-title').hide();
-         $('.bodylabs3d').addClass('visible-labs');
-
-         $('#btnlaboratorios3d .card-container').addClass('active');
-         $('#btnlaboratorios3d .card-container .card').addClass('active');
-
-         $('.overlapTabsItems li').removeClass('active');
-         $('.overlapTabsItems li .card-container').removeClass('active');
+      function changeClass(element, isMore) {
+         const text = document.getElementById(`${element}-content`);
+         if (!text) return;
+         text.className = isMore ? "max-item-content" : "min-item-content";
       }
 
-      // Click a labs
-      btnLabs.on('click', function(){
-         $('.bodyAccordion').hide();
-         $('.onlyViewInAll ').css('opacity','0');
-         $('.showTab .itemContains-title').hide();
-         $('.bodylabs3d').addClass('visible-labs');
+      window.addEventListener('load', function () {
+         // JQUERY
+         const btnLabs = document.querySelectorAll('#btnlaboratorios3d .btnol');
 
-         $('#btnlaboratorios3d .card-container').addClass('active');
-         $('#btnlaboratorios3d .card-container .card').addClass('active');
+         if (window.location.href.includes('campus#laboratoriosvirtuales')) {
+            document.querySelectorAll('.bodyAccordion').forEach(element => element.style.display = 'none');
+            document.querySelectorAll('.onlyViewInAll ').forEach(element => element.style.opacity = '0');
+            document.querySelectorAll('.showTab .itemContains-title').forEach(element => element.style.display = 'none');
+            document.querySelectorAll('.bodylabs3d').forEach(element => element.classList.add('visible-labs'));
 
-         $('.overlapTabsItems li').removeClass('active');
-         $('.overlapTabsItems li .card-container').removeClass('active');
+            document.querySelectorAll('#btnlaboratorios3d .card-container').forEach(element => element.classList.add('active'));
+            document.querySelectorAll('#btnlaboratorios3d .card-container .card').forEach(element => element.classList.add('active'));
+
+            document.querySelectorAll('.overlapTabsItems li').forEach(element => element.classList.remove('active'));
+            document.querySelectorAll('.overlapTabsItems li .card-container').forEach(element => element.classList.remove('active'));
+         }
+
+         // Click en laboratorios
+         btnLabs.forEach(btnLab => {
+            btnLab.addEventListener('click', function () {
+               document.querySelectorAll('.bodyAccordion').forEach(element => element.style.display = 'none');
+               document.querySelectorAll('.onlyViewInAll ').forEach(element => element.style.opacity = '0');
+               document.querySelectorAll('.showTab .itemContains-title').forEach(element => element.style.display = 'none');
+               document.querySelectorAll('.bodylabs3d').forEach(element => element.classList.add('visible-labs'));
+
+               document.querySelectorAll('#btnlaboratorios3d .card-container').forEach(element => element.classList.add('active'));
+               document.querySelectorAll('#btnlaboratorios3d .card-container .card').forEach(element => element.classList.add('active'));
+
+               document.querySelectorAll('.overlapTabsItems li').forEach(element => element.classList.remove('active'));
+               document.querySelectorAll('.overlapTabsItems li .card-container').forEach(element => element.classList.remove('active'));
+            });
+         });
+
+         // Click en otros lk
+         document.querySelectorAll('.overlapTabsItems li').forEach(liElemento => {
+            liElemento.addEventListener('click', function () {
+               document.querySelectorAll('.bodyAccordion').forEach(element => element.style.display = 'block');
+               document.querySelectorAll('.onlyViewInAll ').forEach(element => element.style.opacity = '1');
+               document.querySelectorAll('.showTab .itemContains-title').forEach(element => element.style.display = 'block');
+               document.querySelectorAll('.bodylabs3d').forEach(element => element.classList.remove('visible-labs'));
+               document.querySelectorAll('#btnlaboratorios3d .card-container').forEach(element => element.classList.remove('active'));
+               document.querySelectorAll('#btnlaboratorios3d .card-container .card').forEach(element => element.classList.remove('active'));
+            });
+         });
       });
-
-      // click a otros lk
-      $('.overlapTabsItems li').on('click', function(){
-         $('.bodyAccordion').show();
-         $('.onlyViewInAll ').css('opacity','1');
-         $('.showTab .itemContains-title').show();
-         $('.bodylabs3d').removeClass('visible-labs');
-         $('#btnlaboratorios3d .card-container').removeClass('active');
-         $('#btnlaboratorios3d .card-container .card').removeClass('active');
-      })
-
    });
-
 </script>
-
-<!-- END - Campus - Regiones - Contenido / Campus presenciales -->

@@ -154,10 +154,6 @@ $settings['skip_permissions_hardening'] = TRUE;
  */
 # $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy'];
 
-$settings['trusted_host_patterns'] = ['.*'];
-
-$settings['config_sync_directory'] = '../config/sync';
-
 $databases['default']['default'] = array(
   'database' => 'tecmilenio',
   'username' => 'root',
@@ -167,5 +163,6 @@ $databases['default']['default'] = array(
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
+$settings['config_sync_directory'] = '../config/sync';
+$settings['hash_salt'] = 'VhCj5EtDLSye3K-VrirIhubMPycEcZYCDptw00hNfOMuOADN_-cdoFenOKaO8AgTdpG_0hdGWg';
