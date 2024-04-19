@@ -7,9 +7,9 @@
     }
 </style>
 
-<section id="video-programas-tecmilenio-2024" class="tec24-one-video container">
+<section id="video-programas-tecmilenio-2024" class="container d-none">
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oawUvQO0d4k?si=TB6528ZYViKmFvxV&rel=0"
+        <iframe class="embed-responsive-item" src=""
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -18,7 +18,9 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        let currentPath = window.location.pathname;
+        const currentPath = window.location.pathname;
+        const section = document.querySelector('#video-programas-tecmilenio-2024');
+        const iframe = section.querySelector('iframe');
 
         // Lista de paginas y videos 
         // Aqui se debe agregar la url y el video correspondiente a la url.
@@ -65,17 +67,15 @@
             '/es/licenciatura-en-administracion-y-desarrollo-del-talento' : 'https://www.youtube.com/embed/saf_66mr0NQ?si=sVK_xt7xWAhShB1u',            
         };
 
-        let iframe = document.querySelector('#video-programas-tecmilenio-2024 iframe');
         if (videos[currentPath]) {
             iframe.src = videos[currentPath];
+            section.classList.remove('d-none');
         } else {
-            let embedDiv = iframe.closest('.embed-responsive');
+            const embedDiv = iframe.closest('.embed-responsive');
             if (embedDiv) {
-                let section = embedDiv.closest('section');
                 embedDiv.remove(); // Elimina el div padre del iframe
-
-                // Verifica si el section no tiene más contenido relevante y, de ser así, también lo elimina
-                if (section && section.children.length === 0) {
+                // Elimina el section si está vacío
+                if (!section.querySelector('*')) {
                     section.remove();
                 }
             }
