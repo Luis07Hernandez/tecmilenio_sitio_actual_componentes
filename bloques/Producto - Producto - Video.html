@@ -1,0 +1,34 @@
+<style>
+    /* Aplica estilos solo en pantallas de más de 992px */
+    @media (min-width: 992px) {
+        #video-programas-tecmilenio-2024 {
+            padding: 150px !important;
+        }
+    }
+</style>
+
+<section id="video-programas-tecmilenio-2024" class="tec24-one-video container">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oawUvQO0d4k?si=TB6528ZYViKmFvxV&rel=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let currentPath = window.location.pathname;
+
+        let videos = {
+            '/es/especialidad-en-innovacion': 'https://www.youtube.com/embed/yBhuFHpqITo?si=74-ywhrrd5apd7ox',
+            '/es/especialidad-en-finanzas': 'https://www.youtube.com/embed/qKS_v7PU_OU?si=tC6RrK4wRPI8FxcG',
+            '/es/especialidad-en-recursos-humanos': 'https://www.youtube.com/embed/WTxgN9_KM-g?si=boJbfSiJ4_9nnMf3',
+        };
+
+        let iframe = document.querySelector('#video-programas-tecmilenio-2024 iframe');
+        if (videos[currentPath]) {
+            iframe.src = videos[currentPath];
+        }
+    });
+</script>
