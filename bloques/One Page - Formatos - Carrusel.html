@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="//cdn2.hubspot.net/hubfs/2429099/website/newebsite/css/style.css" />
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Cairo");
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
+    </style>
+</head>
+
+<body>
+    <style>
+        /* ==============================
+                START DECLARE FONT FAMILIES
+            ============================== */       
+
+        .carouselOnePage h5 {
+            font-family: 'Cairo', Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0px;
+        }
+
+        .carouselOnePage p {
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+        /* ==============================
+                END DECLARE FONT FAMILIES
+            ============================== */
+
+        /* ==============================
+                    START - GENERAL STYLES
+            ============================== */
+        /* MOBILE FIRST METHOD */
+
+        .carouselOnePage {
+            width: 100%;
+        }
+
+        .carousel-inner {
+            align-items: center;
+        }
+
+        .carouselOnePage .imgCarouselOnePage {
+            margin: auto;
+            align-items: center;
+
+        }
+
+        .carouselOnePage .col-md-6 {
+            margin: auto !important;
+        }
+
+        .carouselOnePage .divCarouselOnePage {
+            background-color: #007864;
+            color: #fff !important;
+            margin: 6%;
+            height: 466px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .carouselOnePage .divCarouselOnePage h5,
+        .carouselOnePage .divCarouselOnePage p,
+        .carouselOnePage .divCarouselOnePage span {
+            color: #fff !important;
+        }
+
+        .carouselOnePage .divImgCarouselOnePage {
+            border-radius: 5px;
+            margin: 0 6% 0 5%;
+        }
+
+        .carouselOnePage .imgCarouselOnePage img {
+            width: 100%;
+            margin: auto;
+            align-items: center;
+        }
+
+        .carousel_desktop {
+            display: none !important;
+        }
+
+        .carousel_mobile {
+            display: block !important;
+        }
+
+        .carouselOnePage .carousel-indicators {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 15;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-left: 0;
+            margin-right: 15%;
+            margin-left: 15%;
+            list-style: none;
+            align-items: center;
+        }
+
+        .carouselOnePage .carousel-indicators li {
+            box-sizing: content-box;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 3px;
+            margin-left: 3px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #00A499;
+            background-clip: padding-box;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            opacity: .5;
+            transition: opacity .6s ease;
+
+        }
+
+        .carouselOnePage .carousel-indicators .active {
+            background-color: #00A499;
+            opacity: 1;
+            width: 16px;
+            height: 16px;
+        }
+
+        .carouselOnePage .carousel-control-next,
+        .carouselOnePage .carousel-control-prev {
+            opacity: 0.8 !important;
+        }
+
+        .carouselOnePage .row {
+            display: flex !important;
+        }
+
+        /* Custom, iPhone Retina - More than 320px */
+        @media only screen and (min-width : 320px) {
+
+            .carouselOnePage .carousel-control-next,
+            .carouselOnePage .carousel-control-prev {
+                top: -50% !important;
+                width: unset !important;
+            }
+
+            .carouselOnePage h5 {
+                font-size: 20px;
+                line-height: 32px;
+                padding-top: 20px;
+            }
+
+            .carouselOnePage p,
+            .carouselOnePage ul {
+                font-size: 14px;
+                line-height: 18px;
+                width: 100%;
+            }
+
+            .carouselOnePage p span {
+                font-weight: 700;
+            }
+        }
+
+        /* Extra Small Devices, Phones - More than 480px */
+        @media only screen and (min-width : 480px) {
+            .carouselOnePage h5 {
+                font-size: 22px;
+                padding-top: 20px;
+            }
+
+            .carouselOnePage p,
+            .carouselOnePage ul {
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%;
+            }
+
+            .carouselOnePage .carousel-control-next,
+            .carouselOnePage .carousel-control-prev {
+                padding: 2%;
+            }
+        }
+
+        /* Small Devices, Tablets - More than 768px  */
+        @media only screen and (min-width : 768px) {
+            .carouselOnePage h5 {
+                font-size: 22px;
+                padding-top: 20px;
+            }
+
+            .carouselOnePage p,
+            .carouselOnePage ul {
+                font-size: 14px;
+                line-height: 18px;
+                width: 100%;
+            }
+
+            .carouselOnePage .carousel-control-next,
+            .carouselOnePage .carousel-control-prev {
+                top: 0 !important;
+            }
+
+            .carousel_desktop {
+                display: block !important;
+            }
+
+            .carousel_mobile {
+                display: none !important;
+            }
+
+            .carouselOnePage .divCarouselOnePage {
+                padding: 10px 10px !important;
+                border-radius: 5px;
+                width: 300px;
+                margin: 10%;
+            }
+
+            .col-md-6 .divImgCarouselOnePage {
+                width: 100%;
+                margin: none !important;
+            }
+        }
+
+        @media only screen and (min-width : 992px) {
+            .carouselOnePage .divCarouselOnePage {
+                width: 400px;
+                height: 430px;
+            }
+
+            .col-md-6 .divImgCarouselOnePage {
+                width: 100%;
+            }
+
+            .carouselOnePage h5 {
+                font-size: 24px;
+                padding-top: 20px;
+            }
+
+            .carouselOnePage p,
+            .carouselOnePage ul {
+                font-size: 14px;
+                line-height: 18px;
+                width: 100%;
+            }
+
+
+        }
+
+        @media only screen and (min-width : 1200px) {
+            .carouselOnePage .divCarouselOnePage {
+                margin: auto !important;
+                width: 493px;
+                height: 435px;
+            }
+
+            .col-md-6 .divImgCarouselOnePage {
+                margin-left: -8% !important;
+                width: 600px;
+            }
+
+            .carouselOnePage p,
+            .carouselOnePage ul {
+                font-size: 18px;
+                line-height: 24px;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width : 1300px) {
+            .carouselOnePage .divCarouselOnePage {
+                margin: auto !important;
+                width: 493px;
+                height: 460px;
+            }
+
+            .col-md-6 .divImgCarouselOnePage {
+                margin-left: -10% !important;
+                width: 640px;
+            }
+        }
+
+        @media only screen and (min-width : 1400px) {
+            .carouselOnePage .divCarouselOnePage {
+                margin: auto !important;
+                width: 493px;
+                height: 515px;
+                margin-left: 1% !important;
+                padding: 10px 20px !important;
+            }
+
+            .col-md-6 .divImgCarouselOnePage {
+                margin-left: -15% !important;
+                width: 713px;
+            }
+        }
+
+
+
+
+        /* ==============================
+                    END - GENERAL STYLES
+            ============================== */
+    </style>
+
+    <div id="carouselOnePageIndicators" class="carousel slide carouselOnePage mt-3 mb-3" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="divCarouselOnePage">
+                                <h5>Presencial</h5>
+                                <p>Asiste a clases presenciales en tu campus Tecmilenio más cercano. Vive la experiencia
+                                    de
+                                    convivir con tus compañeros(as) y docentes en nuestras amplias y modernas
+                                    instalaciones.
+                                    <br><br>
+                                    <span>¿Por qué estudiar en ese formato?</span>
+                                <ul>
+                                    <li>Contarás con un espacio físico donde tendrás la posibilidad de tomar tus clases
+                                        de
+                                        manera presencial y convivir con tus compañeros(as) como ya se conoce
+                                        normalmente.
+                                    </li>
+                                    <li>Convivirás con el resto de las y los estudiantes y docentes, asistiendo al aula.
+                                        En
+                                        caso de que se complique tu traslado al campus, también tienes la opción de
+                                        tomar la
+                                        clase en vivo y de manera virtual, sin importar el lugar en el que te
+                                        encuentres.
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 imgCarouselOnePage">
+                            <div class="divImgCarouselOnePage">
+                                <img class="carousel_desktop"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Presencial.png"
+                                    alt="...">
+                                <img class="carousel_mobile"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Presencial_Mobile.png"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="divCarouselOnePage">
+                                <h5>Online</h5>
+                                <p>Gestiona tu aprendizaje según tus ritmos, tu agenda y tus necesidades, a través de
+                                    nuestra plataforma de aprendizaje automatizado. <br>Cuenta con el apoyo de
+                                    asesores(as) que te guiarán en los cursos y proyectos, además de talleres de
+                                    vivencia asincrónica, experiencias internacionales, certificaciones, OnDemand y
+                                    acompañamiento centralizado.
+                                    <br><br>
+                                    <span>¿Por qué estudiar en ese formato?</span>
+                                <ul>
+                                    <li>Contarás con flexibilidad de horarios y podrás estudiar en línea a tu propio
+                                        ritmo de vida.</li>
+                                    <li>Movilidad nacional e internacional.</li>
+                                    <li>Acompañamiento por tu asesor académico.</li>
+                                    <li>Acceso a los Espacios Connect.</li>
+                                    <li>Cursos diseñados para que el alumno tenga la mejor experiencia de aprendizaje
+                                        remota.</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 imgCarouselOnePage">
+                            <div class="divImgCarouselOnePage">
+                                <img class="carousel_desktop"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Online.png"
+                                    alt="...">
+                                <img class="carousel_mobile"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Online_Mobile.png"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="divCarouselOnePage">
+                                <h5>Autodirigido</h5>
+                                <p>Modelo de aprendizaje 100% flexible y a tu propio ritmo, que por medio de cursos
+                                    asincrónicos, tendrás la libertad de elegir cuándo acceder a nuestra plataforma de
+                                    aprendizaje 24/7.
+                                    <br><br>
+                                    <span>¿Por qué estudiar en ese formato?</span>
+                                <ul>
+                                    <li>Acceso al contenido en la plataforma.</li>
+                                    <li>Evaluador de proyectos.</li>
+                                    <li>Aprendizaje a tu ritmo.</li>
+                                    <li>Acompañamiento.</li>
+                                    <li>Calendarización de actividades.</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 imgCarouselOnePage">
+                            <div class="divImgCarouselOnePage">
+                                <img class="carousel_desktop"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Autodirigido.png"
+                                    alt="...">
+                                <img class="carousel_mobile"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Autodirigido_Mobile.png"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="divCarouselOnePage">
+                                <h5>Connect Hybrid</h5>
+                                <p>
+                                    ¿Te gusta tener opciones? Con “Formato Connect Hybrid" combinar la vida
+                                    universitaria en
+                                    campus con la comodidad de tu sofá, sin perderte de nada gracias a las clases
+                                    grabadas.
+                                    Además, cuentas con acompañamiento académico, y orientación en cada paso. Ideal para
+                                    quienes quieren asistir a clases presenciales y tener la flexibilidad del
+                                    aprendizaje en línea.
+                                    <br><br>
+                                    <span>¿Por qué estudiar en ese formato?</span><br>
+                                    Para aquellos que buscan una experiencia educativa híbrida, combinando la
+                                    experiencia de la
+                                    presencialidad con la comodidad del aprendizaje en línea.<br>
+                                    Personas que valoran la interacción personal pero también le gustar estar en casa.
+                                    Estudiantes
+                                    que decidieron emprender o trabajar, pero quieren continuar con sus estudios y tener
+                                    la flexibilidad
+                                    para trabajar sin perder el contacto con sus maestros y compañeros.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 imgCarouselOnePage">
+                            <div class="divImgCarouselOnePage">
+                                <img class="carousel_desktop"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectPresencial.png"
+                                    alt="...">
+                                <img class="carousel_mobile"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectPresencial_Mobile.png"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="divCarouselOnePage">
+                                <h5>Connect Online</h5>
+                                <p>Transforma cualquier lugar en un aula con “Connect Online”. Participa en clases en
+                                    vivo desde donde
+                                    estés, ya sea en pijama o en traje. ¿Te perdiste una clase? No hay problema, las
+                                    grabaciones están ahí
+                                    para ti. Además, nuestro equipo de acompañamiento estará disponible para resolver
+                                    tus dudas y guiarte
+                                    de manera constante. Ideal para quienes manejan agendas apretadas y buscan
+                                    flexibilidad en sus estudios.
+                                    <br><br>
+                                    <span>¿Por qué estudiar en ese formato?</span><br>
+                                    Para aquellas Personas que tienen un horario ajustado o no pueden ir a clases
+                                    presenciales y buscan flexibilidad.<br>
+                                    Personas que viajan mucho, que trabajan en horarios complicados. Quienes quieren
+                                    estudiar en Tecmilenio,
+                                    pero tienen un campus en su ciudad. Para aquellos que están súper cómodos con la
+                                    tecnología y prefieren
+                                    interactuar de forma online.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 imgCarouselOnePage">
+                            <div class="divImgCarouselOnePage">
+                                <img class="carousel_desktop"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectOnline.png"
+                                    alt="...">
+                                <img class="carousel_mobile"
+                                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectOnline_Mobile.png"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselOnePageIndicators" role="button" data-slide="prev">
+            <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Left.png"
+                alt="">
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselOnePageIndicators" role="button" data-slide="next">
+            <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Right.png"
+                alt="">
+            <span class="sr-only">Next</span>
+        </a>
+        <ol class="carousel-indicators">
+            <li data-target="#carouselOnePageIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselOnePageIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselOnePageIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselOnePageIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselOnePageIndicators" data-slide-to="4"></li>
+        </ol>
+    </div>
+    
+</body>
+
+</html>

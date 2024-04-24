@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+    <title>Accordion | One Page</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Cairo");
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
+    </style>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: unset !important;
+        }
+
+        .row {
+            display: flex !important;
+        }
+
+        .accordionTitleTop h5 {
+            font-family: 'Cairo', Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0px;
+            color: #007864;
+        }
+
+        .accordionTitleTop p {
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+        .accordion_desktop {
+            display: none !important;
+        }
+
+        .accordion_mobile {
+            display: block !important;
+        }
+
+        .mb-3 .col-md-5 {
+            position: relative;
+            order: 1 !important;
+        }
+
+        .col-md-5 .bg-light {
+            position: relative;
+        }
+
+        .overlay-container {
+            position: relative;
+        }
+
+        /* Estilo para el div superpuesto */
+        .col-md-5 .accordionOverlay {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            height: 52px;
+            background-color: #00A499;
+        }
+
+        .accordion .card {
+            border: unset !important;
+            border-radius: unset;
+            height: auto !important;
+        }
+
+        #headingTwo,
+        #headingThree,
+        #headingFour,
+        #headingFive {
+            background-color: #fff !important;
+        }
+
+        #headingTwo:focus,
+        #headingThree:focus,
+        #headingFour:focus,
+        #headingFive:focus,
+        #headingTwo:hover,
+        #headingThree:hover,
+        #headingFour:hover,
+        #headingFive:hover {
+            background-color: #fff !important;
+        }
+
+
+        .accordion .card-header {
+            background-color: #fff !important;
+            padding: unset !important;
+        }
+
+        .accordion>.card>.card-header {
+            margin-bottom: 1px !important;
+        }
+
+        .accordion .card-header h2 {
+            border-bottom: 1.4px solid #007864 !important;
+        }
+
+        .accordion-arrow {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .rotate-up {
+            transform: rotate(-180deg);
+        }
+
+        .accordion-title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .accordion-title-container span {
+            color: #007864 !important;
+            text-decoration: none !important;
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+
+        .accordion .card-body {
+            padding: 1rem 0 !important;
+        }
+
+        .accordion .card-body ul {
+            padding-inline-start: 0px !important;
+        }
+
+        .accordion .card-body li {
+            list-style: none;
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+        .accordion .card-body li span {
+            font-weight: 700;
+        }
+
+        .show {
+            display: block !important;
+            animation-name: unset !important;
+            animation-duration: 0s !important;
+            transform: unset !important;
+            opacity: 1 !important;
+        }
+
+        @media only screen and (min-width : 320px) {
+            .mb-3 .flex-md-column-reverse {
+                flex-direction: column-reverse;
+            }
+
+            .divAccordionOnePage {
+                width: 85%;
+                margin: 0 auto;
+                align-items: center;
+                -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+                padding: 20px;
+            }
+
+            .accordionTitleTop h5 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .accordionTitleTop p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .accordion-title-container span {
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            .accordion .card-body li {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        @media only screen and (min-width : 480px) {
+            .accordionTitleTop h5 {
+                font-size: 28px;
+                line-height: 32px;
+            }
+
+            .accordionTitleTop p {
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            .accordion-title-container span {
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .accordion .card-body li {
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+
+        @media only screen and (min-width : 768px) {
+            .mb-3 .flex-md-column-reverse {
+                flex-direction: unset !important;
+            }
+
+            .col-md-7,
+            .col-md-5 {
+                padding-right: unset !important;
+                padding-left: unset !important;
+            }
+
+            .col-md-7 {
+                display: flex;
+                flex-direction: column;
+                max-height: 100%;
+            }
+
+            .col-md-5 img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .row {
+                padding-left: 3rem !important;
+                padding-right: 3rem !important;
+                display: flex !important;
+            }
+
+            .divAccordionOnePage {
+                width: 100% !important;
+                height: 100% !important;
+                box-shadow: none !important;
+                padding: unset !important;
+                padding-top: 20px !important;
+                padding-bottom: unset !important;
+                padding-left: 10px !important;
+                margin: unset !important;
+                bottom: 0;
+            }
+
+            .divAccordionOnePage .accordionTitleTop h5 {
+                width: 80%;
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            .divAccordionOnePage .accordionTitleTop p {
+                width: 90%;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            .divAccordionOnePage .accordion {
+                -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+                box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+                padding: 20px;
+                width: 100%;
+                overflow: auto !important;
+                max-height: 100% !important;
+            }
+
+            .accordion-title-container span {
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            .accordion .card-body li {
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            .col-md-5 .accordionOverlay {
+                width: 20% !important;
+                height: 50%;
+                left: unset !important;
+                transform: unset !important;
+            }
+
+            .accordion_desktop {
+                display: block !important;
+            }
+
+            .accordion_mobile {
+                display: none !important;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .divAccordionOnePage .accordion {
+                padding: 30px !important;
+            }
+
+            .divAccordionOnePage .accordionTitleTop h5 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .divAccordionOnePage .accordionTitleTop p {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            .accordion-title-container span {
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .accordion .card-body li {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            .divAccordionOnePage .accordion {
+                padding: 50px !important;
+            }
+
+            .divAccordionOnePage .accordionTitleTop h5 {
+                font-size: 40px !important;
+                line-height: 48px;
+                width: 70%;
+            }
+
+            .divAccordionOnePage .accordionTitleTop p {
+                font-size: 20px !important;
+                line-height: 27px !important;
+            }
+
+            .accordion-title-container span {
+                font-size: 26px;
+                line-height: 30px;
+            }
+
+            .accordion .card-body li {
+                font-size: 20px !important;
+                line-height: 27px;
+            }
+        }
+    </style>
+    <div class="mb-3">
+        <div class="row flex-md-column-reverse">
+            <div class="col-md-7 order-md-1 d-flex flex-column">
+                <div class="divAccordionOnePage">
+                    <div class="accordionTitleTop">
+                        <h5>¿Qué puedes estudiar en este formato?</h5>
+                        <p><br><br><br></p>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <div class="accordion-title-container" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <span>Presencial</span>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                alt="Flecha Abajo" class="accordion-arrow">
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><span>NEGOCIOS</span></li>
+                                        <li>Licenciatura en Comercio Internacional</li>
+                                        <li>Licenciatura en Administración de Empresas</li>
+                                        <li>Licenciatura en Creación y Desarrollo de Empresas</li>
+                                        <li>Licenciatura en Administración y Finanzas</li>
+                                        <li>Licenciatura en Mercadotecnia</li><br>
+                                        <li><span>BIENESTAR Y SALUD</span></li>
+                                        <li>Licenciatura en Nutrición</li>
+                                        <li>Licenciatura en Psicología</li><br>
+                                        <li><span>INGENIERÍAS</span></li>
+                                        <li>Ingeniería Industrial</li>
+                                        <li>Ingeniería en Mecatrónica</li><br>
+                                        <li><span>TECNOLOGÍAS DE INFORMACIÓN</span></li>
+                                        <li>Ingeniería en Desarrollo de Software</li>
+                                        <li>Ingeniería en Sistemas de Computación Administrativa</li><br>
+                                        <li><span>INDUSTRIAS CREATIVAS Y HUMANIDADES</span></li>
+                                        <li>Licenciatura en Derecho</li>
+                                        <li>Licenciatura en Diseño Gráfico y Animación</li>
+                                        <li>Licenciatura en Gastronomía</li>
+                                        <li>Licenciatura en Administración Hotelera y Turística</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <div class="accordion-title-container" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span>Online</span>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+
+                                            <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                alt="Flecha Abajo" class="accordion-arrow">
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Licenciatura en Educación y Desarrollo</li>
+                                        <li>Maestría en Gestión de Tecnologías de la Información</li>
+                                        <li>Maestría en Educación</li>
+                                        <li>Especialidad en Recursos Humanos</li>
+                                        <li>Especialidad en Finanzas</li>
+                                        <li>Especialidad en Innovación</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <div class="accordion-title-container" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span>Autodirigido</span>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                alt="Flecha Abajo" class="accordion-arrow">
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Profesional Asociado en Administración de Negocios</li>
+                                        <li>Profesional Asociado en Desarrollo de Software</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <div class="accordion-title-container" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <span>Connect Hybrid</span>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                alt="Flecha Abajo" class="accordion-arrow">
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><span>Carreras Ejecutivas</span></li>
+                                        <li>Licenciatura en Administración</li>
+                                        <li>Licenciatura en Comercio y Negocios Internacionales</li>
+                                        <li>Licenciatura en Mercadotecnia y Publicidad</li>
+                                        <li>Ingeniería Industrial y de Sistemas</li>
+                                        <li>Ingeniería en Computación Administrativa</li>
+                                        <li>Licenciatura en Derecho</li>
+                                        <li>Licenciatura en Administración y Desarrollo del Talento</li>
+                                        <li>Licenciatura en Educación y Desarrollo</li>
+                                        <br>
+                                        <li><span>Maestrías</span></li>
+                                        <li>Maestría en Administración de Negocios Área Calidad y Productividad</li>
+                                        <li>Maestría en Administración de Negocios Área Finanzas</li>
+                                        <li>Maestría en Administración de Negocios Área Mercadotecnia</li>
+                                        <li>Maestría en Administración de Negocios Área Recursos Humanos</li>
+                                        <li>Maestría en Administración de Negocios Área Logística</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <div class="accordion-title-container" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <span>Connect Online</span>
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                alt="Flecha Abajo" class="accordion-arrow">
+                                        </button>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><span>Carreras Ejecutivas</span></li>
+                                        <li>Licenciatura en Administración</li>
+                                        <li>Licenciatura en Comercio y Negocios Internacionales</li>
+                                        <li>Licenciatura en Mercadotecnia y Publicidad</li>
+                                        <li>Ingeniería Industrial y de Sistemas</li>
+                                        <li>Ingeniería en Computación Administrativa</li>
+                                        <li>Licenciatura en Derecho</li>
+                                        <li>Licenciatura en Administración y Desarrollo del Talento</li>
+                                        <li>Licenciatura en Educación y Desarrollo</li>
+                                        <br>
+                                        <li><span>Maestrías</span></li>
+                                        <li>Maestría en Administración de Negocios Área Calidad y Productividad</li>
+                                        <li>Maestría en Administración de Negocios Área Finanzas</li>
+                                        <li>Maestría en Administración de Negocios Área Mercadotecnia</li>
+                                        <li>Maestría en Administración de Negocios Área Recursos Humanos</li>
+                                        <li>Maestría en Administración de Negocios Área Logística</li><br>
+                                        <li><span>Profesional Asociado</span></li>
+                                        <li>Profesional Asociado en Administración en Salud</li>
+                                        <li>Profesional Asociado en Desarrollo de Software</li>
+                                        <li>Profesional Asociado en Turismo</li>
+                                        <li>Profesional Asociado en Procesos Industriales</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-2">
+                <div class="bg-light position-relative overlay-container">
+                    <!-- Contenido de la columna 5, incluyendo la imagen -->
+                    <img class="accordion_desktop w-100"
+                        src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Collapse_Desktop.png"
+                        alt="">
+                    <img class="accordion_mobile w-100"
+                        src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Collapse_Mobile.png"
+                        alt="">
+                    <div class="accordionOverlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function toggleAccordion(container) {
+                var arrowImage = container.querySelector('.accordion-arrow');
+                arrowImage.classList.toggle('rotate-up');
+
+                var otherContainers = document.querySelectorAll('.accordion-title-container');
+                otherContainers.forEach(function (otherContainer) {
+                    if (otherContainer !== container) {
+                        var otherArrowImage = otherContainer.querySelector('.accordion-arrow');
+                        otherArrowImage.classList.remove('rotate-up');
+                    }
+                });
+
+                // Lógica específica del primer script
+                var card = container.closest('.card');
+                var siblingCards = card.parentElement.querySelectorAll('.card');
+                siblingCards.forEach(function (siblingCard) {
+                    if (siblingCard !== card) {
+                        var collapse = siblingCard.querySelector('.collapse');
+                        if (collapse.classList.contains('show')) {
+                            collapse.classList.remove('show');
+                        }
+                    }
+                });
+            }
+
+            var accordionTitleContainers = document.querySelectorAll('.accordion-title-container');
+            accordionTitleContainers.forEach(function (container) {
+                container.addEventListener('click', function () {
+                    toggleAccordion(container);
+                });
+            });
+
+            // Lógica específica del segundo script si es necesario
+
+            // Para obligar a que la card se contraiga
+            var collapseTriggers = document.querySelectorAll('[data-toggle="collapse"]');
+            collapseTriggers.forEach(function (trigger) {
+                trigger.addEventListener('click', function () {
+                    var card = trigger.closest('.card');
+                    var siblingCards = card.parentElement.querySelectorAll('.card');
+                    siblingCards.forEach(function (siblingCard) {
+                        if (siblingCard !== card) {
+                            var collapse = siblingCard.querySelector('.collapse');
+                            if (collapse.classList.contains('show')) {
+                                collapse.classList.remove('show');
+                            }
+                        }
+                    });
+                });
+            });
+        });
+
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var prevScreenWidth = window.innerWidth;
+            var accordionInitialized = false;
+
+            // Función para ajustar la altura del accordion
+            function ajustarAlturaAccordion() {
+                var screenWidth = window.innerWidth;
+
+                // Verificar si la pantalla es mayor o igual a 768px
+                if (screenWidth >= 768) {
+                    var divAccordionOnePage = document.querySelector('.divAccordionOnePage');
+                    var body = document.querySelector('body');
+                    var colMd5 = document.querySelector('.col-md-5');
+                    var imgColMd5 = colMd5.querySelector('img');
+                    var accordion = document.querySelector('.accordion');
+                    var accordionTitleTop = document.querySelector('.accordionTitleTop');
+                    var accordionTitle = accordionTitleTop.querySelector('h5');
+                    var accordionText = accordionTitleTop.querySelector('p');
+
+                    // Calcula la altura disponible en .col-md-5
+                    var alturaDisponible = imgColMd5.getBoundingClientRect().height + 8;
+
+                    var estilosDivAccordion = getComputedStyle(divAccordionOnePage);
+                    var estilosbody = getComputedStyle(body);
+
+                    var estilosTitulo = getComputedStyle(accordionTitle);
+                    alturaDisponible -= parseFloat(estilosTitulo.marginTop) + parseFloat(estilosTitulo.marginBottom) + parseFloat(estilosTitulo.paddingTop) + parseFloat(estilosTitulo.paddingBottom);
+
+                    var estilosTexto = getComputedStyle(accordionText);
+                    alturaDisponible -= parseFloat(estilosTexto.marginTop) + parseFloat(estilosTexto.marginBottom) + parseFloat(estilosTexto.paddingTop) + parseFloat(estilosTexto.paddingBottom);
+
+                    var alturaAccordionTitleTop = accordionTitleTop.getBoundingClientRect().height;
+                    alturaDisponible -= alturaAccordionTitleTop + parseFloat(estilosDivAccordion.paddingTop) + parseFloat(estilosbody.marginTop) + parseFloat(estilosbody.marginBottom);
+
+                    if (!accordionInitialized || prevScreenWidth !== screenWidth) {
+                        // Ajusta la altura del accordion si es la primera vez o si cambió el tamaño de la pantalla
+                        alturaDisponible = alturaDisponible;
+                        accordion.style.height = alturaDisponible + 'px';
+                        prevScreenWidth = screenWidth;
+                        accordionInitialized = true;
+                    }
+                } else {
+                    // Si la pantalla es menor a 768px, restablecer la altura del accordion
+                    var accordion = document.querySelector('.accordion');
+                    accordion.style.height = 'auto';
+                }
+            }
+
+            // Llama a la función cuando la ventana cambia de tamaño
+            window.addEventListener('resize', function () {
+                ajustarAlturaAccordion();
+            });
+
+            // Llama a la función al cargar la página
+            ajustarAlturaAccordion();
+        });
+
+    </script>
+</body>
+
+</html>

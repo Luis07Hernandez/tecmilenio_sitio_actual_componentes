@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+    <title>Table | One Page </title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Cairo");
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
+    </style>
+</head>
+
+<body>
+    <style>
+        .FormatosTableContainer {
+            background-color: #EFEFEF;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .FormatosTableContainer h5 {
+            font-family: 'Cairo', Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0px;
+            color: #00A499;
+        }
+
+        .desktopContentTable {
+            display: none;
+        }
+
+        .mobileContentTable {
+            display: block;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .accordionTitleTable {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordionTitleTable span {
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            padding-left: 10px;
+        }
+
+        .accordionTable {
+            margin: 0 auto;
+            display: block;
+            justify-content: center;
+        }
+
+        .accordionTable .card {
+            border: unset;
+            width: 89% !important;
+            max-width: 89% !important;
+            margin: auto;
+        }
+
+        .accordionTable .card-header {
+            background-color: #fff;
+            border: 1px solid #26D07C;
+            color: #00534C;
+            padding: 5px;
+        }
+
+        .accordionTable .card-header h2 {
+            margin-bottom: unset !important;
+        }
+
+
+        .accordionTable .card-header.show {
+            background-color: #26D07C;
+            border: 1px solid #007864;
+            color: #ffffff;
+        }
+
+        .accordionTable .card-header.show span {
+            font-weight: 700;
+        }
+
+        .accordionTable .card-body {
+            background-color: #00A499;
+        }
+
+        .accordionTable .card-body .two-column-list {
+            column-count: 2;
+            column-gap: 20px;
+            margin: 0 auto;
+        }
+
+        .accordionTable .card-body ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .accordionTable .card-body li {
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .accordionTable .card-body li span {
+            font-weight: 700;
+        }
+
+        .divTableButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+        }
+
+        .tec2023Tablebutton {
+            background-color: #26D07C;
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: #007864;
+
+        }
+
+        .TableContentFormatos .ContentBody {
+            background-color: #00A499;
+            padding: 25px 40px;
+        }
+
+        .TableContentFormatos .ContentBody .three-column-list {
+            column-count: 3;
+            column-gap: 50px;
+            margin: 0 auto;
+        }
+
+        .ContentBody ul {
+            list-style-type: none;
+        }
+
+        .ContentBody li {
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .ContentBody li span {
+            font-weight: 700;
+        }
+
+        .desktopContentTable .btnFormatos:focus {
+            outline: unset !important;
+        }
+
+        .desktopContentTable .btnFormatos {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            padding: 0.375rem 0.75rem;
+            line-height: 1.5;
+            text-decoration: none;
+            ;
+        }
+
+        .desktopContentTable .btnTableFormatos {
+            background-color: #fff !important;
+            border: 1px solid #26D07C !important;
+            color: #00534C !important;
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif !important;
+            font-weight: 400 !important;
+            font-size: 16px !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            text-transform: unset !important;
+        }
+
+        .desktopContentTable .btnTableFormatos.active {
+            background-color: #26D07C !important;
+            color: #fff !important;
+            font-weight: 700 !important;
+            font-size: 16px !important;
+        }
+
+        .table-arrow_1 {
+            display: none;
+        }
+
+        .table-arrow_2 {
+            display: block;
+        }
+
+        .card-header.show .table-arrow_1 {
+            display: inline;
+        }
+
+        .card-header.show .table-arrow_2 {
+            display: none;
+        }
+
+        @media only screen and (min-width: 320px) {
+            .FormatosTableContainer h5 {
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            .accordionTitleTable span {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .card-body .two-column-list li {
+                font-size: 16px;
+                line-height: 27px;
+            }
+
+            .tec2023Tablebutton {
+                font-size: 17px;
+                line-height: 27px;
+                padding: 5px 15px;
+            }
+
+        }
+
+        @media only screen and (min-width: 480px) {
+            .FormatosTableContainer h5 {
+                font-size: 28px;
+                line-height: 36px;
+                text-align: center;
+                padding-left: 72px;
+                padding-right: 72px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .FormatosTableContainer h5 {
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+                padding-left: 170px;
+                padding-right: 170px;
+            }
+
+            .desktopContentTable {
+                display: block;
+            }
+
+            .mobileContentTable {
+                display: none;
+            }
+
+            .TableContentFormatos {
+                display: none;
+                width: 721px;
+                height: 411px;
+            }
+
+            .TableContentFormatos.show {
+                display: block;
+            }
+
+            .ContentBody li {
+                font-size: 16px;
+                line-height: 27px;
+            }
+
+            .btn-group-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .accordionTitleTable {
+                width: auto;
+                margin: 0 10px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .FormatosTableContainer h5 {
+                font-size: 36px;
+                line-height: 44px;
+                text-align: center;
+                padding-left: unset !important;
+                padding-right: unset !important;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .FormatosTableContainer h5 {
+                font-size: 40px;
+                line-height: 48px;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <div class="FormatosTableContainer">
+        <!-- Desktop Content (Shown above 768px) -->
+        <div class="desktopContentTable pt-5 pb-5">
+            <h5 class="pb-3">¿Dónde puedes estudiar el formato que necesitas?</h5>
+            <div class="btn-group-container">
+                <div class="btn-group">
+                    <button class="btnFormatos btnTableFormatos active"
+                        data-target="#TableContentFormatos1">Presencial</button>
+                    <button class="btnFormatos btnTableFormatos" data-target="#TableContentFormatos2">Online</button>
+                    <button class="btnFormatos btnTableFormatos"
+                        data-target="#TableContentFormatos3">Autodirigido</button>
+                    <button class="btnFormatos btnTableFormatos" data-target="#TableContentFormatos4">Connect
+                        Hybrid</button>
+                    <button class="btnFormatos btnTableFormatos" data-target="#TableContentFormatos5">Connect
+                        Online</button>
+                </div>
+                <div class="btn-group-content">
+                    <div id="TableContentFormatos1" class="TableContentFormatos show">
+                        <div class="ContentBody mt-2">
+                            <div class="three-column-list mb-4">
+                                <ul>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara</li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Torres</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reynosa</li>
+                                    <li>SLP</li>
+                                    <li>San Nicolás</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TableContentFormatos2" class="TableContentFormatos">
+                        <div class="ContentBody mt-2">
+                            <div class="three-column-list mb-4">
+                                <ul>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara </li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Torres</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reynosa</li>
+                                    <li>San Luis Potosí</li>
+                                    <li>San Nicolás</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TableContentFormatos3" class="TableContentFormatos">
+                        <div class="ContentBody mt-2">
+                            <div class="three-column-list mb-4">
+                                <ul>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara </li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Torres</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reynosa</li>
+                                    <li>San Luis Potosí</li>
+                                    <li>San Nicolás</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TableContentFormatos4" class="TableContentFormatos">
+                        <div class="ContentBody mt-2 ">
+                            <div class="three-column-list mb-4">
+                                <ul style="line-height: 18px;">
+                                    <li>Artz Pedregal</li>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara</li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Americas</li>
+                                    <li>Las Torres</li>
+                                    <li>León</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Mítikah</li>
+                                    <li>Morelia</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reforma</li>
+                                    <li>Reynosa</li>
+                                    <li>Saltillo</li>
+                                    <li>SLP</li>
+                                    <li>San Nicolás</li>
+                                    <li>Santa Fé</li>
+                                    <li>Satélite</li>
+                                    <li>Tijuana Río</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TableContentFormatos5" class="TableContentFormatos">
+                        <div class="ContentBody mt-2">
+                            <div class="three-column-list mb-4">
+                                <ul>
+                                    <li>Artz Pedregal</li>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara</li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Americas</li>
+                                    <li>Las Torres</li>
+                                    <li>León</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Mítikah</li>
+                                    <li>Morelia</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reforma</li>
+                                    <li>Reynosa</li>
+                                    <li>Saltillo</li>
+                                    <li>SLP</li>
+                                    <li>San Nicolás</li>
+                                    <li>Santa Fé</li>
+                                    <li>Satélite</li>
+                                    <li>Tijuana Río</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Content (Shown below 768px) -->
+        <div class="mobileContentTable pt-5 pb-5">
+            <h5 class="pb-3">¿Dónde puedes estudiar el formato que necesitas?</h5>
+            <div class="accordionTable" id="accordionExample">
+                <div class="card mb-3">
+                    <div class="card-header show" id="headingOneTable">
+                        <h2>
+                            <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseOneTable"
+                                aria-expanded="true" aria-controls="collapseOneTable">
+                                <span>Presencial</span>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseOneTable" aria-expanded="true"
+                                    aria-controls="collapseOneTable">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                        alt="Flecha" class="table-arrow_1" style="display: inline;">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                        alt="Flecha" class="table-arrow_2" style="display: none;">
+                                </button>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseOneTable" class="collapse show" aria-labelledby="headingOneTable"
+                        data-parent="#accordionExample">
+                        <div class="card-body mt-2">
+                            <div class="two-column-list">
+                                <ul>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara </li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Torres</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reynosa</li>
+                                    <li>San Luis Potosí</li>
+                                    <li>San Nicolás</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header" id="headingTwoTable">
+                        <h2>
+                            <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseTwoTable"
+                                aria-expanded="false" aria-controls="collapseTwoTable">
+                                <span>Online</span>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwoTable" aria-expanded="false"
+                                    aria-controls="collapseTwoTable">
+
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                        alt="Flecha" class="table-arrow_1">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                        alt="Flecha" class="table-arrow_2">
+                                </button>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseTwoTable" class="collapse" aria-labelledby="headingTwoTable"
+                        data-parent="#accordionExample">
+                        <div class="card-body mt-2">
+                            <div class="two-column-list">
+                                <ul>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara </li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Torres</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reynosa</li>
+                                    <li>San Luis Potosí</li>
+                                    <li>San Nicolás</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header" id="headingThreeTable">
+                        <h2>
+                            <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseThreeTable"
+                                aria-expanded="false" aria-controls="collapseThreeTable">
+                                <span>Autodirigido</span>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThreeTable" aria-expanded="false"
+                                    aria-controls="collapseThreeTable">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                        alt="Flecha" class="table-arrow_1">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                        alt="Flecha" class="table-arrow_2">
+                                </button>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseThreeTable" class="collapse" aria-labelledby="headingThreeTable"
+                        data-parent="#accordionExample">
+                        <div class="card-body mt-2">
+                            <div class="two-column-list">
+                                <ul>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara </li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Torres</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reynosa</li>
+                                    <li>San Luis Potosí</li>
+                                    <li>San Nicolás</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header" id="headingFourTable">
+                        <h2>
+                            <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseFourTable"
+                                aria-expanded="false" aria-controls="collapseFourTable">
+                                <span>Connect Hybrid</span>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFourTable" aria-expanded="false"
+                                    aria-controls="collapseFourTable">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                        alt="Flecha" class="table-arrow_1">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                        alt="Flecha" class="table-arrow_2">
+                                </button>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseFourTable" class="collapse" aria-labelledby="headingFourTable"
+                        data-parent="#accordionExample">
+                        <div class="card-body mt-2">
+                            <div class="two-column-list">
+                                <ul>
+                                    <li>Artz Pedregal</li>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara</li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Americas</li>
+                                    <li>Las Torres</li>
+                                    <li>León</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Mítikah</li>
+                                    <li>Morelia</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reforma</li>
+                                    <li>Reynosa</li>
+                                    <li>Saltillo</li>
+                                    <li>SLP</li>
+                                    <li>San Nicolás</li>
+                                    <li>Santa Fé</li>
+                                    <li>Satélite</li>
+                                    <li>Tijuana Río</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header" id="headingFiveTable">
+                        <h2>
+                            <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseFiveTable"
+                                aria-expanded="false" aria-controls="collapseFiveTable">
+                                <span>Connect Online</span>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFiveTable" aria-expanded="false"
+                                    aria-controls="collapseFiveTable">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                        alt="Flecha" class="table-arrow_1">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                        alt="Flecha" class="table-arrow_2">
+                                </button>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseFiveTable" class="collapse" aria-labelledby="headingFiveTable"
+                        data-parent="#accordionExample">
+                        <div class="card-body mt-2">
+                            <div class="two-column-list">
+                                <ul>
+                                    <li>Artz Pedregal</li>
+                                    <li>Cancún</li>
+                                    <li>Chihuahua</li>
+                                    <li>Ciudad Juárez</li>
+                                    <li>Cuautitlán Izcalli</li>
+                                    <li>Cuernavaca</li>
+                                    <li>Culiacán</li>
+                                    <li>Cumbres</li>
+                                    <li>Durango</li>
+                                    <li>Ferrería</li>
+                                    <li>Guadalajara</li>
+                                    <li>Guadalupe</li>
+                                    <li>Hermosillo</li>
+                                    <li>Laguna</li>
+                                    <li>Las Americas</li>
+                                    <li>Las Torres</li>
+                                    <li>León</li>
+                                    <li>Los Mochis</li>
+                                    <li>Mazatlán</li>
+                                    <li>Mérida</li>
+                                    <li>Mítikah</li>
+                                    <li>Morelia</li>
+                                    <li>Nuevo Laredo</li>
+                                    <li>Ciudad Obregón</li>
+                                    <li>Puebla</li>
+                                    <li>Querétaro</li>
+                                    <li>Reforma</li>
+                                    <li>Reynosa</li>
+                                    <li>Saltillo</li>
+                                    <li>SLP</li>
+                                    <li>San Nicolás</li>
+                                    <li>Santa Fé</li>
+                                    <li>Satélite</li>
+                                    <li>Tijuana Río</li>
+                                    <li>Toluca</li>
+                                    <li>Veracruz</li>
+                                    <li>Villahermosa</li>
+                                    <li>Zacatecas</li>
+                                    <li>Zapopan</li>
+                                </ul>
+                            </div>
+                            <div class="divTableButton">
+                                <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionHeaders = document.querySelectorAll(".card-header");
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener("click", function () {
+                    const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+                    // Oculta todos los cuerpos y cambia las flechas
+                    accordionHeaders.forEach(h => {
+                        h.classList.remove("show");
+                        const arrow1 = h.querySelector(".table-arrow_1");
+                        const arrow2 = h.querySelector(".table-arrow_2");
+                        if (arrow1) arrow1.style.display = "none";
+                        if (arrow2) arrow2.style.display = "inline";
+                        h.setAttribute("aria-expanded", "false");
+                    });
+
+                    // Muestra o oculta el cuerpo de la tarjeta actual
+                    const body = this.nextElementSibling;
+                    if (!isExpanded) {
+                        this.classList.add("show");
+                        const arrow1 = this.querySelector(".table-arrow_1");
+                        const arrow2 = this.querySelector(".table-arrow_2");
+                        if (arrow1) arrow1.style.display = "inline";
+                        if (arrow2) arrow2.style.display = "none";
+                        this.setAttribute("aria-expanded", "true");
+                    } else {
+                        this.setAttribute("aria-expanded", "false");
+                    }
+
+                    // Validación adicional para el div con id único
+                    const collapseId = body.getAttribute("id");
+                    const collapseElement = document.getElementById(collapseId);
+
+                    setTimeout(() => {
+                        if (collapseElement && collapseElement.classList.contains("show")) {
+                            header.classList.add("show");
+                            accordionHeaders.forEach(h => {
+                                h.setAttribute("aria-expanded", "true");
+                                const arrow1 = h.querySelector(".table-arrow_1");
+                                const arrow2 = h.querySelector(".table-arrow_2");
+                                arrow1.style.display = "inline";
+                                arrow2.style.display = "none";
+                            });
+                        } else {
+                            header.classList.remove("show");
+                            accordionHeaders.forEach(h => {
+                                h.setAttribute("aria-expanded", "false");
+                                const arrow1 = h.querySelector(".table-arrow_1");
+                                const arrow2 = h.querySelector(".table-arrow_2");
+                                arrow1.style.display = "none";
+                                arrow2.style.display = "inline";
+                            });
+                        }
+                    }, 500);
+                });
+            });
+
+            // Script adicional para manejar clics en los botones
+            const btns = document.querySelectorAll('.btn-group-container .btnFormatos');
+            btns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Elimina la clase active de todos los botones
+                    btns.forEach(b => b.classList.remove('active'));
+
+                    // Agrega la clase active al botón clicado
+                    this.classList.add('active');
+
+                    // Elimina la clase show de todos los elementos de TableContentFormatos
+                    document.querySelectorAll('.TableContentFormatos').forEach(tc => tc.classList.remove('show'));
+
+                    // Agrega la clase show al elemento asociado al botón clicado
+                    const target = this.dataset.target;
+                    document.querySelector(target).classList.add('show');
+                });
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
