@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" media="all" href="//cdn2.hubspot.net/hubfs/2429099/website/newebsite/css/style.css" /> -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+    <title>Banner | One Page</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Cairo");
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
+    </style>
+
+    
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        /* ==============================
+            START DECLARE FONT FAMILIES
+        ============================== */
+
+        .tecmilenioBannerOnePage h1 {
+            font-family: 'Cairo', Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0px;
+        }
+
+        /* ==============================
+                END DECLARE FONT FAMILIES
+            ============================== */
+
+        /* ==============================
+                    START - GENERAL STYLES
+            ============================== */
+
+        /* MOBILE FIRST METHOD */
+        .tecmilenioBannerOnePage {
+            position: relative;
+        }
+
+        .tecmilenioBannerOnePage .imgBannerTopOnePage {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+            font-size: 0;
+        }
+
+        .tecmilenioBannerOnePage .imgBannerTopOnePage img {
+            min-height: 100%;
+            min-width: 100%;
+            max-width: none !important;
+            width: auto !important;
+        }
+
+        .banner_desktop {
+            display: none !important;
+        }
+
+        .banner_mobile {
+            display: block !important;
+        }
+
+        .tecmilenioBannerOnePage .imgBannerTopOnePage+.container {
+            height: 768px;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .tecmilenioBannerOnePage .contentBannerOnePage {
+            position: relative;
+        }
+
+        .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+            font-size: 56px;
+            margin: 90px 0px 40px 0px;
+        }
+
+        .OnePageContentBanner {
+            padding: 10% 0px;
+        }
+
+        .container {
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+        }
+
+        .tecmilenioBannerOnePage .imgBannerTopOnePage+.container {
+            display: block;
+        }
+
+        /* Custom, iPhone Retina - More than 320px */
+        @media only screen and (min-width : 320px) {
+            .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                font-size: 56px;
+                margin: 240px 0px 40px 0px;
+            }
+        }
+
+        /* Extra Small Devices, Phones - More than 480px */
+        @media only screen and (min-width : 480px) {
+            .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                font-size: 68px;
+                margin: 200px 0px 40px 0px;
+            }
+        }
+
+        /* Small Devices, Tablets - More than 768px  */
+        @media only screen and (min-width : 768px) {
+            .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                font-size: 56px;
+                margin: 110px 0px 40px 120px;
+            }
+
+            .banner_desktop {
+                display: block !important;
+            }
+
+            .banner_mobile {
+                display: none !important;
+            }
+
+            .tecmilenioBannerOnePage .imgBannerTopOnePage img {
+                position: absolute;
+                min-height: 100%;
+                min-width: 100%;
+                top: 50%;
+                left: 30%;
+                transform: translateX(-40%) translateY(-50%);
+                -webkit-transform: translateX(-40%) translateY(-50%);
+                -moz-transform: translateX(-40%) translateY(-50%);
+                -o-transform: translateX(-40%) translateY(-50%);
+                -ms-transform: translateX(-40%) translateY(-50%);
+                max-width: none !important;
+                width: auto !important;
+            }
+        }
+
+        @media only screen and (min-width : 992px) {
+            .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                font-size: 56px;
+                margin-top: 80px;
+                margin-left: 340px;
+            }
+        }
+
+        @media only screen and (min-width : 1200px) {
+            .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                font-size: 56px;
+                margin-top: 80px;
+                margin-left: 550px;
+            }
+
+            .tecmilenioBannerOnePage .imgBannerTopOnePage img {
+                width: 100% !important;
+                top: initial;
+                left: initial;
+                transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -o-transform: none;
+                -ms-transform: none;
+            }
+        }
+
+        /* ==============================
+                    END - GENERAL STYLES
+            ============================== */
+    </style>
+    <section class="tecmilenioBannerOnePage" id="OnePageBanner">
+        <div class="imgBannerTopOnePage">
+            <img alt="Tecmilenio" class="banner_desktop"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Banner_Desktop.png" />
+            <img alt="Tecmilenio" class="banner_mobile"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Banner_Mobile.png">
+        </div>
+
+        <div class="container">
+            <div class="contentBannerOnePage animator-on OnePageContentBanner">
+                <div class="mb-5">
+                    <div class="col-md-12 p-0">
+                        <div class="titleBannerOnePage">
+                            <h1 class="banner_desktop text-white animate__animated animate__fadeInRight">Desarrolla tus competencias a través de diferentes
+                                formatos de estudio según tus necesidades</h1>
+                            <h1 class="banner_mobile text-white animate__animated animate__fadeInRight">Conoce los formatos que te permitirán cumplir tus metas
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
