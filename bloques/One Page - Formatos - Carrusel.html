@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="all" href="//cdn2.hubspot.net/hubfs/2429099/website/newebsite/css/style.css" />
+    <!-- <link rel="stylesheet" media="all" href="//cdn2.hubspot.net/hubfs/2429099/website/newebsite/css/style.css" /> -->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
 
@@ -24,6 +24,10 @@
 </head>
 
 <body>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <style>
         /* ==============================
                 START DECLARE FONT FAMILIES
@@ -322,7 +326,7 @@
             ============================== */
     </style>
 
-    <div id="carouselOnePageIndicators" class="carousel slide carouselOnePage mt-3 mb-3" data-ride="carousel">
+    <div id="carouselOnePageIndicators" class="carousel slide carouselOnePage mt-3 mb-3" data-aos="fade-up" data-aos-duration="1000" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container">
@@ -536,7 +540,10 @@
             <li data-target="#carouselOnePageIndicators" data-slide-to="4"></li>
         </ol>
     </div>
-    
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
