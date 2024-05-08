@@ -1,0 +1,2494 @@
+<!-- ESTA PAGINA ES LA BASE PARA TODAS LAS PAGINAS TECMILENIO Y ASI AGILIZAR EL DESARROLLO, 
+ESTA PAGINA YA TIENE AGREGADAS LAS LIBRERIAS TECMILENIO Y FUENTES NECESARIAS, PARA COMENZAR
+AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Tecmilenio</title>
+
+    <link rel="stylesheet" media="all"
+        href="//fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Gentium+Plus:wght@400;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" />
+    <link rel="stylesheet" media="all"
+        href="//fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" media="all"
+        href="//2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/css/styles.bundle.min.css" />
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/themes/custom/tecmilenio/css/iconfont.css">
+</head>
+
+<body>
+
+    <!-- START CODE HERE -->
+    <!-- El codigo siempre debe estar dentro del section para mas comodidad. -->
+
+    <section id="formatos-2024">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- Banner -->
+
+        <style>
+            /* ==============================
+                START DECLARE FONT FAMILIES
+            ============================== */
+
+            .tecmilenioBannerOnePage h1 {
+                font-family: 'Cairo', Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                letter-spacing: 0px;
+            }
+
+            /* ==============================
+                    END DECLARE FONT FAMILIES
+                ============================== */
+
+            /* ==============================
+                        START - GENERAL STYLES
+                ============================== */
+
+            /* MOBILE FIRST METHOD */
+            .tecmilenioBannerOnePage {
+                position: relative;
+            }
+
+            .tecmilenioBannerOnePage .imgBannerTopOnePage {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                overflow: hidden;
+                font-size: 0;
+            }
+
+            .tecmilenioBannerOnePage .imgBannerTopOnePage img {
+                min-height: 100%;
+                min-width: 100%;
+                max-width: none !important;
+                width: auto !important;
+            }
+
+            .banner_desktop {
+                display: none !important;
+            }
+
+            .banner_mobile {
+                display: block !important;
+            }
+
+            .tecmilenioBannerOnePage .imgBannerTopOnePage+.container {
+                height: 768px;
+                display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -o-flex;
+                display: -ms-flex;
+                align-items: center;
+                z-index: 1;
+            }
+
+            .tecmilenioBannerOnePage .contentBannerOnePage {
+                position: relative;
+            }
+
+            .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                font-size: 56px;
+                margin: 90px 0px 40px 0px;
+            }
+
+            .OnePageContentBanner {
+                padding: 10% 0px;
+            }
+
+            .container {
+                padding-right: 20px !important;
+                padding-left: 20px !important;
+            }
+
+            .tecmilenioBannerOnePage .imgBannerTopOnePage+.container {
+                display: block;
+            }
+
+            /* Custom, iPhone Retina - More than 320px */
+            @media only screen and (min-width : 320px) {
+                .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                    font-size: 56px;
+                    margin: 240px 0px 40px 0px;
+                }
+            }
+
+            /* Extra Small Devices, Phones - More than 480px */
+            @media only screen and (min-width : 480px) {
+                .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                    font-size: 68px;
+                    margin: 200px 0px 40px 0px;
+                }
+            }
+
+            /* Small Devices, Tablets - More than 768px  */
+            @media only screen and (min-width : 768px) {
+                .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                    font-size: 56px;
+                    margin: 110px 0px 40px 120px;
+                }
+
+                .banner_desktop {
+                    display: block !important;
+                }
+
+                .banner_mobile {
+                    display: none !important;
+                }
+
+                .tecmilenioBannerOnePage .imgBannerTopOnePage img {
+                    position: absolute;
+                    min-height: 100%;
+                    min-width: 100%;
+                    top: 50%;
+                    left: 30%;
+                    transform: translateX(-40%) translateY(-50%);
+                    -webkit-transform: translateX(-40%) translateY(-50%);
+                    -moz-transform: translateX(-40%) translateY(-50%);
+                    -o-transform: translateX(-40%) translateY(-50%);
+                    -ms-transform: translateX(-40%) translateY(-50%);
+                    max-width: none !important;
+                    width: auto !important;
+                }
+            }
+
+            @media only screen and (min-width : 992px) {
+                .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                    font-size: 56px;
+                    margin-top: 80px;
+                    margin-left: 340px;
+                }
+            }
+
+            @media only screen and (min-width : 1200px) {
+                .tecmilenioBannerOnePage .titleBannerOnePage h1 {
+                    font-size: 56px;
+                    margin-top: 80px;
+                    margin-left: 550px;
+                }
+
+                .tecmilenioBannerOnePage .imgBannerTopOnePage img {
+                    width: 100% !important;
+                    top: initial;
+                    left: initial;
+                    transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -o-transform: none;
+                    -ms-transform: none;
+                }
+            }
+
+            /* ==============================
+                        END - GENERAL STYLES
+                ============================== */
+        </style>
+
+        <section class="tecmilenioBannerOnePage" id="OnePageBanner">
+            <div class="imgBannerTopOnePage">
+                <img alt="Tecmilenio" class="banner_desktop"
+                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Banner_Desktop.png" />
+                <img alt="Tecmilenio" class="banner_mobile"
+                    src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Banner_Mobile.png">
+            </div>
+
+            <div class="container">
+                <div class="contentBannerOnePage animator-on OnePageContentBanner">
+                    <div class="mb-5">
+                        <div class="col-md-12 p-0">
+                            <div class="titleBannerOnePage">
+                                <h1 class="banner_desktop text-white animate__animated animate__fadeInRight">Desarrolla
+                                    tus competencias a través de diferentes
+                                    formatos de estudio según tus necesidades</h1>
+                                <h1 class="banner_mobile text-white animate__animated animate__fadeInRight">Conoce los
+                                    formatos que te permitirán cumplir tus metas
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel -->
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <style>
+            /* ==============================
+                START DECLARE FONT FAMILIES
+            ============================== */
+
+            .description07 p {
+                color: white !important;
+            }
+
+            .description07 h5 {
+                font-family: 'Cairo', Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                letter-spacing: 0px;
+            }
+
+            .description07 p,
+            .description07 ul {
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+            }
+
+            /* ==============================
+                END DECLARE FONT FAMILIES
+            ============================== */
+
+            /* ==============================
+                    START - GENERAL STYLES
+            ============================== */
+            /* MOBILE FIRST METHOD */
+
+            .carousel-inner {
+                align-items: center;
+            }
+
+            .carouselOnePage .carousel-indicators {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 15;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-pack: center;
+                justify-content: center;
+                padding-left: 0;
+                margin-right: 15%;
+                margin-left: 15%;
+                list-style: none;
+                align-items: center;
+            }
+
+            .carouselOnePage .carousel-indicators li {
+                box-sizing: content-box;
+                -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 3px;
+                margin-left: 3px;
+                text-indent: -999px;
+                cursor: pointer;
+                background-color: #00A499;
+                background-clip: padding-box;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                opacity: .5;
+                transition: opacity .6s ease;
+
+            }
+
+            .carouselOnePage .carousel-indicators .active {
+                background-color: #00A499;
+                opacity: 1;
+                width: 16px;
+                height: 16px;
+            }
+
+            .carouselOnePage .carousel-control-next,
+            .carouselOnePage .carousel-control-prev {
+                opacity: 0.8 !important;
+            }
+
+            .container07 {
+                display: flex;
+                flex-direction: column-reverse;
+                background-color: transparent;
+            }
+
+            .description07 {
+                background-color: #007864;
+                color: #fff !important;
+            }
+
+            .description07 ul {
+                list-style: none !important;
+                margin: 0;
+                padding: 0;
+            }
+
+            img.desktop07 {
+                display: none;
+            }
+
+            imgs.mobile07 {
+                display: block;
+            }
+
+            /* Custom, iPhone Retina - More than 320px */
+            @media only screen and (min-width : 320px) {
+
+                .carouselOnePage .carousel-control-next,
+                .carouselOnePage .carousel-control-prev {
+                    top: -50% !important;
+                    width: unset !important;
+                }
+
+                .container07 {
+                    gap: 15px;
+                    width: 85%;
+                    margin: auto;
+                }
+
+                .description07 {
+                    padding: 35px;
+                    border-radius: 5px;
+                }
+
+                .description07 h5 {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+
+                .description07 p,
+                .description07 ul {
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+
+                .description07 p span {
+                    font-weight: 700;
+                }
+
+                img .mobile07 {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+
+            /* Extra Small Devices, Phones - More than 480px */
+            @media only screen and (min-width : 480px) {
+                .description07 h5 {
+                    font-size: 22px;
+                }
+
+                .description07 p,
+                .description07 ul {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                .carouselOnePage .carousel-control-next,
+                .carouselOnePage .carousel-control-prev {
+                    padding: 2%;
+                }
+            }
+
+            /* Small Devices, Tablets - More than 768px  */
+            @media only screen and (min-width : 768px) {
+                .container07 {
+                    display: flex;
+                    flex-direction: row;
+                    width: 80%;
+                    margin: 0 auto;
+                    background-color: transparent;
+                    gap: 10px;
+                    align-items: stretch;
+                    min-height: 510px;
+                    max-height: 1200px;
+                }
+
+                .description07 {
+                    padding: 25px;
+                    width: 45%;
+                    border-radius: 5px;
+                }
+
+                img.mobile07 {
+                    display: none;
+                }
+
+                img.desktop07 {
+                    display: block;
+                    object-fit: cover;
+                    width: 60%;
+                }
+
+                .description07 h5 {
+                    font-size: 22px;
+                }
+
+                .description07 p,
+                .description07 ul {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                .carouselOnePage .carousel-control-next,
+                .carouselOnePage .carousel-control-prev {
+                    top: 0 !important;
+                }
+            }
+
+            @media only screen and (min-width : 992px) {
+
+                .description07 h5 {
+                    font-size: 18px !important;
+                }
+
+                .description07 p,
+                .description07 ul {
+                    font-size: 14px !important;
+                    line-height: 18px !important;
+                }
+            }
+
+            @media only screen and (min-width : 1200px) {
+
+                .description07 h5 {
+                    font-size: 20px;
+                }
+
+                .description07 p,
+                .description07 ul {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            /* ==============================
+                    END - GENERAL STYLES
+            ============================== */
+        </style>
+
+        <div id="carouselOnePageIndicators" class="carousel slide carouselOnePage mt-3 mb-3" data-aos="fade-up"
+            data-aos-duration="1000" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container07">
+                        <div class="description07">
+                            <h5>Presencial</h5>
+                            <p>Asiste a clases presenciales en tu campus Tecmilenio más cercano. Vive la experiencia
+                                de
+                                convivir con tus compañeros(as) y docentes en nuestras amplias y modernas
+                                instalaciones.
+                                <br><br>
+                                <span>¿Por qué estudiar en ese formato?</span>
+                            <ul>
+                                <li>Contarás con un espacio físico donde tendrás la posibilidad de tomar tus clases
+                                    de
+                                    manera presencial y convivir con tus compañeros(as) como ya se conoce
+                                    normalmente.
+                                </li>
+                                <li>Convivirás con el resto de las y los estudiantes y docentes, asistiendo al aula.
+                                    En
+                                    caso de que se complique tu traslado al campus, también tienes la opción de
+                                    tomar la
+                                    clase en vivo y de manera virtual, sin importar el lugar en el que te
+                                    encuentres.
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <img class="mobile07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Presencial_Mobile.png"
+                            alt="" />
+                        <img class="desktop07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Presencial.png"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container07">
+                        <div class="description07">
+                            <h5>Online</h5>
+                            <p>Gestiona tu aprendizaje según tus ritmos, tu agenda y tus necesidades, a través
+                                de
+                                nuestra plataforma de aprendizaje automatizado. <br>Cuenta con el apoyo de
+                                asesores(as) que te guiarán en los cursos y proyectos, además de talleres de
+                                vivencia asincrónica, experiencias internacionales, certificaciones, OnDemand y
+                                acompañamiento centralizado.
+                                <br><br>
+                                <span>¿Por qué estudiar en ese formato?</span>
+                            <ul>
+                                <li>Contarás con flexibilidad de horarios y podrás estudiar en línea a tu propio
+                                    ritmo de vida.</li>
+                                <li>Movilidad nacional e internacional.</li>
+                                <li>Acompañamiento por tu asesor académico.</li>
+                                <li>Acceso a los Espacios Connect.</li>
+                                <li>Cursos diseñados para que el alumno tenga la mejor experiencia de
+                                    aprendizaje
+                                    remota.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <img class="mobile07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Online_Mobile.png"
+                            alt="" />
+                        <img class="desktop07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Online.png"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container07">
+                        <div class="description07">
+                            <h5>Autodirigido</h5>
+                            <p>Modelo de aprendizaje 100% flexible y a tu propio ritmo, que por medio de cursos
+                                asincrónicos, tendrás la libertad de elegir cuándo acceder a nuestra plataforma
+                                de
+                                aprendizaje 24/7.
+                                <br><br>
+                                <span>¿Por qué estudiar en ese formato?</span>
+                            <ul>
+                                <li>Acceso al contenido en la plataforma.</li>
+                                <li>Evaluador de proyectos.</li>
+                                <li>Aprendizaje a tu ritmo.</li>
+                                <li>Acompañamiento.</li>
+                                <li>Calendarización de actividades.</li>
+                            </ul>
+                            </p>
+                        </div>
+
+                        <img class="mobile07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Autodirigido_Mobile.png"
+                            alt="...">
+                        <img class="desktop07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_Autodirigido.png"
+                            alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container07">
+                        <div class="description07">
+                            <h5>Connect Hybrid</h5>
+                            <p>
+                                ¿Te gusta tener opciones? Con “Formato Connect Hybrid" combinar la vida
+                                universitaria en
+                                campus con la comodidad de tu sofá, sin perderte de nada gracias a las clases
+                                grabadas.
+                                Además, cuentas con acompañamiento académico, y orientación en cada paso. Ideal
+                                para
+                                quienes quieren asistir a clases presenciales y tener la flexibilidad del
+                                aprendizaje en línea.
+                                <br><br>
+                                <span>¿Por qué estudiar en ese formato?</span><br>
+                                Para aquellos que buscan una experiencia educativa híbrida, combinando la
+                                experiencia de la
+                                presencialidad con la comodidad del aprendizaje en línea.<br>
+                                Personas que valoran la interacción personal pero también le gustar estar en
+                                casa.
+                                Estudiantes
+                                que decidieron emprender o trabajar, pero quieren continuar con sus estudios y
+                                tener
+                                la flexibilidad
+                                para trabajar sin perder el contacto con sus maestros y compañeros.
+                            </p>
+                        </div>
+                        <img class="desktop07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectPresencial.png"
+                            alt="...">
+                        <img class="mobile07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectPresencial_Mobile.png"
+                            alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container07">
+                        <div class="description07">
+                            <h5>Connect Online</h5>
+                            <p>Transforma cualquier lugar en un aula con “Connect Online”. Participa en clases
+                                en
+                                vivo desde donde
+                                estés, ya sea en pijama o en traje. ¿Te perdiste una clase? No hay problema, las
+                                grabaciones están ahí
+                                para ti. Además, nuestro equipo de acompañamiento estará disponible para
+                                resolver
+                                tus dudas y guiarte
+                                de manera constante. Ideal para quienes manejan agendas apretadas y buscan
+                                flexibilidad en sus estudios.
+                                <br><br>
+                                <span>¿Por qué estudiar en ese formato?</span><br>
+                                Para aquellas Personas que tienen un horario ajustado o no pueden ir a clases
+                                presenciales y buscan flexibilidad.<br>
+                                Personas que viajan mucho, que trabajan en horarios complicados. Quienes quieren
+                                estudiar en Tecmilenio,
+                                pero tienen un campus en su ciudad. Para aquellos que están súper cómodos con la
+                                tecnología y prefieren
+                                interactuar de forma online.
+                            </p>
+                        </div>
+                        <img class="desktop07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectOnline.png"
+                            alt="...">
+                        <img class="mobile07"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Carrusel_ConnectOnline_Mobile.png"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselOnePageIndicators" role="button" data-slide="prev">
+                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Left.png"
+                    alt="">
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselOnePageIndicators" role="button" data-slide="next">
+                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Right.png"
+                    alt="">
+                <span class="sr-only">Next</span>
+            </a>
+            <ol class="carousel-indicators">
+                <li data-target="#carouselOnePageIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselOnePageIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselOnePageIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselOnePageIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselOnePageIndicators" data-slide-to="4"></li>
+            </ol>
+        </div>
+
+        <script>
+            AOS.init();
+        </script>
+
+
+        <!-- Accordion -->
+
+        <style>
+            body {
+                margin: unset !important;
+            }
+
+            .row {
+                display: flex !important;
+            }
+
+            .divAccordionOnePage .btn {
+                background: none !important;
+                border: none !important;
+            }
+
+            .accordionTitleTop h5 {
+                font-family: 'Cairo', Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                letter-spacing: 0px;
+                color: #007864;
+            }
+
+            .accordionTitleTop p {
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+            }
+
+            .accordion_desktop {
+                display: none !important;
+            }
+
+            .accordion_mobile {
+                display: block !important;
+            }
+
+            .mb-3 .col-md-5 {
+                position: relative;
+                order: 1 !important;
+            }
+
+            .col-md-5 .bg-light {
+                position: relative;
+            }
+
+            .overlay-container {
+                position: relative;
+            }
+
+            /* Estilo para el div superpuesto */
+            .col-md-5 .accordionOverlay {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 85%;
+                height: 52px;
+                background-color: #00A499;
+            }
+
+            .accordion .card {
+                border: unset !important;
+                border-radius: unset;
+                height: auto !important;
+            }
+
+            #headingTwo,
+            #headingThree,
+            #headingFour,
+            #headingFive {
+                background-color: #fff !important;
+            }
+
+            #headingTwo:focus,
+            #headingThree:focus,
+            #headingFour:focus,
+            #headingFive:focus,
+            #headingTwo:hover,
+            #headingThree:hover,
+            #headingFour:hover,
+            #headingFive:hover {
+                background-color: #fff !important;
+            }
+
+
+            .accordion .card-header {
+                background-color: #fff !important;
+                padding: unset !important;
+            }
+
+            .accordion>.card>.card-header {
+                margin-bottom: 1px !important;
+            }
+
+            .accordion .card-header h2 {
+                border-bottom: 1.4px solid #007864 !important;
+            }
+
+            .accordion-arrow {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .rotate-up {
+                transform: rotate(-180deg);
+            }
+
+            .accordion-title-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            .accordion-title-container span {
+                color: #007864 !important;
+                text-decoration: none !important;
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 700;
+            }
+
+            .accordion .card-body {
+                padding: 1rem 0 !important;
+            }
+
+            .accordion .card-body ul {
+                padding-inline-start: 0px !important;
+            }
+
+            .accordion .card-body li {
+                list-style: none;
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+            }
+
+            .accordion .card-body li a:hover {
+                color: var(--tecmilenio-text-second) !important;
+                text-decoration: none !important;
+            }
+
+            .accordion .card-body li span {
+                font-weight: 700;
+            }
+
+            .show {
+                display: block !important;
+                animation-name: unset !important;
+                animation-duration: 0s !important;
+                transform: unset !important;
+                opacity: 1 !important;
+            }
+
+            @media only screen and (min-width : 320px) {
+                .mb-3 .flex-md-column-reverse {
+                    flex-direction: column-reverse;
+                }
+
+                .divAccordionOnePage {
+                    width: 85%;
+                    margin: 0 auto;
+                    align-items: center;
+                    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+                    -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+                    padding: 20px;
+                }
+
+                .accordionTitleTop h5 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                .accordionTitleTop p {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+                .accordion-title-container span {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                .accordion .card-body li {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            @media only screen and (min-width : 480px) {
+                .accordionTitleTop h5 {
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+
+                .accordionTitleTop p {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                .accordion-title-container span {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+
+                .accordion .card-body li {
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
+
+            @media only screen and (min-width : 768px) {
+                .mb-3 .flex-md-column-reverse {
+                    flex-direction: unset !important;
+                }
+
+                .col-md-7,
+                .col-md-5 {
+                    padding-right: unset !important;
+                    padding-left: unset !important;
+                }
+
+                .col-md-7 {
+                    display: flex;
+                    flex-direction: column;
+                    max-height: 100%;
+                }
+
+                .col-md-5 img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .row {
+                    padding-left: 3rem !important;
+                    padding-right: 3rem !important;
+                    display: flex !important;
+                }
+
+                .divAccordionOnePage {
+                    width: 100% !important;
+                    height: 100% !important;
+                    box-shadow: none !important;
+                    padding: unset !important;
+                    padding-top: 20px !important;
+                    padding-bottom: unset !important;
+                    padding-left: 10px !important;
+                    margin: unset !important;
+                    bottom: 0;
+                }
+
+                .divAccordionOnePage .accordionTitleTop h5 {
+                    width: 80%;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+
+                .divAccordionOnePage .accordionTitleTop p {
+                    width: 90%;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+
+                .divAccordionOnePage .accordion {
+                    -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+                    -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+                    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+                    padding: 20px;
+                    width: 100%;
+                    overflow: auto !important;
+                    max-height: 100% !important;
+                }
+
+                .accordion-title-container span {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                .accordion .card-body li {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+
+                .col-md-5 .accordionOverlay {
+                    width: 20% !important;
+                    height: 50%;
+                    left: unset !important;
+                    transform: unset !important;
+                }
+
+                .accordion_desktop {
+                    display: block !important;
+                }
+
+                .accordion_mobile {
+                    display: none !important;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+                .divAccordionOnePage .accordion {
+                    padding: 30px !important;
+                }
+
+                .divAccordionOnePage .accordionTitleTop h5 {
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+
+                .divAccordionOnePage .accordionTitleTop p {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+
+                .accordion-title-container span {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+
+                .accordion .card-body li {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+
+            @media only screen and (min-width:1200px) {
+                .divAccordionOnePage .accordion {
+                    padding: 50px !important;
+                }
+
+                .divAccordionOnePage .accordionTitleTop h5 {
+                    font-size: 40px !important;
+                    line-height: 48px;
+                    width: 70%;
+                }
+
+                .divAccordionOnePage .accordionTitleTop p {
+                    font-size: 20px !important;
+                    line-height: 27px !important;
+                }
+
+                .accordion-title-container span {
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+
+                .accordion .card-body li {
+                    font-size: 20px !important;
+                    line-height: 27px;
+                }
+            }
+        </style>
+
+        <div class="mb-3">
+            <div class="row flex-md-column-reverse">
+                <div class="col-md-7 order-md-1 d-flex flex-column">
+                    <div class="divAccordionOnePage">
+                        <div class="accordionTitleTop">
+                            <h5>¿Qué puedes estudiar en este formato?</h5>
+                            <p><br><br><br></p>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card mb-3" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <div class="accordion-title-container" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            <span>Presencial</span>
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="false"
+                                                aria-controls="collapseOne">
+                                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                    alt="Flecha Abajo" class="accordion-arrow">
+                                            </button>
+                                        </div>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><span>NEGOCIOS</span></li>
+                                            <li><a href="/licenciatura-en-comercio-internacional">Licenciatura en
+                                                    Comercio Internacional</a></li>
+                                            <li><a href="/licenciatura-en-administracion-de-empresas">Licenciatura en
+                                                    Administración de Empresas</a></li>
+                                            <li><a href="/LCDE-licenciatura-en-creacion-y-desarrollo-de-empresas">Licenciatura
+                                                    en Creación y Desarrollo de Empresas</a></li>
+                                            <li><a href="/licenciatura-en-administracion-y-finanzas">Licenciatura en
+                                                    Administración y Finanzas</a></li>
+                                            <li><a href="/licenciatura-en-mercadotecnia">Licenciatura en
+                                                    Mercadotecnia</a></li><br>
+                                            <li><span>BIENESTAR Y SALUD</span></li>
+                                            <li><a href="/licenciatura-en-nutricion">Licenciatura en Nutrición</a></li>
+                                            <li><a href="/licenciatura-en-psicologia">Licenciatura en Psicología</a>
+                                            </li><br>
+                                            <li><span>INGENIERÍAS</span></li>
+                                            <li><a href="/ingenieria-industrial">Ingeniería Industrial</a></li>
+                                            <li><a href="/ingenieria-en-mecatronica">Ingeniería en Mecatrónica</a></li>
+                                            <br>
+                                            <li><span>TECNOLOGÍAS DE INFORMACIÓN</span></li>
+                                            <li><a href="/ingenieria-en-desarrollo-de-software">Ingeniería en Desarrollo
+                                                    de Software</a></li>
+                                            <li><a href="/ingenieria-computacion-administrativa">Ingeniería en Sistemas
+                                                    de Computación Administrativa</a></li><br>
+                                            <li><span>INDUSTRIAS CREATIVAS Y HUMANIDADES</span></li>
+                                            <li><a href="/licenciatura-en-derecho">Licenciatura en Derecho</a></li>
+                                            <li><a href="/licenciatura-en-diseno-grafico-y-animacion">Licenciatura en
+                                                    Diseño Gráfico y Animación</a></li>
+                                            <li><a href="/licenciatura-en-gastronomia">Licenciatura en Gastronomía</a>
+                                            </li>
+                                            <li><a href="/licenciatura-en-administracion-hotelera-y-turistica">Licenciatura
+                                                    en Administración Hotelera y Turística</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <div class="accordion-title-container" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <span>Online</span>
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+
+                                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                    alt="Flecha Abajo" class="accordion-arrow">
+                                            </button>
+                                        </div>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><a href="/licenciatura-en-educacion-y-desarrollo.">Licenciatura en
+                                                    Educación y Desarrollo</a></li>
+                                            <li><a href="/maestria-en-gestion-de-tecnologias-de-la-Informacion.">Maestría
+                                                    en Gestión de Tecnologías de la Información</a></li>
+                                            <li><a href="/maestria-en-educacion.">Maestría en Educación</a></li>
+                                            <li><a href="/especialidad-en-recursos-humanos">Especialidad en Recursos
+                                                    Humanos</a></li>
+                                            <li><a href="/especialidad-en-finanzas">Especialidad en Finanzas</a></li>
+                                            <li><a href="/especialidad-en-innovacion">Especialidad en Innovación</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <div class="accordion-title-container" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span>Autodirigido</span>
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                    alt="Flecha Abajo" class="accordion-arrow">
+                                            </button>
+                                        </div>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><a href="/profesional-asociado/administracion-de-negocios">Profesional
+                                                    Asociado en Administración de Negocios</a></li>
+                                            <li><a href="/profesional-asociado-desarrollo-software">Profesional Asociado
+                                                    en Desarrollo de Software</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <div class="accordion-title-container" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            <span>Connect Hybrid</span>
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                    alt="Flecha Abajo" class="accordion-arrow">
+                                            </button>
+                                        </div>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><span>Carreras Ejecutivas</span></li>
+                                            <li><a href="/licenciatura-en-administracion.">Licenciatura en
+                                                    Administración</a></li>
+                                            <li><a href="/licenciatura-en-comercio-y-negocios-internacionales.">Licenciatura
+                                                    en Comercio y Negocios Internacionales</a></li>
+                                            <li><a href="/licenciatura-en-mercadotecnia-y-publicidad">Licenciatura en
+                                                    Mercadotecnia y Publicidad</a></li>
+                                            <li><a href="/ingenieria-industrial-y-de-sistemas-connect.">Ingeniería
+                                                    Industrial y de Sistemas</a></li>
+                                            <li><a href="/ingenieria-en-computacion-administrativa.">Ingeniería en
+                                                    Computación Administrativa</a></li>
+                                            <li><a href="/licenciado-en-derecho">Licenciatura en Derecho</a></li>
+                                            <li><a href="/licenciatura-en-administracion-y-desarrollo-del-talento">Licenciatura
+                                                    en Administración y Desarrollo del Talento</a></li>
+                                            <li><a href="/licenciatura-en-educacion-y-desarrollo.">Licenciatura en
+                                                    Educación y Desarrollo</a></li><br>
+                                            <li><span>Maestrías</span></li>
+                                            <li><a
+                                                    href="/maestria-en-administracion-de-negocios-con-calidad-y-productividad-online-connect">Maestría
+                                                    en Administración de Negocios Área Calidad y Productividad</a></li>
+                                            <li><a href="/posgrado/maestria-administracion-negocios-finanzas">Maestría
+                                                    en Administración de Negocios Área Finanzas</a></li>
+                                            <li><a href="/maestria-en-administracion-de-negocios-con-mercadotecnia">Maestría
+                                                    en Administración de Negocios Área Mercadotecnia</a></li>
+                                            <li><a
+                                                    href="/maestria-en-administracion-de-negocios-con-recursos-humanos-online">Maestría
+                                                    en Administración de Negocios Área Recursos Humanos</a></li>
+                                            <li><a href="/maestria-en-administracion-de-negocios-con-logistica.">Maestría
+                                                    en Administración de Negocios Área Logística</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <div class="accordion-title-container" data-toggle="collapse"
+                                            data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            <span>Connect Online</span>
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseFive" aria-expanded="false"
+                                                aria-controls="collapseFive">
+                                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                                                    alt="Flecha Abajo" class="accordion-arrow">
+                                            </button>
+                                        </div>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><span>Carreras Ejecutivas</span></li>
+                                            <li><a href="/licenciatura-en-administracion.">Licenciatura en
+                                                    Administración</a></li>
+                                            <li><a href="/licenciatura-en-comercio-y-negocios-internacionales.">Licenciatura
+                                                    en Comercio y Negocios Internacionales</a></li>
+                                            <li><a href="/licenciatura-en-mercadotecnia-y-publicidad">Licenciatura en
+                                                    Mercadotecnia y Publicidad</a></li>
+                                            <li><a href="/ingenieria-industrial-y-de-sistemas-connect.">Ingeniería
+                                                    Industrial y de Sistemas</a></li>
+                                            <li><a href="/ingenieria-en-computacion-administrativa.">Ingeniería en
+                                                    Computación Administrativa</a></li>
+                                            <li><a href="/licenciado-en-derecho">Licenciatura en Derecho</a></li>
+                                            <li><a href="/licenciatura-en-administracion-y-desarrollo-del-talento">Licenciatura
+                                                    en Administración y Desarrollo del Talento</a></li>
+                                            <li><a href="/licenciatura-en-educacion-y-desarrollo.">Licenciatura en
+                                                    Educación y Desarrollo</a></li><br>
+                                            <li><span>Maestrías</span></li>
+                                            <li><a
+                                                    href="/maestria-en-administracion-de-negocios-con-calidad-y-productividad-online-connect">Maestría
+                                                    en Administración de Negocios Área Calidad y Productividad</a></li>
+                                            <li><a href="/posgrado/maestria-administracion-negocios-finanzas">Maestría
+                                                    en Administración de Negocios Área Finanzas</a></li>
+                                            <li><a href="/maestria-en-administracion-de-negocios-con-mercadotecnia">Maestría
+                                                    en Administración de Negocios Área Mercadotecnia</a></li>
+                                            <li><a
+                                                    href="/maestria-en-administracion-de-negocios-con-recursos-humanos-online">Maestría
+                                                    en Administración de Negocios Área Recursos Humanos</a></li>
+                                            <li><a href="/maestria-en-administracion-de-negocios-con-logistica.">Maestría
+                                                    en Administración de Negocios Área Logística</a></li><br>
+                                            <li><span>Profesional Asociado</span></li>
+                                            <li><a href="/profesional-asociado-administracion-en-salud">Profesional
+                                                    Asociado en Administración en Salud</a></li>
+                                            <li><a href="/profesional-asociado-desarrollo-software">Profesional Asociado
+                                                    en Desarrollo de Software</a></li>
+                                            <li><a href="/profesional-asociado-turismo">Profesional Asociado en
+                                                    Turismo</a></li>
+                                            <li><a href="/profesional-asociado-en-procesos-industriales">Profesional
+                                                    Asociado en Procesos Industriales</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-2">
+                    <div class="bg-light position-relative overlay-container">
+                        <!-- Contenido de la columna 5, incluyendo la imagen -->
+                        <img class="accordion_desktop w-100"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Collapse_Desktop.png"
+                            alt="">
+                        <img class="accordion_mobile w-100"
+                            src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Collapse_Mobile.png"
+                            alt="">
+                        <div class="accordionOverlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                function toggleAccordion(container) {
+                    var arrowImage = container.querySelector('.accordion-arrow');
+                    arrowImage.classList.toggle('rotate-up');
+
+                    var otherContainers = document.querySelectorAll('.accordion-title-container');
+                    otherContainers.forEach(function (otherContainer) {
+                        if (otherContainer !== container) {
+                            var otherArrowImage = otherContainer.querySelector('.accordion-arrow');
+                            otherArrowImage.classList.remove('rotate-up');
+                        }
+                    });
+
+                    // Lógica específica del primer script
+                    var card = container.closest('.card');
+                    var siblingCards = card.parentElement.querySelectorAll('.card');
+                    siblingCards.forEach(function (siblingCard) {
+                        if (siblingCard !== card) {
+                            var collapse = siblingCard.querySelector('.collapse');
+                            if (collapse.classList.contains('show')) {
+                                collapse.classList.remove('show');
+                            }
+                        }
+                    });
+                }
+
+                var accordionTitleContainers = document.querySelectorAll('.accordion-title-container');
+                accordionTitleContainers.forEach(function (container) {
+                    container.addEventListener('click', function () {
+                        toggleAccordion(container);
+                    });
+                });
+
+                // Lógica específica del segundo script si es necesario
+
+                // Para obligar a que la card se contraiga
+                var collapseTriggers = document.querySelectorAll('[data-toggle="collapse"]');
+                collapseTriggers.forEach(function (trigger) {
+                    trigger.addEventListener('click', function () {
+                        var card = trigger.closest('.card');
+                        var siblingCards = card.parentElement.querySelectorAll('.card');
+                        siblingCards.forEach(function (siblingCard) {
+                            if (siblingCard !== card) {
+                                var collapse = siblingCard.querySelector('.collapse');
+                                if (collapse.classList.contains('show')) {
+                                    collapse.classList.remove('show');
+                                }
+                            }
+                        });
+                    });
+                });
+            });
+
+
+            window.addEventListener('DOMContentLoaded', function () {
+                var prevScreenWidth = window.innerWidth;
+                var accordionInitialized = false;
+
+                // Función para ajustar la altura del accordion
+                function ajustarAlturaAccordion() {
+                    var screenWidth = window.innerWidth;
+
+                    // Verificar si la pantalla es mayor o igual a 768px
+                    if (screenWidth >= 768) {
+                        var divAccordionOnePage = document.querySelector('.divAccordionOnePage');
+                        var body = document.querySelector('body');
+                        var colMd5 = document.querySelector('.col-md-5');
+                        var imgColMd5 = colMd5.querySelector('img');
+                        var accordion = document.querySelector('.accordion');
+                        var accordionTitleTop = document.querySelector('.accordionTitleTop');
+                        var accordionTitle = accordionTitleTop.querySelector('h5');
+                        var accordionText = accordionTitleTop.querySelector('p');
+
+                        // Calcula la altura disponible en .col-md-5
+                        var alturaDisponible = imgColMd5.getBoundingClientRect().height + 8;
+
+                        var estilosDivAccordion = getComputedStyle(divAccordionOnePage);
+                        var estilosbody = getComputedStyle(body);
+
+                        var estilosTitulo = getComputedStyle(accordionTitle);
+                        alturaDisponible -= parseFloat(estilosTitulo.marginTop) + parseFloat(estilosTitulo.marginBottom) + parseFloat(estilosTitulo.paddingTop) + parseFloat(estilosTitulo.paddingBottom);
+
+                        var estilosTexto = getComputedStyle(accordionText);
+                        alturaDisponible -= parseFloat(estilosTexto.marginTop) + parseFloat(estilosTexto.marginBottom) + parseFloat(estilosTexto.paddingTop) + parseFloat(estilosTexto.paddingBottom);
+
+                        var alturaAccordionTitleTop = accordionTitleTop.getBoundingClientRect().height;
+                        alturaDisponible -= alturaAccordionTitleTop + parseFloat(estilosDivAccordion.paddingTop) + parseFloat(estilosbody.marginTop) + parseFloat(estilosbody.marginBottom);
+
+                        if (!accordionInitialized || prevScreenWidth !== screenWidth) {
+                            // Ajusta la altura del accordion si es la primera vez o si cambió el tamaño de la pantalla
+                            alturaDisponible = alturaDisponible;
+                            accordion.style.height = alturaDisponible + 'px';
+                            prevScreenWidth = screenWidth;
+                            accordionInitialized = true;
+                        }
+                    } else {
+                        // Si la pantalla es menor a 768px, restablecer la altura del accordion
+                        var accordion = document.querySelector('.accordion');
+                        accordion.style.height = 'auto';
+                    }
+                }
+
+                // Llama a la función cuando la ventana cambia de tamaño
+                window.addEventListener('resize', function () {
+                    ajustarAlturaAccordion();
+                });
+
+                // Llama a la función al cargar la página
+                ajustarAlturaAccordion();
+            });
+
+        </script>
+
+        <!-- Table -->
+
+        <style>
+            .FormatosTableContainer {
+                background-color: #EFEFEF;
+                margin: 0 auto;
+                justify-content: center;
+            }
+
+            .FormatosTableContainer h5 {
+                font-family: 'Cairo', Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                letter-spacing: 0px;
+                color: #00A499;
+            }
+
+            .desktopContentTable {
+                display: none;
+            }
+
+            .mobileContentTable {
+                display: block;
+                align-items: center;
+                margin: 0 auto;
+            }
+
+            .accordionTitleTable {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .accordionTitleTable span {
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                padding-left: 10px;
+            }
+
+            .accordionTable {
+                margin: 0 auto;
+                display: block;
+                justify-content: center;
+            }
+
+            .accordionTable .btn:before,
+            .accordionTable .btn:hover,
+            .accordionTable .btn {
+                background: none !important;
+                border: none !important;
+            }
+
+            .accordionTable .card {
+                border: unset;
+                width: 89% !important;
+                max-width: 89% !important;
+                margin: auto;
+            }
+
+            .accordionTable .card-header {
+                background-color: #fff;
+                border: 1px solid #26D07C;
+                color: #00534C;
+                padding: 5px;
+            }
+
+            .accordionTable .card-header h2 {
+                margin-bottom: unset !important;
+            }
+
+
+            .accordionTable .card-header.show {
+                background-color: #26D07C;
+                border: 1px solid #007864;
+                color: #ffffff;
+            }
+
+            .accordionTable .card-header.show span {
+                font-weight: 700;
+            }
+
+            .accordionTable .card-body {
+                background-color: #00A499;
+            }
+
+            .accordionTable .card-body .two-column-list {
+                column-count: 2;
+                column-gap: 20px;
+                margin: 0 auto;
+            }
+
+            .accordionTable .card-body ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .accordionTable .card-body li {
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            .accordionTable .card-body li span {
+                font-weight: 700;
+            }
+
+            .divTableButton {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px auto;
+            }
+
+            .tec2023Tablebutton {
+                background-color: #26D07C;
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                color: #007864;
+
+            }
+
+            .TableContentFormatos .ContentBody {
+                background-color: #00A499;
+                padding: 25px 40px;
+            }
+
+            .TableContentFormatos .ContentBody .three-column-list {
+                column-count: 3;
+                column-gap: 50px;
+                margin: 0 auto;
+            }
+
+            .ContentBody ul {
+                list-style-type: none;
+            }
+
+            .ContentBody li {
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            .ContentBody li span {
+                font-weight: 700;
+            }
+
+            .desktopContentTable .btnFormatos:focus {
+                outline: unset !important;
+            }
+
+            .desktopContentTable .btnFormatos {
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                padding: 0.375rem 0.75rem;
+                line-height: 1.5;
+                text-decoration: none;
+                ;
+            }
+
+            .desktopContentTable .btnTableFormatos {
+                background-color: #fff !important;
+                border: 1px solid #26D07C !important;
+                color: #00534C !important;
+                font-family: 'Source Sans 3', Arial, Helvetica, sans-serif !important;
+                font-weight: 400 !important;
+                font-size: 16px !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+                text-transform: unset !important;
+            }
+
+            .desktopContentTable .btnTableFormatos.active {
+                background-color: #26D07C !important;
+                color: #fff !important;
+                font-weight: 700 !important;
+                font-size: 16px !important;
+            }
+
+            .table-arrow_1 {
+                display: none;
+            }
+
+            .table-arrow_2 {
+                display: block;
+            }
+
+            .card-header.show .table-arrow_1 {
+                display: inline;
+            }
+
+            .card-header.show .table-arrow_2 {
+                display: none;
+            }
+
+            @media only screen and (min-width: 320px) {
+                .FormatosTableContainer h5 {
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-align: center;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+
+                .accordionTitleTable span {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                .card-body .two-column-list li {
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+
+                .tec2023Tablebutton {
+                    font-size: 17px;
+                    line-height: 27px;
+                    padding: 5px 15px;
+                }
+
+            }
+
+            @media only screen and (min-width: 480px) {
+                .FormatosTableContainer h5 {
+                    font-size: 28px;
+                    line-height: 36px;
+                    text-align: center;
+                    padding-left: 72px;
+                    padding-right: 72px;
+                }
+            }
+
+            @media only screen and (min-width: 768px) {
+                .FormatosTableContainer h5 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-align: center;
+                    padding-left: 170px;
+                    padding-right: 170px;
+                }
+
+                .desktopContentTable {
+                    display: block;
+                }
+
+                .mobileContentTable {
+                    display: none;
+                }
+
+                .TableContentFormatos {
+                    display: none;
+                    width: 721px;
+                    height: 411px;
+                }
+
+                .TableContentFormatos.show {
+                    display: block;
+                }
+
+                .ContentBody li {
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+
+                .btn-group-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+
+                .accordionTitleTable {
+                    width: auto;
+                    margin: 0 10px;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+                .FormatosTableContainer h5 {
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-align: center;
+                    padding-left: unset !important;
+                    padding-right: unset !important;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                .FormatosTableContainer h5 {
+                    font-size: 40px;
+                    line-height: 48px;
+                    text-align: center;
+                }
+            }
+        </style>
+
+        <div class="FormatosTableContainer">
+            <!-- Desktop Content (Shown above 768px) -->
+            <div class="desktopContentTable pt-5 pb-5">
+                <h5 class="pb-3" data-aos="zoom-out-right" data-aos-duration="1000">¿Dónde puedes estudiar el formato
+                    que necesitas?</h5>
+                <div class="btn-group-container" data-aos="zoom-out-right" data-aos-duration="1500">
+                    <div class="btn-group">
+                        <button class="btnFormatos btnTableFormatos active"
+                            data-target="#TableContentFormatos1">Presencial</button>
+                        <button class="btnFormatos btnTableFormatos"
+                            data-target="#TableContentFormatos2">Online</button>
+                        <button class="btnFormatos btnTableFormatos"
+                            data-target="#TableContentFormatos3">Autodirigido</button>
+                        <button class="btnFormatos btnTableFormatos" data-target="#TableContentFormatos4">Connect
+                            Hybrid</button>
+                        <button class="btnFormatos btnTableFormatos" data-target="#TableContentFormatos5">Connect
+                            Online</button>
+                    </div>
+                    <div class="btn-group-content">
+                        <div id="TableContentFormatos1" class="TableContentFormatos show">
+                            <div class="ContentBody mt-2">
+                                <div class="three-column-list mb-4">
+                                    <ul>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara</li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Torres</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reynosa</li>
+                                        <li>SLP</li>
+                                        <li>San Nicolás</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="TableContentFormatos2" class="TableContentFormatos">
+                            <div class="ContentBody mt-2">
+                                <div class="three-column-list mb-4">
+                                    <ul>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara </li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Torres</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reynosa</li>
+                                        <li>San Luis Potosí</li>
+                                        <li>San Nicolás</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="TableContentFormatos3" class="TableContentFormatos">
+                            <div class="ContentBody mt-2">
+                                <div class="three-column-list mb-4">
+                                    <ul>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara </li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Torres</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reynosa</li>
+                                        <li>San Luis Potosí</li>
+                                        <li>San Nicolás</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="TableContentFormatos4" class="TableContentFormatos">
+                            <div class="ContentBody mt-2 ">
+                                <div class="three-column-list mb-4">
+                                    <ul style="line-height: 18px;">
+                                        <li>Artz Pedregal</li>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara</li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Americas</li>
+                                        <li>Las Torres</li>
+                                        <li>León</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Mítikah</li>
+                                        <li>Morelia</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reforma</li>
+                                        <li>Reynosa</li>
+                                        <li>Saltillo</li>
+                                        <li>SLP</li>
+                                        <li>San Nicolás</li>
+                                        <li>Santa Fé</li>
+                                        <li>Satélite</li>
+                                        <li>Tijuana Río</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="TableContentFormatos5" class="TableContentFormatos">
+                            <div class="ContentBody mt-2">
+                                <div class="three-column-list mb-4">
+                                    <ul>
+                                        <li>Artz Pedregal</li>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara</li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Americas</li>
+                                        <li>Las Torres</li>
+                                        <li>León</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Mítikah</li>
+                                        <li>Morelia</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reforma</li>
+                                        <li>Reynosa</li>
+                                        <li>Saltillo</li>
+                                        <li>SLP</li>
+                                        <li>San Nicolás</li>
+                                        <li>Santa Fé</li>
+                                        <li>Satélite</li>
+                                        <li>Tijuana Río</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Content (Shown below 768px) -->
+            <div class="mobileContentTable pt-5 pb-5">
+                <h5 class="pb-3">¿Dónde puedes estudiar el formato que necesitas?</h5>
+                <div class="accordionTable" id="accordionExample">
+                    <div class="card mb-3" data-aos="fade-up">
+                        <div class="card-header show" id="headingOneTable">
+                            <h2>
+                                <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseOneTable"
+                                    aria-expanded="true" aria-controls="collapseOneTable">
+                                    <span>Presencial</span>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseOneTable" aria-expanded="true"
+                                        aria-controls="collapseOneTable">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                            alt="Flecha" class="table-arrow_1" style="display: inline;">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                            alt="Flecha" class="table-arrow_2" style="display: none;">
+                                    </button>
+                                </div>
+                            </h2>
+                        </div>
+                        <div id="collapseOneTable" class="collapse show" aria-labelledby="headingOneTable"
+                            data-parent="#accordionExample">
+                            <div class="card-body mt-2">
+                                <div class="two-column-list">
+                                    <ul>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara </li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Torres</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reynosa</li>
+                                        <li>San Luis Potosí</li>
+                                        <li>San Nicolás</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" data-aos="fade-up">
+                        <div class="card-header" id="headingTwoTable">
+                            <h2>
+                                <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseTwoTable"
+                                    aria-expanded="false" aria-controls="collapseTwoTable">
+                                    <span>Online</span>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwoTable" aria-expanded="false"
+                                        aria-controls="collapseTwoTable">
+
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                            alt="Flecha" class="table-arrow_1">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                            alt="Flecha" class="table-arrow_2">
+                                    </button>
+                                </div>
+                            </h2>
+                        </div>
+                        <div id="collapseTwoTable" class="collapse" aria-labelledby="headingTwoTable"
+                            data-parent="#accordionExample">
+                            <div class="card-body mt-2">
+                                <div class="two-column-list">
+                                    <ul>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara </li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Torres</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reynosa</li>
+                                        <li>San Luis Potosí</li>
+                                        <li>San Nicolás</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" data-aos="fade-up">
+                        <div class="card-header" id="headingThreeTable">
+                            <h2>
+                                <div class="accordionTitleTable" data-toggle="collapse"
+                                    data-target="#collapseThreeTable" aria-expanded="false"
+                                    aria-controls="collapseThreeTable">
+                                    <span>Autodirigido</span>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThreeTable" aria-expanded="false"
+                                        aria-controls="collapseThreeTable">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                            alt="Flecha" class="table-arrow_1">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                            alt="Flecha" class="table-arrow_2">
+                                    </button>
+                                </div>
+                            </h2>
+                        </div>
+                        <div id="collapseThreeTable" class="collapse" aria-labelledby="headingThreeTable"
+                            data-parent="#accordionExample">
+                            <div class="card-body mt-2">
+                                <div class="two-column-list">
+                                    <ul>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara </li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Torres</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reynosa</li>
+                                        <li>San Luis Potosí</li>
+                                        <li>San Nicolás</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" data-aos="fade-up">
+                        <div class="card-header" id="headingFourTable">
+                            <h2>
+                                <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseFourTable"
+                                    aria-expanded="false" aria-controls="collapseFourTable">
+                                    <span>Connect Hybrid</span>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFourTable" aria-expanded="false"
+                                        aria-controls="collapseFourTable">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                            alt="Flecha" class="table-arrow_1">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                            alt="Flecha" class="table-arrow_2">
+                                    </button>
+                                </div>
+                            </h2>
+                        </div>
+                        <div id="collapseFourTable" class="collapse" aria-labelledby="headingFourTable"
+                            data-parent="#accordionExample">
+                            <div class="card-body mt-2">
+                                <div class="two-column-list">
+                                    <ul>
+                                        <li>Artz Pedregal</li>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara</li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Americas</li>
+                                        <li>Las Torres</li>
+                                        <li>León</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Mítikah</li>
+                                        <li>Morelia</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reforma</li>
+                                        <li>Reynosa</li>
+                                        <li>Saltillo</li>
+                                        <li>SLP</li>
+                                        <li>San Nicolás</li>
+                                        <li>Santa Fé</li>
+                                        <li>Satélite</li>
+                                        <li>Tijuana Río</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" data-aos="fade-up">
+                        <div class="card-header" id="headingFiveTable">
+                            <h2>
+                                <div class="accordionTitleTable" data-toggle="collapse" data-target="#collapseFiveTable"
+                                    aria-expanded="false" aria-controls="collapseFiveTable">
+                                    <span>Connect Online</span>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFiveTable" aria-expanded="false"
+                                        aria-controls="collapseFiveTable">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_1.png"
+                                            alt="Flecha" class="table-arrow_1">
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/arrow_table_2.png"
+                                            alt="Flecha" class="table-arrow_2">
+                                    </button>
+                                </div>
+                            </h2>
+                        </div>
+                        <div id="collapseFiveTable" class="collapse" aria-labelledby="headingFiveTable"
+                            data-parent="#accordionExample">
+                            <div class="card-body mt-2">
+                                <div class="two-column-list">
+                                    <ul>
+                                        <li>Artz Pedregal</li>
+                                        <li>Cancún</li>
+                                        <li>Chihuahua</li>
+                                        <li>Ciudad Juárez</li>
+                                        <li>Cuautitlán Izcalli</li>
+                                        <li>Cuernavaca</li>
+                                        <li>Culiacán</li>
+                                        <li>Cumbres</li>
+                                        <li>Durango</li>
+                                        <li>Ferrería</li>
+                                        <li>Guadalajara</li>
+                                        <li>Guadalupe</li>
+                                        <li>Hermosillo</li>
+                                        <li>Laguna</li>
+                                        <li>Las Americas</li>
+                                        <li>Las Torres</li>
+                                        <li>León</li>
+                                        <li>Los Mochis</li>
+                                        <li>Mazatlán</li>
+                                        <li>Mérida</li>
+                                        <li>Mítikah</li>
+                                        <li>Morelia</li>
+                                        <li>Nuevo Laredo</li>
+                                        <li>Ciudad Obregón</li>
+                                        <li>Puebla</li>
+                                        <li>Querétaro</li>
+                                        <li>Reforma</li>
+                                        <li>Reynosa</li>
+                                        <li>Saltillo</li>
+                                        <li>SLP</li>
+                                        <li>San Nicolás</li>
+                                        <li>Santa Fé</li>
+                                        <li>Satélite</li>
+                                        <li>Tijuana Río</li>
+                                        <li>Toluca</li>
+                                        <li>Veracruz</li>
+                                        <li>Villahermosa</li>
+                                        <li>Zacatecas</li>
+                                        <li>Zapopan</li>
+                                    </ul>
+                                </div>
+                                <div class="divTableButton">
+                                    <a class="btnFormatos tec2023Tablebutton" href="/campus">Conocer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const accordionHeaders = document.querySelectorAll(".card-header");
+
+                accordionHeaders.forEach(header => {
+                    header.addEventListener("click", function () {
+                        const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+                        // Oculta todos los cuerpos y cambia las flechas
+                        accordionHeaders.forEach(h => {
+                            h.classList.remove("show");
+                            const arrow1 = h.querySelector(".table-arrow_1");
+                            const arrow2 = h.querySelector(".table-arrow_2");
+                            if (arrow1) arrow1.style.display = "none";
+                            if (arrow2) arrow2.style.display = "inline";
+                            h.setAttribute("aria-expanded", "false");
+                        });
+
+                        // Muestra o oculta el cuerpo de la tarjeta actual
+                        const body = this.nextElementSibling;
+                        if (!isExpanded) {
+                            this.classList.add("show");
+                            const arrow1 = this.querySelector(".table-arrow_1");
+                            const arrow2 = this.querySelector(".table-arrow_2");
+                            if (arrow1) arrow1.style.display = "inline";
+                            if (arrow2) arrow2.style.display = "none";
+                            this.setAttribute("aria-expanded", "true");
+                        } else {
+                            this.setAttribute("aria-expanded", "false");
+                        }
+
+                        // Validación adicional para el div con id único
+                        const collapseId = body.getAttribute("id");
+                        const collapseElement = document.getElementById(collapseId);
+
+                        setTimeout(() => {
+                            if (collapseElement && collapseElement.classList.contains("show")) {
+                                header.classList.add("show");
+                                accordionHeaders.forEach(h => {
+                                    h.setAttribute("aria-expanded", "true");
+                                    const arrow1 = h.querySelector(".table-arrow_1");
+                                    const arrow2 = h.querySelector(".table-arrow_2");
+                                    arrow1.style.display = "inline";
+                                    arrow2.style.display = "none";
+                                });
+                            } else {
+                                header.classList.remove("show");
+                                accordionHeaders.forEach(h => {
+                                    h.setAttribute("aria-expanded", "false");
+                                    const arrow1 = h.querySelector(".table-arrow_1");
+                                    const arrow2 = h.querySelector(".table-arrow_2");
+                                    arrow1.style.display = "none";
+                                    arrow2.style.display = "inline";
+                                });
+                            }
+                        }, 500);
+                    });
+                });
+
+                // Script adicional para manejar clics en los botones
+                const btns = document.querySelectorAll('.btn-group-container .btnFormatos');
+                btns.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        // Elimina la clase active de todos los botones
+                        btns.forEach(b => b.classList.remove('active'));
+
+                        // Agrega la clase active al botón clicado
+                        this.classList.add('active');
+
+                        // Elimina la clase show de todos los elementos de TableContentFormatos
+                        document.querySelectorAll('.TableContentFormatos').forEach(tc => tc.classList.remove('show'));
+
+                        // Agrega la clase show al elemento asociado al botón clicado
+                        const target = this.dataset.target;
+                        document.querySelector(target).classList.add('show');
+                    });
+                });
+            });
+
+        </script>
+
+        <!-- Disponibilidad -->
+
+        <style>
+            .formatosDisponibilidad {
+                background-color: #007864;
+                width: 100%;
+                display: flex;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .formatosDisponibilidadContent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .formatosDisponibilidadContent h5 {
+                font-family: 'Cairo', Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                letter-spacing: 0px;
+                text-align: center;
+                color: #fff !important;
+                margin: unset !important;
+                text-transform: unset !important
+            }
+
+            /* Media query para pantallas pequeñas (min-width: 375px) */
+            @media (min-width: 375px) {
+                .formatosDisponibilidad {
+                    height: 270px;
+                }
+
+                .formatosDisponibilidad img {
+                    width: 40px;
+                }
+
+                .formatosDisponibilidad h5 {
+                    font-size: 24px !important;
+                    line-height: 30px !important;
+                    padding: 20px 50px 5px 50px !important;
+                }
+            }
+
+            /* Media query para pantallas medianas (min-width: 480px) */
+            @media (min-width: 480px) {
+                .formatosDisponibilidad {
+                    height: 320px;
+                    /* Ajusta el valor según sea necesario */
+                }
+
+                .formatosDisponibilidad img {
+                    width: 45px;
+                }
+
+                .formatosDisponibilidad h5 {
+                    font-size: 28px !important;
+                    line-height: 36px !important;
+                    padding: 20px 80px 5px 80px !important;
+                }
+            }
+
+            /* Media query para pantallas medianas/grandes (min-width: 768px) */
+            @media (min-width: 768px) {
+                .formatosDisponibilidad {
+                    height: 400px;
+                    /* Ajusta el valor según sea necesario */
+                }
+
+                .formatosDisponibilidad img {
+                    width: 50px;
+                }
+
+                .formatosDisponibilidad h5 {
+                    font-size: 32px !important;
+                    line-height: 42px !important;
+                    padding: 20px 80px 5px 80px !important;
+                }
+            }
+
+            /* Media query para pantallas grandes (min-width: 992px) */
+            @media (min-width: 992px) {
+                .formatosDisponibilidad {
+                    height: 440px;
+                    /* Ajusta el valor según sea necesario */
+                }
+
+                .formatosDisponibilidad img {
+                    width: 55px;
+                }
+
+                .formatosDisponibilidad h5 {
+                    font-size: 36px !important;
+                    line-height: 42px !important;
+                    padding: 20px 160px 5px 160px !important;
+                }
+            }
+
+            /* Media query para pantallas extra grandes (min-width: 1200px) */
+            @media (min-width: 1200px) {
+                .formatosDisponibilidad {
+                    height: 467px;
+                    /* Ajusta el valor según sea necesario */
+                }
+
+                .formatosDisponibilidad img {
+                    width: 55px;
+                }
+
+                .formatosDisponibilidad h5 {
+                    font-size: 40px !important;
+                    line-height: 48px !important;
+                    width: 1240px !important;
+                    padding: 20px 260px 5px 260px !important;
+                }
+            }
+        </style>
+
+        <div class="formatosDisponibilidad">
+            <div class="formatosDisponibilidadContent" data-aos="zoom-in-up">
+                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/forum_FILL0_wght400_GRAD0_opsz24%20(1)%202.png"
+                    alt="">
+                <h5>Pregunta por la disponibilidad de formatos de estudio en tu campus</h5>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- END CODE HERE -->
+
+    <script
+        src="//2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/js/main.bundle.min.js"></script>
+    <script src="//cdn2.hubspot.net/hubfs/2429099/landings/landings-javascript/utm.js"></script>
+    <script src="//cdn2.hubspot.net/hubfs/2429099/landings/landings-javascript/validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
