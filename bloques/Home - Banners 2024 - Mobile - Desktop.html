@@ -24,76 +24,76 @@
             var imagenes = [
                 {
                     desktop:
-                        "https://tecmilenio.mx/sites/default/files/2024-01/Banners-Sitio_Web_Prepa.webp",
-                    mobile:
-                        "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PREPA.jpg",
-                    link: "",
-                    alt: "El lugar en donde encuentro mi futuro",
-
-                },
-                {
-                    desktop:
                         "https://tecmilenio.mx/sites/default/files/2024-01/Banners-Sitio_Web.webp",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-TM.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://tecmilenio.mx/es",
+                    alt: "El lugar en donde descubro mi proposito",
+                },
+                {
+                    desktop:
+                        "https://tecmilenio.mx/sites/default/files/2024-01/Banners-Sitio_Web_Prepa.webp",
+                    mobile:
+                        "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PREPA.jpg",
+                    link: "https://universidad.tecmilenio.mx/nueva-prepa?_ga=2.50527529.1277558557.1715185484-479477550.1714666577",
+                    alt: "El lugar en donde encuentro mi futuro",
+
                 },
                 {
                     desktop:
                         "https://tecmilenio.mx/sites/default/files/2024-01/Banners-Sitio_Web_UTM.webp",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PROFE.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://tecmilenio.mx/es/carreras-profesionales",
+                    alt: "Crea un perfil profesiona unico a tu medida",
                 },
                 {
                     desktop:
                         "https://tecmilenio.mx/sites/default/files/2024-01/Banners-Sitio_Web_PA.webp",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PA.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://tecmilenio.mx/es/profesional-asociado",
+                    alt: "Estudia una carrea corta y alcanza tus objetivos",
                 },
                 {
                     desktop:
                         "https://tecmilenio.mx/sites/default/files/2024-01/Banners-Sitio_Web_SC.webp",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-SC.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://cdc.tecmilenio.mx/?_ga=2.120247816.1277558557.1715185484-479477550.1714666577",
+                    alt: "Obten competencias para el trabajo y para la vida",
                 },
                 {
                     desktop:
                         "https://tecmilenio.mx/sites/default/files/2023-11/bannerEmpresas_0.jpg",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Empresas.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://tecmilenio.mx/es/empresas",
+                    alt: "Las herramientas para el exito de colaboradores y empresas estan en tecmilenio",
                 },
                 {
                     desktop:
                         "https://tecmilenio.mx/sites/default/files/2023-11/banner%20-%20nao.png",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_NAO.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://nowisnao.com/",
+                    alt: "Conecta con las oportunidades mas demandadas",
                 },
                 {
                     desktop:
                         "https://tecmilenio.mx/sites/default/files/2024-01/Nuevos-Campus%20%281%29_0.webp",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Campus.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/website/img/bannersitioweb/Comunicado%20Nacional.jpg",
+                    alt: "Descubre nuestros nuevos campus",
                 },
                 {
                     desktop:
                         "https://tecmilenio.mx/sites/default/files/2023-11/digital-skilling.png",
                     mobile:
                         "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Habilidades.jpg",
-                    link: "",
-                    alt: "",
+                    link: "https://tecmilenio.mx/es/digital?utm_source=Banner%20&utm_medium=Banner%20&utm_campaign=Banner%20carrusel",
+                    alt: "Aprende habilidades digitales",
                 },
             ];
 
@@ -109,10 +109,12 @@
                     "img-fluid w-100 banner-top-2024 " +
                     (isDesktop ? "img-desktop" : "img-mobile");
                 imagenElement.src = imgSrc;
-                imagenElement.alt = isDesktop
-                    ? "Imagen para Escritorio"
-                    : "Imagen para Móvil";
-                divItem.appendChild(imagenElement);
+                imagenElement.alt = imagen.alt;
+                var aElement = document.createElement("a");
+                aElement.href = imagen.link;
+                aElement.target = "_blank";
+                aElement.appendChild(imagenElement);
+                divItem.appendChild(aElement);
                 carouselInner.appendChild(divItem);
             });
         }
