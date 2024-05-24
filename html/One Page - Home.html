@@ -1,0 +1,461 @@
+<!-- ESTA PAGINA ES LA BASE PARA TODAS LAS PAGINAS TECMILENIO Y ASI AGILIZAR EL DESARROLLO, 
+ESTA PAGINA YA TIENE AGREGADAS LAS LIBRERIAS TECMILENIO Y FUENTES NECESARIAS, PARA COMENZAR
+AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Tecmilenio</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" media="all"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Gentium+Plus:wght@400;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" />
+    <link rel="stylesheet" media="all"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Hubspot -->
+    <link rel="stylesheet" media="all"
+        href="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/css/styles.bundle.min.css" />
+
+    <!-- Bootstrap -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="/themes/custom/tecmilenio/css/iconfont.css">
+</head>
+
+<body>
+
+    <!-- START CODE HERE -->
+    <!-- El codigo siempre debe estar dentro del section para mas comodidad. -->
+
+    <section id="home-2024">
+
+        <h1 class="d-none">
+            Aprendizaje flexible, basado en certificados, y con proposito de vida
+        </h1>
+
+        <!-- Hero Banner 2024 -->
+
+        <section id="hero-banner-2024">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="carouselImages">
+                    <!-- Imágenes se cargarán dinámicamente aquí -->
+                </div>
+                <!-- Controles del carrusel -->
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+
+            <script>
+                // Variables para almacenar el estado del tamaño de la pantalla
+                var isDesktop = window.innerWidth >= 768;
+
+                // Función para cargar imágenes dinámicamente basadas en el tamaño de la pantalla
+                function cargarImagenes() {
+                    var imagenes = [
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-MB.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-TM.jpg",
+                            link: "https://tecmilenio.mx/es",
+                            alt: "El lugar en donde descubro mi proposito",
+                        },
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-Prepa.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PREPA.jpg",
+                            link: "https://universidad.tecmilenio.mx/nueva-prepa?_ga=2.50527529.1277558557.1715185484-479477550.1714666577",
+                            alt: "El lugar en donde encuentro mi futuro",
+
+                        },
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-Profe.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PROFE.jpg",
+                            link: "https://tecmilenio.mx/es/carreras-profesionales",
+                            alt: "Crea un perfil profesiona unico a tu medida",
+                        },
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-PA.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PA.jpg",
+                            link: "https://tecmilenio.mx/es/profesional-asociado",
+                            alt: "Estudia una carrea corta y alcanza tus objetivos",
+                        },
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-SC.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-SC.jpg",
+                            link: "https://cdc.tecmilenio.mx/?_ga=2.120247816.1277558557.1715185484-479477550.1714666577",
+                            alt: "Obten competencias para el trabajo y para la vida",
+                        },
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-Empresas.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Empresas.jpg",
+                            link: "https://tecmilenio.mx/es/empresas",
+                            alt: "Las herramientas para el exito de colaboradores y empresas estan en tecmilenio",
+                        },
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-NAO.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_NAO.jpg",
+                            link: "https://nowisnao.com/",
+                            alt: "Conecta con las oportunidades mas demandadas",
+                        },
+                        {
+                            desktop:
+                                "https://tecmilenio.mx/sites/default/files/2024-01/Nuevos-Campus%20%281%29_0.webp",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Campus.jpg",
+                            link: "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/website/img/bannersitioweb/Comunicado%20Nacional.jpg",
+                            alt: "Descubre nuestros nuevos campus",
+                        },
+                        {
+                            desktop:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-HD.jpg",
+                            mobile:
+                                "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Habilidades.jpg",
+                            link: "https://tecmilenio.mx/es/digital?utm_source=Banner%20&utm_medium=Banner%20&utm_campaign=Banner%20carrusel",
+                            alt: "Aprende habilidades digitales",
+                        },
+                    ];
+
+                    var carouselInner = document.getElementById("carouselImages");
+                    carouselInner.innerHTML = ""; // Limpiar contenido previo del carrusel
+
+                    imagenes.forEach(function (imagen, index) {
+                        var divItem = document.createElement("div");
+                        divItem.className = "carousel-item" + (index === 0 ? " active" : ""); // Agregar clase 'active' al primer ítem
+                        var imgSrc = isDesktop ? imagen.desktop : imagen.mobile; // Seleccionar imagen según el tamaño de la pantalla
+                        var imagenElement = document.createElement("img");
+                        imagenElement.className =
+                            "img-fluid w-100 banner-top-2024 " +
+                            (isDesktop ? "img-desktop" : "img-mobile");
+                        imagenElement.src = imgSrc;
+                        imagenElement.alt = imagen.alt;
+                        var aElement = document.createElement("a");
+                        aElement.href = imagen.link;
+                        aElement.target = "_blank";
+                        aElement.appendChild(imagenElement);
+                        divItem.appendChild(aElement);
+                        carouselInner.appendChild(divItem);
+                    });
+                }
+
+                // Llamar a la función para cargar las imágenes al cargar la página
+                cargarImagenes();
+
+                // Agregar un evento de cambio de tamaño de ventana para cargar imágenes dinámicamente solo cuando cambie el tipo de dispositivo
+                window.addEventListener("resize", function () {
+                    var isDesktopNow = window.innerWidth >= 768;
+
+                    // Verificar si el tipo de dispositivo ha cambiado
+                    if (isDesktop !== isDesktopNow) {
+                        isDesktop = isDesktopNow;
+                        cargarImagenes();
+                    }
+                });
+            </script>
+
+
+        </section>
+
+        <!-- Hero Periods 2024 -->
+        <section id="hero-periods-2024">
+            <style>
+                #hero-periods-2024 {
+                    background-color: #EFEFEF;
+                }
+
+                #hero-periods-2024 .container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    padding-top: 70px !important;
+                    padding-bottom: 70px !important;
+                }
+
+                #hero-periods-2024 .period-legend,
+                #hero-periods-2024 .periods,
+                #hero-periods-2024 .call-to-action {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+
+                #hero-periods-2024 .period-legend {
+                    color: var(--default-tecmilenio-first);
+                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    text-align: center;
+                }
+
+                #hero-periods-2024 .periods {
+                    gap: 30px;
+                    align-items: center;
+                    color: var(--default-tecmilenio-first);
+                }
+
+                #hero-periods-2024 .quarterly {
+                    text-align: right;
+                }
+
+                #hero-periods-2024 .quarterly,
+                #hero-periods-2024 .biannual {
+                    font-family: Source Sans 3;
+                    font-size: 14px;
+                    line-height: 20px;
+                    max-width: 200px;
+                    width: 100%;
+                }
+
+                #hero-periods-2024 .quarterly-title,
+                #hero-periods-2024 .biannual-title {
+                    font-weight: bold;
+                }
+
+                #hero-periods-2024 .line-periods {
+                    background-color: var(--tecmilenio-first);
+                    height: calc(100% + 16px);
+                    width: 1px;
+                }
+
+                #hero-periods-2024 .call-to-action .btn-icon {
+                    border-radius: 100px;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                    font-size: 11px;
+                    font-weight: 700;
+                    line-height: 14px;
+                    text-align: center;
+                    color: var(--default-tecmilenio-first);
+                    position: relative;
+                    z-index: 0;
+                    margin-top: 20px;
+                }
+
+                #hero-periods-2024 .call-to-action .btn-icon:hover {
+                    background-color: var(--default-tecmilenio-first);
+                    color: white;
+                }
+
+                #hero-periods-2024 .call-to-action .btn-icon:hover>.material-symbols-outlined {
+                    color: white;
+                }
+
+                #hero-periods-2024 .call-to-action .btn-icon::before {
+                    border-radius: 50px;
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    inset: 0;
+                    padding: 3px;
+                    background: linear-gradient(to top right, var(--default-tecmilenio-fifth), #136A3F);
+                    -webkit-mask:
+                        linear-gradient(#fff 0 0) content-box,
+                        linear-gradient(#fff 0 0);
+                    mask:
+                        linear-gradient(#fff 0 0) content-box,
+                        linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                }
+
+                #hero-periods-2024 .call-to-action .btn-icon>:first-child {
+                    background: var(--tecmilenio-first);
+                    padding: 4px 10px;
+                    border-radius: 50px 0px 0px 50px;
+                    font-size: 20px;
+                    color: white;
+                    z-index: -2;
+                }
+
+                #hero-periods-2024 .call-to-action .btn-icon>:last-child {
+                    padding-right: 10px;
+                    color: var(--default-tecmilenio-first);
+                    transition: all .6s ease;
+                }
+            </style>
+            <div class="container">
+                <div class="period-legend w-100">
+                    Próximo inicio de clases
+                </div>
+                <div class="periods my-4">
+                    <div class="quarterly">
+                        <div class="quarterly-title">
+                            Tetramestral
+                        </div>
+                        <div class="quarterly-date">
+                            Septiembre 2022
+                        </div>
+                    </div>
+                    <div class="line-periods"></div>
+                    <div class="biannual">
+                        <div class="biannual-title">
+                            Semestral
+                        </div>
+                        <div class="biannual-date">
+                            Enero 2023
+                        </div>
+                    </div>
+                </div>
+                <div class="call-to-action">
+                    <a href="" class="btn-icon">
+                        <span class="material-symbols-outlined">
+                            notifications_active
+                        </span>
+                        Comienza hoy, Aplica Ahora.
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <script>
+            </script>
+        </section>
+
+        <!-- Info Cards 2024 -->
+        <section class="info-cards-2024">
+            <style>
+                .info-cards-2024 .container {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 70px !important;
+                    padding-bottom: 70px !important;
+                    flex-wrap: wrap;
+                }
+
+                .tcard-2024 {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .tcard-2024-title {
+                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    text-align: center;
+                    color: var(--default-tecmilenio-first);
+                    width: 100%;
+                }
+
+                .tcard-2024-image {
+                    min-height: 176px;
+                    width: 100%;
+                }
+
+                .tcard-2024-description {
+                    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    text-align: center;
+                }
+
+                .tbtn-2024 {
+                    border: 2px solid #00534C;
+                    border-radius: 100px;
+                    min-width: 130px;
+                    min-height: 30px;
+                    padding: 5px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 14.63px;
+                    text-align: center;
+                    color: var(--tecmilenio-first) !important;
+                }
+            </style>
+            <div class="container">
+                <div class="tcard-2024 mb-5">
+                    <h2 class="tcard-2024-title mb-4">Admisiones</h2>
+                    <img src="https://s3-alpha-sig.figma.com/img/70d6/dfde/8d7ed50a86b07ceed1bc52f50ca7dc1b?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iHBwYcIH9LWosOO1H2wGR8Uo9uVxLmF8lza93hpfm53y8J2KWF68yyJpHSJ4A8nXBbxZ1OIacfHKTubk7QxRqfUc2~a7-2LqBr8GevkLmdc--qIml3mK04H5m~9s3zMUiRFlvbSD2FdgBGyDPQujf7c4jnosy98MZOO9YDdlbOpeqk~sVdwpupY7FDB376NkajBqpCdT~ApaE3J1nijJr2nSud9-hnm-UXcRcEm16g7LrbLTNyNjmXHD5KTKkYijdsQMULtxeApEmvqVU62wTbbBYzTAWm5wIhovLWP6-rqNgWM6HfZm3jh3ILWtxAGg-O4y26H8cPFHU3AG1qlETg__"
+                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4">
+                    <p class="tcard-2024-description mb-4">
+                        Conoce el proceso diseñado para que tu admisión en el nivel académico de tu elección sea una
+                        experiencia agradable, ágil y sencilla.
+                    </p>
+                    <a class="tbtn-2024">
+                        Leer más
+                    </a>
+                </div>
+                <div class="tcard-2024">
+                    <h2 class="tcard-2024-title mb-4">Becas</h2>
+                    <img src="https://s3-alpha-sig.figma.com/img/70d6/dfde/8d7ed50a86b07ceed1bc52f50ca7dc1b?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iHBwYcIH9LWosOO1H2wGR8Uo9uVxLmF8lza93hpfm53y8J2KWF68yyJpHSJ4A8nXBbxZ1OIacfHKTubk7QxRqfUc2~a7-2LqBr8GevkLmdc--qIml3mK04H5m~9s3zMUiRFlvbSD2FdgBGyDPQujf7c4jnosy98MZOO9YDdlbOpeqk~sVdwpupY7FDB376NkajBqpCdT~ApaE3J1nijJr2nSud9-hnm-UXcRcEm16g7LrbLTNyNjmXHD5KTKkYijdsQMULtxeApEmvqVU62wTbbBYzTAWm5wIhovLWP6-rqNgWM6HfZm3jh3ILWtxAGg-O4y26H8cPFHU3AG1qlETg__"
+                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4">
+                    <p class="tcard-2024-description mb-4">
+                        Conoce los distintos tipos de apoyos financieros que tenemos para continuar con tus estudios, seguir tus sueños y lograr tu Propósito de Vida.
+                    </p>
+                    <a class="tbtn-2024">
+                        Becas
+                    </a>
+                    <a class="tbtn-2024 ml-3">
+                        Plan educación
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+
+    </section>
+
+    <!-- END CODE HERE -->
+
+    <script
+        src="//2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/js/main.bundle.min.js"></script>
+    <script src="//cdn2.hubspot.net/hubfs/2429099/landings/landings-javascript/utm.js"></script>
+    <script src="//cdn2.hubspot.net/hubfs/2429099/landings/landings-javascript/validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
