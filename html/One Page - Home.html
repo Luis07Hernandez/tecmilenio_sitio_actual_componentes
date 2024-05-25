@@ -41,6 +41,79 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
     <!-- START CODE HERE -->
     <!-- El codigo siempre debe estar dentro del section para mas comodidad. -->
 
+    <!-- General Classes -->
+    <style>
+        .tec24-h2-1 {
+            color: var(--default-tecmilenio-first);
+            font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        .tec24-p-1,
+        .tec24-p-2 {
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        .tec24-p-2 {
+            text-align: justify;
+        }
+
+        .tec24-py-70px {
+            padding-top: 70px !important;
+            padding-bottom: 70px !important;
+        }
+
+        /* Buttons */
+
+        .tec24-btn-1,
+        .tec24-btn-2 {
+            border: 2px solid #00534C;
+            border-radius: 100px;
+            min-width: 130px;
+            min-height: 30px;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14.63px;
+            text-align: center;
+            color: var(--tecmilenio-first) !important;
+        }
+
+        .tec24-btn-1:hover,
+        .tec24-btn-2:hover {
+            border: 2px solid #00534C;
+            border-radius: 100px;
+            min-width: 130px;
+            min-height: 30px;
+            background-color: var(--default-tecmilenio-first);
+            color: white !important;
+            cursor: pointer;
+        }
+
+        .tec24-btn-2 {
+            border-color: var(--default-tecmilenio-fifth);
+            background-color: var(--default-tecmilenio-first);
+            color: white !important;
+        }
+
+        .tec24-btn-2:hover {
+            border-color: var(--default-tecmilenio-fifth);
+            background-color: var(--default-tecmilenio-second);
+            color: white !important;
+        }
+    </style>
+
     <section id="home-2024">
 
         <h1 class="d-none">
@@ -49,7 +122,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         <!-- Hero Banner 2024 -->
 
-        <section id="hero-banner-2024">
+        <section class="hero-banner-2024">
 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" id="carouselImages">
@@ -189,13 +262,13 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         </section>
 
         <!-- Hero Periods 2024 -->
-        <section id="hero-periods-2024">
+        <section class="hero-periods-2024">
             <style>
-                #hero-periods-2024 {
+                .hero-periods-2024 {
                     background-color: #EFEFEF;
                 }
 
-                #hero-periods-2024 .container {
+                .hero-periods-2024 .container {
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
@@ -203,35 +276,25 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     padding-bottom: 70px !important;
                 }
 
-                #hero-periods-2024 .period-legend,
-                #hero-periods-2024 .periods,
-                #hero-periods-2024 .call-to-action {
+                .hero-periods-2024 .periods,
+                .hero-periods-2024 .call-to-action {
                     display: flex;
                     justify-content: center;
                     width: 100%;
                 }
 
-                #hero-periods-2024 .period-legend {
-                    color: var(--default-tecmilenio-first);
-                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 22px;
-                    text-align: center;
-                }
-
-                #hero-periods-2024 .periods {
+                .hero-periods-2024 .periods {
                     gap: 30px;
                     align-items: center;
                     color: var(--default-tecmilenio-first);
                 }
 
-                #hero-periods-2024 .quarterly {
+                .hero-periods-2024 .quarterly {
                     text-align: right;
                 }
 
-                #hero-periods-2024 .quarterly,
-                #hero-periods-2024 .biannual {
+                .hero-periods-2024 .quarterly,
+                .hero-periods-2024 .biannual {
                     font-family: Source Sans 3;
                     font-size: 14px;
                     line-height: 20px;
@@ -239,18 +302,18 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     width: 100%;
                 }
 
-                #hero-periods-2024 .quarterly-title,
-                #hero-periods-2024 .biannual-title {
+                .hero-periods-2024 .quarterly-title,
+                .hero-periods-2024 .biannual-title {
                     font-weight: bold;
                 }
 
-                #hero-periods-2024 .line-periods {
+                .hero-periods-2024 .line-periods {
                     background-color: var(--tecmilenio-first);
                     height: calc(100% + 16px);
                     width: 1px;
                 }
 
-                #hero-periods-2024 .call-to-action .btn-icon {
+                .hero-periods-2024 .call-to-action .btn-icon {
                     border-radius: 100px;
                     text-decoration: none;
                     display: flex;
@@ -269,16 +332,16 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     min-height: 30px;
                 }
 
-                #hero-periods-2024 .call-to-action .btn-icon:hover {
+                .hero-periods-2024 .call-to-action .btn-icon:hover {
                     background-color: var(--default-tecmilenio-first);
                     color: white;
                 }
 
-                #hero-periods-2024 .call-to-action .btn-icon:hover>.material-symbols-outlined {
+                .hero-periods-2024 .call-to-action .btn-icon:hover>.material-symbols-outlined {
                     color: white;
                 }
 
-                #hero-periods-2024 .call-to-action .btn-icon::before {
+                .hero-periods-2024 .call-to-action .btn-icon::before {
                     border-radius: 50px;
                     content: "";
                     position: absolute;
@@ -296,7 +359,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     mask-composite: exclude;
                 }
 
-                #hero-periods-2024 .call-to-action .btn-icon>:first-child {
+                .hero-periods-2024 .call-to-action .btn-icon>:first-child {
                     background: var(--tecmilenio-first);
                     padding: 4px 10px;
                     border-radius: 50px 0px 0px 50px;
@@ -305,16 +368,16 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     z-index: -2;
                 }
 
-                #hero-periods-2024 .call-to-action .btn-icon>:last-child {
+                .hero-periods-2024 .call-to-action .btn-icon>:last-child {
                     padding-right: 10px;
                     color: var(--default-tecmilenio-first);
                     transition: all .6s ease;
                 }
             </style>
             <div class="container">
-                <div class="period-legend w-100">
+                <h2 class="tec24-h2-1 w-100">
                     Próximo inicio de clases
-                </div>
+                </h2>
                 <div class="periods my-4">
                     <div class="quarterly">
                         <div class="quarterly-title">
@@ -368,79 +431,325 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     flex-wrap: wrap;
                 }
 
-                .tcard-2024-title {
-                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 32px;
-                    text-align: center;
-                    color: var(--default-tecmilenio-first);
-                    width: 100%;
-                }
-
                 .tcard-2024-image {
                     min-height: 176px;
                     width: 100%;
                 }
-
-                .tcard-2024-description {
-                    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 18px;
-                    text-align: center;
-                    width: 100%;
-                }
-
-                .tbtn-2024 {
-                    border: 2px solid #00534C;
-                    border-radius: 100px;
-                    min-width: 130px;
-                    min-height: 30px;
-                    padding: 5px 10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
-                    font-size: 12px;
-                    font-weight: 700;
-                    line-height: 14.63px;
-                    text-align: center;
-                    color: var(--tecmilenio-first) !important;
-                }
             </style>
             <div class="container">
                 <div class="tcard-2024 mb-5">
-                    <h2 class="tcard-2024-title mb-4">Admisiones</h2>
+                    <h2 class="tec24-h2-1 mb-4">Admisiones</h2>
                     <img src="https://s3-alpha-sig.figma.com/img/70d6/dfde/8d7ed50a86b07ceed1bc52f50ca7dc1b?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iHBwYcIH9LWosOO1H2wGR8Uo9uVxLmF8lza93hpfm53y8J2KWF68yyJpHSJ4A8nXBbxZ1OIacfHKTubk7QxRqfUc2~a7-2LqBr8GevkLmdc--qIml3mK04H5m~9s3zMUiRFlvbSD2FdgBGyDPQujf7c4jnosy98MZOO9YDdlbOpeqk~sVdwpupY7FDB376NkajBqpCdT~ApaE3J1nijJr2nSud9-hnm-UXcRcEm16g7LrbLTNyNjmXHD5KTKkYijdsQMULtxeApEmvqVU62wTbbBYzTAWm5wIhovLWP6-rqNgWM6HfZm3jh3ILWtxAGg-O4y26H8cPFHU3AG1qlETg__"
                         alt="Admisiones" class="tcard-2024-image img-fluid mb-4">
-                    <p class="tcard-2024-description mb-4">
+                    <p class="tec24-p-1 mb-4">
                         Conoce el proceso diseñado para que tu admisión en el nivel académico de tu elección sea una
                         experiencia agradable, ágil y sencilla.
                     </p>
-                    <a class="tbtn-2024">
+                    <a class="tec24-btn-1">
                         Leer más
                     </a>
                 </div>
                 <div class="tcard-2024">
-                    <h2 class="tcard-2024-title mb-4">Becas</h2>
+                    <h2 class="tec24-h2-1 mb-4">Becas</h2>
                     <img src="https://s3-alpha-sig.figma.com/img/70d6/dfde/8d7ed50a86b07ceed1bc52f50ca7dc1b?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iHBwYcIH9LWosOO1H2wGR8Uo9uVxLmF8lza93hpfm53y8J2KWF68yyJpHSJ4A8nXBbxZ1OIacfHKTubk7QxRqfUc2~a7-2LqBr8GevkLmdc--qIml3mK04H5m~9s3zMUiRFlvbSD2FdgBGyDPQujf7c4jnosy98MZOO9YDdlbOpeqk~sVdwpupY7FDB376NkajBqpCdT~ApaE3J1nijJr2nSud9-hnm-UXcRcEm16g7LrbLTNyNjmXHD5KTKkYijdsQMULtxeApEmvqVU62wTbbBYzTAWm5wIhovLWP6-rqNgWM6HfZm3jh3ILWtxAGg-O4y26H8cPFHU3AG1qlETg__"
                         alt="Admisiones" class="tcard-2024-image img-fluid mb-4">
-                    <p class="tcard-2024-description mb-4">
-                        Conoce los distintos tipos de apoyos financieros que tenemos para continuar con tus estudios, seguir tus sueños y lograr tu Propósito de Vida.
+                    <p class="tec24-p-1 mb-4">
+                        Conoce los distintos tipos de apoyos financieros que tenemos para continuar con tus estudios,
+                        seguir tus sueños y lograr tu Propósito de Vida.
                     </p>
-                    <a class="tbtn-2024">
+                    <a class="tec24-btn-1">
                         Becas
                     </a>
-                    <a class="tbtn-2024 ml-3">
+                    <a class="tec24-btn-1 ml-3">
                         Plan educación
                     </a>
                 </div>
             </div>
         </section>
 
-        <!--  -->
+        <!-- Swiper Carrusel 2024-->
+        <section class="swiper-carrusel-2024">
+            <!-- Link Swiper's CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+            <!-- Styles -->
+            <style>
+                .swiper-carrusel-2024 .container {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 70px !important;
+                    padding-bottom: 70px !important;
+                    flex-wrap: wrap;
+                    background-color: #EFEFEF;
+                }
+
+                .swiper-carrusel-2024 .tec24-p-1 {
+                    color: var(--default-tecmilenio-first);
+                }
+
+                .swiper-header {
+                    text-align: center;
+                }
+
+                .swiper-header .tec24-h2-1 {
+                    padding: 0px 18%;
+                }
+
+                /* Swiper Slider */
+                .swiper {
+                    width: 100%;
+                    height: 50%;
+                }
+
+                .swiper-wrapper {
+                    /* Esta padding es para poder mostrar el paginado abajo de la card */
+                    padding-bottom: 40px;
+                }
+
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    /* Aqui movemos las flechas next y back al centro vertical restandole 20px (cantidad del padding de 40px/2 del contenedor swiper-wrapper) al 50%  */
+                    top: var(--swiper-navigation-top-offset, calc(50% - 20px));
+                }
+
+                .swiper-button-next,
+                .swiper-rtl .swiper-button-prev {
+                    right: var(--swiper-navigation-sides-offset, 0px);
+                    left: auto;
+                }
+
+                .swiper-button-prev,
+                .swiper-rtl .swiper-button-next {
+                    left: var(--swiper-navigation-sides-offset, 0px);
+                    right: auto;
+                }
+
+                .swiper-button-prev::after,
+                .swiper-button-next::after {
+                    font-family: 'Material Symbols Outlined';
+                    font-weight: 700;
+                    font-size: 30px;
+                    color: var(--default-tecmilenio-first);
+                    /* Color del icono */
+                }
+
+                .swiper-button-prev::after {
+                    content: '\e5c4';
+                    /* Icono de flecha izquierda */
+                }
+
+                .swiper-button-next::after {
+                    content: '\e5c8';
+                    /* Icono de flecha derecha */
+                }
+
+                .swiper-pagination-bullet {
+                    background: var(--default-tecmilenio-first);
+                    opacity: var(--swiper-pagination-bullet-inactive-opacity, .7);
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: var(--default-tecmilenio-first);
+                    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+                }
+
+                /* Tec24 Card 1 */
+                .tec24-card-1 {
+                    height: 450px;
+                    /* Los 70 px son por que es el espaciado para las flechas next y prev. */
+                    width: calc(100% - 70px);
+                }
+
+                .tec24-card-1-image {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .tec24-card-1-description {
+                    min-width: 208px;
+                    min-height: 246px;
+                    height: 65%;
+                    width: 65%;
+                    position: absolute;
+                    bottom: 0px;
+                    background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);
+                    padding: 20px 15px;
+                }
+
+                .tec24-card-1 .tec24-btn-2 {
+                    width: inherit;
+                }
+            </style>
+            <div class="container">
+
+                <div class="swiper-header">
+                    <h2 class="tec24-h2-1">
+                        Estudia en Tecmilenio
+                        y expande tu camino
+                    </h2>
+                    <p class="tec24-p-1">Al continuar tu formación con nosotros, experimentarás un modelo educativo
+                        único que te motivará
+                        a descubrir y vivir tu Propósito de Vida, facilitando tu rápida integración en el mundo laboral.
+                        Además, disfrutarás de altas tasas de empleabilidad; el 90% de nuestros estudiantes aseguran un
+                        empleo a tiempo completo al graduarse de Tecmilenio.</p>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="tec24-card-1">
+                                <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
+                                    alt="Prepa Tecmilenio" class="tec24-card-1-image">
+                                <div class="tec24-card-1-description"
+                                    style="background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Prepa Tecmilenio</h2>
+                                    <p class="tec24-p-1 text-left text-white">
+                                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
+                                        el año 1500, cuando un impresor.
+                                    </p>
+                                    <a class="tec24-btn-2">
+                                        Más información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-card-1">
+                                <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
+                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <div class="tec24-card-1-description"
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras Profesionales</h2>
+                                    <p class="tec24-p-1 text-left text-white">
+                                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
+                                        el año 1500, cuando un impresor.
+                                    </p>
+                                    <a class="tec24-btn-2">
+                                        Más información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-card-1">
+                                <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
+                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <div class="tec24-card-1-description"
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras Ejecutivas</h2>
+                                    <p class="tec24-p-1 text-left text-white">
+                                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
+                                        el año 1500, cuando un impresor.
+                                    </p>
+                                    <a class="tec24-btn-2">
+                                        Más información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-card-1">
+                                <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
+                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <div class="tec24-card-1-description"
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras Test</h2>
+                                    <p class="tec24-p-1 text-left text-white">
+                                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
+                                        el año 1500, cuando un impresor.
+                                    </p>
+                                    <a class="tec24-btn-2">
+                                        Más información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-card-1">
+                                <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
+                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <div class="tec24-card-1-description"
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras TEST @</h2>
+                                    <p class="tec24-p-1 text-left text-white">
+                                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
+                                        el año 1500, cuando un impresor.
+                                    </p>
+                                    <a class="tec24-btn-2">
+                                        Más información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        dynamicBullets: true,
+
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                    },
+                });
+            </script>
+        </section>
+
+        <!-- Features 2024 -->
+        <section class="features-2024">
+            <style>
+
+            </style>
+            <div class="container tec24-py-70px">
+                <h2 class="tec24-h2-1">
+                    ¿Por qué estudiar en Tecmilenio?
+                </h2>
+            </div>
+        </section>
     </section>
 
     <!-- END CODE HERE -->
