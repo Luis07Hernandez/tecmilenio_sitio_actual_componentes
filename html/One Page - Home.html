@@ -73,25 +73,29 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         /* Buttons */
 
         .tec24-btn-1,
-        .tec24-btn-2 {
+        .tec24-btn-2, 
+        .tec24-btn-3 {
             border: 2px solid #00534C;
             border-radius: 100px;
             min-width: 130px;
             min-height: 30px;
             padding: 5px 10px;
-            display: flex;
+            display: inline-block;
+            /* display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center; */
             font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
             font-size: 12px;
             font-weight: 700;
             line-height: 14.63px;
             text-align: center;
             color: var(--tecmilenio-first) !important;
+            text-decoration: none !important;
         }
 
         .tec24-btn-1:hover,
-        .tec24-btn-2:hover {
+        .tec24-btn-2:hover,
+        .tec24-btn-3:hover {
             border: 2px solid #00534C;
             border-radius: 100px;
             min-width: 130px;
@@ -109,6 +113,18 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         .tec24-btn-2:hover {
             border-color: var(--default-tecmilenio-fifth);
+            background-color: var(--default-tecmilenio-second);
+            color: white !important;
+        }
+
+        .tec24-btn-3 {
+            border-color: var(--default-tecmilenio-first);
+            background-color: var(--default-tecmilenio-first);
+            color: white !important;
+        }
+
+        .tec24-btn-3:hover {
+            border-color: var(--default-tecmilenio-second);
             background-color: var(--default-tecmilenio-second);
             color: white !important;
         }
@@ -591,8 +607,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     width: inherit;
                 }
             </style>
-            <div class="container">
 
+            <div class="container">
                 <div class="swiper-header">
                     <h2 class="tec24-h2-1">
                         Estudia en Tecmilenio
@@ -612,7 +628,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             <div class="tec24-card-1">
                                 <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
                                     alt="Prepa Tecmilenio" class="tec24-card-1-image">
-                                <div class="tec24-card-1-description"
+                                <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Prepa Tecmilenio</h2>
                                     <p class="tec24-p-1 text-left text-white">
@@ -630,7 +646,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             <div class="tec24-card-1">
                                 <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
-                                <div class="tec24-card-1-description"
+                                <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Carreras Profesionales</h2>
                                     <p class="tec24-p-1 text-left text-white">
@@ -648,7 +664,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             <div class="tec24-card-1">
                                 <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
-                                <div class="tec24-card-1-description"
+                                <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Carreras Ejecutivas</h2>
                                     <p class="tec24-p-1 text-left text-white">
@@ -666,7 +682,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             <div class="tec24-card-1">
                                 <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
-                                <div class="tec24-card-1-description"
+                                <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Carreras Test</h2>
                                     <p class="tec24-p-1 text-left text-white">
@@ -684,7 +700,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             <div class="tec24-card-1">
                                 <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AxqxSmqewuoGKH-AdMlpDp~BHt3iX5r2NSHEWnuhfqwarETcFds9YhVQCONgkF7hnULDBPI7UGMNKYqqLXVbNRr6ObusP2SUAWjfKJLUiOSG2CATqWbhIQ7F09Gg5QAucNElxkP3IcsRLAcImQxgRZ-ohQ00iC53Au5dryXtVqjAldjQKajuXAZItN4oVm75mPHEMSkhUz7TQQiDKokr~n~wXiMQPKbvHjuYaxkqNUeMijEhCW7yqUrKht90NgI3Y-bIO2IoAwe8pVeLBqLElm1UomvCnz1RvECCve4FmMG5aoXqfz2ORP1Qjvq8Y4oYeInY6iEvFvHrCBQZvMmPlg__"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
-                                <div class="tec24-card-1-description"
+                                <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Carreras TEST @</h2>
                                     <p class="tec24-p-1 text-left text-white">
@@ -704,6 +720,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
+
             <!-- Swiper JS -->
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -742,12 +759,127 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         <!-- Features 2024 -->
         <section class="features-2024">
             <style>
+                .tec24-card-2 {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    gap: 15px;
+                }
 
+                .tec24-card-2 .tec24-card-2-icon {
+                    min-width: 50px;
+                    height: 50px;
+                    background-color: var(--tecmilenio-first);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .tec24-card-2 .tec24-card-2-icon span {
+                    font-size: 30px;
+                    font-weight: 700px;
+                    color: white;
+                }
             </style>
             <div class="container tec24-py-70px">
-                <h2 class="tec24-h2-1">
+                <h2 class="tec24-h2-1 mb-4">
                     ¿Por qué estudiar en Tecmilenio?
                 </h2>
+                <div class="features-2024-container">
+                    <div class="tec24-card-2 mb-4">
+                        <div class="tec24-card-2-icon">
+                            <span class="material-symbols-outlined">
+                                mood
+                            </span>
+                        </div>
+                        <div class="tec24-card-2-body">
+                            <h2 class="tec24-h2-1 text-left">
+                                Bienestar
+                            </h2>
+                            <div class="tec24-p-1 text-left">
+                                Ecosistema de bienestar y felicidad para lograr tu propósito de vida.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tec24-card-2 mb-4">
+                        <div class="tec24-card-2-icon">
+                            <span class="material-symbols-outlined">
+                                mood
+                            </span>
+                        </div>
+                        <div class="tec24-card-2-body">
+                            <h2 class="tec24-h2-1 text-left">
+                                Flexibilidad
+                            </h2>
+                            <div class="tec24-p-1 text-left">
+                                Personaliza tu plan de estudios para adaptarlo a tu estilo de vida.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tec24-card-2 mb-4">
+                        <div class="tec24-card-2-icon">
+                            <span class="material-symbols-outlined">
+                                mood
+                            </span>
+                        </div>
+                        <div class="tec24-card-2-body">
+                            <h2 class="tec24-h2-1 text-left">
+                                Personalización
+                            </h2>
+                            <div class="tec24-p-1 text-left">
+                                Plataforma abierta y personalizada para el desarrollo y certificación de competencias.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tec24-card-2 mb-4">
+                        <div class="tec24-card-2-icon">
+                            <span class="material-symbols-outlined">
+                                mood
+                            </span>
+                        </div>
+                        <div class="tec24-card-2-body">
+                            <h2 class="tec24-h2-1 text-left">
+                                Acompañamiento
+                            </h2>
+                            <div class="tec24-p-1 text-left">
+                                Modelo de acompañamiento cercano durante toda la vida.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tec24-card-2 mb-4">
+                        <div class="tec24-card-2-icon">
+                            <span class="material-symbols-outlined">
+                                mood
+                            </span>
+                        </div>
+                        <div class="tec24-card-2-body">
+                            <h2 class="tec24-h2-1 text-left">
+                                Empleabilidad
+                            </h2>
+                            <div class="tec24-p-1 text-left">
+                                9 de cada 10 alumnos se gradúan con empleo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tec24-card-2">
+                        <div class="tec24-card-2-icon">
+                            <span class="material-symbols-outlined">
+                                mood
+                            </span>
+                        </div>
+                        <div class="tec24-card-2-body">
+                            <h2 class="tec24-h2-1 text-left">
+                                Formatos
+                            </h2>
+                            <div class="tec24-p-1 text-left">
+                                Selecciona el formato que se adapte a tu estilo de vida y alcanza tu objetivo
+                                profesional: Presencial, Online, Connect y Autodirigido.
+                            </div>
+                            <a href="" class="tec24-btn-3 mt-3">
+                                Conoce más
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </section>
