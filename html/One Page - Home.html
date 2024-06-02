@@ -43,7 +43,6 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
     <!-- General Classes -->
     <style>
-
         /* Headings */
         .tec24-h2-1 {
             color: var(--default-tecmilenio-first);
@@ -487,20 +486,20 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         grid-row-end: 4;
                     }
 
-                    .tcard-2024-title{
+                    .tcard-2024-title {
                         display: flex;
                         justify-content: center;
                         align-items: end;
                     }
 
-                    .tcard-2024-info{
+                    .tcard-2024-info {
                         padding: 0px 20%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
-                    .tcard-2024-btn{
+                    .tcard-2024-btn {
                         display: flex;
                         justify-content: center;
                         align-items: start;
@@ -566,7 +565,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                 .swiper-carrusel-2024 .container {
                     display: flex;
                     justify-content: center;
-                    flex-wrap: wrap;                   
+                    flex-wrap: wrap;
                 }
 
                 .swiper-carrusel-2024 .tec24-p-1 {
@@ -671,10 +670,56 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     bottom: 0px;
                     background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);
                     padding: 20px 15px;
+                    transition: height 0.5s ease;
                 }
 
                 .tec24-card-1 .tec24-btn-2 {
                     width: inherit;
+                }
+
+                /* Desktop */
+                @media (min-width: 992px) {
+
+                    /* Tec24 Card 1 */
+                    .tec24-card-1 {
+                        height: 530px;
+                        /* Los 70 px son por que es el espaciado para las flechas next y prev. */
+                        width: calc(100% - 70px);
+                    }
+
+                    .tec24-card-1-description{
+                        bottom: 50px;
+                        width: 80%;
+                        height: 40%;
+                    }
+
+                    /* Swiper Slider */
+
+                    .swiper{
+                        height: 800px;
+                    }
+
+                    .swiper-slide:not(.swiper-slide-active) .tec24-card-1-description {
+                        min-height: 100px;
+                        height: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0px 10px;
+                        transition: height 0.5s ease;
+                        bottom: 135px;
+                        width: 60%;
+                    }
+
+                    .swiper-slide:not(.swiper-slide-active) p,
+                    .swiper-slide:not(.swiper-slide-active) a {
+                        display: none;
+                    }
+
+                    .swiper-slide-active .tec24-card-1{
+                        height: 700px;
+                        width: 100%;
+                    }
                 }
             </style>
 
@@ -797,7 +842,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper('.swiper-container', {
-                    initialSlide: 2,
+                    centeredSlides: true,
                     loop: true,
                     pagination: {
                         el: '.swiper-pagination',
@@ -810,15 +855,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         prevEl: '.swiper-button-prev',
                     },
                     breakpoints: {
-                        640: {
-                            slidesPerView: 1,
-                            spaceBetween: 10,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        1024: {
+                        992: {
                             slidesPerView: 3,
                             spaceBetween: 30,
                         },
