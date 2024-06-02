@@ -43,6 +43,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
     <!-- General Classes -->
     <style>
+
+        /* Headings */
         .tec24-h2-1 {
             color: var(--default-tecmilenio-first);
             font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
@@ -52,6 +54,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             text-align: center;
         }
 
+        /* Paragraphs */
         .tec24-p-1,
         .tec24-p-2 {
             font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
@@ -65,6 +68,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             text-align: justify;
         }
 
+        /* Margins and Paddings */
+
         .tec24-py-70px {
             padding-top: 70px !important;
             padding-bottom: 70px !important;
@@ -73,7 +78,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         /* Buttons */
 
         .tec24-btn-1,
-        .tec24-btn-2, 
+        .tec24-btn-2,
         .tec24-btn-3 {
             border: 2px solid #00534C;
             border-radius: 100px;
@@ -430,13 +435,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         </section>
 
         <!-- Info Cards 2024 -->
-        <section class="info-cards-2024">
+        <section class="info-cards-2024 tec24-py-70px">
             <style>
                 .info-cards-2024 .container {
                     display: flex;
                     justify-content: center;
-                    padding-top: 70px !important;
-                    padding-bottom: 70px !important;
                     flex-wrap: wrap;
                 }
 
@@ -447,56 +450,123 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     flex-wrap: wrap;
                 }
 
+                .tcard-2024 .tec24-p-1 {
+                    width: 100%;
+                }
+
                 .tcard-2024-image {
                     min-height: 176px;
                     width: 100%;
                 }
+
+                /* Desktop */
+                @media (min-width: 992px) {
+                    .tcard-2024 {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        justify-items: stretch;
+                    }
+
+                    .tcard-2024-image {
+                        max-height: 360px;
+                        height: 100%;
+                        max-width: 660px;
+                        width: 100%;
+                        display: inline-block;
+                        max-width: 100%;
+                        grid-row: span 3;
+                        grid-column-start: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 4;
+                    }
+
+                    .tcard-2024-leftimg .tcard-2024-image {
+                        grid-row: span 3;
+                        grid-column-start: 1;
+                        grid-row-start: 1;
+                        grid-row-end: 4;
+                    }
+
+                    .tcard-2024-title{
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+                    }
+
+                    .tcard-2024-info{
+                        padding: 0px 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .tcard-2024-btn{
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+                        width: 100%;
+                    }
+                }
             </style>
             <div class="container">
                 <div class="tcard-2024 mb-5">
-                    <h2 class="tec24-h2-1 mb-4">Admisiones</h2>
+                    <div class="tcard-2024-title">
+                        <h2 class="tec24-h2-1 mb-4">Admisiones</h2>
+                    </div>
                     <img src="https://s3-alpha-sig.figma.com/img/70d6/dfde/8d7ed50a86b07ceed1bc52f50ca7dc1b?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iHBwYcIH9LWosOO1H2wGR8Uo9uVxLmF8lza93hpfm53y8J2KWF68yyJpHSJ4A8nXBbxZ1OIacfHKTubk7QxRqfUc2~a7-2LqBr8GevkLmdc--qIml3mK04H5m~9s3zMUiRFlvbSD2FdgBGyDPQujf7c4jnosy98MZOO9YDdlbOpeqk~sVdwpupY7FDB376NkajBqpCdT~ApaE3J1nijJr2nSud9-hnm-UXcRcEm16g7LrbLTNyNjmXHD5KTKkYijdsQMULtxeApEmvqVU62wTbbBYzTAWm5wIhovLWP6-rqNgWM6HfZm3jh3ILWtxAGg-O4y26H8cPFHU3AG1qlETg__"
-                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4">
-                    <p class="tec24-p-1 mb-4">
-                        Conoce el proceso diseñado para que tu admisión en el nivel académico de tu elección sea una
-                        experiencia agradable, ágil y sencilla.
-                    </p>
-                    <a class="tec24-btn-1">
-                        Leer más
-                    </a>
+                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4 mb-lg-0 ">
+                    <div class="tcard-2024-info">
+                        <p class="tec24-p-1 mb-4">
+                            Conoce el proceso diseñado para que tu admisión en el nivel académico de tu elección sea una
+                            experiencia agradable, ágil y sencilla.
+                        </p>
+                    </div>
+                    <div class="tcard-2024-btn">
+                        <a class="tec24-btn-1">
+                            Leer más
+                        </a>
+                    </div>
                 </div>
-                <div class="tcard-2024">
-                    <h2 class="tec24-h2-1 mb-4">Becas</h2>
+                <div class="tcard-2024 tcard-2024-leftimg">
+                    <div class="tcard-2024-title">
+                        <h2 class="tec24-h2-1 mb-4">Becas</h2>
+                    </div>
                     <img src="https://s3-alpha-sig.figma.com/img/70d6/dfde/8d7ed50a86b07ceed1bc52f50ca7dc1b?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iHBwYcIH9LWosOO1H2wGR8Uo9uVxLmF8lza93hpfm53y8J2KWF68yyJpHSJ4A8nXBbxZ1OIacfHKTubk7QxRqfUc2~a7-2LqBr8GevkLmdc--qIml3mK04H5m~9s3zMUiRFlvbSD2FdgBGyDPQujf7c4jnosy98MZOO9YDdlbOpeqk~sVdwpupY7FDB376NkajBqpCdT~ApaE3J1nijJr2nSud9-hnm-UXcRcEm16g7LrbLTNyNjmXHD5KTKkYijdsQMULtxeApEmvqVU62wTbbBYzTAWm5wIhovLWP6-rqNgWM6HfZm3jh3ILWtxAGg-O4y26H8cPFHU3AG1qlETg__"
-                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4">
-                    <p class="tec24-p-1 mb-4">
-                        Conoce los distintos tipos de apoyos financieros que tenemos para continuar con tus estudios,
-                        seguir tus sueños y lograr tu Propósito de Vida.
-                    </p>
-                    <a class="tec24-btn-1">
-                        Becas
-                    </a>
-                    <a class="tec24-btn-1 ml-3">
-                        Plan educación
-                    </a>
+                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4 mb-lg-0">
+                    <div class="tcard-2024-info">
+                        <p class="tec24-p-1 mb-4">
+                            Conoce los distintos tipos de apoyos financieros que tenemos para continuar con tus
+                            estudios,
+                            seguir tus sueños y lograr tu Propósito de Vida.
+                        </p>
+                    </div>
+                    <div class="tcard-2024-btn">
+                        <a class="tec24-btn-1">
+                            Becas
+                        </a>
+                        <a class="tec24-btn-1 ml-3">
+                            Plan educación
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Swiper Carrusel 2024-->
-        <section class="swiper-carrusel-2024">
+        <section class="swiper-carrusel-2024 tec24-py-70px">
             <!-- Link Swiper's CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
             <!-- Styles -->
             <style>
+                .swiper-carrusel-2024 {
+                    background-color: #EFEFEF;
+                }
+
                 .swiper-carrusel-2024 .container {
                     display: flex;
                     justify-content: center;
-                    padding-top: 70px !important;
-                    padding-bottom: 70px !important;
-                    flex-wrap: wrap;
-                    background-color: #EFEFEF;
+                    flex-wrap: wrap;                   
                 }
 
                 .swiper-carrusel-2024 .tec24-p-1 {
@@ -727,6 +797,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper('.swiper-container', {
+                    initialSlide: 2,
                     loop: true,
                     pagination: {
                         el: '.swiper-pagination',
