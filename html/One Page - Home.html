@@ -393,12 +393,84 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     color: var(--default-tecmilenio-first);
                     transition: all .6s ease;
                 }
+
+                .hero-periods-2024 .tec24-h2-1 .material-symbols-outlined {
+                    display: none;
+                }
+
+                /* Desktop */
+                @media (min-width: 960px) {
+                    .hero-periods-2024 {
+                        position: absolute;
+                        top: 114px;
+                        width: 100%;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        z-index: 2;
+                        -webkit-box-shadow: 0px 8px 7px -8px rgba(0, 0, 0, 0.61);
+                        -moz-box-shadow: 0px 8px 7px -8px rgba(0, 0, 0, 0.61);
+                        box-shadow: 0px 8px 7px -8px rgba(0, 0, 0, 0.61);
+                    }
+
+                    .hero-periods-2024-sticky {
+                        position: fixed;
+                        top: 81px;
+                    }
+
+                    .hero-periods-2024 .container {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                    }
+
+                    .hero-periods-2024 .tec24-h2-1 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0px !important;
+                    }
+
+                    .hero-periods-2024 .periods,
+                    .hero-periods-2024 .call-to-action {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        /* height: 70px; */
+                        align-items: center;
+                    }
+
+                    .hero-periods-2024 .line-periods {
+                        height: calc(100%);
+                        width: 4px;
+                    }
+
+                    .hero-periods-2024 .call-to-action .btn-icon {
+                        margin-top: 0px;
+                    }
+
+                    .hero-banner-2024 {
+                        position: relative;
+                        top: 70px;
+                        margin-bottom: 70px;
+                    }
+
+                    .material-symbols-outlined {
+                        display: block;
+                        margin-right: 10px;
+                    }
+
+                }
             </style>
             <div class="container">
                 <h2 class="tec24-h2-1 w-100">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
                     Próximo inicio de clases
                 </h2>
-                <div class="periods my-4">
+                <div class="periods my-4 my-lg-0">
                     <div class="quarterly">
                         <div class="quarterly-title">
                             Tetramestral
@@ -430,6 +502,20 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                 </div>
             </div>
             <script>
+                document.addEventListener('scroll', function () {
+                    // Obtener el elemento .hero-periods-2024
+                    const heroPeriods = document.querySelector('.hero-periods-2024');
+                    // Verificar si existe el elemento .tecmilenio__nav__sticky
+                    const navSticky = document.querySelector('.tecmilenio__nav__sticky');
+
+                    if (window.scrollY <= 33) {
+                        heroPeriods.classList.remove('hero-periods-2024-sticky');
+                    } else {
+                        if (!heroPeriods.classList.contains('hero-periods-2024-sticky')) {
+                            heroPeriods.classList.add('hero-periods-2024-sticky');
+                        }
+                    }
+                }, { passive: true });
             </script>
         </section>
 
@@ -687,7 +773,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         width: calc(100% - 70px);
                     }
 
-                    .tec24-card-1-description{
+                    .tec24-card-1-description {
                         bottom: 50px;
                         width: 80%;
                         height: 40%;
@@ -695,7 +781,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                     /* Swiper Slider */
 
-                    .swiper{
+                    .swiper {
                         height: 800px;
                     }
 
@@ -716,7 +802,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         display: none;
                     }
 
-                    .swiper-slide-active .tec24-card-1{
+                    .swiper-slide-active .tec24-card-1 {
                         height: 700px;
                         width: 100%;
                     }
@@ -895,7 +981,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         flex-wrap: wrap;
                         gap: 3.3333%;
                     }
-    
+
                     .tec24-card-2 {
                         flex: 0 0 30%;
                     }
@@ -906,8 +992,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
 
                     .tec24-card-2 .tec24-card-2-icon span {
-                    font-size: 60px;
-                }
+                        font-size: 60px;
+                    }
                 }
             </style>
             <div class="container tec24-py-70px">
