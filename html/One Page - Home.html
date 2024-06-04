@@ -76,14 +76,12 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         }
 
         /* Margins and Paddings */
-
         .tec24-py-70px {
             padding-top: 70px !important;
             padding-bottom: 70px !important;
         }
 
         /* Buttons */
-
         .tec24-btn-1,
         .tec24-btn-2,
         .tec24-btn-3,
@@ -92,11 +90,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             border-radius: 100px;
             min-width: 130px;
             min-height: 30px;
-            padding: 5px 10px;
+            padding: 5px 15px;
             display: inline-block;
-            /* display: flex;
-            align-items: center;
-            justify-content: center; */
             font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
             font-size: 12px;
             font-weight: 700;
@@ -158,6 +153,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         /* Desktop */
         @media (min-width: 992px) {
+
+            /* Headings */
             .tec24-h2-1 {
                 color: var(--default-tecmilenio-first);
                 font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
@@ -167,11 +164,21 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                 text-align: center;
             }
 
+            /* Paragraphs */
             .tec24-p-1,
             .tec24-p-2,
             .tec24-p-3 {
                 font-size: 16px !important;
                 line-height: 20px !important;
+            }
+
+            /* Buttons */
+            .tec24-btn-1,
+            .tec24-btn-2,
+            .tec24-btn-3,
+            .tec24-btn-4 {
+                font-size: 14px;
+                line-height: 19.5px;
             }
         }
     </style>
@@ -701,26 +708,26 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     color: var(--default-tecmilenio-first);
                 }
 
-                .swiper-header {
+                .swiper-carrusel-2024 .swiper-header {
                     text-align: center;
                 }
 
-                .swiper-header .tec24-h2-1 {
+                .swiper-carrusel-2024 .swiper-header .tec24-h2-1 {
                     padding: 0px 18%;
                 }
 
                 /* Swiper Slider */
-                .swiper {
+                .swiper-carrusel-2024 .swiper {
                     width: 100%;
                     height: 50%;
                 }
 
-                .swiper-wrapper {
+                .swiper-carrusel-2024 .swiper-wrapper {
                     /* Esta padding es para poder mostrar el paginado abajo de la card */
                     padding-bottom: 40px;
                 }
 
-                .swiper-slide {
+                .swiper-carrusel-2024 .swiper-slide {
                     text-align: center;
                     font-size: 18px;
                     background: transparent;
@@ -729,26 +736,26 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     align-items: center;
                 }
 
-                .swiper-button-next,
-                .swiper-button-prev {
+                .swiper-carrusel-2024 .swiper-button-next,
+                .swiper-carrusel-2024 .swiper-button-prev {
                     /* Aqui movemos las flechas next y back al centro vertical restandole 20px (cantidad del padding de 40px/2 del contenedor swiper-wrapper) al 50%  */
                     top: var(--swiper-navigation-top-offset, calc(50% - 20px));
                 }
 
-                .swiper-button-next,
-                .swiper-rtl .swiper-button-prev {
+                .swiper-carrusel-2024 .swiper-button-next,
+                .swiper-carrusel-2024 .swiper-rtl .swiper-button-prev {
                     right: var(--swiper-navigation-sides-offset, 0px);
                     left: auto;
                 }
 
-                .swiper-button-prev,
-                .swiper-rtl .swiper-button-next {
+                .swiper-carrusel-2024 .swiper-button-prev,
+                .swiper-carrusel-2024 .swiper-rtl .swiper-button-next {
                     left: var(--swiper-navigation-sides-offset, 0px);
                     right: auto;
                 }
 
-                .swiper-button-prev::after,
-                .swiper-button-next::after {
+                .swiper-carrusel-2024 .swiper-button-prev::after,
+                .swiper-carrusel-2024 .swiper-button-next::after {
                     font-family: 'Material Symbols Outlined';
                     font-weight: 700;
                     font-size: 30px;
@@ -756,22 +763,22 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     /* Color del icono */
                 }
 
-                .swiper-button-prev::after {
+                .swiper-carrusel-2024 .swiper-button-prev::after {
                     content: '\e5c4';
                     /* Icono de flecha izquierda */
                 }
 
-                .swiper-button-next::after {
+                .swiper-carrusel-2024 .swiper-button-next::after {
                     content: '\e5c8';
                     /* Icono de flecha derecha */
                 }
 
-                .swiper-pagination-bullet {
+                .swiper-carrusel-2024 .swiper-pagination-bullet {
                     background: var(--default-tecmilenio-first);
                     opacity: var(--swiper-pagination-bullet-inactive-opacity, .7);
                 }
 
-                .swiper-pagination-bullet-active {
+                .swiper-carrusel-2024 .swiper-pagination-bullet-active {
                     background: var(--default-tecmilenio-first);
                     opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
                 }
@@ -833,19 +840,19 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                     /* Swiper Slider */
 
-                    .swiper {
+                    .swiper-carrusel-2024 .swiper {
                         height: 800px;
                     }
 
-                    .swiper-slide-next {
+                    .swiper-carrusel-2024 .swiper-slide-next {
                         justify-content: start;
                     }
 
-                    .swiper-slide-prev {
+                    .swiper-carrusel-2024 .swiper-slide-prev {
                         justify-content: end;
                     }
 
-                    .swiper-slide:not(.swiper-slide-active) .tec24-card-1-description {
+                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) .tec24-card-1-description {
                         min-height: 100px;
                         height: 20%;
                         display: flex;
@@ -857,12 +864,12 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         width: 60%;
                     }
 
-                    .swiper-slide:not(.swiper-slide-active) p,
-                    .swiper-slide:not(.swiper-slide-active) a {
+                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) p,
+                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) a {
                         display: none;
                     }
 
-                    .swiper-slide-active .tec24-card-1 {
+                    .swiper-carrusel-2024 .swiper-slide-active .tec24-card-1 {
                         height: 700px;
                         width: 100%;
                     }
@@ -1262,6 +1269,209 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         <!-- Swiper Carrusel Video 2024-->
         <section class="swiper-carrusel-video-2024 tec24-py-70px">
 
+
+            <!-- Styles -->
+            <style>
+                .swiper-carrusel-video-2024 {
+                    background-color: #EFEFEF;
+                }
+
+                .swiper-carrusel-video-2024 .container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .tec24-cv24-item {
+                    width: 100%;
+                    max-width: 420px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .tec24-cv24i-heading {
+                    width: 60%;
+                }
+
+                .tec24-cv24i-video {
+                    width: 100%;
+                }
+
+                /* Swiper Slider */
+                .swiper-carrusel-video-2024 .swiper {
+                    width: 100%;
+                    height: 50%;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-wrapper {
+                    /* Esta padding es para poder mostrar el paginado abajo de la card */
+                    padding-bottom: 80px;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-next,
+                .swiper-carrusel-video-2024 .swiper-button-prev {
+                    /* Aqui movemos las flechas next y back al centro vertical restandole 20px (cantidad del padding de 40px/2 del contenedor swiper-wrapper) al 50%  */
+                    top: var(--swiper-navigation-top-offset, calc(50% - 20px));
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-next,
+                .swiper-carrusel-video-2024 .swiper-rtl .swiper-button-prev {
+                    right: var(--swiper-navigation-sides-offset, 0px);
+                    left: auto;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-prev,
+                .swiper-carrusel-video-2024 .swiper-rtl .swiper-button-next {
+                    left: var(--swiper-navigation-sides-offset, 0px);
+                    right: auto;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-prev::after,
+                .swiper-carrusel-video-2024 .swiper-button-next::after {
+                    font-family: 'Material Symbols Outlined';
+                    font-weight: 700;
+                    font-size: 30px;
+                    color: var(--default-tecmilenio-first);
+                    /* Color del icono */
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-prev::after {
+                    content: '\e5c4';
+                    /* Icono de flecha izquierda */
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-next::after {
+                    content: '\e5c8';
+                    /* Icono de flecha derecha */
+                }
+
+                .swiper-carrusel-video-2024 .swiper-pagination-bullet {
+                    background: var(--default-tecmilenio-first);
+                    opacity: var(--swiper-pagination-bullet-inactive-opacity, .7);
+                }
+
+                .swiper-carrusel-video-2024 .swiper-pagination-bullet-active {
+                    background: var(--default-tecmilenio-first);
+                    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+                }
+
+                /* Desktop */
+                @media (min-width: 992px) {
+
+                    .tec24-cv24i-heading {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+
+                    /* Swiper Slider */
+
+
+                }
+            </style>
+
+            <div class="container">
+
+                <!-- Swiper -->
+                <div class="swiper swiper-video-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="tec24-cv24-item">
+                                <div class="tec24-cv24i-heading">
+                                    <h2 class="tec24-h2-1 text-center">
+                                        Habilidades digitales
+                                        para el futuro 1
+                                    </h2>
+                                </div>
+                                <div class="tec24-cv24i-video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-cv24-item">
+                                <div class="tec24-cv24i-heading">
+                                    <h2 class="tec24-h2-1 text-center">
+                                        Habilidades digitales
+                                        para el futuro 2
+                                    </h2>
+                                </div>
+                                <div class="tec24-cv24i-video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-cv24-item">
+                                <div class="tec24-cv24i-heading">
+                                    <h2 class="tec24-h2-1 text-center">
+                                        Habilidades digitales
+                                        para el futuro 3
+                                    </h2>
+                                </div>
+                                <div class="tec24-cv24i-video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-video-container', {
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        dynamicBullets: true,
+
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        992: {
+                            slidesPerView: 2,
+                            spaceBetween: 0,
+                        },
+                    },
+                });
+            </script>
+
         </section>
 
         <!-- Hero Info 2024-->
@@ -1341,11 +1551,13 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     text-align: center;
                     padding: 10px;
                     flex: 0 0 30%;
+                    width: 30%;
                 }
 
                 .tec24-card-3 p {
                     margin: 5px 0;
                     color: var(--default-tecmilenio-first);
+                    hyphens: auto;
                 }
 
                 /* Desktop */
