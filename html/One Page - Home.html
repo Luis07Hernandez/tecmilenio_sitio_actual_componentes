@@ -72,8 +72,6 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         }
 
         .tec24-p-3 {
-            font-size: 12px !important;
-            line-height: 16px !important;
             font-weight: 700 !important;
         }
 
@@ -151,19 +149,41 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         .tec24-btn-4:hover {
             border: 2px solid #00534C;
-            color: var(--tecmilenio-first) !important;
-            ;
+            border-color: var(--default-tecmilenio-second);
+            background-color: var(--default-tecmilenio-second);
+            border-color: var(--default-tecmilenio-second);
+            color: white !important;
+            cursor: pointer;
+        }
+
+        /* Desktop */
+        @media (min-width: 992px) {
+            .tec24-h2-1 {
+                color: var(--default-tecmilenio-first);
+                font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 38px;
+                text-align: center;
+            }
+
+            .tec24-p-1,
+            .tec24-p-2,
+            .tec24-p-3 {
+                font-size: 16px !important;
+                line-height: 20px !important;
+            }
         }
     </style>
 
     <section id="home-2024">
 
+        <!-- Main Heading -->
         <h1 class="d-none">
             Aprendizaje flexible, basado en certificados, y con proposito de vida
         </h1>
 
         <!-- Hero Banner 2024 -->
-
         <section class="hero-banner-2024">
 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -452,6 +472,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         align-items: center;
                         justify-content: center;
                         margin: 0px !important;
+                        font-size: 16px;
                     }
 
                     .hero-periods-2024 .periods,
@@ -478,7 +499,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         margin-bottom: 70px;
                     }
 
-                    .material-symbols-outlined {
+                    .hero-periods-2024 .tec24-h2-1 .material-symbols-outlined {
                         display: block;
                         margin-right: 10px;
                     }
@@ -620,15 +641,15 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="tcard-2024-title">
                         <h2 class="tec24-h2-1 mb-4">Admisiones</h2>
                     </div>
-                    <img src="https://s3-alpha-sig.figma.com/img/70d6/dfde/8d7ed50a86b07ceed1bc52f50ca7dc1b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AOl2YPo4ckWZ0ZFDEXCd-LZsyJB1l9-WLB8yCnMjipqFcheaQfy4asVOmsLpj2sNYL05XKHj~SA6Ayig0gDU9PoyRcA94vA44Q0ssNaQ1DEn5kUwWg0KR2yDvizvn44eZnDYD5KnmhmByQHCnkQACENstwGZGlWKr66D~v-saIZc34eG8tLEYiOfW0OJam0hak2z40YdhOHatusovJq8DET93XKlqP3XR2fdFwFpNIRSIBGxGGj7PMdj7SJh9D420HVdZgHcVvvdv~NjDSbkSMwte2awJAW4ncQYAqRTd3E~BrHl1YJ~GEUTdyKhpkSmRcMSw8a0IiHdewk9DmCsjQ__"
-                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4 mb-lg-0 ">
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/8d7ed50a86b07ceed1bc52f50ca7dc1b.jpeg"
+                        alt="Admisiones Tecmilenio 2024" class="tcard-2024-image img-fluid mb-4 mb-lg-0 ">
                     <div class="tcard-2024-info">
                         <p class="tec24-p-1 mb-4">
                             Conoce el proceso diseñado para que tu admisión en el nivel académico de tu elección sea una
                             experiencia agradable, ágil y sencilla.
                         </p>
                     </div>
-                    <div class="tcard-2024-btn">
+                    <div class="tcard-2024-btn w-100 text-center">
                         <a class="tec24-btn-1">
                             Leer más
                         </a>
@@ -638,8 +659,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="tcard-2024-title">
                         <h2 class="tec24-h2-1 mb-4">Becas</h2>
                     </div>
-                    <img src="https://s3-alpha-sig.figma.com/img/4c82/ae8a/4930bb436f9f3134024ef044b449524c?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Dlzu9MN1JtKDmQYdjkbn2TifKZBsaTNj-FCvvnbqmDiSoX8DGGQvM4yShC45zJJ7kLlhKDPjNlhmN2Z68WcK~Lb85YGq9k7EMi8DGtljsBitqIczsxIqlWyy-4VAJrjX-Q5NVG6qifTb~UTNVZrrM47OLakyIWkUnuBLV42JVd2g3yU5lXNrcYSegMhiFGa9GoFsnOs3D8pzIZnJzcIYuOm22db~R158J2G-uNWGKtAWHwMe7xqAwIqAzXeDWhjy8AV4b5JftgyOzg~qxwdvelaBW5Bc7ygpEyKH~aKm8RjNkiWBqXzQekbwXj2WkhCPB5Tc5b9MxzGb-vr0wFmBDQ__"
-                        alt="Admisiones" class="tcard-2024-image img-fluid mb-4 mb-lg-0">
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/4930bb436f9f3134024ef044b449524c.jpeg"
+                        alt="Becas Tecmilenio 2024" class="tcard-2024-image img-fluid mb-4 mb-lg-0">
                     <div class="tcard-2024-info">
                         <p class="tec24-p-1 mb-4">
                             Conoce los distintos tipos de apoyos financieros que tenemos para continuar con tus
@@ -647,7 +668,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             seguir tus sueños y lograr tu Propósito de Vida.
                         </p>
                     </div>
-                    <div class="tcard-2024-btn">
+                    <div class="tcard-2024-btn w-100 text-center">
                         <a class="tec24-btn-1">
                             Becas
                         </a>
@@ -689,7 +710,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                 }
 
                 /* Swiper Slider */
-                .swiper-carrusel-2024 .swiper {
+                .swiper {
                     width: 100%;
                     height: 50%;
                 }
@@ -699,7 +720,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     padding-bottom: 40px;
                 }
 
-                .swiper-carrusel-2024 .swiper-slide {
+                .swiper-slide {
                     text-align: center;
                     font-size: 18px;
                     background: transparent;
@@ -792,10 +813,18 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     .tec24-card-1 {
                         height: 530px;
                         /* Los 70 px son por que es el espaciado para las flechas next y prev. */
-                        width: calc(100% - 70px);
+                        width: calc(100% - 35px);
                     }
 
-                    .tec24-card-1-description {
+                    .tec24-card-1 .tec24-h2-1 {
+                        color: var(--default-tecmilenio-first);
+                        font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        text-align: center;
+                    }
+
                     .tec24-card-1-description {
                         bottom: 50px;
                         width: 80%;
@@ -803,8 +832,17 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
 
                     /* Swiper Slider */
-                    .swiper-carrusel-2024 .swiper {
+
+                    .swiper {
                         height: 800px;
+                    }
+
+                    .swiper-slide-next {
+                        justify-content: start;
+                    }
+
+                    .swiper-slide-prev {
+                        justify-content: end;
                     }
 
                     .swiper-slide:not(.swiper-slide-active) .tec24-card-1-description {
@@ -819,12 +857,12 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         width: 60%;
                     }
 
-                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) p,
-                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) a {
+                    .swiper-slide:not(.swiper-slide-active) p,
+                    .swiper-slide:not(.swiper-slide-active) a {
                         display: none;
                     }
 
-                    .swiper-carrusel-2024 .swiper-slide-active .tec24-card-1 {
+                    .swiper-slide-active .tec24-card-1 {
                         height: 700px;
                         width: 100%;
                     }
@@ -833,7 +871,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
             <div class="container">
                 <div class="swiper-header">
-                    <h2 class="tec24-h2-1">
+                    <h2 class="tec24-h2-1 mb-4">
                         Estudia en Tecmilenio
                         y expande tu camino
                     </h2>
@@ -849,15 +887,15 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/6682/46dd/2fb49981a1c80f166983f7335a88d11d?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iJLTLwR4ensWlZjRPzVr~LV9LSvgFJa84R77EZw4upH23vi1sh7pVkuq3f2Povv~-fxsfZwn5pRvvbnxC23ssWJ0FODNkDVJ3iGMRLUhe0l4XWgpo9CwF8cQHLOrqZecUCHJmAO10mi8oPjW-W-hTnCRhDSpRn5lgGx9RErrQg4gO6lzRRTOO1JHOSJfg8vJVoizc7X6Ib2cNVOlWYjxnb04zMiaoEVC~WC7BcNzW3mcLYc0cJICbr-Ob~s06YeznA9zyeKWdTyKJ6xZVuAddyoMi1AwP3UuxQDGAIXm5PKeuJbPzgMUn~jCtHKmLxX82yEIDTpXOsmow4iOe8V6oA__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/2fb49981a1c80f166983f7335a88d11d.jpeg"
                                     alt="Prepa Tecmilenio" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Prepa Tecmilenio</h2>
                                     <p class="tec24-p-1 text-left text-white">
-                                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
-                                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
-                                        el año 1500, cuando un impresor.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra augue id
+                                        accumsan vestibulum. Nunc laoreet, nulla sit amet sodales fringilla, urna ex
+                                        facilisis ligula, nec gravida arcu urna consectetur enim. Pellentesque ac.
                                     </p>
                                     <a class="tec24-btn-2">
                                         Más información
@@ -867,7 +905,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/673c/e887/d857152c1d1ea194e30c0ea9e4301b88?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B1ulsKeqdG4RWtsmcMVtl1Uhwe9Ck~KcQxaz2qMx7JDtMOjHApQliu706yJQ7wWxejUXl8p7kMXWRnMIHJTPTbpJThk2viOdb8IgsdTt7adxkbnA9cHkwdyObFqx5BomGo8lrZo~VJLDENIqjT9fDu5e~ictLYo6yagjZ40KktlJU-nO-KsPLnrGnXNxhTHDf5nAsBXtHJgbO8AgSSJpejx-gmm13rlYbXqS5mGVkjlYngAQLlkeLqE5xbwXl0Ae2RAOWn9jFHh3RbPF44tlOda2GQxJpssu8NVvgvMoe8ENuwcLz9MRCviSqop3sm4-75JZKVUIOPWmcJJRF4cIPA__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/d857152c1d1ea194e30c0ea9e4301b88.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
@@ -885,10 +923,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/3d0a/dcf3/0a6aa9f1d7c9d29e6064881b9d605420?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XKjZFYyoEmuM3YTUJuqv3N-zt0lk5jYioIedMEVI0foHbb~N5xOQPT5qeEsRacb992SteC9kiDiPYN7zEI9kSMYAP3WFZG4fmpYeXKRHL-FDG4kCohWT83-kZ0IWehgVzLCYIadpPkAvP170b5HP0lH62UwspUfP7HNavhw4BTyySYNoMCGUXQOZqTR-55vG3RtRh6v0jLE3OexU0YapQuYhi5rPvnEpW8IcB5MfiNcsESkFdVcL5HqgDFZq1QuW4VBn7HM~zznLPaoP-TNcgeipag9TpOCSI6K9dHKbmfo8jWvEA2waB1WP73FtsOXrrtZ9LQSK7Xy6KhhHJYjcOA__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/0a6aa9f1d7c9d29e6064881b9d605420.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(120, 214, 75, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Carreras Ejecutivas</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
@@ -903,11 +941,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/1de6/6a18/9cbd7ae0ad5b7ef1acbd1325d0656913?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QnzmcE9e4o~e6S-1VeT-4pJVkp-IP~wPLa40W8uOuGrfnuCoArgm7~DQxvJMkhs-rKCzaxbJBZwsWgJWOoCy6UmsJ3zgMF-j4LNdinLU8ROMk1PkgIuSg8VxRXczp8vwYgj7bjnQ2hszMGYwUlJqG0t2HYuu8f68pVdkwPFGT6fTluI3eEYZjl55L8QrZMTXtfmd5nFFQJoy3u-IFMXqFuD3M1Pam2s5HcEtYy2mixs7FHx5sb3lF2NTxSKHAyj-B4PciBS9GHP6HWWbUlws8xC-r~dCWTccGlKk4u1269TNz2n570zOC2TL-taFvoRjZulAQZq1rKOAs3hDD9n9dA__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/9cbd7ae0ad5b7ef1acbd1325d0656913.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(205, 25, 62, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
-                                    <h2 class="tec24-h2-1 text-white text-left">Profesional Asociado</h2>
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras Test</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
                                         texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
@@ -921,11 +959,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/736a/dcdd/788a76f93622405e700a7c40d70209e7?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WyhSzZ8acJWUP1zYZRNXa6-qWUQW64jFsy2M7MdQ6W5ZeToHWHmZL6WSKIbRTe70nKM7B5IjgT55GPkTG2oG56z3e7U2w0lgFmNQSsD34mZ~N-w62UuRmAPdnngQqXOOT7cSpPSE3IVmwJeN544M4r9RF5NrAfwNS2QDWNBGbbw6OqKmlPEo6e5uuSIoPOM8VN5pKgs~Hnf85-tb5vqm8Vw5a1EB~reKvxMSYIhV80UFm5lLVqWl6FsmnyU-BSi2JeL0LWjstKVOKGODTI~V8afpHGqO7yYbe3PpOpa8I9r9lLKaIph29H5nqwdzjvFbhG2F~jGjAFsjAFrEIfLU-w__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/788a76f93622405e700a7c40d70209e7.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(38, 208, 124, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
-                                    <h2 class="tec24-h2-1 text-white text-left">Maestrías</h2>
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras TEST @</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
                                         texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
@@ -939,11 +977,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/e35d/8dbe/0567a293a6f1ae9b362fdf3271790d91?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ck5ZtGaXnbwdTLt0aBvETF5Jl4rfP12Jjj70A12I~P~m-q4G4VjH5LPX82tZaKqfM9YAEgATGtlH3Xhu0qftHbBvvYdPrJtzYwBIi3ZdegThZvhRazbpbYWE4xKWw2o7stqpL5-Ibi4tfne0kGzo7bKokTIJnJUChmb~XWB519bGBnCXov3rRWjQ~3kh8svMqI72bjNXhsAVB~vPyMwA8tp4x17FgVEP1GXw5yDpKY5hWPZl9e8MHwNO4-wFGtL4pYPgweqE7Ye~oj3L3-5unIL~2QngWpHgG4N0iEQU-RdK6VlwoMYy~xpN5KPIHH3mTxnbQWP1v9jUrE1HH3oREA__"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/0567a293a6f1ae9b362fdf3271790d91.jpeg"
+                                    alt="Prepa Tecmilenio" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(38, 208, 124, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
-                                    <h2 class="tec24-h2-1 text-white text-left">Especialidades</h2>
+                                    style="background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Prepa Tecmilenio</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
                                         texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
@@ -957,11 +995,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/2359/dfba/9c24e5b3230c94d9fbc2edbb9496eb31?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OQspWzN3dj86IgzCn3PX~7HrYB9pCvyzizR~pPNGzLWpwV2geN~UeE9ahan7NisY4Y8zHD7k7L0Dh8XLrLkD4vzSBUgf75fpwj7Ge92JERtREVNjxzJHDy6vmhFc6~99eT5KoZn6I3zmnQOurdM-qF4~UzALpuWcI~CLy3v68xVLtBrkgiJwrIIbUyWpcZRmYhkG~8QZiH9ruUPDv5IP0Y3m39o3sDjnSUSJ3YEqemPyzJ9913fX-4kWmKcZTFi6lQA0xCpI8Lg09aabJT-0EswGb6StDl5eK7KItRlPYpxf87qBEnHWLNq4aSbUFJu3o6EZukd6gNw7GtdV90CaIA__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/9c24e5b3230c94d9fbc2edbb9496eb31.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(38, 208, 124, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
-                                    <h2 class="tec24-h2-1 text-white text-left">Másteres</h2>
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras Profesionales</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
                                         texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
@@ -975,11 +1013,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/aa80/f330/5d608e1729d4f045b0fd7fe5d2516154?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=likRQyq49kXDm2CZxQs78H1zudmsCZHClH6xc6zpqpltAwis0E~w1WtjNjjUoTy4MRN3eAxBZVmdxbkXSvNT4n-cFjxTPFM-mjiWk8QIZQ1Hf82xzzX-~oAKtRSoQoPTzXQ3VZ3JZbI1aGeFTPztE2FzlbD~XM1ek5PIuzrY6DpWcQHFZQchu4BnyRAkDDoN2EWhgREY76jp94IYxMmldGhz46p25VYmF4~lIe6ZCxzFfrcudzs44CmDk3chNRh8KaqgV90N8eKe-KixLSdjoetYmgzszHnLAGrBTuaXy7m53-X1NOYDc567CmDefu8gidYiEdkX6aKM8XCKlZ3pUQ__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/5d608e1729d4f045b0fd7fe5d2516154.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(2, 193, 176, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
-                                    <h2 class="tec24-h2-1 text-white text-left">Skilling Center</h2>
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras Ejecutivas</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
                                         texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
@@ -993,11 +1031,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/821b/3f14/878f8e0958406e4603ec12eb3e2d2263?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gk3GmVKVmAPErGj5i5Y9GUhXfcCUyyxh7QZk1vAEUugMEv-G9hltdlN5NTlldH1MpqwktiSde8ypX5IOnSEvJlyKWmXD-rCjKD1yYixndnAkDetGJk7PoNX5lQeAinpuA9pdw~IcjfSc2Gy~iA9gO5SvXeQyc6fk8~mCkUwzvA9u1HV~tK2y3BVhAtiwopNeVn9Yn80Ie0qe4OfIG8Pi8z9agLmVReLYqDzd1wjPGJEQPG1xQO6wvNW7G69vbzbHNxsAEAlIMmKLdWqy~HSh57VbT8AJd2FJV698fpNNklDvClhIZ0L4jKVKCQWTnj5VwpW8wsG4sk5Lw2irDlISAw__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/878f8e0958406e4603ec12eb3e2d2263.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(0, 120, 100, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
-                                    <h2 class="tec24-h2-1 text-white text-left">Programas en línea</h2>
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras Test</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
                                         texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
@@ -1011,11 +1049,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://s3-alpha-sig.figma.com/img/ff09/7246/85bd49721b06bed27c604652046fb227?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QZg2T4IiPFmDoIIXHeaOz7-BBPzy7URXw1zMQpcBxw6kQXVHJwAi5Dyh~~ekql8AWcdoPfUXa70m2qw1XgGOJezAmuNQgBZ-tu7OIFJCjy0qPRDHA8cwfJg2zVbZB0dns5cqBdduJpbakjEajpW3C8GFf08x5gD6nLvOgC8HfcvtoIdPZjooGvMjOjqWRkbcsy8mqVW1gBIT1Elx-4l9K0PtelTB-fNTKgBI83SmKecnC16M~NG9PXabwA4ytd8PD7ZkGDL3cNhvM-1Xb8E4UQSHmJUGiAf3H-tRtb7hmTYRF3TykOfvNCOvRrR5Jy~vT737zaF2B1Y3LDc8deE7tA__"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/85bd49721b06bed27c604652046fb227.jpeg"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
-                                    style="background: linear-gradient(180deg, rgba(0, 77, 255, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
-                                    <h2 class="tec24-h2-1 text-white text-left">Digital NAO</h2>
+                                    style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
+                                    <h2 class="tec24-h2-1 text-white text-left">Carreras TEST @</h2>
                                     <p class="tec24-p-1 text-left text-white">
                                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
                                         texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
@@ -1096,6 +1134,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                     .tec24-card-2 {
                         flex: 0 0 30%;
+                        width: 30%;
                     }
 
                     .tec24-card-2 .tec24-card-2-icon {
@@ -1106,10 +1145,19 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     .tec24-card-2 .tec24-card-2-icon span {
                         font-size: 60px;
                     }
+
+                    .tec24-card-2 .tec24-h2-1 {
+                        color: var(--default-tecmilenio-first);
+                        font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        text-align: center;
+                    }
                 }
             </style>
             <div class="container tec24-py-70px">
-                <h2 class="tec24-h2-1 mb-4">
+                <h2 class="tec24-h2-1 mb-4 mb-lg-5">
                     ¿Por qué estudiar en Tecmilenio?
                 </h2>
                 <div class="features-2024-container">
@@ -1211,333 +1259,123 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             </div>
         </section>
 
-        <!-- Swiper Carrusel 2024-->
+        <!-- Swiper Carrusel Video 2024-->
         <section class="swiper-carrusel-video-2024 tec24-py-70px">
-            <!-- Link Swiper's CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-            <!-- Styles -->
+        </section>
+
+        <!-- Hero Info 2024-->
+        <section class="hero-info-2024 tec24-py-70px"
+            style="background: linear-gradient(180deg, #00534C 0%, #00B9A9 100%);">
             <style>
-                .swiper-carrusel-video-2024 {
-                    background-color: #EFEFEF;
-                }
-
-                .swiper-carrusel-video-2024 .container {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-
-                .swiper-carrusel-video-2024 .tec24-p-1 {
-                    color: var(--default-tecmilenio-first);
-                }
-
-                .swiper-header {
-                    text-align: center;
-                }
-
-                .swiper-header .tec24-h2-1 {
-                    padding: 0px 18%;
-                }
-
-                /* Swiper Slider */
-                .swiper {
+                .hero-info-2024 {
                     width: 100%;
-                    height: 50%;
                 }
 
-                .swiper-wrapper {
-                    /* Esta padding es para poder mostrar el paginado abajo de la card */
-                    padding-bottom: 40px;
-                }
-
-                .swiper-carrusel-video-2024 .swiper-slide {
+                .tec24-hero-info-heading {
                     text-align: center;
-                    font-size: 18px;
-                    background: transparent;
+                }
+
+                .tec24-hero-info-heading .material-symbols-outlined {
+                    text-align: center;
+                    color: white;
+                    font-size: 40px;
+                }
+
+                .tec24-hero-info-cta {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    flex-direction: column;
-                }
-
-                .swiper-button-next,
-                .swiper-button-prev {
-                    /* Aqui movemos las flechas next y back al centro vertical restandole 20px (cantidad del padding de 40px/2 del contenedor swiper-wrapper) al 50%  */
-                    top: var(--swiper-navigation-top-offset, calc(50% - 20px));
-                }
-
-                .swiper-button-next,
-                .swiper-rtl .swiper-button-prev {
-                    right: var(--swiper-navigation-sides-offset, 0px);
-                    left: auto;
-                }
-
-                .swiper-button-prev,
-                .swiper-rtl .swiper-button-next {
-                    left: var(--swiper-navigation-sides-offset, 0px);
-                    right: auto;
-                }
-
-                .swiper-button-prev::after,
-                .swiper-button-next::after {
-                    font-family: 'Material Symbols Outlined';
-                    font-weight: 700;
-                    font-size: 30px;
-                    color: var(--default-tecmilenio-first);
-                    /* Color del icono */
-                }
-
-                .swiper-button-prev::after {
-                    content: '\e5c4';
-                    /* Icono de flecha izquierda */
-                }
-
-                .swiper-button-next::after {
-                    content: '\e5c8';
-                    /* Icono de flecha derecha */
-                }
-
-                .swiper-pagination-bullet {
-                    background: var(--default-tecmilenio-first);
-                    opacity: var(--swiper-pagination-bullet-inactive-opacity, .7);
-                }
-
-                .swiper-pagination-bullet-active {
-                    background: var(--default-tecmilenio-first);
-                    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
-                }
-
-                /* Tec24 Card 1 */
-                .tec24-card-video-1 {
-                    /* Los 70 px son por que es el espaciado para las flechas next y prev. */
-                    width: calc(100% - 50px);
-                    height: 200px;
-                    padding-bottom: 70px;
-                }
-
-                .tec24-card-1-description {
-                    min-width: 208px;
-                    min-height: 246px;
-                    height: 65%;
-                    width: 65%;
-                    position: absolute;
-                    bottom: 0px;
-                    background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);
-                    padding: 20px 15px;
-                    transition: height 0.5s ease;
-                }
-
-                .tec24-card-1 .tec24-btn-2 {
-                    width: inherit;
-                }
-
-                .tec24-carousel-video {
-                    width: 80%;
+                    width: 100%;
+                    gap: 10px;
+                    flex-wrap: wrap;
                 }
 
                 /* Desktop */
                 @media (min-width: 992px) {
-
-                    .swiper-carrusel-video-2024 .swiper-slide {
-                        flex-direction: row;
-                    }
-
-                    /* Tec24 Card 1 */
-                    .tec24-card-video-1 {
-                        /* Los 70 px son por que es el espaciado para las flechas next y prev. */
-                        width: calc(100% - 70px);
-                        height: 350px;
-                        padding-bottom: 70px;
+                    .tec24-hero-info-heading .material-symbols-outlined {
+                        font-size: 60px !important;
                     }
                 }
             </style>
-
             <div class="container">
-                <!-- Swiper -->
-                <div class="swiper swiper-container-videos">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="tec24-card-video-1">
-                                <h2 class="tec24-h2-1 mb-4">Habilidades digitales para el futuro</h2>
-                                <iframe class="tec24-carousel-video"
-                                    src="https://www.youtube.com/embed/biz4xrs8LgA?si=KwcK5xYbn6-lwDnR" frameborder="0"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="tec24-card-video-1">
-                                <h2 class="tec24-h2-1 mt-4 mb-4">Digital skilling x Tecmilenio</h2>
-                                <iframe class="tec24-carousel-video"
-                                    src="https://www.youtube.com/embed/Ka8sbSK72Uc?si=Rtayzu5d8dZKLLWR" frameborder="0"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tec24-card-video-1">
-                                <h2 class="tec24-h2-1 mb-4">El momento de actualizarte es ahora. Aprende habilidades
-                                    digitales</h2>
-                                <iframe class="tec24-carousel-video"
-                                    src="https://www.youtube.com/embed/llhMhNelcNE?si=BPo1mLXgwhQHrxT4" frameborder="0"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="tec24-card-video-1">
-                                <h2 class="tec24-h2-1 mt-4 mb-4"></h2>
-                                <iframe class="tec24-carousel-video" src="" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                <div class="tec24-hero-info-heading">
+                    <span class="material-symbols-outlined">
+                        live_help
+                    </span>
+                    <h2 class="tec24-h2-1 text-white">¿Tienes dudas?</h2>
                 </div>
-            </div>
-
-            <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper('.swiper-container-videos', {
-                    centeredSlides: true,
-                    loop: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                        dynamicBullets: true,
-
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    breakpoints: {
-                        992: {
-                            slidesPerView: 1,
-                            spaceBetween: 30,
-                        },
-                    },
-                });
-            </script>
-        </section>
-
-        <!-- Dudas 2024-->
-        <section class="tec24-dudas-container tec24-py-70px">
-            <style>
-                .tec24-dudas-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: linear-gradient(180deg, rgba(0, 83, 76, 0.9) 0%, rgba(0, 185, 169, 0.9) 100%);
-                    height: 100vh;
-                    width: 100%;
-                }
-
-                .tec24-card {
-                    color: white;
-                    padding: 20px;
-                    text-align: center;
-                    width: 300px;
-                }
-
-                .tec24-icon img {
-                    width: 40px;
-                    height: 40px;
-                }
-
-                .tec24-card h2 {
-                    margin-top: 20px;
-                }
-
-                .tec24-card p {
-                    margin: 10px 0;
-                }
-
-                .tec24-horario {
-                    margin: 20px 0;
-                }
-
-                .tec24-btn {
-                    background-color: #008b8b;
-                    border: none;
-                    border-radius: 5px;
-                    color: white;
-                    cursor: pointer;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                }
-
-                .tec24-btn:hover {
-                    background-color: #007070;
-                }
-            </style>
-            <div class="tec24-card">
-                <div class="tec24-icon">
-                    <img src="../img/Vector.png" alt="Icono de dudas">
-                </div>
-                <h2 class="tec24-h2-1 text-white">¿Tienes dudas?</h2>
-                <p class="tec24-p-1 text-white">Ingresa a nuestra sala virtual y resuelve tus dudas. Uno de nuestros
-                    asesores te atenderá.</p>
-                <div class="tec24-horario">
+                <div class="tec24-hero-info-body">
+                    <p class="tec24-p-1 text-white">
+                        Ingresa a nuestra sala virtual y resuelve tus dudas. Uno de nuestros
+                        asesores te atenderá.
+                    </p>
                     <p class="tec24-p-1 text-white">
                         <b>Horario de atención</b><br>
                         9:00 am a 6:30 pm de lunes a viernes.
                     </p>
                 </div>
-                <a class="tec24-btn-4">Inicia Videoconferencia</a>
+                <div class="tec24-hero-info-cta">
+                    <a class="tec24-btn-4">Inicia Videoconferencia</a>
+                </div>
             </div>
         </section>
 
-        <!-- Info 2024-->
-        <section class="tec24-info-block tec24-py-70px">
+        <!-- Quick Facts 2024-->
+        <section class="quick-facts-2024 tec24-py-70px">
             <style>
-                .tec24-info-block {
+                .quick-facts-2024 {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
                     background-color: #f8f8f8;
                     padding: 10px;
+                    gap: 3.3333%;
                 }
 
-                .tec24-info-item {
+                .quick-facts-2024 .material-symbols-outlined {
+                    font-size: 40px;
+                }
+
+                .tec24-card-3 {
                     text-align: center;
-                    margin: 10px;
+                    padding: 10px;
+                    flex: 0 0 30%;
                 }
 
-                .tec24-info-item i {
-                    color: #00cc66;
-                    font-size: 50px;
-                    margin-bottom: 10px;
-                }
-
-                .tec24-info-item p {
+                .tec24-card-3 p {
                     margin: 5px 0;
-                    color: #003366;
-                    width: 80px;
-                    ;
+                    color: var(--default-tecmilenio-first);
+                }
+
+                /* Desktop */
+                @media (min-width: 992px) {
+                    .quick-facts-2024 .material-symbols-outlined {
+                        font-size: 60px !important;
+                    }
                 }
             </style>
-            <div class="tec24-info-item">
+            <div class="tec24-card-3">
                 <span class="material-symbols-outlined" style="color: #26D07C">diversity_3</span>
                 <p class="tec24-p-3">+61 k estudiantes</p>
             </div>
-            <div class="tec24-info-item">
+            <div class="tec24-card-3">
                 <span class="material-symbols-outlined" style="color: #26D07C">domain</span>
                 <p class="tec24-p-3">42 espacios Tecmilenio</p>
             </div>
-            <div class="tec24-info-item">
+            <div class="tec24-card-3">
                 <span class="material-symbols-outlined" style="color: #26D07C">groups</span>
                 <p class="tec24-p-3">+4k Docentes</p>
             </div>
-            <div class="tec24-info-item">
+            <div class="tec24-card-3">
                 <span class="material-symbols-outlined" style="color: #26D07C">school</span>
                 <p class="tec24-p-3">+140 k exatecmi</p>
             </div>
-            <div class="tec24-info-item">
+            <div class="tec24-card-3">
                 <span class="material-symbols-outlined" style="color: #26D07C">collections_bookmark</span>
                 <p class="tec24-p-3">+49 programas académicos</p>
             </div>
-            <div class="tec24-info-item">
+            <div class="tec24-card-3">
                 <span class="material-symbols-outlined" style="color: #26D07C">add_business</span>
                 <p class="tec24-p-3">+10 empresas socioformadoras</p>
             </div>
@@ -1545,299 +1383,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         <!--  Acreditaciones 2024-->
         <section class="swiper-carrusel-acreditaciones-2024 tec24-py-70px">
-            <!-- Link Swiper's CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-            <!-- Styles -->
-            <style>
-                .swiper-carrusel-acreditaciones-2024 {
-                    background: linear-gradient(180deg, rgba(0, 185, 169, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
-                }
-
-                .swiper-carrusel-acreditaciones-2024 .container {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-
-                .swiper-carrusel-acreditaciones-2024 .tec24-p-1 {
-                    color: var(--default-tecmilenio-first);
-                    padding: 20px;
-                }
-
-                .swiper-header {
-                    text-align: center;
-                }
-
-                .swiper-header .tec24-h2-1 {
-                    padding: 0px 18%;
-                }
-
-                /* Swiper Slider */
-                .swiper-carrusel-acreditaciones-2024 .swiper {
-                    width: 100%;
-                    height: 50%;
-                }
-
-                .swiper-wrapper {
-                    /* Esta padding es para poder mostrar el paginado abajo de la card */
-                    padding-bottom: 40px;
-                }
-
-                .swiper-carrusel-acreditaciones-2024 .swiper-slide {
-                    text-align: center;
-                    font-size: 18px;
-                    background: transparent;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .swiper-button-next,
-                .swiper-button-prev {
-                    /* Aqui movemos las flechas next y back al centro vertical restandole 20px (cantidad del padding de 40px/2 del contenedor swiper-wrapper) al 50%  */
-                    top: var(--swiper-navigation-top-offset, calc(50% - 20px));
-                }
-
-                .swiper-button-next,
-                .swiper-rtl .swiper-button-prev {
-                    right: var(--swiper-navigation-sides-offset, 0px);
-                    left: auto;
-                }
-
-                .swiper-button-prev,
-                .swiper-rtl .swiper-button-next {
-                    left: var(--swiper-navigation-sides-offset, 0px);
-                    right: auto;
-                }
-
-                .swiper-button-prev::after,
-                .swiper-button-next::after {
-                    font-family: 'Material Symbols Outlined';
-                    font-weight: 700;
-                    font-size: 30px;
-                    color: var(--default-tecmilenio-first);
-                    /* Color del icono */
-                }
-
-                .swiper-button-prev::after {
-                    content: '\e5c4';
-                    /* Icono de flecha izquierda */
-                }
-
-                .swiper-button-next::after {
-                    content: '\e5c8';
-                    /* Icono de flecha derecha */
-                }
-
-                .swiper-pagination-bullet {
-                    background: var(--default-tecmilenio-first);
-                    opacity: var(--swiper-pagination-bullet-inactive-opacity, .7);
-                }
-
-                .swiper-pagination-bullet-active {
-                    background: var(--default-tecmilenio-first);
-                    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
-                }
-
-                /* Tec24 Card 1 */
-                .tec24-card-1 {
-                    height: 450px;
-                    /* Los 70 px son por que es el espaciado para las flechas next y prev. */
-                    width: calc(100% - 70px);
-                    border: 2px solid #00534C;
-                    border-radius: 5px;
-                    background-color: white;
-                }
-
-                .tec24-card-1-description {
-                    min-width: 208px;
-                    min-height: 246px;
-                    height: 65%;
-                    width: 65%;
-                    position: absolute;
-                    bottom: 0px;
-                    background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);
-                    padding: 20px 15px;
-                    transition: height 0.5s ease;
-                }
-
-                .tec24-card-1 .tec24-btn-2 {
-                    width: inherit;
-                }
-
-                .tec24-cropped-image {
-                    max-width: 100%;
-                    padding: 20px;
-                    /* Ajusta los valores para mostrar el porcentaje deseado */
-                }
-
-                /* Desktop */
-                @media (min-width: 992px) {
-
-                    /* Tec24 Card 1 */
-                    .tec24-card-1 {
-                        height: 530px;
-                        /* Los 70 px son por que es el espaciado para las flechas next y prev. */
-                        width: calc(100% - 70px);
-                    }
-
-                    .tec24-card-1-description {
-                        bottom: 50px;
-                        width: 80%;
-                        height: 40%;
-                    }
-
-                    /* Swiper Slider */
-                    .swiper-carrusel-2024 .swiper {
-                        height: 800px;
-                    }
-
-                    .swiper-slide:not(.swiper-slide-active) .tec24-card-1-description {
-                        min-height: 100px;
-                        height: 20%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 0px 10px;
-                        transition: height 0.5s ease;
-                        bottom: 135px;
-                        width: 60%;
-                    }
-
-                    .swiper-carrusel-2024 .swiper-slide-active .tec24-card-1 {
-                        height: 700px;
-                        width: 100%;
-                    }
-                }
-            </style>
-
-            <div class="container">
-                <div class="swiper-header">
-                    <h2 class="tec24-h2-1">
-                        Acreditaciones y Reconocimientos
-                    </h2>
-                </div>
-
-                <!-- Swiper -->
-                <div class="swiper swiper-acreditaciones-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="tec24-card-1">
-                                <div>
-                                    <img class="tec24-cropped-image"
-                                        src="https://s3-alpha-sig.figma.com/img/11d8/78c2/01ed961123c9edb0f1052a33a8d2de73?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GzsVWi-uKs~6YXDVOrabd34RyW30GiGNWg8G6EkKUIb1psQIsoLbFH7yZElMgkz-PKfg5auvtdoKKnxtLvK89tSH9ggLhrhSJWsnD~i0YdJxqbUHaJ89TJt7RMJmR5TCMfX-eIWUCU7auxVDgEgSxdT3Cg6JXra8K0F4ydkGNUnIzEUQU3ZL36fLvKBD3yNj1lWLshMKc4ztwwZPevBTaYULdEigWANlb7eqac0eEMkhdhRZJFclYMRX4HhT56LlQ4uTAw69hPmCFcH0JaQ~XV90RKtD3l8LXU7UGfmIBfTiLoxdgcrXvgmDyYXdxHM60XzSbA2Oj~ByB9TpV1AlyQ__"
-                                        alt="">
-                                </div>
-                                <p class="tec24-p-1 text-left">
-                                    Tecmilenio obtuvo 5 de 5 estrellas de calificación en: Enseñanza, Empleabilidad,
-                                    Educación Online, Responsabilidas Social e Inclusión.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tec24-card-1">
-                                <div>
-                                    <img class="tec24-cropped-image"
-                                        src="https://s3-alpha-sig.figma.com/img/4fe9/a71e/7f8760b43424ba6dc82ec99cb1566120?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qqgJrPNvu1m56comn4PyjDAcm-tx89C0eRxuUGR0a-eJPt~231bhJfoiFr5m8bp3kGplWt~abigsyk~0JlGXmbpZWFbd-rjCq6i4yfRlXInp1xpxLhX9Fm6R9fi3m~HL5xYUFSn4V3b8zUdm92icXptXFy5k9kf0h2OqO0FcKVCdlPmdAekSBJS8POq1dQb3zWwX~6OdorHGfWsK6vIKWgQaPEp4QkxYTAvuPUnkO8-AIyRJ3MEoCfHVE1z9rVrAI3LbmpxObien1qdg3nBMSs53-SdOOS-ieIT1iFsIXYL2NuRdsfCHkxoBm1uQYSY6C-sM78hxnZdoL1BmobAhJQ__"
-                                        alt="">
-                                </div>
-                                <p class="tec24-p-1 text-left">
-                                    Reconocimiento por ser la institución educativa más responsable lorem ipsum es un
-                                    texto.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tec24-card-1">
-                                <div>
-                                    <img class="tec24-cropped-image"
-                                        src="https://s3-alpha-sig.figma.com/img/9386/27d9/33c9b10bc56a15406e7a10fc043a2517?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HT5RFsMuU4xxn9Ngy8mpXm1tWNSLeatkBFUrvh~gHVaBfK61ph~Iinqz0xip87tAM987dZdWxwKUMK8T74QEwMXleLu1vaVKNbkP-RlTYeAcxBQwYHbcrQiQR8Q5rnHr5ItOUy-tBsvOkvI5Qyi7JHHP7-gw1E1oho~JOr6veDcAkhd~AX0rgIt9JGs8XjWubu73O0CaSzgtnGEae2bbTEmYCfdWzlFsmvdVLcQMTsAkV6gHgHT3TCOeOmKDaJxh8787xc7MMPSjCOei3adNOCMxa7IiOTqCPlUn5~eUgWjcmTQT1z0RJcPUh3morS-DnFlu5ZscFDnKidca8dEoTw__"
-                                        alt="">
-                                </div>
-                                <p class="tec24-p-1 text-left">
-                                    Reconocimiento por ser la institución educativa más responsable lorem ipsum es un
-                                    texto.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tec24-card-1">
-                                <div>
-                                    <img class="tec24-cropped-image"
-                                        src="https://s3-alpha-sig.figma.com/img/5e26/239d/805e93b0b2329a08dcdaabb6d442ba9a?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=n4hIg-cz2UpL6ujR8N9EFG1leSi9sOGbU2~lVHkxowDeCSZc84xqAXXSBnsZc0UAfgCAIqmHcG4KVs1Fcc5A~ifBMjUJiuv3ksutCPPz2yl~tg4biNEhsaYOaeGoOpq-KFBc8wk-d-kpYEbCqNIZV~mQ~ezW~jpxgR3zhRH8t3cERHGKtUs9OPw8TJpipXvobYFXiFLMyqhcN3zz-rzW2NkzD-aoKCnoODfBCH6eZ30w0V991KTO7xM12c6qun8ggCqK86Qtg95Yu3seD9beq7BOvI5EkTVU1Y~Yq8RZOElAwLjjXrN43yojASDUsPPdmepkn6TH2ruo70Em~R556A__"
-                                        alt="">
-                                </div>
-                                <p class="tec24-p-1 text-left">
-                                    Reconocimiento por ser la institución educativa más responsable lorem ipsum es un
-                                    texto.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tec24-card-1">
-                                <div>
-                                    <img class="tec24-cropped-image"
-                                        src="https://s3-alpha-sig.figma.com/img/0167/7999/410c4cd90ce15c9bada2d8a41843bb65?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O8iDH-xyIfx6YwXLy2qsxpAlPHY0pXqGkglM4wUiac3P83U6MY6MnZcH~Mc-5QsiFkneWLV5nPwNIM-Xj9Ww-Sfp5UyMeRlPASlDgpAj6SUDJ999bAbwd39AUVaZC9j8~9KMm2~-PTrvEAvQIFeZWDswtJgisZIvixSskr-iSXkmMibTbipzfma5pjthiefZXJi4ZuwqO-btkgOKIaHClQ2RRhMtCp97azE1LvlIHcGkFe2-O~D0oTIkTm5t~ThMTtxH0YeZOoXeZ7CdCRkapy0vu2Mhxuk9bZv5U6Tv1LOSe2O18aW~6LlNbI9p~qVCBa8jJkvCef~FtKJ~PPM3lQ__"
-                                        alt="">
-                                </div>
-                                <p class="tec24-p-1 text-left">
-                                    Reconocimiento por ser la institución educativa más responsable lorem ipsum es un
-                                    texto.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tec24-card-1">
-                                <div>
-                                    <img class="tec24-cropped-image"
-                                        src="https://s3-alpha-sig.figma.com/img/88f8/d9ab/7300a56b68c3e193409b53e76cbab85f?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l5ZR2euMA2o74tdts8fZxNBdYoJCw8eUjqmiobHH90x23A3y~gQjxmf2wPAggF5hmGhQ71veaoYHHukg0pTaoLFRPAiczgTvZHGGueFi1~p4dMN8oUewLjIrCyXeMVOim04fZq4zO9wgTKt1ySWkPMRV2E0ZWUyDdDFp7QnOTUuRw5K-MmXSD7oAxbxiKxYJvz23A6Dy~2mI7muwlE6c9~VOgvXo1oxVcgWiiplOu0VmSZJ53XVsokort~JaDbfM~U12YzMpsCo0A3TFM8mNgJPe5rqIyKkv74aCM9SULKnGzEAHLCP4iQohtT00KQ9hvheupBbvMSCEoXBFhz~67w__"
-                                        alt="">
-                                </div>
-                                <p class="tec24-p-1 text-left">
-                                    Reconocimiento por ser la institución educativa más responsable lorem ipsum es un
-                                    texto.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-
-            <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper('.swiper-acreditaciones-container', {
-                    centeredSlides: true,
-                    loop: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                        dynamicBullets: true,
-
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    breakpoints: {
-                        992: {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
-                        },
-                    },
-                });
-            </script>
         </section>
 
         <!-- Campus 2024-->
-        <section class="tec24-campus-container text-center my-5 tec24-py-70px">
+        <section class="tec24-campus-container text-center tec24-py-70px">
             <style>
                 .tec24-campus-container {
                     font-family: Arial, sans-serif;
@@ -1970,29 +1520,29 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
                 }
             </style>
-            <div class="tec24-h2-1 pb-2">Recorre nuestras instalaciones de manera virtual</div>
-            <div class="tec24-p-1 pb-3">Conoce los distintos espacios que te permitirán enfocarte en tus
+            <div class="tec24-h2-1 mb-2 mb-lg-4">Recorre nuestras instalaciones de manera virtual</div>
+            <div class="tec24-p-1  mb-3 mb-lg-5">Conoce los distintos espacios que te permitirán enfocarte en tus
                 estudios, incrementar tu red de contactos y construir una nueva versión de ti.</div>
 
             <div class="tec24-campus-grid-container pb-4">
                 <div class="tec24-campus-grid-item s1">
-                    <img src="https://s3-alpha-sig.figma.com/img/ba65/424a/925cad023492bf523b9878eeaadd6a2b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fXZseTUXFE2B1h0FofU7s68RIgf3qQuxHZTxeh8E6gMQx7WEGELrSGaTM1Wg0d~FreO1wjx6qMcIYny9VORB3DHPjSI9yVnApjoiO9eAhEakdQDQWqrHWT5fN90hfCyw4MKO4cFWgyZbxItAOYepkdlBqkSokvDG-aTLtPGPjpjE5OykFsOMksg8698uwDMqHmMtWR2VknkZHRftA5qk26nH0r0a-5I7SFO74YosrPquVsX45dxV~YUFGnEqVl~6bAtx32-ROawOGCkwf-yPE5cb5LOi74NocRv-qEHapk1nacMqDN3CJYutRzxxdsPTOUioi6utk792O4Ajh6v7CA__"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/925cad023492bf523b9878eeaadd6a2b.jpeg"
                         alt="Instalación 1">
                 </div>
                 <div class="tec24-campus-grid-item span-2x1 s2">
-                    <img src="https://s3-alpha-sig.figma.com/img/3082/691c/6a82cc5f6076868a456ae5f5be5a5fbf?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N4Ut3NzGb1FgonovvmaE-jfRUbjenCYpHv2MqRp-f~ssEYzL5KRfmmoyYV7-m7CH2FQrUkvt9i3oQGchmakak4oyO4lumumHVtzLrijxO-pES5CnOTAFiQLGV-MQzv4BSpM2fj-6bMzDg-s~52ck~5OOv4A~HGbS1lK-rW0B9svys-UvLoisfEFXOApXiFqEDtOO4I79kiuHTWOdXAfAY5aNRjDr0VoEtsZ9cNs4-4JNy3E6LEmPX41m0tahj4BM7AjuXblH8A9Gv~3~BuUK-aUSwTgqh8PuDiRpWX8eZdaVd85atP8jYWDpdmqeJRvnXTdOMDtqujHkS-A9KXbz~g__"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/6a82cc5f6076868a456ae5f5be5a5fbf.jpeg"
                         alt="Instalación 2">
                 </div>
                 <div class="tec24-campus-grid-item span-1x2 s3">
-                    <img src="https://s3-alpha-sig.figma.com/img/b22e/8a42/665c3869ebb27f3a527e7346497a21d2?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hwh4uIz-IrDv0SjrdXIeit7IovlzkgwSUdxaczO2TKN3tLTbG4NxrqM9xG1Losb7WfcCDBywHOQbpD4zU24134LqQvh0Z0sWjrKTzS47S3dPlRB1XWVGqRibtAjV-Qus8yeGX2VyBWMqEOZehrtZ4aLP3Yd18kyg0-wHc0Hz24noRdzGwNz-koHaubHw4oOnoQoYOsRvlUMw0jb2Vw7Zw6WGeELZFFaL4pfVtRbISCGjwCptRMYSLYecqpYLE4mKpdcXnB6eMvfJ596P03Z-KQ6hUDvUEDIogdPjVemhUYSnCJdcRmWZGZFKY2zgQzU0IoroEG~sj7YF3X~oIUDsZA__"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/665c3869ebb27f3a527e7346497a21d2.jpeg"
                         alt="Instalación 3">
                 </div>
                 <div class="tec24-campus-grid-item span-2x1 s4">
-                    <img src="https://s3-alpha-sig.figma.com/img/42b2/5aad/6e1bce7bf1823cecb6f5812823664a8b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e2TqrRLDxlyOXuYnXIZjd~tumOxjJ2lBFA72eZ6xlF2nTdroyd1DlhCnxAaPGe1yVhS8Wl19c-Yhfah7CHLwEFHmLpMKG1PCQnsyN6eKfHraHoV7TdovX70zAWmcREHsJBpJFSGgwbpH03aKO~xybhf6BsGiEXyWBI9I-kQ9RcgHyWnJkZ~SOHfx4kQ8WlFQQOWD60k2ZJEscURrv87YGQIYrYeABliYJFstvzM7Rf02ClngnZNC1BuIrZDmywX367~ZiCt7kwWgn~xTv-49NRrZ19LG7jhAJp3xWUFRkJ77rMZTKnO-2elEMWbY8mM3Q16nyKCv7jFV2GPuEMVZ7A__"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/6e1bce7bf1823cecb6f5812823664a8b.jpeg"
                         alt="Instalación 4">
                 </div>
                 <div class="tec24-campus-grid-item s5">
-                    <img src="https://s3-alpha-sig.figma.com/img/cc6a/9cd0/13537045f9f50d5135db767c9e731712?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J5DjdGuCu-ZFVhLrgSUz9sFzUB3YTdA9mb7LcT2fsQ9O3LKXtZruADK0HZcB0yyjyxzu~Y2kOp1h2auKI2r3saW~GMMTT7b0SjgT~rHCplmW9T3TPvxXlN9BWVPUOIXN8pSU--Br5erR1GKSqAm1QAco-jvo1LhKVfCREGSHMHxfNNtaPVpwOhucZzdYAl6FT0bq-GelU-Bfvbwhcj1jraht6vLJbu6pIzwBjTy8tWnmqqjElhHUb8xpz3O14~WkwbqImlvQKUExbFTOQnSrdKpxmcZr-oRGiuRgscgEBJhpnj8ujSadIBzBrUp9OfESbTVPju~c3GNflV2BTna-iA__"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/13537045f9f50d5135db767c9e731712.jpeg"
                         alt="Instalación 5">
                 </div>
             </div>
@@ -2001,43 +1551,214 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         </section>
 
         <!-- Visita Campus 2024-->
-        <section class="tec24-visita-container tec24-py-70px">
+        <section class="hero-info-2024 tec24-py-70px"
+            style="background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 185, 169, 1) 110%);">
             <style>
-                .tec24-visita-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 185, 169, 1) 110%);
-                    height: 100vh;
+                .hero-info-2024 {
                     width: 100%;
                 }
 
-                .tec24-visita-container .tec24-card {
-                    color: white;
-                    padding: 20px;
+                .tec24-hero-info-heading {
                     text-align: center;
-                    width: 300px;
                 }
 
-                .tec24-visita-container .tec24-icon span {
-                    width: 40px;
-                    height: 40px;
-                }
-
-                .tec24-visita-container .material-symbols-outlined {
+                .tec24-hero-info-heading .material-symbols-outlined {
+                    text-align: center;
                     font-size: 40px;
                 }
+
+                .tec24-hero-info-cta {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                }
             </style>
-            <div class="tec24-card">
-                <div class="tec24-icon">
-                    <span class="material-symbols-outlined" style="color: #26D07C">domain</span>
+            <div class="container">
+                <div class="tec24-hero-info-heading">
+                    <span class="material-symbols-outlined" style="color: var(--default-tecmilenio-first);">
+                        domain
+                    </span>
+                    <h2 class="tec24-h2-1">Visita el campus</h2>
                 </div>
-                <h2 class="tec24-h2-1">Visita el campus</h2>
-                <p class="tec24-p-1">Nuestras instalaciones y espacios están diseñados para fomentar un ambiente positivo, que estimule el bienestar y la creatividad de nuestros estudiantes. ¡Conócenos!</p>
-                <a class="tec24-btn-1">Programar una visita</a>
+                <div class="tec24-hero-info-body">
+                    <p class="tec24-p-1" style="color: var(--default-tecmilenio-first);">Nuestras instalaciones y
+                        espacios están diseñados para fomentar un ambiente
+                        positivo, que estimule el bienestar y la creatividad de nuestros estudiantes.</p>
+                    <p class="tec24-p-1" style="color: var(--default-tecmilenio-first);">¡Conócenos!</p>
+                </div>
+                <div class="tec24-hero-info-cta">
+                    <a class="tec24-btn-1">Programar una visita</a>
+                </div>
             </div>
         </section>
 
+        <!-- Info Cards 2024 -->
+        <section class="info-cards-2024 tec24-py-70px">
+            <style>
+                .info-cards-2024 .container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .tcard-2024 {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .tcard-2024 .tec24-p-1 {
+                    width: 100%;
+                }
+
+                .tcard-2024-image {
+                    min-height: 176px;
+                    width: 100%;
+                }
+
+                /* Desktop */
+                @media (min-width: 992px) {
+                    .tcard-2024 {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        justify-items: stretch;
+                    }
+
+                    .tcard-2024-image {
+                        max-height: 360px;
+                        height: 100%;
+                        max-width: 660px;
+                        width: 100%;
+                        display: inline-block;
+                        max-width: 100%;
+                        grid-row: span 3;
+                        grid-column-start: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 4;
+                    }
+
+                    .tcard-2024-leftimg .tcard-2024-image {
+                        grid-row: span 3;
+                        grid-column-start: 1;
+                        grid-row-start: 1;
+                        grid-row-end: 4;
+                    }
+
+                    .tcard-2024-title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+                    }
+
+                    .tcard-2024-info {
+                        padding: 0px 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .tcard-2024-btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+                        width: 100%;
+                    }
+                }
+            </style>
+            <div class="container">
+                <div class="tcard-2024 tcard-2024-leftimg">
+                    <div class="tcard-2024-title">
+                        <h2 class="tec24-h2-1 mb-4">Libro 20 aniversario</h2>
+                    </div>
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/aa5c488db1c985c6041c1414e73cae20.jpeg"
+                        alt="Libro 20 aniversario" class="tcard-2024-image img-fluid mb-4 mb-lg-0">
+                    <div class="tcard-2024-info">
+                        <p class="tec24-p-1 mb-4">
+                            Cumplimos 20 años construyendo historias.
+                            Este libro es un viaje a través de 20 años de historias en Tecmilenio que han transformado
+                            nuestra comunidad académica.
+                        </p>
+                    </div>
+                    <div class="tcard-2024-btn">
+                        <a class="tec24-btn-3">
+                            Conoce más
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog 2024 -->
+        <section class="blog-2024 tec24-py-70px">
+            <style>
+                .blog-2024 {
+                    background-color: #EFEFEF;
+                }
+
+                .blog-2024 .container {
+                    justify-content: center;
+                    display: flex;
+                }
+
+                .blog-2024 .tec24-card-4 {
+                    width: 80%;
+                    height: 500px;
+                }
+
+                .tec24-card-4-cta {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                }
+
+                /* Desktop */
+                @media (min-width: 992px) {
+                    .tec24-card-4 {
+                        display: flex;
+                        flex-wrap: nowrap;
+                    }
+
+                    .tec24-card-4-img {
+                        width: 50%;
+                        object-fit: cover;
+                    }
+
+                    .tec24-card-4-body {
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
+                }
+            </style>
+            <h2 class="tec24-h2-1 mb-4">
+                Blog
+            </h2>
+            <div class="container">
+                <div class="tec24-card-4" style="background: linear-gradient(180deg, #015B53 38.5%, #02C1B0 100%);">
+                    <img class="tec24-card-4-img img-fluid w-md-100 mb-4 mb-lg-0"
+                        src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/36f5b51ae550406f5eb9072a7f521474.jpeg"
+                        alt="Blog Tecmilenio">
+                    <div class="tec24-card-4-body px-4">
+                        <p class="tec24-p-1 text-white">
+                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
+                            Ipsum
+                            ha sido el texto de relleno estándar de las industrias desde el año 1500.
+                        </p>
+                        <div class="tec24-card-4-cta pt-3 pb-5 py-lg-0">
+                            <a class="tec24-btn-4">Ir al blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
     <!-- END CODE HERE -->
