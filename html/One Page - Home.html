@@ -788,6 +788,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     height: 450px;
                     /* Los 70 px son por que es el espaciado para las flechas next y prev. */
                     width: calc(100% - 70px);
+                    max-width: 420px;
                 }
 
                 .tec24-card-1-image {
@@ -799,9 +800,9 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                 .tec24-card-1-description {
                     min-width: 208px;
-                    min-height: 246px;
-                    height: 65%;
+                    height: 30%;
                     width: 65%;
+                    max-width: 350px;
                     position: absolute;
                     bottom: 0px;
                     background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);
@@ -809,8 +810,20 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     transition: height 0.5s ease;
                 }
 
-                .tec24-card-1 .tec24-btn-2 {
-                    width: inherit;
+                .swiper-slide-active .tec24-card-1-description {
+                    height: 65%;
+                }
+
+                .tec24-card-1-description p,
+                .tec24-card-1-description a {
+                    opacity: 0;
+                    transition: opacity 1s ease;
+                }
+
+                .swiper-slide-active .tec24-card-1-description h2,
+                .swiper-slide-active .tec24-card-1-description p,
+                .swiper-slide-active .tec24-card-1-description a {
+                    opacity: 1;
                 }
 
                 /* Desktop */
@@ -838,6 +851,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         height: 40%;
                     }
 
+                    .swiper-slide-active .tec24-card-1-description {
+                        height: 40%;
+                    }
+
                     /* Swiper Slider */
 
                     .swiper-carrusel-2024 .swiper {
@@ -862,11 +879,22 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         transition: height 0.5s ease;
                         bottom: 135px;
                         width: 60%;
+                        flex-wrap: wrap;
                     }
 
-                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) p,
-                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) a {
+                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) h2 {
+                        display: block;
+                        position: absolute;
+                        left: 10px;
+                    }
+
+                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) p {
                         display: none;
+                    }
+
+                    .swiper-carrusel-2024 .swiper-slide:not(.swiper-slide-active) a {
+                        opacity: 0;
+                        transition: opacity 0s ease;
                     }
 
                     .swiper-carrusel-2024 .swiper-slide-active .tec24-card-1 {
@@ -1284,6 +1312,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                 .tec24-cv24-item {
                     width: 100%;
+                    width: calc(100% - 70px);
                     max-width: 420px;
                     display: flex;
                     justify-content: center;
@@ -1595,7 +1624,208 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         <!--  Acreditaciones 2024-->
         <section class="swiper-carrusel-acreditaciones-2024 tec24-py-70px">
+            <!-- Styles -->
+            <style>
+                .swiper-carrusel-video-2024 {
+                    background-color: #EFEFEF;
+                }
 
+                .swiper-carrusel-video-2024 .container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .tec24-cv24-item {
+                    width: 100%;
+                    width: calc(100% - 70px);
+                    max-width: 420px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .tec24-cv24i-heading {
+                    width: 60%;
+                }
+
+                .tec24-cv24i-video {
+                    width: 100%;
+                }
+
+                /* Swiper Slider */
+                .swiper-carrusel-video-2024 .swiper {
+                    width: 100%;
+                    height: 50%;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-wrapper {
+                    /* Esta padding es para poder mostrar el paginado abajo de la card */
+                    padding-bottom: 80px;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-next,
+                .swiper-carrusel-video-2024 .swiper-button-prev {
+                    /* Aqui movemos las flechas next y back al centro vertical restandole 20px (cantidad del padding de 40px/2 del contenedor swiper-wrapper) al 50%  */
+                    top: var(--swiper-navigation-top-offset, calc(50% - 20px));
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-next,
+                .swiper-carrusel-video-2024 .swiper-rtl .swiper-button-prev {
+                    right: var(--swiper-navigation-sides-offset, 0px);
+                    left: auto;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-prev,
+                .swiper-carrusel-video-2024 .swiper-rtl .swiper-button-next {
+                    left: var(--swiper-navigation-sides-offset, 0px);
+                    right: auto;
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-prev::after,
+                .swiper-carrusel-video-2024 .swiper-button-next::after {
+                    font-family: 'Material Symbols Outlined';
+                    font-weight: 700;
+                    font-size: 30px;
+                    color: var(--default-tecmilenio-first);
+                    /* Color del icono */
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-prev::after {
+                    content: '\e5c4';
+                    /* Icono de flecha izquierda */
+                }
+
+                .swiper-carrusel-video-2024 .swiper-button-next::after {
+                    content: '\e5c8';
+                    /* Icono de flecha derecha */
+                }
+
+                .swiper-carrusel-video-2024 .swiper-pagination-bullet {
+                    background: var(--default-tecmilenio-first);
+                    opacity: var(--swiper-pagination-bullet-inactive-opacity, .7);
+                }
+
+                .swiper-carrusel-video-2024 .swiper-pagination-bullet-active {
+                    background: var(--default-tecmilenio-first);
+                    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+                }
+
+                /* Desktop */
+                @media (min-width: 992px) {
+
+                    .tec24-cv24i-heading {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+
+                    /* Swiper Slider */
+
+
+                }
+            </style>
+
+            <div class="container">
+
+                <!-- Swiper -->
+                <div class="swiper swiper-video-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="tec24-cv24-item">
+                                <div class="tec24-cv24i-heading">
+                                    <h2 class="tec24-h2-1 text-center">
+                                        Habilidades digitales
+                                        para el futuro 1
+                                    </h2>
+                                </div>
+                                <div class="tec24-cv24i-video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-cv24-item">
+                                <div class="tec24-cv24i-heading">
+                                    <h2 class="tec24-h2-1 text-center">
+                                        Habilidades digitales
+                                        para el futuro 2
+                                    </h2>
+                                </div>
+                                <div class="tec24-cv24i-video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-cv24-item">
+                                <div class="tec24-cv24i-heading">
+                                    <h2 class="tec24-h2-1 text-center">
+                                        Habilidades digitales
+                                        para el futuro 3
+                                    </h2>
+                                </div>
+                                <div class="tec24-cv24i-video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-video-container', {
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        dynamicBullets: true,
+
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        992: {
+                            slidesPerView: 2,
+                            spaceBetween: 0,
+                        },
+                    },
+                });
+            </script>
         </section>
 
         <!-- Campus 2024-->
