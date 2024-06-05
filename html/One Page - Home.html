@@ -59,11 +59,15 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         /* Paragraphs */
         .tec24-p-1,
         .tec24-p-2,
-        .tec24-p-3 {
+        .tec24-p-3,
+        .tec24-p-4 {
             font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
             font-size: 14px;
             font-weight: 400;
             line-height: 18px;
+        }
+
+        .tec24-p-1 {
             text-align: center;
         }
 
@@ -73,6 +77,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         .tec24-p-3 {
             font-weight: 700 !important;
+        }
+
+        .tec24-p-4 {
+            text-align: left;
         }
 
         /* Margins and Paddings */
@@ -1297,7 +1305,6 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         <!-- Swiper Carrusel Video 2024-->
         <section class="swiper-carrusel-video-2024 tec24-py-70px">
 
-
             <!-- Styles -->
             <style>
                 .swiper-carrusel-video-2024 {
@@ -1410,7 +1417,6 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             </style>
 
             <div class="container">
-
                 <!-- Swiper -->
                 <div class="swiper swiper-video-container">
                     <div class="swiper-wrapper">
@@ -1622,49 +1628,41 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             </div>
         </section>
 
-        <!--  Acreditaciones 2024-->
-        <section class="swiper-carrusel-acreditaciones-2024 tec24-py-70px">
+        <!--  Swiper Carrusel 2024 - 2 - Acreditaciones 2024-->
+        <section class="swiper-carrusel-2024-2 tec24-py-70px"
+            style="background: linear-gradient(180deg, #FFFFFF 0%, #00B9A9 100%);">
             <!-- Styles -->
             <style>
-                .swiper-carrusel-video-2024 {
-                    background-color: #EFEFEF;
-                }
-
-                .swiper-carrusel-video-2024 .container {
+                .swiper-carrusel-2024-2 .container {
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
                 }
 
-                .tec24-cv24-item {
+                .tec24-card-5 {
                     width: 100%;
-                    width: calc(100% - 70px);
-                    max-width: 420px;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
+                    height: 300px;
+                    border-radius: 20px;
+                    border: 2px solid;
+                    padding: 25px 15px;
                 }
 
-                .tec24-cv24i-heading {
-                    width: 60%;
+                .tec24-card-5-img {
+                    text-align: left;
+                    margin-bottom: 25px;
                 }
 
-                .tec24-cv24i-video {
-                    width: 100%;
+                .tec24-card-5-img img {
+                    width: 130px;
                 }
 
                 /* Swiper Slider */
-                .swiper-carrusel-video-2024 .swiper {
+                .swiper-carrusel-2024-2 .swiper {
                     width: 100%;
                     height: 50%;
                 }
 
-                .swiper-carrusel-video-2024 .swiper-wrapper {
-                    /* Esta padding es para poder mostrar el paginado abajo de la card */
-                    padding-bottom: 80px;
-                }
-
-                .swiper-carrusel-video-2024 .swiper-slide {
+                .swiper-carrusel-2024-2 .swiper-slide {
                     text-align: center;
                     font-size: 18px;
                     background: transparent;
@@ -1673,60 +1671,44 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     align-items: center;
                 }
 
-                .swiper-carrusel-video-2024 .swiper-button-next,
-                .swiper-carrusel-video-2024 .swiper-button-prev {
-                    /* Aqui movemos las flechas next y back al centro vertical restandole 20px (cantidad del padding de 40px/2 del contenedor swiper-wrapper) al 50%  */
-                    top: var(--swiper-navigation-top-offset, calc(50% - 20px));
+                .swiper-carrusel-2024-2 .swiper-navigation {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    margin-top: 30px;
+                    gap: 20px;
+                    /* padding-right: 20px; */
                 }
 
-                .swiper-carrusel-video-2024 .swiper-button-next,
-                .swiper-carrusel-video-2024 .swiper-rtl .swiper-button-prev {
-                    right: var(--swiper-navigation-sides-offset, 0px);
-                    left: auto;
-                }
-
-                .swiper-carrusel-video-2024 .swiper-button-prev,
-                .swiper-carrusel-video-2024 .swiper-rtl .swiper-button-next {
-                    left: var(--swiper-navigation-sides-offset, 0px);
-                    right: auto;
-                }
-
-                .swiper-carrusel-video-2024 .swiper-button-prev::after,
-                .swiper-carrusel-video-2024 .swiper-button-next::after {
+                .swiper-carrusel-2024-2 .swiper-button-prev::after,
+                .swiper-carrusel-2024-2 .swiper-button-next::after {
                     font-family: 'Material Symbols Outlined';
-                    font-weight: 700;
+                    font-weight: 200;
                     font-size: 30px;
                     color: var(--default-tecmilenio-first);
                     /* Color del icono */
                 }
 
-                .swiper-carrusel-video-2024 .swiper-button-prev::after {
+                .swiper-carrusel-2024-2 .swiper-button-prev::after {
                     content: '\e5c4';
                     /* Icono de flecha izquierda */
                 }
 
-                .swiper-carrusel-video-2024 .swiper-button-next::after {
+                .swiper-carrusel-2024-2 .swiper-button-next::after {
                     content: '\e5c8';
                     /* Icono de flecha derecha */
                 }
 
-                .swiper-carrusel-video-2024 .swiper-pagination-bullet {
-                    background: var(--default-tecmilenio-first);
-                    opacity: var(--swiper-pagination-bullet-inactive-opacity, .7);
-                }
-
-                .swiper-carrusel-video-2024 .swiper-pagination-bullet-active {
-                    background: var(--default-tecmilenio-first);
-                    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+                .swiper-carrusel-2024-2 .swiper-button-next,
+                .swiper-carrusel-2024-2 .swiper-button-prev {
+                    position: unset;
+                    margin: 0px;
+                    width: inherit;
+                    height: auto;
                 }
 
                 /* Desktop */
                 @media (min-width: 992px) {
 
-                    .tec24-cv24i-heading {
-                        width: 100%;
-                        margin-bottom: 15px;
-                    }
 
 
                     /* Swiper Slider */
@@ -1738,90 +1720,131 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             <div class="container">
 
                 <!-- Swiper -->
-                <div class="swiper swiper-video-container">
+                <div class="swiper swiper-container-2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="tec24-cv24-item">
-                                <div class="tec24-cv24i-heading">
-                                    <h2 class="tec24-h2-1 text-center">
-                                        Habilidades digitales
-                                        para el futuro 1
-                                    </h2>
+                            <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
+                                <div class="tec24-card-5-img">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Logo-FIMPES_02%202.png"
+                                        alt="FIMPES" class="img-fluid">
                                 </div>
-                                <div class="tec24-cv24i-video">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
+                                <div class="tec24-card-5-body">
+                                    <p class="tec24-p-4">
+                                        Reconocimiento por ser
+                                        la institución educativa
+                                        más responsable lorem ipsum es un texto.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="tec24-cv24-item">
-                                <div class="tec24-cv24i-heading">
-                                    <h2 class="tec24-h2-1 text-center">
-                                        Habilidades digitales
-                                        para el futuro 2
-                                    </h2>
+                            <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
+                                <div class="tec24-card-5-img">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Logo-FIMPES_02%202.png"
+                                        alt="FIMPES" class="img-fluid">
                                 </div>
-                                <div class="tec24-cv24i-video">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
+                                <div class="tec24-card-5-body">
+                                    <p class="tec24-p-4">
+                                        Reconocimiento por ser
+                                        la institución educativa
+                                        más responsable lorem ipsum es un texto.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="tec24-cv24-item">
-                                <div class="tec24-cv24i-heading">
-                                    <h2 class="tec24-h2-1 text-center">
-                                        Habilidades digitales
-                                        para el futuro 3
-                                    </h2>
+                            <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
+                                <div class="tec24-card-5-img">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Logo-FIMPES_02%202.png"
+                                        alt="FIMPES" class="img-fluid">
                                 </div>
-                                <div class="tec24-cv24i-video">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                            src="https://www.youtube.com/embed/G5cl32no8wY?si=RXYwZWActqWMw_-S&amp;controls=1&rel=0"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
+                                <div class="tec24-card-5-body">
+                                    <p class="tec24-p-4">
+                                        Reconocimiento por ser
+                                        la institución educativa
+                                        más responsable lorem ipsum es un texto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
+                                <div class="tec24-card-5-img">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Logo-FIMPES_02%202.png"
+                                        alt="FIMPES" class="img-fluid">
+                                </div>
+                                <div class="tec24-card-5-body">
+                                    <p class="tec24-p-4">
+                                        Reconocimiento por ser
+                                        la institución educativa
+                                        más responsable lorem ipsum es un texto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
+                                <div class="tec24-card-5-img">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Logo-FIMPES_02%202.png"
+                                        alt="FIMPES" class="img-fluid">
+                                </div>
+                                <div class="tec24-card-5-body">
+                                    <p class="tec24-p-4">
+                                        Reconocimiento por ser
+                                        la institución educativa
+                                        más responsable lorem ipsum es un texto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
+                                <div class="tec24-card-5-img">
+                                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Logo-FIMPES_02%202.png"
+                                        alt="FIMPES" class="img-fluid">
+                                </div>
+                                <div class="tec24-card-5-body">
+                                    <p class="tec24-p-4">
+                                        Reconocimiento por ser
+                                        la institución educativa
+                                        más responsable lorem ipsum es un texto.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
 
             <!-- Initialize Swiper -->
             <script>
-                var swiper = new Swiper('.swiper-video-container', {
+                var swiper = new Swiper('.swiper-container-2', {
                     loop: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                        dynamicBullets: true,
-
-                    },
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     },
                     breakpoints: {
-                        992: {
-                            slidesPerView: 2,
-                            spaceBetween: 0,
+                        '@0': {
+                            slidesPerView: 1.5,
+                            spaceBetween: 20,
+                        },
+                        '@0.75': {
+                            slidesPerView: 2.5,
+                            spaceBetween: 20,
+                        },
+                        '@1.00': {
+                            slidesPerView: 3.5,
+                            spaceBetween: 20,
+                        },
+                        '@1.50': {
+                            slidesPerView: 4.5,
+                            spaceBetween: 20,
                         },
                     },
                 });
