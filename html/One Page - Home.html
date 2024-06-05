@@ -95,7 +95,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         .tec24-btn-3,
         .tec24-btn-4 {
             border: 2px solid #00534C;
-            border-radius: 100px;
+            border-radius: 100px !important;
             min-width: 130px;
             min-height: 30px;
             padding: 5px 15px;
@@ -113,7 +113,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         .tec24-btn-2:hover,
         .tec24-btn-3:hover {
             border: 2px solid #00534C;
-            border-radius: 100px;
+            border-radius: 100px !important;
             min-width: 130px;
             min-height: 30px;
             background-color: var(--default-tecmilenio-first);
@@ -192,6 +192,19 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
     </style>
 
     <section id="home-2024">
+        <!-- General Classes of Page -->
+        <style>
+            #home-2024 .container {
+                max-width: 600px !important;
+            }
+
+            /* Desktop */
+            @media (min-width: 992px) {
+                #home-2024 .container {
+                    max-width: 1300px !important;
+                }
+            }
+        </style>
 
         <!-- Main Heading -->
         <h1 class="d-none">
@@ -228,7 +241,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-MB.jpg",
                             mobile:
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-TM.jpg",
-                            link: "https://tecmilenio.mx/es",
+                            link: "/es",
                             alt: "El lugar en donde descubro mi proposito",
                         },
                         {
@@ -245,7 +258,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-Profe.jpg",
                             mobile:
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PROFE.jpg",
-                            link: "https://tecmilenio.mx/es/carreras-profesionales",
+                            link: "/es/carreras-profesionales",
                             alt: "Crea un perfil profesiona unico a tu medida",
                         },
                         {
@@ -253,7 +266,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-PA.jpg",
                             mobile:
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PA.jpg",
-                            link: "https://tecmilenio.mx/es/profesional-asociado",
+                            link: "/es/profesional-asociado",
                             alt: "Estudia una carrea corta y alcanza tus objetivos",
                         },
                         {
@@ -269,7 +282,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-Empresas.jpg",
                             mobile:
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Empresas.jpg",
-                            link: "https://tecmilenio.mx/es/empresas",
+                            link: "/es/empresas",
                             alt: "Las herramientas para el exito de colaboradores y empresas estan en tecmilenio",
                         },
                         {
@@ -282,7 +295,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         },
                         {
                             desktop:
-                                "https://tecmilenio.mx/sites/default/files/2024-01/Nuevos-Campus%20%281%29_0.webp",
+                                "/sites/default/files/2024-01/Nuevos-Campus%20%281%29_0.webp",
                             mobile:
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Campus.jpg",
                             link: "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/website/img/bannersitioweb/Comunicado%20Nacional.jpg",
@@ -293,7 +306,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1920x997-BannerWeb-HD.jpg",
                             mobile:
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920_Banner_Habilidades.jpg",
-                            link: "https://tecmilenio.mx/es/digital?utm_source=Banner%20&utm_medium=Banner%20&utm_campaign=Banner%20carrusel",
+                            link: "/es/digital?utm_source=Banner%20&utm_medium=Banner%20&utm_campaign=Banner%20carrusel",
                             alt: "Aprende habilidades digitales",
                         },
                     ];
@@ -340,6 +353,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         <!-- Hero Periods 2024 -->
         <section class="hero-periods-2024">
+            <!-- Styles -->
             <style>
                 .hero-periods-2024 {
                     background-color: #EFEFEF;
@@ -457,6 +471,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                 /* Desktop */
                 @media (min-width: 960px) {
+                    #home-2024 .hero-periods-2024 .container {
+                        max-width: 1300px !important;
+                    }
+
                     .hero-periods-2024 {
                         position: absolute;
                         top: 114px;
@@ -521,6 +539,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                 }
             </style>
+
             <div class="container">
                 <h2 class="tec24-h2-1 w-100">
                     <span class="material-symbols-outlined">
@@ -548,7 +567,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     </div>
                 </div>
                 <div class="call-to-action">
-                    <a href="" class="btn-icon">
+                    <a href="/es/contacto" class="btn-icon">
                         <span class="material-symbols-outlined">
                             notifications_active
                         </span>
@@ -559,6 +578,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     </a>
                 </div>
             </div>
+
             <script>
                 document.addEventListener('scroll', function () {
                     // Obtener el elemento .hero-periods-2024
@@ -579,6 +599,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         <!-- Info Cards 2024 -->
         <section class="info-cards-2024 tec24-py-70px">
+            <!-- Styles -->
             <style>
                 .info-cards-2024 .container {
                     display: flex;
@@ -600,6 +621,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                 .tcard-2024-image {
                     min-height: 176px;
                     width: 100%;
+                }
+
+                a[href="/es/proceso-de-admision"] {
+                    border-radius: 100px !important;
                 }
 
                 /* Desktop */
@@ -651,6 +676,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
                 }
             </style>
+
             <div class="container">
                 <div class="tcard-2024 mb-5">
                     <div class="tcard-2024-title">
@@ -665,7 +691,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </p>
                     </div>
                     <div class="tcard-2024-btn w-100 text-center">
-                        <a class="tec24-btn-1">
+                        <a href="/es/proceso-de-admision" class="tec24-btn-1">
                             Leer más
                         </a>
                     </div>
@@ -684,10 +710,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </p>
                     </div>
                     <div class="tcard-2024-btn w-100 text-center">
-                        <a class="tec24-btn-1">
+                        <a href="/es/proceso-de-admision-becas" class="tec24-btn-1">
                             Becas
                         </a>
-                        <a class="tec24-btn-1 ml-3">
+                        <a href="/es/plan-de-educacion-a-futuro" class="tec24-btn-1 ml-3">
                             Plan educación
                         </a>
                     </div>
@@ -918,11 +944,13 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         Estudia en Tecmilenio
                         y expande tu camino
                     </h2>
-                    <p class="tec24-p-1">Al continuar tu formación con nosotros, experimentarás un modelo educativo
-                        único que te motivará
-                        a descubrir y vivir tu Propósito de Vida, facilitando tu rápida integración en el mundo laboral.
-                        Además, disfrutarás de altas tasas de empleabilidad; el 90% de nuestros estudiantes aseguran un
-                        empleo a tiempo completo al graduarse de Tecmilenio.</p>
+                    <p class="tec24-p-1">
+                        Al continuar tu formación académica con nosotros podrás vivir un modelo educativo único que te
+                        inspirará a descubrir y vivir tu Propósito de Vida, contribuyendo también a tu pronta
+                        incorporación en el mundo laboral. Disfruta de nuestros altos índices de empleabilidad, 9 de
+                        cada 10 personas que estudian en Tecmilenio logran obtener un empleo de tiempo completo al
+                        graduarse.
+                    </p>
                 </div>
 
                 <!-- Swiper -->
@@ -939,11 +967,9 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         Con un enfoque de brindarte las competencias para la escuela y para la vida,
                                         Prepa Tecmilenio expande tus habilidades a través de 3 certificaciones que te
                                         llevarán a tu siguiente nivel y así, que tus estudios se conviertan en la pieza
-                                        clave para construir el camino hacia el éxito en tu futuro. Descubre la
-                                        preparatoria donde ser parte de una vida estudiantil que impulsa tu pasión
-                                        mientras estudias, es posible.
+                                        clave para construir el camino hacia el éxito en tu futuro.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/preparatoria" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -959,12 +985,9 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                     <p class="tec24-p-1 text-left text-white">
                                         En Universidad Tecmilenio transformamos el modelo tradicional de materias y
                                         ahora te ofrecemos un plan de estudios innovador, compuesto por más de 28
-                                        certificados cocreados con empresas y expertos en la industria. Además,
-                                        experimentas el mundo laboral de primera mano con nuestra Estancia Empresarial,
-                                        una oportunidad invaluable que, durante el último periodo de tu carrera, te
-                                        sumerge en una empresa o emprendimiento real.
+                                        certificados cocreados con empresas y expertos en la industria.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/carreras-profesionales" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -981,9 +1004,9 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         En estas carreras obtienes una experiencia laboral real junto con la enseñanza
                                         de docentes expertos en la industria. Además, cuentas con acompañamiento durante
                                         todos tus estudios y tienes la oportunidad de experimentar actividades de
-                                        Vivencia Estudiantil y aprender en un entorno académico intercultural.
+                                        Vivencia Estudiantil.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/carreras-ejecutivas" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -1000,10 +1023,9 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         Logra Más con un título de Profesional Asociado, una carrera de alta calidad
                                         académica que te prepara en solo 2 años. Adquiere insignias digitales mediante
                                         certificados para poner en práctica tus conocimientos de inmediato, aprende
-                                        inglés con nuestros 5 niveles de idiomas, y recibe el apoyo de un coach a lo
-                                        largo de tu carrera.
+                                        inglés con nuestros 5 niveles de idiomas.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/profesional-asociado" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -1020,13 +1042,9 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         Es un título académico de posgrado con duración de 5 tetramestres que cuenta con
                                         validez oficial y es emitido por una institución educativa autorizada. Las
                                         maestrías buscan ampliar y desarrollar los conocimientos y competencias para la
-                                        solución de problemas disciplinarios, interdisciplinarios o profesionales.En
-                                        nuestros posgrados vives una enseñanza por expertos en la industria, que te
-                                        permitirá conectar con las empresas y oportunidades laborales que te propongas.
-                                        Además, podrás participar en proyectos académicas interculturales y conocer a
-                                        profesionistas de todo el mundo
+                                        solución de problemas disciplinarios, interdisciplinarios o profesionales.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/maestrias" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -1046,7 +1064,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         Especialidad en la rama disciplinar específica. La duración de este posgrado es
                                         de 2 tetramestres.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/especialidades" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -1063,11 +1081,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         Son títulos de posgrado propios de Tecmilenio cuyos contenidos están
                                         desarrollados en conjunto con empresas líderes en el mercado. La validez,
                                         actualidad y pertinencia de las competencias que desarrollan están avaladas por
-                                        Tecmilenio y por las empresas que participan en la co-creación de los contenidos
-                                        a través de insignias digitales. El título que se obtiene es el de Mater y es
-                                        emitido por Tecmilenio. La duración de los masters es de 5 tetramestres.
+                                        Tecmilenio y por las empresas que participan en la co-creación de los
+                                        contenidos.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/masteres" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -1087,7 +1104,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         constantemente y convertirse en aprendedores para toda la vida a través de + de
                                         1500 cursos e idiomas en distintas áreas.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="https://cdc.tecmilenio.mx/?_ga=2.239677635.1393361475.1717347256-725772906.1715972654"
+                                        class="tec24-btn-2" target="_blank">
                                         Más información
                                     </a>
                                 </div>
@@ -1108,7 +1126,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         <br><br>Proporcionamos programas en línea, con formatos que superan las barreras de
                                         tiempo y distancia.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="/es/programas-en-linea" class="tec24-btn-2">
                                         Más información
                                     </a>
                                 </div>
@@ -1127,7 +1145,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                         industria retos basados en situaciones reales, y Conecta con oportunidades
                                         laborales.
                                     </p>
-                                    <a class="tec24-btn-2">
+                                    <a href="https://nowisnao.com/" class="tec24-btn-2" target="_blank">
                                         Más información
                                     </a>
                                 </div>
@@ -1152,7 +1170,6 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         el: '.swiper-pagination',
                         clickable: true,
                         dynamicBullets: true,
-
                     },
                     navigation: {
                         nextEl: '.swiper-button-next',
@@ -1216,116 +1233,113 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                     .tec24-card-2 .tec24-h2-1 {
                         color: var(--default-tecmilenio-first);
-                        font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
                         font-size: 30px;
                         font-weight: 700;
                         line-height: 28px;
                         text-align: center;
                     }
-
-                    .tec24-card-2 .tec24-p-1 {
-                        font-size: 22px !important;
-                        line-height: 27px !important;
-                    }
                 }
             </style>
-            <div class="container tec24-py-70px">
-                <h2 class="tec24-h2-1 mb-4 mb-lg-5">
-                    ¿Por qué estudiar en Tecmilenio?
-                </h2>
-                <div class="features-2024-container">
-                    <div class="tec24-card-2 mb-4 mb-lg-5">
-                        <div class="tec24-card-2-icon">
-                            <span class="material-symbols-outlined">
-                                mood
-                            </span>
-                        </div>
-                        <div class="tec24-card-2-body">
-                            <h2 class="tec24-h2-1 text-left">
-                                Bienestar
-                            </h2>
-                            <div class="tec24-p-1 text-left">
-                                Ecosistema de bienestar y felicidad para lograr tu propósito de vida.
+            <div class="tec24-py-70px">
+                <div class="container">
+                    <h2 class="tec24-h2-1 mb-4 mb-lg-5">
+                        ¿Por qué estudiar en Tecmilenio?
+                    </h2>
+                    <div class="features-2024-container">
+                        <div class="tec24-card-2 mb-4 mb-lg-5">
+                            <div class="tec24-card-2-icon">
+                                <span class="material-symbols-outlined">
+                                    mood
+                                </span>
+                            </div>
+                            <div class="tec24-card-2-body">
+                                <h2 class="tec24-h2-1 text-left">
+                                    Bienestar
+                                </h2>
+                                <div class="tec24-p-1 text-left">
+                                    Ecosistema de bienestar y felicidad para lograr tu propósito de vida.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tec24-card-2 mb-4 mb-lg-5">
-                        <div class="tec24-card-2-icon">
-                            <span class="material-symbols-outlined">
-                                mood
-                            </span>
-                        </div>
-                        <div class="tec24-card-2-body">
-                            <h2 class="tec24-h2-1 text-left">
-                                Flexibilidad
-                            </h2>
-                            <div class="tec24-p-1 text-left">
-                                Personaliza tu plan de estudios para adaptarlo a tu estilo de vida.
+                        <div class="tec24-card-2 mb-4 mb-lg-5">
+                            <div class="tec24-card-2-icon">
+                                <span class="material-symbols-outlined">
+                                    schedule
+                                </span>
+                            </div>
+                            <div class="tec24-card-2-body">
+                                <h2 class="tec24-h2-1 text-left">
+                                    Flexibilidad
+                                </h2>
+                                <div class="tec24-p-1 text-left">
+                                    Personaliza tu plan de estudios para adaptarlo a tu estilo de vida.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tec24-card-2 mb-4 mb-lg-5">
-                        <div class="tec24-card-2-icon">
-                            <span class="material-symbols-outlined">
-                                mood
-                            </span>
-                        </div>
-                        <div class="tec24-card-2-body">
-                            <h2 class="tec24-h2-1 text-left">
-                                Personalización
-                            </h2>
-                            <div class="tec24-p-1 text-left">
-                                Plataforma abierta y personalizada para el desarrollo y certificación de competencias.
+                        <div class="tec24-card-2 mb-4 mb-lg-5">
+                            <div class="tec24-card-2-icon">
+                                <span class="material-symbols-outlined">
+                                    laptop_windows
+                                </span>
+                            </div>
+                            <div class="tec24-card-2-body">
+                                <h2 class="tec24-h2-1 text-left">
+                                    Personalización
+                                </h2>
+                                <div class="tec24-p-1 text-left">
+                                    Plataforma abierta y personalizada para el desarrollo y certificación de
+                                    competencias.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tec24-card-2 mb-4 mb-lg-5">
-                        <div class="tec24-card-2-icon">
-                            <span class="material-symbols-outlined">
-                                mood
-                            </span>
-                        </div>
-                        <div class="tec24-card-2-body">
-                            <h2 class="tec24-h2-1 text-left">
-                                Acompañamiento
-                            </h2>
-                            <div class="tec24-p-1 text-left">
-                                Modelo de acompañamiento cercano durante toda la vida.
+                        <div class="tec24-card-2 mb-4 mb-lg-5">
+                            <div class="tec24-card-2-icon">
+                                <span class="material-symbols-outlined">
+                                    handshake
+                                </span>
+                            </div>
+                            <div class="tec24-card-2-body">
+                                <h2 class="tec24-h2-1 text-left">
+                                    Acompañamiento
+                                </h2>
+                                <div class="tec24-p-1 text-left">
+                                    Modelo de acompañamiento cercano durante toda la vida.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tec24-card-2 mb-4 mb-lg-5">
-                        <div class="tec24-card-2-icon">
-                            <span class="material-symbols-outlined">
-                                mood
-                            </span>
-                        </div>
-                        <div class="tec24-card-2-body">
-                            <h2 class="tec24-h2-1 text-left">
-                                Empleabilidad
-                            </h2>
-                            <div class="tec24-p-1 text-left">
-                                9 de cada 10 alumnos se gradúan con empleo.
+                        <div class="tec24-card-2 mb-4 mb-lg-5">
+                            <div class="tec24-card-2-icon">
+                                <span class="material-symbols-outlined">
+                                    work
+                                </span>
+                            </div>
+                            <div class="tec24-card-2-body">
+                                <h2 class="tec24-h2-1 text-left">
+                                    Empleabilidad
+                                </h2>
+                                <div class="tec24-p-1 text-left">
+                                    9 de cada 10 alumnos se gradúan con empleo.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tec24-card-2">
-                        <div class="tec24-card-2-icon">
-                            <span class="material-symbols-outlined">
-                                mood
-                            </span>
-                        </div>
-                        <div class="tec24-card-2-body">
-                            <h2 class="tec24-h2-1 text-left">
-                                Formatos
-                            </h2>
-                            <div class="tec24-p-1 text-left">
-                                Selecciona el formato que se adapte a tu estilo de vida y alcanza tu objetivo
-                                profesional: Presencial, Online, Connect y Autodirigido.
+                        <div class="tec24-card-2">
+                            <div class="tec24-card-2-icon">
+                                <span class="material-symbols-outlined">
+                                    home_work
+                                </span>
                             </div>
-                            <a href="" class="tec24-btn-3 mt-3">
-                                Conoce más
-                            </a>
+                            <div class="tec24-card-2-body">
+                                <h2 class="tec24-h2-1 text-left">
+                                    Formatos
+                                </h2>
+                                <div class="tec24-p-1 text-left">
+                                    Selecciona el formato que se adapte a tu estilo de vida y alcanza tu objetivo
+                                    profesional: Presencial, Online, Connect y Autodirigido.
+                                </div>
+                                <a href="/es/formatos-de-estudio" class="tec24-btn-3 mt-3">
+                                    Conoce más
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1358,6 +1372,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                 .tec24-cv24i-heading {
                     width: 60%;
+                    margin-bottom: 15px;
                 }
 
                 .tec24-cv24i-video {
@@ -1436,7 +1451,6 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
                     .tec24-cv24i-heading {
                         width: 100%;
-                        margin-bottom: 15px;
                     }
 
                     .tec24-cv24i-heading .tec24-h2-1 {
@@ -1544,6 +1558,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
         <!-- Hero Info 2024-->
         <section class="hero-info-2024 tec24-py-70px"
             style="background: linear-gradient(180deg, #00534C 0%, #00B9A9 100%);">
+
             <style>
                 .hero-info-2024 {
                     width: 100%;
@@ -1575,6 +1590,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
                 }
             </style>
+
             <div class="container">
                 <div class="tec24-hero-info-heading">
                     <span class="material-symbols-outlined">
@@ -1593,19 +1609,263 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     </p>
                 </div>
                 <div class="tec24-hero-info-cta">
-                    <a class="tec24-btn-4">Inicia Videoconferencia</a>
+                    <a id="button-llamada" data-target=".modal.fade" data-toggle="modal" class="tec24-btn-4">Inicia
+                        Videoconferencia</a>
                 </div>
+            </div>
+
+            <!-- Modal-->
+            <div class="modal-home-videollamada">
+                <style>
+                    #tecmilenio-click .b-1of3 {
+                        margin: 0px;
+                        width: 33.333333%;
+                    }
+
+                    #tecmilenio-click .b-1of6 {
+                        margin: 0px;
+                        width: 66.667%;
+                        display: block;
+                        float: left;
+                    }
+
+                    #tecmilenio-click {
+                        height: 420px;
+                        overflow: hidden;
+                    }
+
+                    #tecmilenio-click .row {
+                        padding: 4% 7% 0% 7%;
+                    }
+
+                    #tecmilenio-click .imagen-left-container {
+                        background: url("https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/01_Banner-Dudas.jpg") no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        height: 100%;
+                    }
+
+                    #tecmilenio-click img {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    #tecmilenio-click .imagen-left-container {
+                        background-position: center;
+                        background-size: cover;
+                        height: 100%;
+                        margin: 0px;
+                    }
+
+                    #tecmilenio-click .click-center-wrapper {
+                        background-color: #e8eff9;
+                        color: #000;
+                        height: 100%;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    #tecmilenio-click .click-center-wrapper h3 {
+                        color: var(--default-tecmilenio-text-second);
+                        font-weight: 700;
+                        font-size: 2rem;
+                    }
+
+                    #tecmilenio-click .click-center-wrapper p {
+                        font-size: 1.1rem;
+                        margin: 2rem 0;
+                    }
+
+                    #tecmilenio-click .click-center-wrapper a {
+                        background-color: #2da547;
+                        border-radius: 14px;
+                        color: #fff;
+                        display: block;
+                        margin: 10px auto;
+                        max-width: 65%;
+                        padding: 10px 15px;
+                    }
+
+                    #tecmilenio-click .click-center-wrapper a:hover {
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+
+                    #tecmilenio-click .click-center-wrapper p span {
+                        font-weight: 700;
+                    }
+
+                    #tecmilenio-click .click-center-wrapper p:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    #tecmilenio-click .click-right-wrapper {
+                        background-color: #f2f8ff;
+                        color: #000;
+                        height: 100%;
+                        justify-content: center;
+                        text-align: center;
+                        margin: 0px;
+                    }
+
+                    #tecmilenio-click .click-right-wrapper h4 {
+                        color: #2da547;
+                        font-weight: 600;
+                        font-size: 2rem;
+                    }
+
+                    #tecmilenio-click .click-right-wrapper p {
+                        font-size: 1.1rem;
+                        margin: 2rem 0;
+                        font-weight: 600;
+                    }
+
+                    #tecmilenio-click .click-right-wrapper a {
+                        background-color: #fff;
+                        padding: 6px 11px;
+                        color: #000;
+                        border-radius: 14px;
+                        margin-bottom: 10px;
+                        display: inline-block;
+                    }
+
+                    #tecmilenio-click .click-right-wrapper a:hover {
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+
+                    #form-click-modal .hs-button {
+                        color: #fff !important;
+                        font-weight: 600;
+                    }
+
+                    @media screen and (max-width: 900px) {
+                        #tecmilenio-click .b-1of3 {
+                            clear: none;
+                            display: block;
+                            float: left;
+                            margin: 0px;
+                            width: 32.3%;
+                        }
+
+                        #tecmilenio-click .row {
+                            padding: 3% 4% 0% 4%;
+                        }
+
+                        #tecmilenio-click {
+                            height: auto;
+                        }
+
+                        #tecmilenio-click .imagen-left-container {
+                            height: 400px;
+                        }
+
+                        #tecmilenio-click .click-center-wrapper {
+                            padding: 2rem 0.8rem;
+                        }
+
+                        #tecmilenio-click .click-right-wrapper {
+                            padding: 2rem 0.8rem;
+                        }
+                    }
+
+                    @media screen and (max-width: 767px) {
+
+                        #tecmilenio-click .b-1of3,
+                        #tecmilenio-click .b-1of6 {
+                            margin: 0px;
+                            width: 100%;
+                        }
+                    }
+                </style>
+                <div aria-hidden="true" aria-labelledby="ModalLabel" class="modal fade" id="Modal-Videollamada"
+                    role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header justify-content-center border-0 bg-white">
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <!--[if lte IE 8]>
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/v2-legacy.js"
+          ></script>
+        <![endif]-->
+                                <script charset="utf-8" type="text/javascript"
+                                    src="//js.hsforms.net/forms/v2.js"></script>
+                                <script>
+                                    hbspt.forms.create({
+                                        portalId: "2429099",
+                                        formId: "3ffde726-eb87-44c9-b5c2-40f2f9ec6a82",
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    // Profesional asociado
+                    function agregarOPTecClick() {
+                        const selectUsuario = jQuery(
+                            'form[data-form-id="3ffde726-eb87-44c9-b5c2-40f2f9ec6a82"] .hs-input[name="nivel_de_interes_2"]'
+                        );
+                        // console.log(selectUsuario);
+                        // Nivel de interes
+                        if (selectUsuario.length > 1) {
+                            let optionPA = jQuery("<option></option>");
+                            optionPA.attr("value", "8");
+                            optionPA.text("Profesional Asociado");
+                            if (
+                                document.querySelectorAll(
+                                    'form[data-form-id="3ffde726-eb87-44c9-b5c2-40f2f9ec6a82"] .hs-input[name="nivel_de_interes_2"] option[value="8"]'
+                                ).length < 1
+                            ) {
+                                selectUsuario.eq(0).find('option[value="1"]').after(optionPA);
+                            }
+                            // console.log(jQuery('option[value="8"]').length);
+                        } else {
+                            let optionPA = jQuery("<option></option>");
+                            optionPA.attr("value", "8");
+                            optionPA.text("Profesional Asociado");
+                            if (
+                                document.querySelectorAll(
+                                    'form[data-form-id="3ffde726-eb87-44c9-b5c2-40f2f9ec6a82"] .hs-input[name="nivel_de_interes_2"] option[value="8"]'
+                                ).length < 1
+                            ) {
+                                selectUsuario.find('option[value="1"]').after(optionPA);
+                            }
+                        }
+                    }
+
+                    window.addEventListener("message", (event) => {
+                        if (event.data.eventName === "onFormReady") {
+                            setTimeout(() => {
+                                // console.clear();
+                                agregarOPTecClick();
+                            }, 1500);
+                        }
+                    });
+                </script>
             </div>
         </section>
 
         <!-- Quick Facts 2024-->
         <section class="quick-facts-2024 tec24-py-70px">
+            <!-- Styles -->
             <style>
                 .quick-facts-2024 {
+                    background-color: #f8f8f8;
+                }
+
+                .quick-facts-2024 .container {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
-                    background-color: #f8f8f8;
                     padding: 10px;
                     gap: 3.3333%;
                 }
@@ -1634,29 +1894,32 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
                 }
             </style>
-            <div class="tec24-card-3">
-                <span class="material-symbols-outlined" style="color: #26D07C">diversity_3</span>
-                <p class="tec24-p-3">+61 k estudiantes</p>
-            </div>
-            <div class="tec24-card-3">
-                <span class="material-symbols-outlined" style="color: #26D07C">domain</span>
-                <p class="tec24-p-3">42 espacios Tecmilenio</p>
-            </div>
-            <div class="tec24-card-3">
-                <span class="material-symbols-outlined" style="color: #26D07C">groups</span>
-                <p class="tec24-p-3">+4k Docentes</p>
-            </div>
-            <div class="tec24-card-3">
-                <span class="material-symbols-outlined" style="color: #26D07C">school</span>
-                <p class="tec24-p-3">+140 k exatecmi</p>
-            </div>
-            <div class="tec24-card-3">
-                <span class="material-symbols-outlined" style="color: #26D07C">collections_bookmark</span>
-                <p class="tec24-p-3">+49 programas académicos</p>
-            </div>
-            <div class="tec24-card-3">
-                <span class="material-symbols-outlined" style="color: #26D07C">add_business</span>
-                <p class="tec24-p-3">+10 empresas socioformadoras</p>
+
+            <div class="container">
+                <div class="tec24-card-3">
+                    <span class="material-symbols-outlined" style="color: #26D07C">diversity_3</span>
+                    <p class="tec24-p-3">+61 k estudiantes</p>
+                </div>
+                <div class="tec24-card-3">
+                    <span class="material-symbols-outlined" style="color: #26D07C">domain</span>
+                    <p class="tec24-p-3">42 espacios Tecmilenio</p>
+                </div>
+                <div class="tec24-card-3">
+                    <span class="material-symbols-outlined" style="color: #26D07C">groups</span>
+                    <p class="tec24-p-3">+4k Docentes</p>
+                </div>
+                <div class="tec24-card-3">
+                    <span class="material-symbols-outlined" style="color: #26D07C">school</span>
+                    <p class="tec24-p-3">+140 k exatecmi</p>
+                </div>
+                <div class="tec24-card-3">
+                    <span class="material-symbols-outlined" style="color: #26D07C">collections_bookmark</span>
+                    <p class="tec24-p-3">+49 programas académicos</p>
+                </div>
+                <div class="tec24-card-3">
+                    <span class="material-symbols-outlined" style="color: #26D07C">add_business</span>
+                    <p class="tec24-p-3">+10 empresas socioformadoras</p>
+                </div>
             </div>
         </section>
 
@@ -1750,6 +2013,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
             </style>
 
             <div class="container">
+                <div class="sc2024-2-heading w-100">
+                    <div class="tec24-h2-1 pb-4 pb-lg-5">
+                        Acreditaciones y Reconocimientos
+                    </div>
+                </div>
 
                 <!-- Swiper -->
                 <div class="swiper swiper-container-2">
@@ -1882,6 +2150,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         <!-- Campus 2024-->
         <section class="tec24-campus-container text-center tec24-py-70px">
+            <!-- Styles -->
             <style>
                 .tec24-campus-container {
                     font-family: Arial, sans-serif;
@@ -2014,39 +2283,44 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
                 }
             </style>
-            <div class="tec24-h2-1 mb-2 mb-lg-4">Recorre nuestras instalaciones de manera virtual</div>
-            <div class="tec24-p-1  mb-3 mb-lg-5">Conoce los distintos espacios que te permitirán enfocarte en tus
-                estudios, incrementar tu red de contactos y construir una nueva versión de ti.</div>
 
-            <div class="tec24-campus-grid-container pb-4">
-                <div class="tec24-campus-grid-item s1">
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/925cad023492bf523b9878eeaadd6a2b.jpeg"
-                        alt="Instalación 1">
+            <div class="container">
+                <div class="tec24-h2-1 mb-2 mb-lg-4">Recorre nuestras instalaciones de manera virtual</div>
+                <div class="tec24-p-1  mb-3 mb-lg-5">Conoce los distintos espacios que te permitirán enfocarte en tus
+                    estudios, incrementar tu red de contactos y construir una nueva versión de ti.</div>
+
+                <div class="tec24-campus-grid-container pb-4">
+                    <div class="tec24-campus-grid-item s1">
+                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/925cad023492bf523b9878eeaadd6a2b.jpeg"
+                            alt="Instalación 1">
+                    </div>
+                    <div class="tec24-campus-grid-item span-2x1 s2">
+                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/6a82cc5f6076868a456ae5f5be5a5fbf.jpeg"
+                            alt="Instalación 2">
+                    </div>
+                    <div class="tec24-campus-grid-item span-1x2 s3">
+                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/665c3869ebb27f3a527e7346497a21d2.jpeg"
+                            alt="Instalación 3">
+                    </div>
+                    <div class="tec24-campus-grid-item span-2x1 s4">
+                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/6e1bce7bf1823cecb6f5812823664a8b.jpeg"
+                            alt="Instalación 4">
+                    </div>
+                    <div class="tec24-campus-grid-item s5">
+                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/13537045f9f50d5135db767c9e731712.jpeg"
+                            alt="Instalación 5">
+                    </div>
                 </div>
-                <div class="tec24-campus-grid-item span-2x1 s2">
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/6a82cc5f6076868a456ae5f5be5a5fbf.jpeg"
-                        alt="Instalación 2">
-                </div>
-                <div class="tec24-campus-grid-item span-1x2 s3">
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/665c3869ebb27f3a527e7346497a21d2.jpeg"
-                        alt="Instalación 3">
-                </div>
-                <div class="tec24-campus-grid-item span-2x1 s4">
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/6e1bce7bf1823cecb6f5812823664a8b.jpeg"
-                        alt="Instalación 4">
-                </div>
-                <div class="tec24-campus-grid-item s5">
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/13537045f9f50d5135db767c9e731712.jpeg"
-                        alt="Instalación 5">
-                </div>
+
+                <a href="/es/campus?_ga=2.52576104.1393361475.1717347256-725772906.1715972654#Virtual"
+                    class="tec24-btn-3">Explorar ahora</a>
             </div>
-
-            <a href="#" class="tec24-btn-3">Explorar ahora</a>
         </section>
 
         <!-- Visita Campus 2024-->
         <section class="hero-info-2024 tec24-py-70px"
             style="background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 185, 169, 1) 110%);">
+            <!-- Styles -->
             <style>
                 .hero-info-2024 {
                     width: 100%;
@@ -2070,6 +2344,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     flex-wrap: wrap;
                 }
             </style>
+
             <div class="container">
                 <div class="tec24-hero-info-heading">
                     <span class="material-symbols-outlined" style="color: var(--default-tecmilenio-first);">
@@ -2084,13 +2359,15 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <p class="tec24-p-1" style="color: var(--default-tecmilenio-first);">¡Conócenos!</p>
                 </div>
                 <div class="tec24-hero-info-cta">
-                    <a class="tec24-btn-1">Programar una visita</a>
+                    <a href="/es/campus?_ga=2.52576104.1393361475.1717347256-725772906.1715972654"
+                        class="tec24-btn-1">Programar una visita</a>
                 </div>
             </div>
         </section>
 
         <!-- Info Cards 2024 -->
         <section class="info-cards-2024 tec24-py-70px">
+            <!-- Styles -->
             <style>
                 .info-cards-2024 .container {
                     display: flex;
@@ -2163,6 +2440,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
                 }
             </style>
+
             <div class="container">
                 <div class="tcard-2024 tcard-2024-leftimg">
                     <div class="tcard-2024-title">
@@ -2178,7 +2456,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </p>
                     </div>
                     <div class="tcard-2024-btn">
-                        <a class="tec24-btn-3">
+                        <a href="/es/libro-20-aniversario-tecmilenio" class="tec24-btn-3">
                             Conoce más
                         </a>
                     </div>
@@ -2188,6 +2466,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
 
         <!-- Blog 2024 -->
         <section class="blog-2024 tec24-py-70px">
+            <!-- Styles -->
             <style>
                 .blog-2024 {
                     background-color: #EFEFEF;
@@ -2196,11 +2475,12 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                 .blog-2024 .container {
                     justify-content: center;
                     display: flex;
+                    flex-wrap: wrap;
                 }
 
-                .blog-2024 .tec24-card-4 {
-                    width: 80%;
-                    height: 500px;
+                .tec24-card-4 {
+                    width: 100%;
+                    height: auto;
                 }
 
                 .tec24-card-4-cta {
@@ -2217,6 +2497,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     .tec24-card-4 {
                         display: flex;
                         flex-wrap: nowrap;
+                        height: 500px;
                     }
 
                     .tec24-card-4-img {
@@ -2232,22 +2513,26 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     }
                 }
             </style>
-            <h2 class="tec24-h2-1 mb-4">
-                Blog
-            </h2>
+
             <div class="container">
+                <h2 class="tec24-h2-1 mb-4 w-100">
+                    Blog
+                </h2>
+
                 <div class="tec24-card-4" style="background: linear-gradient(180deg, #015B53 38.5%, #02C1B0 100%);">
                     <img class="tec24-card-4-img img-fluid w-md-100 mb-4 mb-lg-0"
                         src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/36f5b51ae550406f5eb9072a7f521474.jpeg"
                         alt="Blog Tecmilenio">
-                    <div class="tec24-card-4-body px-4">
+                    <div class="tec24-card-4-body px-5">
                         <p class="tec24-p-1 text-white">
-                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
-                            Ipsum
-                            ha sido el texto de relleno estándar de las industrias desde el año 1500.
+                            Encuentra contenido de valor a través de consejos útiles, para tomar la mejor decisión al
+                            momento de elegir una carrera, posgrado y cursos para tu éxito profesional.
+                            <br><br>
+                            Además, conoce más sobre la vida universitaria, noticias y eventos de nuestra comunidad
                         </p>
                         <div class="tec24-card-4-cta pt-3 pb-5 py-lg-0">
-                            <a class="tec24-btn-4">Ir al blog</a>
+                            <a href="https://blog.tecmilenio.mx/?_ga=2.253900616.1393361475.1717347256-725772906.1715972654"
+                                class="tec24-btn-4" target="_blank">Ir al blog</a>
                         </div>
                     </div>
                 </div>
