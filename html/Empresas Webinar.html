@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- GENERAL -->
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Cairo");
+      @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Cairo";
+      }
+
+      .displayNone {
+        display: none !important;
+      }
+
+      .width-50 {
+        width: 50%;
+        height: 100%;
+      }
+
+      .height-100 {
+        height: 100%;
+      }
+    </style>
+
+    <!-- BANNER -->
+    <style></style>
+
+    <!-- STATISTICS -->
+    <style>
+      /* Statistics section */
+      .tec2023__statisticsSection {
+        display: flex;
+        width: 100%;
+        background-color: #00534c;
+        padding: 35px 0;
+      }
+
+      .tec2023__statisticsSection .tec2023-statistics {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        color: white;
+      }
+
+      .tec2023__statisticsSection .tec2023-statistics .tec2023-statistics-item {
+        width: 100%;
+      }
+
+      .tec2023__statisticsSection
+        .tec2023-statistics
+        .tec2023-statistics-item
+        .tec2023-s-i-quantity {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
+        margin: 10px 0;
+        color: #6bcaba;
+      }
+
+      .tec2023__statisticsSection
+        .tec2023-statistics
+        .tec2023-statistics-item
+        .tec2023-s-i-text {
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 10px 0;
+        color: #6bcaba;
+      }
+    </style>
+
+    <!-- BUSINESS SUCCESS -->
+    <style>
+      /* Business success section */
+      .tec2023__businessSuccessSection {
+        width: 100%;
+      }
+
+      .tec2023-heading-1 {
+        width: 100%;
+        text-align: center;
+        padding-top: 25px;
+      }
+
+      .tec2023__businessSuccessSection .tec2023-heading-1 h2 {
+        font-family: "Cairo";
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        padding: 0 20%;
+        color: #00534c;
+        margin-top: 0;
+        padding: 15px 0;
+      }
+
+      .tec2023__businessSuccessSection .tec2023-heading-1 h5 {
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 5%;
+        color: #6bcaba;
+        text-transform: initial;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cS-heading {
+        color: #26d07c;
+        font-size: 20px;
+        font-family: "Cairo";
+        font-weight: 700;
+        line-height: 64px;
+        margin: 0;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cS-text {
+        width: 80%;
+        font-family: "Source Sans Pro";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cardsSection1 {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: 40px 0;
+        gap: 10px;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cardsSection1
+        .tec2023-card {
+        width: 100%;
+        /* margin: 10px 0; */
+        padding: 25px;
+        min-height: 100px;
+        border: solid 2px #00534c;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cardsSection1
+        .tec2023-card
+        .tec2023-c-2-heading {
+        margin: 0;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #00534c;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cardsSection1
+        .tec2023-card
+        .tec2023-c-2-description {
+        padding-bottom: 10px;
+        font-family: "Source Sans Pro";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cardsSection1
+        .tec2023-card:hover {
+        background-color: #00534c;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cardsSection1
+        .tec2023-card:hover
+        .tec2023-c-2-description {
+        color: white;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-cardsSection1
+        .tec2023-card:hover
+        .tec2023-c-2-heading {
+        color: #26d07c;
+      }
+
+      .tec2023__businessSuccessSection
+        .tec2023-customSolutions
+        .tec2023-container-button {
+        width: 100%;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+      }
+
+      .tec2023-button-right {
+        border: solid 1px #26d07c;
+        border-radius: 2px;
+        background-color: #26d07c;
+        padding: 10px 25px;
+      }
+
+      .tec2023-button-right > a {
+        text-decoration: none;
+        color: white;
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .tec2023-offer-container .tec2023__slider-cards-2 .item:hover p {
+        color: white !important;
+      }
+    </style>
+
+    <!-- OFFER -->
+    <style>
+      /* Offer section */
+      .tec2023__offerSection {
+        display: flex;
+        width: 100%;
+        background-color: #efefef;
+        padding: 0 0 25px;
+      }
+
+      .tec2023__offerSection .tec2023-offer-container {
+        margin: 25px 0;
+      }
+
+      .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info h5 {
+        color: #00534c;
+        font-size: 20px;
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+        line-height: 28px;
+        margin-top: 0;
+      }
+
+      .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info p {
+        color: #000000;
+        font-size: 16px;
+        font-family: "Source Sans Pro";
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 15px;
+      }
+
+      .tec2023__offerSection
+        .tec2023-offer-container
+        .tec2023-offer-banner-controller {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .tec2023-offer-banner-controller div {
+        margin: 0 15px;
+        cursor: pointer;
+      }
+    </style>
+
+    <!-- BENEFITS -->
+    <style>
+      /* Benefits section */
+      .tec2023__benefitsSection {
+        width: 100%;
+        /* min-height: 736px; */
+        background-color: #00534c;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .tec2023__benefitsSection .tec2023-benefits-container {
+        width: 100%;
+        background-color: #00534c;
+        padding: 25px 0;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .tec2023__benefitsSection .tec2023-benefits-title h1 {
+        color: #6bcaba;
+        font-family: "Cairo";
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      .tec2023__benefitsSection
+        .tec2023-benefits-container
+        .tec2023-benefits-items-container
+        .tec2023-benefits-item {
+        margin: 25px 0;
+        border: solid 1px white;
+        border-radius: 5px;
+        padding: 15px;
+        position: relative;
+      }
+
+      .tec2023-benefits-item .tec2023__benefits__item__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .tec2023-benefits-item .tec2023__benefits__item__header h5 {
+        padding-top: 10px;
+        color: #6bcaba;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      .tec2023-benefits-item .tec2023__icon {
+        font-size: 50px;
+        font-weight: 700;
+        padding: 0 10px;
+        line-height: 0;
+        cursor: pointer;
+      }
+
+      .tec2023-benefits-item .tec2023__icon:hover {
+        color: #26d07c;
+      }
+
+      .tec2023-benefits-item .tec2023__benefits__item__body {
+        padding: 10px 0 0 0;
+      }
+
+      .tec2023-benefits-item p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      .tec2023__benefitsSection
+        .tec2023-benefits-container
+        .tec2023-benefits-items-container
+        .tec2023-benefits-item
+        .tec2023-benefits-item-span {
+        color: white;
+        position: absolute;
+        top: -15px;
+        right: 5%;
+        font-weight: 900;
+        font-size: 40px;
+        cursor: pointer;
+      }
+
+      .tec2023__benefitsSection .tec2023-benefits-container p {
+        color: white !important;
+      }
+    </style>
+
+    <!-- BEPART -->
+    <style>
+      /* Be part section */
+      .tec2023__bepartSection {
+        width: 100%;
+        background-color: #6bcaba;
+        display: flex;
+      }
+
+      .tec2023-tec2023__bepartSection-container {
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .tec2023-tec2023__bepartSection-container
+        .tec2023-tec2023__bepartSection-item
+        h2 {
+        color: #00534c;
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: 700;
+        padding-right: 10%;
+        margin-bottom: 15px;
+      }
+
+      .tec2023-tec2023__bepartSection-container
+        .tec2023-tec2023__bepartSection-item-2 {
+        min-height: 400px;
+        background-color: white;
+        /* border: solid 1px white; */
+        border-radius: 5px;
+        width: 100%;
+        padding: 30px;
+      }
+    </style>
+
+    <!-- FUTURE -->
+    <style>
+      /* tec2023__futureSection */
+      .tec2023__futureSection {
+        width: 100%;
+        background-color: #efefef;
+      }
+
+      .tec2023_futureSection
+        .tec2023-tec2023_futureSection-container
+        .container {
+        /* height: 100%; */
+        width: calc(100% - 30px);
+        display: flex;
+        padding: 25px 15px 50px 15px;
+        flex-wrap: wrap;
+      }
+
+      .tec2023__futureSection
+        .tec2023-tec2023__futureSection-container
+        .tec2023-tec2023__futureSection-img {
+        background-image: url("foto.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+      }
+
+      .tec2023__futureSection
+        .tec2023-tec2023__futureSection-container
+        .tec2023-tec2023__futureSection-item {
+        width: calc(100% - 30px);
+      }
+
+      .tec2023__futureSection
+        .tec2023-tec2023__futureSection-container
+        .tec2023-tec2023__futureSection-item
+        .tec2023-tec2023__futureSection-info
+        h4 {
+        color: #00534c;
+        padding-top: 24px;
+        font-weight: 700;
+        line-height: 32px;
+      }
+
+      .tec2023__futureSection
+        .tec2023-tec2023__futureSection-container
+        .tec2023-tec2023__futureSection-item
+        .tec2023-tec2023__futureSection-info
+        p {
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+      }
+    </style>
+
+    <!-- START VIDEO BANNER -->
+
+    <style>
+      .tec2023__videoYTModal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 99999;
+      }
+
+      .tec2023_videoYTModal_content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 80%;
+        max-width: 1200px;
+      }
+
+      .tec2023_videoYTModalcontent_close {
+        color: white;
+        position: absolute;
+        margin: -35px 0px 0px 0px;
+        right: 0px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      .tec2023_videoYTModalcontent_close:hover {
+        color: #000;
+        background-color: white;
+        text-decoration: none;
+      }
+
+      .tec2023_videoYTModalcontent_iframe-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+      }
+
+      .tec2023_videoYTModalcontent_iframe-container iframe {
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+    <!-- MEDIA -->
+    <style>
+      /* Styles for small and larger screens */
+      @media (min-width: 576px) {
+        .tec2023__bannerSection .tec2023-bannerSectionBackground {
+          background-size: cover;
+        }
+      }
+
+      /* Styles for medium and larger screens */
+      @media (min-width: 768px) {
+        /* Add your styles here */
+      }
+
+      /* Styles for large and larger screens */
+      @media (min-width: 992px) {
+        /* BANNER */
+        .tec2023__bannerSection {
+          height: 750px;
+        }
+
+        .tec2023__bannerSection .tec2023-bannerSectionBackground {
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 100%;
+        }
+
+        .tec2023__bannerSection .tec2023-bannerSectionContainer {
+          height: 100%;
+        }
+
+        .tec2023__bannerSection
+          .tec2023-bannerSectionContainer
+          .tec2023-bannerSectionContainerFlex {
+          width: 50%;
+          height: 100%;
+        }
+
+        .tec2023__bannerSection
+          .tec2023-bannerSectionContainer
+          .tec2023-bannerSectionContainerFlex
+          .tec2023-bannerSectionContainerInfo
+          h1 {
+          font-size: 56px;
+          line-height: 60px;
+        }
+
+        /* STATISTICS */
+        .tec2023__statisticsSection
+          .tec2023-statistics
+          .tec2023-statistics-item {
+          width: 25%;
+        }
+
+        /* BUSINESS SUCCESS */
+        .tec2023__businessSuccessSection .tec2023-customSolutions {
+          /* min-height: 600px; */
+          /* width: calc(100% - 100px); */
+          /* padding: 15px 50px; */
+        }
+
+        .tec2023__businessSuccessSection
+          .tec2023-customSolutions
+          .tec2023-cardsSection1
+          .tec2023-card {
+          width: auto;
+          flex: 1;
+          /* margin: 10px; */
+        }
+
+        .tec2023__businessSuccessSection
+          .tec2023-customSolutions
+          .tec2023-cS-heading {
+          font-size: 24px;
+        }
+
+        .tec2023__businessSuccessSection
+          .tec2023-customSolutions
+          .tec2023-cardsSection1
+          .tec2023-card
+          .tec2023-c-2-heading {
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        .tec2023__businessSuccessSection .tec2023-heading-1 h2 {
+          font-size: 56px;
+          line-height: 60px;
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .tec2023__businessSuccessSection .tec2023-heading-1 h5 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        /* OFFER */
+        .tec2023__offerSection {
+          position: relative;
+          z-index: 0;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container {
+          margin: 25px 0 0 40%;
+          padding-bottom: 0;
+          z-index: 1;
+        }
+
+        .tec2023-offer-info {
+          padding-left: 25%;
+        }
+
+        .tec2023__offerSection .tec2023-background-image-0 {
+          position: absolute;
+          top: 5%;
+          left: 0;
+          width: 50%;
+          height: 90%;
+          background-image: url("https://tecmilenio.mx/sites/default/files/2023-07/Rectangle%20%281%29%20%281%29%20%281%29.jpg");
+          background-position-x: left;
+          background-position-y: top;
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: -1;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info {
+          padding-top: 40px;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info h5 {
+          font-size: 24px;
+          line-height: 28px;
+        }
+
+        .tec2023__offerSection .tec2023-offer-container .tec2023-offer-info p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        /* BENEFITS */
+        .tec2023__benefitsSection {
+          background-color: #26d07c;
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .tec2023__benefitsSection .container {
+          position: relative;
+          display: flex;
+          flex-direction: row-reverse;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-container {
+          width: 70%;
+          background-color: #00534c;
+          margin: 25px 0 25px;
+          padding-bottom: 25px;
+          color: white;
+        }
+
+        .tec2023__benefitsSection .tec2023-background-image-1 {
+          position: absolute;
+          left: 0;
+          width: 50%;
+          height: 100%;
+          background-image: url("https://tecmilenio.mx/sites/default/files/2023-07/Rectangle%20%282%29%20%281%29%20%281%29.jpg");
+          background-position-x: left;
+          background-position-y: top;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-container {
+          z-index: 1;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-title {
+          padding: 15px;
+        }
+
+        .tec2023__benefitsSection .tec2023-benefits-title h1 {
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 64px;
+        }
+
+        .tec2023__benefitsSection
+          .tec2023-benefits-container
+          .tec2023-benefits-items-container
+          .tec2023-benefits-item {
+          margin: 25px 15px;
+        }
+
+        /* BEPART */
+        .tec2023_bepartSection .tec2023-tec2023_bepartSection-container {
+          padding: 25px 0 50px 0;
+          /* width: 100%; */
+          height: 100%;
+          flex-wrap: nowrap;
+        }
+
+        .tec2023-tec2023__bepartSection-item,
+        .tec2023-tec2023__bepartSection-item-2 {
+          width: 50% !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .tec2023-tec2023__bepartSection-container
+          .tec2023-tec2023__bepartSection-item
+          h2 {
+          font-size: 40px;
+          padding: calc(30% - 120px) 60px;
+          margin: 0;
+          font-weight: 700;
+          line-height: 70px;
+        }
+
+        /* FUTURE */
+        .tec2023__futureSection
+          .tec2023-tec2023__futureSection-container
+          .container {
+          flex-wrap: nowrap;
+        }
+
+        .tec2023__futureSection
+          .tec2023-tec2023__futureSection-container
+          .container
+          .tec2023-tec2023__futureSection-item {
+          display: flex;
+        }
+
+        .tec2023__futureSection
+          .tec2023-tec2023__futureSection-container
+          .container
+          .tec2023-tec2023__futureSection-item
+          .tec2023-tec2023__futureSection-info
+          h4 {
+          font-size: 24px;
+          margin: 0;
+          padding: 0;
+          font-weight: 700;
+          line-height: 32px;
+        }
+
+        .tec2023__futureSection
+          .tec2023-tec2023__futureSection-container
+          .container
+          .tec2023-tec2023__futureSection-item
+          .tec2023-tec2023__futureSection-info {
+          margin: 0;
+          padding: 0 25px;
+        }
+
+        .tec2023__futureSection
+          .tec2023-tec2023__futureSection-container
+          .container
+          .tec2023-tec2023__futureSection-img {
+          background-image: url("foto.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 170px;
+          height: 160px;
+          border-radius: 5px;
+        }
+      }
+
+      /* Styles for extra large and larger screens */
+      @media (min-width: 1200px) {
+        /* Add your styles here */
+      }
+    </style>
+
+    <!-- TEC2023 LOADER SPINNER -->
+    <style>
+      .tec2023__loader {
+        border: 4px solid rgba(0, 0, 0, 0.3);
+        border-top: 4px solid #00534c;
+        /* Color del spinner */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+        margin: 20px auto;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- HTML SECTION -->
+
+    <!-- ==============================
+  START - BANNER - SECTION
+  ================================= -->
+
+    <img
+      class="w-100"
+      src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Webinar%20para%20Evento%20en%20Colombia%202_charla%20landing-min.jpg"
+      alt=""
+    />
+
+    <!-- ==============================
+  START - BEPART SECTION
+  ================================= -->
+
+    <section class="tec2023__bepartSection" id="empresas-formulario">
+      <div class="container">
+        <div class="tec2023-tec2023__bepartSection-container">
+          <div class="tec2023-tec2023__bepartSection-item">
+            <h2>
+             Únete al summit Tecmilenio en Panamá y descubre las mega tendencias que marcaran tecnología, bienestar corporativo y gestión del talento.
+            </h2>
+          </div>
+          <div class="tec2023-tec2023__bepartSection-item-2">
+            <!-- ==============================
+            START - HUBSPOT FORM
+            ================================= -->
+
+            <!-- STYLES -->
+            <style>
+              .hs-form-field {
+                padding: 0 0 10px 0;
+              }
+
+              .hs-form-field .hs-input {
+                background: white !important;
+                border: 1px solid #ccc !important;
+                color: rgba(0, 0, 0, 0.3);
+              }
+
+              .hs-button {
+                width: 100%;
+                /* max-width: 200px; */
+                height: 40px;
+                /* border-radius: 13px; */
+                display: block;
+                margin: 20px auto 0;
+                background: #74deaa;
+                border: 1px solid #74deaa;
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+              }
+
+              /* Estilo base para todos los inputs de tipo time */
+              input[type="time"] {
+                /* Ajusta el tamaño y el espaciado según sea necesario */
+                width: 150px;
+                padding: 8px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+              }
+
+              /* Cambia el color del borde y el fondo cuando el input está enfocado */
+              input[type="time"]:focus {
+                border-color: #3498db;
+                outline: none;
+              }
+
+              /* Estilo para la flecha del input time (solo funciona en algunos navegadores) */
+              input[type="time"]::-webkit-calendar-picker-indicator {
+                /* Cambia el color de la flecha según tus preferencias */
+                filter: invert(25%);
+              }
+
+              /* Estilo para el texto en el input time (hora y minutos) */
+              input[type="time"]::before {
+                content: "Hora de posible contacto: ";
+                /* Puedes personalizar este texto según tus necesidades */
+              }
+            </style>
+
+            <!-- SCRIPTS -->
+            <script
+              charset="utf-8"
+              type="text/javascript"
+              src="//js.hsforms.net/forms/embed/v2.js"
+            ></script>
+            <script>
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "2429099",
+                formId: "f380148c-2ea4-484d-8d63-6c2723a60a55",
+              });
+            </script>
+
+            <!-- ==============================
+            END -
+            ================================= -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================
+            START - ACCORDION SECTION
+    ======================================== -->
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Cairo");
+      @import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
+
+      .row {
+        display: flex !important;
+      }
+
+      .accordionTitleTop p {
+        font-family: " Source Sans 3", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0px;
+        color: #151515;
+      }
+
+      .divTitleAccordionWebinarEmpresas h3 {
+        font-family: "Cairo", Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0px;
+        color: #007864;
+      }
+
+      .accordionTitleTop p {
+        font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
+
+      .accordion_desktop {
+        display: none !important;
+      }
+
+      .accordion_mobile {
+        display: block !important;
+      }
+
+      .mb-3 .col-md-6 {
+        position: relative;
+        order: 1 !important;
+      }
+
+      .col-md-6 .bg-light {
+        position: relative;
+      }
+
+      .overlay-container {
+        position: relative;
+      }
+
+      /* Estilo para el div superpuesto */
+      .col-md-6 .accordionOverlay {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        height: 52px;
+        background-color: #00a499;
+      }
+
+      .accordion .card {
+        border: unset !important;
+        border-radius: unset;
+        height: auto !important;
+      }
+
+      #headingTwo,
+      #headingThree,
+      #headingFour,
+      #headingFive {
+        background-color: #fff !important;
+      }
+
+      #headingTwo:focus,
+      #headingThree:focus,
+      #headingFour:focus,
+      #headingFive:focus,
+      #headingTwo:hover,
+      #headingThree:hover,
+      #headingFour:hover,
+      #headingFive:hover {
+        background-color: #fff !important;
+      }
+
+      .accordion .card-header {
+        background-color: #fff !important;
+        padding: unset !important;
+      }
+
+      .accordion > .card > .card-header {
+        margin-bottom: 1px !important;
+      }
+
+      .accordion .card-header h2 {
+        border-bottom: 1.4px solid #007864 !important;
+      }
+
+      .accordion-arrow {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .rotate-up {
+        transform: rotate(-180deg);
+      }
+
+      .accordion-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .accordion-title-container span {
+        color: #007864 !important;
+        text-decoration: none !important;
+        font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+
+      .accordion .card-body-responsive,
+      .accordion .card-body-desktop {
+        padding: 1rem 0 !important;
+      }
+
+      .card-body-responsive {
+        display: block;
+      }
+
+      .card-body-desktop {
+        display: none;
+      }
+
+      .accordion .card-body-responsive p,
+      .accordion .card-body-desktop p {
+        font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
+
+      .show {
+        display: block !important;
+        animation-name: unset !important;
+        animation-duration: 0s !important;
+        transform: unset !important;
+        opacity: 1 !important;
+      }
+
+      .imgCard1 {
+        display: block;
+      }
+
+      .imgCard2,
+      .imgCard3 {
+        display: none;
+      }
+
+      @media only screen and (min-width: 320px) {
+        .mb-3 .flex-md-column-reverse {
+          flex-direction: column-reverse;
+        }
+
+        .divAccordionOnePage {
+          width: 85%;
+          margin: 0 auto;
+          align-items: center;
+          -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+          padding: 20px;
+        }
+
+        .accordionTitleTop p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        .divTitleAccordionWebinarEmpresas {
+          width: 340px;
+          height: 40px;
+          justify-content: center;
+          margin: 25px auto;
+        }
+
+        .divTitleAccordionWebinarEmpresas h3 {
+          font-size: 18px;
+          line-height: 20px;
+          text-align: center;
+        }
+
+        .accordionTitleTop p {
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        .accordion-title-container span {
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        .accordion .card-body-responsive p {
+          font-size: 14px;
+          line-height: 20px;
+          padding: 15px 50px;
+        }
+      }
+
+      @media only screen and (min-width: 480px) {
+        .accordionTitleTop h5 {
+          font-size: 28px;
+          line-height: 32px;
+        }
+
+        .divTitleAccordionWebinarEmpresas h3 {
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+        }
+
+        .accordionTitleTop p {
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        .accordion-title-container span {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        .mb-3 .flex-md-column-reverse {
+          flex-direction: unset !important;
+        }
+
+        .col-md-6 {
+          padding-right: unset !important;
+          padding-left: unset !important;
+        }
+
+        .col-md-6 {
+          display: flex;
+          flex-direction: column;
+          max-height: 100%;
+        }
+
+        .col-md-6 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .row {
+          padding-left: 3rem !important;
+          padding-right: 3rem !important;
+          display: flex !important;
+        }
+
+        .divAccordionOnePage {
+          width: 100% !important;
+          height: 100% !important;
+          box-shadow: none !important;
+          padding: unset !important;
+          padding-bottom: unset !important;
+          padding-left: 10px !important;
+          margin: unset !important;
+          bottom: 0;
+        }
+
+        .divAccordionOnePage .accordionTitleTop h5 {
+          width: 80%;
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        .divAccordionOnePage .accordionTitleTop p {
+          width: 90%;
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+        .divTitleAccordionWebinarEmpresas {
+          width: 540px;
+          height: 60px;
+          justify-content: center;
+          margin: 25px auto;
+        }
+
+        .divTitleAccordionWebinarEmpresas h3 {
+          font-size: 28px;
+          line-height: 28px;
+          text-align: center;
+        }
+
+        .divAccordionOnePage .accordion {
+          -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+          padding: 20px;
+          width: 100%;
+          overflow: auto !important;
+          max-height: 100% !important;
+        }
+
+        .accordion-title-container span {
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        .card-body-responsive {
+          display: none;
+        }
+
+        .card-body-desktop {
+          display: block;
+        }
+
+        .accordion .card-body-desktop p {
+          font-size: 14px;
+          line-height: 21px;
+          padding: 10px 30px;
+        }
+
+        .col-md-6 .accordionOverlay {
+          width: 20% !important;
+          height: 50%;
+          left: unset !important;
+          transform: unset !important;
+        }
+
+        .accordion_desktop {
+          display: block !important;
+        }
+
+        .accordion_mobile {
+          display: none !important;
+        }
+      }
+
+      @media only screen and (min-width: 992px) {
+        .divAccordionOnePage .accordion {
+          padding: 30px !important;
+        }
+
+        .divAccordionOnePage .accordionTitleTop h5 {
+          font-size: 32px;
+          line-height: 38px;
+        }
+
+        .divAccordionOnePage .accordionTitleTop p {
+          font-size: 18px;
+          line-height: 25px;
+        }
+
+        .divTitleAccordionWebinarEmpresas {
+          width: 540px;
+          height: 60px;
+          justify-content: center;
+          margin: 25px auto;
+        }
+
+        .divTitleAccordionWebinarEmpresas h3 {
+          font-size: 32px;
+          line-height: 32px;
+          text-align: center;
+        }
+
+        .accordion-title-container span {
+          font-size: 20px;
+          line-height: 26px;
+        }
+
+        .accordion .card-body-desktop p {
+          font-size: 18px;
+          line-height: 25px;
+          padding: 10px 15px;
+        }
+      }
+
+      @media only screen and (min-width: 1200px) {
+        .divAccordionOnePage .accordion {
+          padding: 60px !important;
+        }
+
+        .divAccordionOnePage .accordionTitleTop h5 {
+          font-size: 40px !important;
+          line-height: 48px;
+          width: 70%;
+        }
+
+        .divAccordionOnePage .accordionTitleTop p {
+          font-size: 26px !important;
+          line-height: 47px !important;
+          margin: 20px auto;
+          max-width: 663px;
+        }
+
+        .divTitleAccordionWebinarEmpresas {
+          width: 800px;
+          height: 81px;
+          justify-content: center;
+          margin: 25px auto;
+        }
+
+        .divTitleAccordionWebinarEmpresas h3 {
+          font-size: 40px;
+          line-height: 42px;
+          text-align: center;
+        }
+
+        .accordion-title-container span {
+          font-size: 26px;
+          line-height: 30px;
+        }
+
+        .accordion .card-body-desktop p {
+          font-size: 20px !important;
+          line-height: 34px;
+          padding: 10px 50px;
+        }
+      }
+    </style>
+    <div class="mb-3">
+      <div class="divTitleAccordionWebinarEmpresas">
+        <h3>
+          ¡Conoce más sobre los lideres que protagonizarán nuestro summit!
+        </h3>
+      </div>
+      <div class="row flex-md-column-reverse">
+        <div class="col-md-6 order-md-1 d-flex flex-column">
+          <div class="divAccordionOnePage">
+            <div class="accordionTitleTop">
+              <p>
+                Desde innovadores tecnológicos hasta líderes en bienestar
+                integral, cada uno está listo para inspirarte con sus ideas.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="card mb-3" data-cardNumber="1">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <div
+                      class="accordion-title-container"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <span>Rosalinda Ballesteros</span>
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <img
+                          src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                          alt="Flecha Abajo"
+                          class="accordion-arrow rotate-up"
+                        />
+                      </button>
+                    </div>
+                  </h2>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-responsive">
+                    <p>
+                      Directora del Instituto de Ciencias del Bienestar Integral
+                      de Tecmilenio, con una trayectoria destacada en liderazgo
+                      educativo, investigación en psicología positiva y
+                      contribución a proyectos humanitarios a nivel
+                      internacional.
+                      <br /><br />
+                      Doctora en Estudios Humanísticos por el Tecnológico de
+                      Monterrey y maestría en Psicología Positiva Aplicada por
+                      la Universidad de Pennsylvania. Sólida experiencia docente
+                      de 20 años y habilidades demostradas en negociación,
+                      desarrollo organizacional y gestión de equipos. Miembro
+                      activo de diversas asociaciones profesionales y consejos
+                      consultivos, comprometida con el bienestar y la educación
+                      positiva a nivel global.
+                    </p>
+                  </div>
+                  <div class="card-body-desktop">
+                    <p>
+                      Directora del Instituto de Ciencias del Bienestar Integral
+                      de Tecmilenio, con una trayectoria destacada en liderazgo
+                      educativo, investigación en psicología positiva y
+                      contribución en proyectos humanitarios a nivel
+                      internacional.
+                      <br /><br />
+                      Cuenta con doctorado en Estudios Humanísticos por el
+                      Tecnológico de Monterrey y maestría en Psicología Positiva
+                      Aplicada por la Universidad de Pennsylvania. Además, tiene
+                      una sólida experiencia docente de 20 años y habilidades
+                      demostradas en negociación, desarrollo organizacional y
+                      gestión de equipos. Forma parte de diversas asociaciones
+                      profesionales y consejos consultivos, comprometida con el
+                      bienestar y la educación positiva a nivel global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" data-cardNumber="2">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <div
+                      class="accordion-title-container"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <span>Julio Peña Gaviria</span>
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <img
+                          src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                          alt="Flecha Abajo"
+                          class="accordion-arrow"
+                        />
+                      </button>
+                    </div>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-responsive">
+                    <p>
+                      Con 23 años de experiencia en el mercado latinoamericano
+                      de Tecnología de la Información, he desempeñado roles
+                      destacados en empresas líderes como IBM, Dell y Microsoft.
+                      Su trayectoria se ha centrado en operaciones, finanzas,
+                      marketing y ventas, donde ha logrado resultados
+                      sobresalientes. Actualmente, lideró la Vicerrectoría de
+                      Educación Abierta y Organizaciones en Tecmilenio, después
+                      de ocupar roles clave en el crecimiento y la expansión de
+                      Tecmilenio Online.
+                    </p>
+                  </div>
+                  <div class="card-body-desktop">
+                    <p>
+                      Cuenta con 23 años de experiencia en el mercado
+                      latinoamericano de Tecnologías de la Información, ha
+                      desempeñado roles destacados en empresas líderes como IBM,
+                      Dell y Microsoft. Su trayectoria abarca áreas como
+                      operaciones, finanzas, marketing y ventas, donde ha
+                      logrado resultados sobresalientes. Actualmente, lideró la
+                      Vicerrectoría de Educación Abierta y Organizaciones en
+                      Tecmilenio, después de ocupar roles clave en el
+                      crecimiento y la expansión de Tecmilenio Online.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" data-cardNumber="3">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <div
+                      class="accordion-title-container"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <span>Juan Domínguez</span>
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <img
+                          src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Arrow_Accordion.png"
+                          alt="Flecha Abajo"
+                          class="accordion-arrow"
+                        />
+                      </button>
+                    </div>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body-responsive">
+                    <p>
+                      Juan cuenta con m&aacute;s de dos d&eacute;cadas de
+                      experiencia dirigiendo equipos de Recursos Humanos&nbsp;y
+                      Organizaci&oacute;n, al igual que en Asuntos
+                      P&uacute;blicos y Corporativos, Comunicaci&oacute;n y
+                      Jur&iacute;dicos. Ha&nbsp;trabajado en siete
+                      pa&iacute;ses, en las industrias de aviaci&oacute;n,
+                      servicios financieros, servicios legales y consumo masivo
+                      tanto como ejecutivo así como consultor. Ha trabajado y
+                      vivido en Europa, Estados Unidos, Asia y varios
+                      pa&iacute;ses de Am&eacute;rica Latina. Fue director de
+                      recursos humanos en&nbsp;varias de las operaciones de
+                      Coca-Cola FEMSA en Latinoam&eacute;rica y en Asia.
+                      Mas&nbsp;recientemente fue director corporativo de
+                      Recursos Humanos (CHRO) del Grupo
+                      Financiero&nbsp;Citibanamex. Actualmente es columnista en
+                      Expansión México y El Economista.
+                    </p>
+                  </div>
+                  <div class="card-body-desktop">
+                    <p>
+                      Juan cuenta con m&aacute;s de dos d&eacute;cadas de
+                      experiencia dirigiendo equipos de Recursos Humanos&nbsp;y
+                      Organizaci&oacute;n, al igual que en Asuntos
+                      P&uacute;blicos y Corporativos, Comunicaci&oacute;n y
+                      Jur&iacute;dicos. Ha&nbsp;trabajado en siete
+                      pa&iacute;ses, en las industrias de aviaci&oacute;n,
+                      servicios financieros, servicios legales y consumo masivo
+                      tanto como ejecutivo así como consultor. Ha trabajado y
+                      vivido en Europa, Estados Unidos, Asia y varios
+                      pa&iacute;ses de Am&eacute;rica Latina. Fue director de
+                      recursos humanos en&nbsp;varias de las operaciones de
+                      Coca-Cola FEMSA en Latinoam&eacute;rica y en Asia.
+                      Mas&nbsp;recientemente fue director corporativo de
+                      Recursos Humanos (CHRO) del Grupo
+                      Financiero&nbsp;Citibanamex. Actualmente es columnista en
+                      Expansión México y El Economista.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2">
+          <div class="bg-light position-relative overlay-container">
+            <!-- Contenido de la columna 5, incluyendo la imagen -->
+            <div class="imgCard1">
+              <img
+                class="accordion_desktop w-100"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/RosalindaBallesterosDesktop.webp"
+                alt=""
+              />
+              <img
+                class="accordion_mobile w-100"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/RosalindaBallesterosMobile.webp"
+                alt=""
+              />
+            </div>
+            <div class="imgCard2">
+              <img
+                class="accordion_desktop w-100"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/JulioPe%C3%B1aGaviriaDesktop.webp"
+                alt=""
+              />
+              <img
+                class="accordion_mobile w-100"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/JulioPe%C3%B1aGaviriaMobile.webp"
+                alt=""
+              />
+            </div>
+            <div class="imgCard3">
+              <img
+                class="accordion_desktop w-100"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/juanDominguezRedNew.webp"
+                alt=""
+              />
+              <img
+                class="accordion_mobile w-100"
+                src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Foto%20Juan%20Dominguez.webp"
+                alt=""
+              />
+            </div>
+            <div class="accordionOverlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function toggleAccordion(container) {
+          var arrowImage = container.querySelector(".accordion-arrow");
+          var card = container.closest(".card");
+          var collapse = card.querySelector(".collapse");
+
+          // Si la tarjeta ya está expandida, mantenemos la clase rotate-up
+          if (collapse.classList.contains("show")) {
+            arrowImage.classList.add("rotate-up");
+          } else {
+            // Si la tarjeta no está expandida, removemos la clase rotate-up de todas las flechas
+            var allArrows = document.querySelectorAll(".accordion-arrow");
+            allArrows.forEach(function (arrow) {
+              if (arrow !== arrowImage) {
+                arrow.classList.remove("rotate-up");
+              }
+            });
+          }
+
+          // Si la tarjeta ya tiene la clase show, no hacemos nada
+          if (collapse.classList.contains("show")) {
+            return;
+          }
+
+          // Si no, mostramos la tarjeta y ocultamos las demás
+          var siblingCards = card.parentElement.querySelectorAll(".card");
+          siblingCards.forEach(function (siblingCard) {
+            var siblingCollapse = siblingCard.querySelector(".collapse");
+            if (siblingCard === card) {
+              siblingCollapse.classList.add("show");
+              arrowImage.classList.add("rotate-up");
+            } else {
+              siblingCollapse.classList.remove("show");
+            }
+          });
+
+          // Lógica para mostrar las imgCard
+          var cardNumber = card.getAttribute("data-cardnumber");
+          var imgCards = document.querySelectorAll('[class^="imgCard"]');
+          imgCards.forEach(function (imgCard) {
+            if (imgCard.classList.contains("imgCard" + cardNumber)) {
+              imgCard.style.display = "block";
+            } else {
+              imgCard.style.display = "none";
+            }
+          });
+        }
+
+        var accordionTitleContainers = document.querySelectorAll(
+          ".accordion-title-container"
+        );
+        accordionTitleContainers.forEach(function (container) {
+          container.addEventListener("click", function (event) {
+            // Evitamos que Bootstrap maneje el evento de clic
+            event.stopPropagation();
+            toggleAccordion(container);
+          });
+        });
+      });
+
+      window.addEventListener("DOMContentLoaded", function () {
+        var prevScreenWidth = window.innerWidth;
+        var accordionInitialized = false;
+
+        // Función para ajustar la altura del accordion
+        function ajustarAlturaAccordion() {
+          var screenWidth = window.innerWidth;
+
+          // Verificar si la pantalla es mayor o igual a 768px
+          if (screenWidth >= 768) {
+            var divAccordionOnePage = document.querySelector(
+              ".divAccordionOnePage"
+            );
+            var body = document.querySelector("body");
+            var colMd5 = document.querySelector(".col-md-6");
+            var imgColMd5 = colMd5.querySelector("img");
+            var accordion = document.querySelector(".accordion");
+            var accordionTitleTop =
+              document.querySelector(".accordionTitleTop");
+            var accordionTitle = accordionTitleTop.querySelector("h5");
+            var accordionText = accordionTitleTop.querySelector("p");
+
+            // Calcula la altura disponible en .col-md-6
+            var alturaDisponible = imgColMd5.getBoundingClientRect().height + 8;
+
+            var estilosDivAccordion = getComputedStyle(divAccordionOnePage);
+            var estilosbody = getComputedStyle(body);
+
+            var estilosTitulo = getComputedStyle(accordionTitle);
+            alturaDisponible -=
+              parseFloat(estilosTitulo.marginTop) +
+              parseFloat(estilosTitulo.marginBottom) +
+              parseFloat(estilosTitulo.paddingTop) +
+              parseFloat(estilosTitulo.paddingBottom);
+
+            var estilosTexto = getComputedStyle(accordionText);
+            alturaDisponible -=
+              parseFloat(estilosTexto.marginTop) +
+              parseFloat(estilosTexto.marginBottom) +
+              parseFloat(estilosTexto.paddingTop) +
+              parseFloat(estilosTexto.paddingBottom);
+
+            var alturaAccordionTitleTop =
+              accordionTitleTop.getBoundingClientRect().height;
+            alturaDisponible -=
+              alturaAccordionTitleTop +
+              parseFloat(estilosDivAccordion.paddingTop) +
+              parseFloat(estilosbody.marginTop) +
+              parseFloat(estilosbody.marginBottom);
+
+            if (!accordionInitialized || prevScreenWidth !== screenWidth) {
+              // Ajusta la altura del accordion si es la primera vez o si cambió el tamaño de la pantalla
+              alturaDisponible = alturaDisponible;
+              accordion.style.height = alturaDisponible + "px";
+              prevScreenWidth = screenWidth;
+              accordionInitialized = true;
+            }
+          } else {
+            // Si la pantalla es menor a 768px, restablecer la altura del accordion
+            var accordion = document.querySelector(".accordion");
+            accordion.style.height = "auto";
+          }
+        }
+
+        // Llama a la función cuando la ventana cambia de tamaño
+        window.addEventListener("resize", function () {
+          ajustarAlturaAccordion();
+        });
+
+        // Llama a la función al cargar la página
+        ajustarAlturaAccordion();
+      });
+    </script>
+    <!--=====================================
+            END - ACCORDION SECTION
+    ========================================-->
+
+    <!-- ==============================
+  START - STATISTICS - SECTION
+  ================================= -->
+
+    <section class="tec2023__statisticsSection">
+      <div class="container">
+        <div class="tec2023-statistics">
+          <div class="tec2023-statistics-item">
+            <h2 class="tec2023-s-i-quantity">
+              +
+              <span class="amountCounter" data-total="300" data-increment="25">
+                <!-- Amount -->
+                0
+              </span>
+            </h2>
+            <h5 class="tec2023-s-i-text">
+              <!-- Label -->
+              Empresas atendidas
+            </h5>
+          </div>
+          <div class="tec2023-statistics-item">
+            <h2 class="tec2023-s-i-quantity">
+              +
+              <span class="amountCounter" data-total="1000" data-increment="10">
+                <!-- Amount -->
+                0
+              </span>
+            </h2>
+            <h5 class="tec2023-s-i-text">
+              <!-- Label -->
+              Colaboradores capacitados
+            </h5>
+          </div>
+          <div class="tec2023-statistics-item">
+            <h2 class="tec2023-s-i-quantity">
+              +
+              <span class="amountCounter" data-total="10">
+                <!-- Amount -->
+                0
+              </span>
+            </h2>
+            <h5 class="tec2023-s-i-text">
+              <!-- Label -->
+              Empresas transnacionales
+            </h5>
+          </div>
+          <div class="tec2023-statistics-item">
+            <h2 class="tec2023-s-i-quantity">
+              +
+              <span class="amountCounter" data-total="50">
+                <!-- Amount -->
+                0
+              </span>
+            </h2>
+            <h5 class="tec2023-s-i-text">
+              <!-- Label -->
+              Programas codise&ntilde;ados
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function runCounterAnimation() {
+        // Seleccionar el elemento con la clase "tec2023-statistics"
+        const statisticsContainer = document.querySelector(
+          ".tec2023-statistics"
+        );
+
+        // Seleccionar todos los elementos con la clase "amountCounter"
+        const amountCounter = document.querySelectorAll(".amountCounter");
+
+        // Crear un observador utilizando la API Intersection Observer
+        // La función anónima se ejecuta cuando se observa una entrada
+        const observer = new IntersectionObserver((entries) => {
+          // Recorrer las entradas recibidas
+          entries.forEach((entry) => {
+            // Verificar si el elemento está visible en el viewport
+            if (entry.intersectionRatio > 0) {
+              // Iterar sobre los elementos con la clase "digitalSkillingPreparateContador"
+              amountCounter.forEach((element) => {
+                // Configurar un intervalo que se ejecuta cada 10 ms
+                setInterval(function () {
+                  // Obtener el contador actual y el valor final del contador desde el atributo "data-total"
+                  let contador = parseInt(element.innerText);
+                  let finalizarContador = parseInt(element.dataset.total);
+                  let increment = parseInt(
+                    element.dataset.increment ? element.dataset.increment : "1"
+                  );
+
+                  // Incrementar el contador si no se ha alcanzado el valor final
+                  if (contador <= finalizarContador) {
+                    element.innerText = contador + increment;
+                  }
+
+                  if (element.innerText >= finalizarContador) {
+                    element.innerText = finalizarContador;
+                  }
+                }, 10);
+              });
+              // Dejar de observar el elemento una vez que se haya animado
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+
+        // Observar el elemento "statisticsContainer" para activar la animación
+        observer.observe(statisticsContainer);
+      }
+
+      runCounterAnimation();
+    </script>
+
+    <!-- ==============================
+  START - BUSINESS SUCCESS - SECTION
+  ================================= -->
+
+    <section class="tec2023__businessSuccessSection">
+      <!-- Block - Heading 1 -->
+      <div class="container">
+        <div class="tec2023-heading-1">
+          <h2>
+            <!-- Title -->
+            Tu equipo es la clave del éxito de tu empresa
+          </h2>
+          <h5>
+            <!-- Label -->
+            Invierte en su capacitaci&oacute;n y convi&eacute;rtelos en las y
+            los l&iacute;deres que tu empresa necesita.
+          </h5>
+        </div>
+
+        <div class="tec2023-customSolutions">
+          <h5 class="tec2023-cS-heading">
+            <!-- Title -->
+            Soluciones a la medida
+          </h5>
+          <p class="tec2023-cS-text">
+            <!-- Text -->
+            Nuestros programas de desarrollo cocreados y alineados están
+            diseñados para abordar los desafíos particulares de tu empresa y
+            lograr resultados reales.
+          </p>
+
+          <!-- Block - Card Section 1 -->
+          <div class="tec2023-cardsSection1">
+            <div class="tec2023-card">
+              <h5 class="tec2023-c-2-heading">
+                <!-- Title -->
+                Soluciones a la medida, apilables y modulares.
+              </h5>
+              <div class="tec2023-c-2-description">
+                <!-- Description -->
+                Entendimiento y codiseño:
+                <li>Certificados</li>
+                <li>Programas especiales</li>
+              </div>
+            </div>
+
+            <div class="tec2023-card">
+              <h5 class="tec2023-c-2-heading">
+                <!-- Title -->
+                Portafolio empresarial y digital skillings
+              </h5>
+              <div class="tec2023-c-2-description">
+                <!-- Description -->
+                <li>Certificados</li>
+                <li>Certificaciones</li>
+                <li>Microcredenciales</li>
+              </div>
+            </div>
+
+            <div class="tec2023-card">
+              <h5 class="tec2023-c-2-heading">
+                <!-- Title -->
+                Soluciones de bienestar y salud
+              </h5>
+              <div class="tec2023-c-2-description">
+                <!-- Description -->
+                <li>Organizaciones positivas</li>
+                <li>Gestión del bienestar</li>
+                <li>Liderazgo positivo</li>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block - Button Right -->
+          <!-- <div class="tec2023-container-button">
+                <div class="tec2023-button-right">
+                    <a href="" class="button">
+                        !-- Text --
+                        Descarga aqu&iacute;
+                    </a>
+                </div>
+            </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+  START - OFFER SECTION
+  ================================= -->
+
+    <section class="tec2023__offerSection">
+      <!-- Block - Heading 1 -->
+      <div class="tec2023-background-image-0"></div>
+
+      <div class="container">
+        <div class="tec2023-offer-container">
+          <div class="tec2023-offer-info">
+            <h5>
+              Hemos desarrollado una oferta de formación orientada a las
+              necesidades actuales y del futuro.
+            </h5>
+            <p>
+              Nuestros programas están diseñados para ayudar a tus colaboradores
+              a desarrollar habilidades y conocimientos permanentes que
+              mejorarán su desempeño y les permitá crecer profesionalmente.
+            </p>
+          </div>
+
+          <!-- ==============================
+        START - TEC2023 SLIDER CARDS SECTION
+        ================================= -->
+
+          <!-- STYLES -->
+          <style>
+            /* MOBILE FIRST METHOD */
+
+            .tec2023__slider-cards-2 {
+              display: flex;
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -o-flex;
+              display: -ms-flex;
+              justify-content: space-between;
+              width: 100%;
+              overflow-x: scroll;
+              scroll-snap-type: x mandatory;
+              margin: 0 0;
+              padding: 0 0 24px 0;
+            }
+
+            .tec2023__slider-cards-2 .item {
+              border-radius: 5px;
+              padding: 10px;
+              border: 2px solid #00534c;
+              color: white;
+              background: #00534c;
+              scroll-snap-align: start;
+              flex: 0 0 100%;
+              margin: 0 12px;
+            }
+
+            .tec2023__slider-cards-2 .item:last-child {
+              margin: 0 0 0 12px;
+            }
+
+            .tec2023__slider-cards-2 .item:hover {
+              background-color: #26d07c;
+              border-color: #26d07c;
+              color: #00534c;
+              text-decoration: none;
+            }
+
+            .tec2023__slider-cards-2 .item:hover h5 {
+              color: #00534c;
+            }
+
+            .tec2023__slider-cards-2 .item h5 {
+              text-align: left;
+              text-transform: initial;
+              font-size: 16px;
+              color: #26d07c;
+            }
+
+            .tec2023__slider-cards-2 .item p {
+              font-weight: 400;
+              font-size: 12px;
+            }
+
+            .tec2023__slider-cards-2__overflow-arrows {
+              display: block;
+              padding-bottom: 20px;
+              float: right;
+            }
+
+            .tec2023__slider-cards-2__overflow-arrows button {
+              border: 0px solid transparent;
+              background: transparent;
+            }
+
+            .tec2023__slider-cards-2__overflow-arrows button:focus {
+              outline: 0px;
+            }
+
+            /* Custom, iPhone Retina - More than 320px */
+            @media only screen and (min-width: 320px) {
+              .tec2023__slider-cards-2 .item h5 {
+                font-size: 18px;
+              }
+
+              .tec2023__slider-cards-2 .item p {
+                font-size: 14px;
+              }
+            }
+
+            /* Extra Small Devices, Phones - More than 480px */
+            @media only screen and (min-width: 480px) {
+              .tec2023__slider-cards-2 .item h5 {
+                font-size: 20px;
+              }
+            }
+
+            /* Small Devices, Tablets - More than 768px */
+            @media only screen and (min-width: 768px) {
+              .tec2023__slider-cards-2 .item p {
+                font-size: 16px;
+              }
+            }
+
+            /* Medium Devices, Desktops - More than 992px */
+            @media only screen and (min-width: 992px) {
+              .tec2023__slider-cards-2 {
+                overflow: hidden;
+              }
+
+              .tec2023__slider-cards-2 .item {
+                border-radius: 5px;
+                padding: 24px;
+                border: 2px solid #00534c;
+                color: black;
+                background: white;
+                scroll-snap-align: start;
+                flex: 0 0 calc(50% - 12px);
+              }
+
+              .tec2023__slider-cards-2 .item:hover {
+                background-color: #00534c;
+                border-color: #00534c;
+                color: white;
+                text-decoration: none;
+              }
+
+              .tec2023__slider-cards-2 .item:hover h5 {
+                color: #26d07c;
+              }
+
+              .tec2023__slider-cards-2 .item h5 {
+                font-size: 18px;
+                color: #00534c;
+              }
+
+              .tec2023__slider-cards-2 .item p {
+                font-size: 14px;
+              }
+            }
+
+            /* Large Devices, Wide Screens - More than 1200px */
+            @media only screen and (min-width: 1200px) {
+              .tec2023__slider-cards-2 .item h5 {
+                font-size: 20px;
+              }
+            }
+          </style>
+
+          <!-- HTML -->
+          <!-- cards -->
+          <div class="tec2023__slider-cards-2">
+            <!-- item card 1 -->
+            <div href="#" class="item" target="_blank">
+              <h5 class="font-weight-bold">
+                <!-- title -->
+                Prepa Go
+              </h5>
+              <p>
+                <!-- description -->
+                Un programa flexible corto, avalado por CENEVAL, donde todos los
+                colaboradores podr&aacute;n aprender a su ritmo para
+                certificarse y acreditar sus estudios de nivel de bachillerato
+                (Educaci&oacute;n Media Superior).
+              </p>
+            </div>
+            <!-- item card 2 -->
+            <div href="#" class="item" target="_blank">
+              <h5 class="font-weight-bold">
+                <!-- title -->
+                Profesional Asociado
+              </h5>
+              <p>
+                <!-- description -->
+                Carreras cortas con certificados enfocados en el desarrollo de
+                competencias.
+              </p>
+            </div>
+            <!-- item card 3 -->
+            <div href="#" class="item" target="_blank">
+              <h5 class="font-weight-bold">
+                <!-- title -->
+                Carreras Profesionales
+              </h5>
+              <p>
+                <!-- description -->
+                Personaliza parte de tu plan de estudios y obt&eacute;n
+                certificados en competencias para anticipar y asegurar tu
+                inserci&oacute;n laboral de forma exitosa.
+              </p>
+            </div>
+            <!-- item card 4 -->
+            <div href="#" class="item" target="_blank">
+              <h5 class="font-weight-bold">
+                <!-- title -->
+                Carreras Ejecutivas
+              </h5>
+              <p>
+                <!-- description -->
+                Dise&ntilde;a tu carrera para conseguir un perfil profesional
+                &uacute;nico, para personas que trabajan y desean aumentar su
+                valor laboral, gradu&aacute;ndose en 3 a&ntilde;os.
+              </p>
+            </div>
+            <!-- item card 5 -->
+            <div href="#" class="item" target="_blank">
+              <h5 class="font-weight-bold">
+                <!-- title -->
+                Posgrados
+              </h5>
+              <p>
+                <!-- description -->
+                Desarrolla competencias para potenciar tu desarrollo
+                profesional. Con caracter&iacute;sticas &uacute;nicas que se
+                ajustan a tus necesidades.
+              </p>
+            </div>
+            <!-- item card 6 -->
+            <div href="#" class="item" target="_blank">
+              <h5 class="font-weight-bold">
+                <!-- title -->
+                Skilling Center
+              </h5>
+              <p>
+                <!-- description -->
+                Programas dise&ntilde;ados para personas que est&aacute;n
+                dispuestas a Adquirir, Actualizar y Aumentar sus competencias
+                por el deseo, la necesidad y/o el amor por el aprendizaje
+                convirti&eacute;ndose en aprendedores para toda la vida.
+              </p>
+            </div>
+            <!-- item card 7 -->
+            <div href="#" class="item" target="_blank">
+              <h5 class="font-weight-bold">
+                <!-- title -->
+                Instituto de Ciencias del Bienestar Integral
+              </h5>
+              <p>
+                <!-- description -->
+                Programas para una vida plena, proposici&oacute;n de
+                pr&aacute;cticas positivas para la promoci&oacute;n de la
+                felicidad.
+              </p>
+            </div>
+          </div>
+
+          <!-- arrows -->
+          <div class="tec2023__slider-cards-2__overflow-arrows">
+            <button class="btnLeft">
+              <svg
+                width="31"
+                height="24"
+                viewBox="0 0 31 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.939335 10.9393C0.353548 11.5251 0.353548 12.4749 0.939335 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807609 11.0711 0.807609 10.4853 1.3934L0.939335 10.9393ZM30.2353 10.5L1.99999 10.5L1.99999 13.5L30.2353 13.5L30.2353 10.5Z"
+                  fill="#26D07C"
+                />
+              </svg>
+            </button>
+            <button class="btnRight">
+              <svg
+                width="31"
+                height="24"
+                viewBox="0 0 31 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.0604 13.0607C30.6462 12.4749 30.6462 11.5251 30.0604 10.9393L20.5145 1.3934C19.9287 0.807611 18.9789 0.807611 18.3932 1.3934C17.8074 1.97919 17.8074 2.92893 18.3932 3.51472L26.8784 12L18.3932 20.4853C17.8074 21.0711 17.8074 22.0208 18.3932 22.6066C18.9789 23.1924 19.9287 23.1924 20.5145 22.6066L30.0604 13.0607ZM0.764465 13.5H28.9998V10.5H0.764465V13.5Z"
+                  fill="#26D07C"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- SCRIPTS -->
+          <script>
+            // Get the reference to the container element that holds the cards
+            const cardsContainer = document.querySelector(
+              ".tec2023__slider-cards-2"
+            );
+
+            // Get the reference to the left scroll button
+            const scrollLeftButton = document.querySelector(
+              ".tec2023__slider-cards-2__overflow-arrows .btnLeft"
+            );
+
+            // Get the reference to the right scroll button
+            const scrollRightButton = document.querySelector(
+              ".tec2023__slider-cards-2__overflow-arrows .btnRight"
+            );
+
+            // Add a click event listener to the left scroll button
+            scrollLeftButton.addEventListener("click", function () {
+              // Scroll the cards container towards the left by 100 pixels with smooth scrolling behavior
+              cardsContainer.scrollBy({ left: -100, behavior: "smooth" });
+            });
+
+            // Add a click event listener to the right scroll button
+            scrollRightButton.addEventListener("click", function () {
+              // Scroll the cards container towards the right by 100 pixels with smooth scrolling behavior
+              cardsContainer.scrollBy({
+                left: cardsContainer.scrollLeft + 100,
+                behavior: "smooth",
+              });
+            });
+          </script>
+
+          <!-- ==============================
+        END - TEC2023 SLIDER CARDS SECTION
+        ================================= -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+  START - BENEFITS SECTION
+  ================================= -->
+
+    <section class="tec2023__benefitsSection">
+      <!-- Block - Heading 1 -->
+      <div class="tec2023-background-image-1"></div>
+
+      <div class="container">
+        <div class="tec2023-benefits-container">
+          <div class="tec2023-benefits-title">
+            <h1>Beneficios a nuestros aliados</h1>
+            <p>
+              Las y los colaboradores que están involucrados en la capacitación
+              pueden sentirse más comprometidos y valorados, aumentando la
+              retención de trabajadores y mejorando el clima organizacional.
+              Asimismo, ayudan a las empresas a reducir costos importantes y
+              consolidar una cultura positiva a través del compromiso de la
+              fuerza laboral.
+            </p>
+          </div>
+
+          <!-- ==============================
+        START - TEC2023 CARDS
+        ================================= -->
+
+          <!-- STYLES -->
+          <!-- styles are in the top of the page -->
+
+          <!-- HTML -->
+          <!-- cards -->
+          <div class="tec2023-benefits-items-container">
+            <div class="tec2023-benefits-item">
+              <div class="tec2023__benefits__item__header">
+                <h5>
+                  <!-- title -->
+                  Empresas
+                </h5>
+                <span class="tec2023__icon" data-id="CDP2"> - </span>
+              </div>
+              <div class="tec2023__benefits__item__body" id="CDP2">
+                <!-- description -->
+                <p>
+                  Mayor retorno a la inversi&oacute;n en la capacitaci&oacute;n
+                </p>
+                <p>Alto impacto en los indicadores</p>
+                <p>Programas dise&ntilde;ados para adultos que trabajan</p>
+                <p>
+                  M&eacute;todo de acompa&ntilde;amiento para asegurar el
+                  &eacute;xito de la&nbsp; capacitaci&oacute;n
+                </p>
+                <p>Aumento del compromiso en los colaboradores</p>
+              </div>
+            </div>
+
+            <div class="tec2023-benefits-item">
+              <div class="tec2023__benefits__item__header">
+                <h5>
+                  <!-- title -->
+                  Colaborador
+                </h5>
+                <span class="tec2023__icon" data-id="CDP1"> + </span>
+              </div>
+              <div class="tec2023__benefits__item__body displayNone" id="CDP1">
+                <!-- description -->
+                <p>Crecimiento y desarrollo profesional</p>
+                <p>
+                  Desarrollo de competencias alineadas a los objetivos
+                  estrat&eacute;gicos
+                </p>
+                <p>
+                  Ingreso a una comunidad acad&eacute;mica y educativa que lo
+                  apoyar&aacute; en su formaci&oacute;n para toda la vida
+                </p>
+                <p>
+                  Contribuci&oacute;n en su autorrealizaci&oacute;n y metas
+                  personales
+                </p>
+                <p>
+                  Formaci&oacute;n centrada en el prop&oacute;sito y bienestar
+                  del colaborador
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCRIPT -->
+          <script>
+            function startBenefitsCards() {
+              let btnCards = document.querySelectorAll(".tec2023__icon");
+
+              btnCards.forEach((element) => {
+                element.addEventListener("click", function (e) {
+                  let idCard = this.getAttribute("data-id");
+
+                  let bodyCard = document.querySelector(`#${idCard}`);
+
+                  if (bodyCard.classList.contains("displayNone")) {
+                    bodyCard.classList.remove("displayNone");
+                    this.innerText = "-";
+                  } else {
+                    bodyCard.classList.add("displayNone");
+                    this.innerText = "+";
+                  }
+                });
+              });
+            }
+
+            startBenefitsCards();
+          </script>
+
+          <!-- ==============================
+        START - TEC2023 CARDS
+        ================================= -->
+        </div>
+      </div>
+    </section>
+
+    <div id="tec2023_videoYTBannerEmpresasModal" class="tec2023__videoYTModal">
+      <div class="tec2023_videoYTModal_content">
+        <button class="tec2023_videoYTModalcontent_close">X CERRAR</button>
+        <div class="tec2023_videoYTModalcontent_iframe-container">
+          <iframe
+            id="ytplayerEmpresas"
+            width="560"
+            height="315"
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector(".tec2023__loader").classList.add("displayNone");
+      document.querySelector("svg.displayNone").classList.remove("displayNone");
+
+      let url = "https://www.youtube.com/embed/ZzkgsmNxLz4";
+
+      var modal = document.getElementById("tec2023_videoYTBannerEmpresasModal");
+      var playVideoBtn = document.getElementById("playVideoBtn");
+      var closeBtn = document.querySelector(
+        ".tec2023_videoYTModalcontent_close"
+      );
+      let player = document.getElementById("ytplayerEmpresas");
+
+      playVideoBtn.onclick = function () {
+        modal.style.display = "flex";
+        player.src = url + "?autoplay=true";
+      };
+
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+        player.src = "";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          player.src = "";
+        }
+      };
+    </script>
+  </body>
+</html>
