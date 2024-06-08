@@ -11,18 +11,32 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universidad Tecmilenio</title>
 
+    <!-- Google Fonts -->
     <link rel="stylesheet" media="all"
-        href="//fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Gentium+Plus:wght@400;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" />
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Gentium+Plus:wght@400;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" />
     <link rel="stylesheet" media="all"
-        href="//fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Hubspot -->
     <link rel="stylesheet" media="all"
-        href="//2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/css/styles.bundle.min.css" />
+        href="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/css/styles.bundle.min.css" />
+
+    <!-- Bootstrap -->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- Icon Font -->
     <link rel="stylesheet" href="/themes/custom/tecmilenio/css/iconfont.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -30,7 +44,170 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
     <!-- START CODE HERE -->
     <!-- El codigo siempre debe estar dentro del section para mas comodidad. -->
 
-    <section id=""></section>
+    <!-- General Classes -->
+    <style>
+        /* Headings */
+        .tec24-h2-1 {
+            color: var(--default-tecmilenio-first);
+            font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        /* Paragraphs */
+        .tec24-p-1,
+        .tec24-p-2,
+        .tec24-p-3,
+        .tec24-p-4 {
+            font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+
+        .tec24-p-1 {
+            text-align: center;
+        }
+
+        .tec24-p-2 {
+            text-align: justify;
+        }
+
+        .tec24-p-3 {
+            font-weight: 700 !important;
+        }
+
+        .tec24-p-4 {
+            text-align: left;
+        }
+
+        /* Margins and Paddings */
+        .tec24-py-70px {
+            padding-top: 70px !important;
+            padding-bottom: 70px !important;
+        }
+
+        /* Buttons */
+        .tec24-btn-1,
+        .tec24-btn-2,
+        .tec24-btn-3,
+        .tec24-btn-4 {
+            border: 2px solid #00534C;
+            border-radius: 100px !important;
+            min-width: 130px;
+            min-height: 30px;
+            padding: 5px 15px;
+            display: inline-block;
+            font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14.63px;
+            text-align: center;
+            color: var(--tecmilenio-first) !important;
+            text-decoration: none !important;
+        }
+
+        .tec24-btn-1:hover,
+        .tec24-btn-2:hover,
+        .tec24-btn-3:hover {
+            border: 2px solid #00534C;
+            border-radius: 100px !important;
+            min-width: 130px;
+            min-height: 30px;
+            background-color: var(--default-tecmilenio-first);
+            color: white !important;
+            cursor: pointer;
+        }
+
+        .tec24-btn-2 {
+            border-color: var(--default-tecmilenio-fifth);
+            background-color: var(--default-tecmilenio-first);
+            color: white !important;
+        }
+
+        .tec24-btn-2:hover {
+            border-color: var(--default-tecmilenio-fifth);
+            background-color: var(--default-tecmilenio-second);
+            color: white !important;
+        }
+
+        .tec24-btn-3 {
+            border-color: var(--default-tecmilenio-first);
+            background-color: var(--default-tecmilenio-first);
+            color: white !important;
+        }
+
+        .tec24-btn-3:hover {
+            border-color: var(--default-tecmilenio-second);
+            background-color: var(--default-tecmilenio-second);
+            color: white !important;
+        }
+
+        .tec24-btn-4 {
+            border-color: #FFFFFF;
+            color: white !important;
+        }
+
+        .tec24-btn-4:hover {
+            border: 2px solid #00534C;
+            border-color: var(--default-tecmilenio-second);
+            background-color: var(--default-tecmilenio-second);
+            border-color: var(--default-tecmilenio-second);
+            color: white !important;
+            cursor: pointer;
+        }
+
+        /* Desktop */
+        @media (min-width: 992px) {
+
+            /* Headings */
+            .tec24-h2-1 {
+                color: var(--default-tecmilenio-first);
+                font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: center;
+            }
+
+            /* Paragraphs */
+            .tec24-p-1,
+            .tec24-p-2,
+            .tec24-p-3 {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            /* Buttons */
+            .tec24-btn-1,
+            .tec24-btn-2,
+            .tec24-btn-3,
+            .tec24-btn-4 {
+                font-size: 14px;
+                line-height: 19.5px;
+            }
+        }
+    </style>
+
+    <section id="home-2024">
+        <!-- General Classes of Page -->
+        <style>
+            #home-2024 .container {
+                max-width: 600px !important;
+            }
+
+            /* Desktop */
+            @media (min-width: 992px) {
+                #home-2024 .container {
+                    max-width: 1300px !important;
+                }
+            }
+        </style>
+
+
+    </section>
 
     <!-- END CODE HERE -->
 
