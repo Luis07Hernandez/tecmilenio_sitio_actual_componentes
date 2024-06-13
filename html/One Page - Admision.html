@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Universidad Tecmilenio</title>
+
+     <!-- Google Fonts -->
+     <link rel="stylesheet" media="all"
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Gentium+Plus:wght@400;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" />
+     <link rel="stylesheet" media="all"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+     <!-- Hubspot -->
+     <link rel="stylesheet" media="all"
+          href="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/css/styles.bundle.min.css" />
+
+     <!-- Bootstrap -->
+     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+
+     <!-- Icon Font -->
+     <link rel="stylesheet" href="/themes/custom/tecmilenio/css/iconfont.css">
+
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+     <!-- START CODE HERE -->
+     <!-- El codigo siempre debe estar dentro del section para mas comodidad. -->
+
+     <!-- General Classes -->
+     <style>
+          /* Headings */
+          .tec24-h2-1 {
+               color: var(--default-tecmilenio-first);
+               font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+               font-size: 16px;
+               font-weight: 700;
+               line-height: 22px;
+               text-align: center;
+          }
+
+          /* Paragraphs */
+          .tec24-p-1,
+          .tec24-p-2,
+          .tec24-p-3,
+          .tec24-p-4 {
+               font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+               font-size: 14px;
+               font-weight: 400;
+               line-height: 18px;
+          }
+
+          .tec24-p-1 {
+               text-align: center;
+          }
+
+          .tec24-p-2 {
+               text-align: justify;
+          }
+
+          .tec24-p-3 {
+               font-weight: 700 !important;
+          }
+
+          .tec24-p-4 {
+               text-align: left;
+          }
+
+          /* Margins and Paddings */
+          .tec24-py-70px {
+               padding-top: 70px !important;
+               padding-bottom: 70px !important;
+          }
+
+          /* Buttons */
+          .tec24-btn-1,
+          .tec24-btn-2,
+          .tec24-btn-3,
+          .tec24-btn-4 {
+               border: 2px solid #00534C;
+               border-radius: 100px !important;
+               min-width: 130px;
+               min-height: 30px;
+               padding: 5px 15px;
+               display: inline-block;
+               font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+               font-size: 12px;
+               font-weight: 700;
+               line-height: 14.63px;
+               text-align: center;
+               color: var(--tecmilenio-first) !important;
+               text-decoration: none !important;
+          }
+
+          .tec24-btn-1:hover,
+          .tec24-btn-2:hover,
+          .tec24-btn-3:hover {
+               border: 2px solid #00534C;
+               border-radius: 100px !important;
+               min-width: 130px;
+               min-height: 30px;
+               background-color: var(--default-tecmilenio-first);
+               color: white !important;
+               cursor: pointer;
+          }
+
+          .tec24-btn-2 {
+               border-color: var(--default-tecmilenio-fifth);
+               background-color: var(--default-tecmilenio-first);
+               color: white !important;
+          }
+
+          .tec24-btn-2:hover {
+               border-color: var(--default-tecmilenio-fifth);
+               background-color: var(--default-tecmilenio-second);
+               color: white !important;
+          }
+
+          .tec24-btn-3 {
+               border-color: var(--default-tecmilenio-first);
+               background-color: var(--default-tecmilenio-first);
+               color: white !important;
+          }
+
+          .tec24-btn-3:hover {
+               border-color: var(--default-tecmilenio-second);
+               background-color: var(--default-tecmilenio-second);
+               color: white !important;
+          }
+
+          .tec24-btn-4 {
+               border-color: #FFFFFF;
+               color: white !important;
+          }
+
+          .tec24-btn-4:hover {
+               border: 2px solid #00534C;
+               border-color: var(--default-tecmilenio-second);
+               background-color: var(--default-tecmilenio-second);
+               border-color: var(--default-tecmilenio-second);
+               color: white !important;
+               cursor: pointer;
+          }
+
+          /* Desktop */
+          @media (min-width: 992px) {
+
+               /* Headings */
+               .tec24-h2-1 {
+                    color: var(--default-tecmilenio-first);
+                    font-family: Montserrat, 'Source Sans 3', Arial, Helvetica, sans-serif;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    text-align: center;
+               }
+
+               /* Paragraphs */
+               .tec24-p-1,
+               .tec24-p-2,
+               .tec24-p-3 {
+                    font-size: 16px;
+                    line-height: 18px;
+               }
+
+               /* Buttons */
+               .tec24-btn-1,
+               .tec24-btn-2,
+               .tec24-btn-3,
+               .tec24-btn-4 {
+                    font-size: 14px;
+                    line-height: 19.5px;
+               }
+          }
+     </style>
+
+     <section id="home-2024">
+          <!-- General Classes of Page -->
+          <style>
+               #home-2024 .container {
+                    max-width: 600px !important;
+               }
+
+               /* Desktop */
+               @media (min-width: 992px) {
+                    #home-2024 .container {
+                         max-width: 1300px !important;
+                    }
+               }
+          </style>
+
+          <section class="tec24-admission-block my-4">
+               <style>
+                    .tec24-admission-block {
+                         background: linear-gradient(180deg, rgba(0, 83, 76, 0.9) 0%, rgba(0, 185, 169, 0.9) 100%);
+                         color: white;
+                         padding: 50px 15px;
+                    }
+
+                    .tec24-card-1 {
+                         height: 450px;
+                         width: calc(100% - 15px);
+                    }
+
+                    .tec24-card-1 img {
+                         display: block;
+                         width: 100%;
+                         height: 100%;
+                         object-fit: cover;
+                    }
+
+                    .tec24-text-block .tec24-h2-1 {
+                         padding: 0 15%;
+                    }
+
+
+                    .text-white {
+                         color: white !important;
+                    }
+
+                    .tec24-admission-block .tec24-h2-1 {
+                         padding: 0 20%;
+                    }
+
+                    .tec24-admission-block .row {
+                         display: -ms-flexbox;
+                         display: flex !important;
+                         -ms-flex-wrap: wrap;
+                         flex-wrap: wrap;
+                         align-content: center;
+                         justify-content: center;
+                         align-items: center;
+                         flex-direction: row;
+                    }
+
+                    /* Tablet */
+                    @media (min-width: 768px) {
+                         .tec24-admission-block {
+                              padding: 0 15px;
+                         }
+
+                         .tec24-admission-block .col-md-6 {
+                              padding-left: 0;
+                              padding-right: 0;
+                         }
+
+                         .tec24-text-block {
+                              display: flex;
+                              align-self: center;
+                              justify-self: center;
+                              flex-direction: column;
+                              align-content: center;
+                              justify-content: center;
+                              align-items: center;
+                         }
+
+                         .tec24-admission-block .tec24-h2-1 {
+                              padding: 10% 20%;
+                         }
+
+                         .tec24-text-block p {
+                              padding: 0 12%;
+                         }
+                    }
+
+                    @media (min-width: 992px) {
+                         .tec24-admission-block .row {
+                              display: flex !important;
+                         }
+
+                         .tec24-admission-block .col-md-6 {
+                              width: 720px;
+                              height: 768px;
+                         }
+
+                         .tec24-text-block {
+                              align-self: center;
+                              justify-self: center;
+                         }
+
+                         .tec24-admission-block .tec24-h2-1 {
+                              padding: 10% 20%;
+                              font-size: 56px;
+                              line-height: 60px;
+                         }
+
+                         .tec24-text-block p {
+                              padding: 0 17%;
+                              font-size: 22px;
+                              line-height: 27px;
+                         }
+                    }
+               </style>
+               <div class="row">
+                    <div class="col-md-6 tec24-text-block">
+                         <h2 class="tec24-h2-1 text-white">Proceso de admisión</h2>
+                         <p class="tec24-p-1 text-white">Queremos que disfrutes la mejor experiencia desde el
+                              primer momento en que decides estudiar con
+                              nosotros, ya sea en preparatoria, carrera profesional, carrera ejecutiva o maestría,
+                              en
+                              modalidad presencial o en línea.</p>
+                    </div>
+                    <div class="col-md-6 tec24-card-1">
+                         <img src="https://s3-alpha-sig.figma.com/img/aa71/45c5/eed61d8ff17a082a12ff3052d0933c81?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IkCTFaUyi3vIar8OmtMZjgQH6H8-4WwPMjCgUaX~nLSO4~JRpaRsxcFdd0zgC~9sg2S4o0svug5LyZ1d5KwtTChcydXZPEadseDvWEJ8-Rf3saVORMRkPYhcsZPtTSdBYd2UxG2QpHgFMRFc2bgy-2Q-qQHBnjyxPhXoJA7hZhC8q3FT~fooQzmfqih2ssD-XV0wPCMnMK~p16eTf4dlFQkcdlTtBy4x-lchjsVTiqiQhEO5DzFZkYXNdpQ6XuUH1BNeIZ1ksfP2hlslaw76MpKZafur0nnSoQJsSs9mPVyDOFOAjkbnohKD5q7wmtWnfg0hxHJCpYZ7nQHnuihsqg__"
+                              alt="Estudiantes">
+                    </div>
+               </div>
+          </section>
+
+          <section class="tec24-accordion-admission-block my-4">
+               <style>
+                    .tec24-accordion-admission-block {
+                         padding: 15px;
+                    }
+
+                    .tec24-header-text {
+                         padding: 0 20px;
+                         text-align: center;
+                    }
+
+                    .accordion .card-header {
+                         background-color: #ff7f27;
+                    }
+
+                    .accordion .card-body {
+                         background-color: #f8f9fa;
+                    }
+
+                    .tec24-step-title {
+                         font-weight: bold;
+                    }
+
+                    .tec24-accordion-admision .card {
+                         width: 100%;
+                         height: unset !important;
+                         max-width: unset !important;
+                         margin: 15px 0px;
+                    }
+
+                    .tec24-accordion-admision .card .card-header {
+                         padding: 0.5rem;
+                    }
+
+                    .tec24-accordion-admision .card .btn {
+                         color: white !important;
+                         font-weight: 700;
+                         text-transform: capitalize;
+                         background: unset !important;
+                         background-color: unset !important;
+                         box-shadow: unset !important;
+                    }
+
+                    .tec24-accordion-admision .card .btn::before {
+                         background: unset !important;
+                    }
+
+                    .toggle-button {
+                         width: 100%;
+                         text-align: left;
+                         display: flex;
+                         justify-content: space-between;
+                         align-items: center;
+                    }
+
+                    .arrow {
+                         transition: transform 0.3s ease-in-out;
+                    }
+
+                    .arrow.rotate {
+                         transform: rotate(180deg);
+                    }
+
+                    .btn:after {
+                         content: unset !important;
+                    }
+               </style>
+               <div class="tec24-header-text">
+                    <h2 class="tec24-h2-1">Conoce el proceso diseñado para que tu admisión en el nivel académico de tu
+                         elección sea una
+                         experiencia agradable, ágil y sencilla</h2>
+                    <p class="tec24-p-1 pt-3">Durante todo tu proceso de admisión, serás acompañado por un asesor</p>
+               </div>
+               <div class="tec24-accordion-admision" id="accordion">
+                    <div class="card">
+                         <div class="card-header" id="headingPrepa"
+                              style="background: linear-gradient(90deg, rgba(235,149,67, 0.9) 40%, rgba(0,83,76, 0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapsePrepa" aria-expanded="true"
+                                        aria-controls="collapsePrepa">
+                                        <span>Prepa Tecmilenio</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow rotate">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapsePrepa" class="collapse show" aria-labelledby="headingPrepa"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Déjanos tus datos de contacto <a
+                                             href="https://universidad.tecmilenio.mx/tecmilenio-click?_ga=2.117818639.708477797.1718059244-175748222.1712261232">aquí</a>
+                                        y nuestros(as) asesores(as) se pondrán en
+                                        comunicación contigo para despejar tus dudas y explicarte a detalle lo que
+                                        necesitas
+                                        para comenzar tu proceso de inscripción en Prepa Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b> 2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Acta de nacimiento.</li>
+                                        <li>CURP.</li>
+                                        <li>Comprobante de calificaciones.</li>
+                                        <li>Solicitud de admisión.</li>
+                                        <li>Identificación oficial (INE o Pasaporte).</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Recuerda entregar los documentos en Servicios Escolares para formar tu
+                                        expediente
+                                        escolar.<br>
+
+                                        En caso de requerir información para admisión por equivalencia o revalidación de
+                                        estudios, favor de consultarlo con uno de nuestros(as) asesores(as) de
+                                        admisiones.
+                                   </p>
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. Presenta tu examen de admisión</b><br><br>
+                                        El examen de admisión de ingreso a Prepa Tecmilenio consiste en un cuestionario,
+                                        que sirve para conocer tus habilidades intelectuales y hábitos para desarrollar
+                                        tu Propósito de Vida.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Presenta tu examen de inglés</b><br><br>
+                                        Te permite el ingreso a alguno de nuestros programas, así como para asignarte el
+                                        nivel de idioma que te corresponde.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>5. Realiza tu pago</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de estas formas:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico (crédito, débito, paypal) o en miferia.tecmilenio.mx</li>
+                                        <li>Depósito bancario</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros
+                                        programas de Becas y Financiamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>6. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que nuestro equipo administrativo verifique la información que nos
+                                        proporcionaste, recibirás un correo electrónico confirmando que ya eres parte de
+                                        la comunidad Tecmilenio.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingCarrerasP"
+                              style="background: linear-gradient(90deg, rgba(96, 205, 61, 0.9) 40%, rgba(0,83,76,1) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseCarrerasP" aria-expanded="false"
+                                        aria-controls="collapseCarrerasP">
+                                        <span>Carreras Profesionales</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseCarrerasP" class="collapse" aria-labelledby="headingCarrerasP"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Completar y enviar tu solicitud de admisión.<br><br>
+                                        Déjanos tus datos de contacto aquí y nuestros(as) asesores(as) se pondrán en
+                                        comunicación contigo para enviarte la solicitud y despejar tus dudas para
+                                        iniciar tu proceso de inscripción en Carreras Profesionales.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos:</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Acta de nacimiento.</li>
+                                        <li>CURP.</li>
+                                        <li>Comprobante de calificaciones de preparatoria.</li>
+                                        <li>Copia de identificación oficial (INE o Pasaporte) del estudiante y
+                                             responsable de colegiaturas.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        En caso de requerir información para admisión por equivalencia o revalidación de
+                                        estudios, favor de consultarlo con uno de nuestros(as) asesores(as) de
+                                        admisiones.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. Presenta tu examen de admisión</b><br><br>
+                                        El examen de admisión que presentarás para ingresar a Universidad Tecmilenio es
+                                        100%
+                                        en línea y consiste en un cuestionario para conocer tus habilidades
+                                        intelectuales y
+                                        hábitos para desarrollar tu propósito de vida.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Reserva tu lugar</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de estas formas:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico (crédito, débito, paypal) o en tecmilenio.mx</li>
+                                        <li>Depósito bancario.</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros
+                                        programas de Becas y Financiamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>5. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que hayas reservado tu lugar, nos pondremos en contacto contigo para
+                                        agendar
+                                        la entrevista inicial, que presentes tu examen de nivelación de inglés, realices
+                                        tu
+                                        horario y participes en los eventos de inducción a Universidad Tecmilenio.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingCarrerasE"
+                              style="background: linear-gradient(90deg, rgba(96, 205, 61, 0.9) 40%, rgba(0,83,76,0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseCarrerasE" aria-expanded="false"
+                                        aria-controls="collapseCarrerasE">
+                                        <span>Carreras Ejecutivas</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseCarrerasE" class="collapse" aria-labelledby="headingCarrerasE"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Déjanos tus datos de contacto aquí y nuestros(as) asesores(as) se pondrán en
+                                        comunicación contigo para despejar tus dudas y explicarte a detalle lo que
+                                        necesitas para iniciar tu proceso de inscripción en Profesional Ejecutivo.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Acta de nacimiento.</li>
+                                        <li>Comprobante de calificaciones de preparatoria.</li>
+                                        <li>Solicitud de admisión.</li>
+                                        <li>Identificación oficial (INE o Pasaporte).</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        En caso de requerir información para admisión por equivalencia o revalidación de
+                                        estudios, favor de consultarlo con uno(a) de nuestros(as) asesores(as) en
+                                        admisiones.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. Aparta tu lugar</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de las siguientes
+                                        modalidades:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico (crédito, débito, paypal) o en tecmilenio.mx</li>
+                                        <li>Depósito bancario.</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Una vez que hayas reservado tu lugar, nos pondremos en contacto contigo para
+                                        agendar
+                                        la entrevista inicial, realices tu horario y participes en los eventos de
+                                        inducción a
+                                        Universidad Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        Personal de nuestro equipo de asesoría en admisiones te acompañará durante el
+                                        proceso, hasta el primer día de clases.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros
+                                        programas de Becas y Financiamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Presenta tu examen diagnóstico de inglés</b><br><br>
+                                        Este examen ayudará a definir tu ruta de aprendizaje del idioma inglés.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingMaestrias"
+                              style="background: linear-gradient(90deg, rgba(38, 208, 124, 0.9) 40%, rgba(0,83,76,0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseMaestrias" aria-expanded="false"
+                                        aria-controls="collapseMaestrias">
+                                        <span>Maestrías</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseMaestrias" class="collapse" aria-labelledby="headingMaestrias"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Déjanos tus datos de contacto aquí y nuestros(as) asesores(as) se pondrán en
+                                        comunicación contigo para despejar tus dudas y explicarte a detalle lo que
+                                        necesitas para iniciar tu proceso de inscripción de Posgrados Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Acta de nacimiento.</li>
+                                        <li>CURP.</li>
+                                        <li>Certificado de carrera profesional.</li>
+                                        <li>Título profesional de licenciatura.</li>
+                                        <li>Cédula profesional de licenciatura*.</li>
+                                        <li>Solicitud de admisión.</li>
+                                        <li>Identificación oficial (INE o Pasaporte).</li>
+                                        *Para quienes solicitan cédula profesional de maestría.
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        En caso de requerir información para admisión por equivalencia o revalidación de
+                                        estudios, favor de consultarlo con uno de nuestros asesores de admisiones.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. Reserva tu lugar</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de las siguientes
+                                        modalidades:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico (crédito, débito, paypal) o en tecmilenio.mx</li>
+                                        <li>Depósito bancario.</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros programas de Becas y Financiamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que hayas apartado tu lugar, nos pondremos en contacto contigo para
+                                        agendar la entrevista inicial, realices tu horario y participes en los eventos
+                                        de inducción a Universidad Tecmilenio.<br><br>
+                                        Tu asesor(a) de admisiones te acompañará durante el proceso, hasta el primer día
+                                        de clases.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingMaestriasD"
+                              style="background: linear-gradient(90deg, rgba(38, 208, 124, 0.9) 40%, rgba(0,83,76,0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseMaestriasD" aria-expanded="false"
+                                        aria-controls="collapseMaestriasD">
+                                        <span>Maestrías doble titulación</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseMaestriasD" class="collapse" aria-labelledby="headingMaestriasD"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Déjanos tus datos de contacto aquí y nuestros(as) asesores(as) se pondrán en
+                                        comunicación contigo para despejar tus dudas y explicarte a detalle lo que
+                                        necesitas para iniciar tu proceso de inscripción en Maestrías de Doble
+                                        Titulación Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Solicitud de admisión completa y firmada en original.</li>
+                                        <li>CURP o acta de nacimiento.</li>
+                                        <li>Certificado de estudios de licenciatura (original y copia) o constancia de
+                                             terminación con promedio (el promedio mínimo de admisión es de 70).</li>
+                                        <li>Cédula profesional.</li>
+                                        <li>INE o pasaporte de las personas que firmen la solicitud de admisión. (El/La
+                                             estudiante, el/la asegurado(a) y el/la obligado(a) solidario(a)).</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Recuerda entregar los documentos en Servicios Escolares para formar tu
+                                        expediente escolar.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. Contar con título universitario homologado</b><br><br>
+                                        Para la Doble Titulación con la Universidad de Burgos, será necesario tramitar
+                                        una homologación de tu Título Profesional, en caso de que esté certificado fuera
+                                        del Espacio Europeo de Educación Superior y no esté homologado en España.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Presenta tu examen de inglés</b><br><br>
+                                        Realiza el examen de nivel de lengua extranjera o presenta un comprobante de
+                                        nivel mínimo B1 de inglés
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>5. Entrevista con la dirección</b><br><br>
+                                        Deberás tener una entrevista con el director o la directora del programa de la
+                                        Universidad de Burgos.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>6. Realiza tu pago</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de estas formas:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico a través nuestro portal tecmilenio.mx</li>
+                                        <li>Depósito bancario.</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros programas de Becas y Financiamiento.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingMaestriasP"
+                              style="background: linear-gradient(90deg, rgba(38, 208, 124, 0.9) 40%, rgba(0,83,76,1) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseMaestriasP" aria-expanded="false"
+                                        aria-controls="collapseMaestriasP">
+                                        <span>Maestrías premium</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseMaestriasP" class="collapse" aria-labelledby="headingMaestriasP"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Envíanos un correo a mlp@servicios.tecmilenio.mx con tus datos de contacto y
+                                        nuestros(as) asesores(as) se pondrán en comunicación contigo para darte más
+                                        información sobre la Maestría en Liderazgo Positivo, despejar tus dudas y
+                                        comentar a detalle lo que necesitas para iniciar el proceso de inscripción.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Curriculum Vitae en el que destaques la experiencia profesional de los
+                                             últimos cinco años en tu área de liderazgo.</li>
+                                        <li>Ensayo: compártenos tu interés por estudiar la maestría en un máximo de una
+                                             cuartilla.</li>
+                                        <li>Programar la entrevista virtual con Directora del programa en <b>Universidad
+                                                  Tecmilenio.</b></li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        <b>3. Recibe tu carta de aceptación</b><br><br>
+                                        Después de la entrevista y los documentos entregados, el Comité del Instituto de
+                                        Ciencias del Bienestar Integral de Tecmilenio (ICBI) revisará la información y
+                                        emitirá una carta de aceptación o no aceptación a la Maestría de Liderazgo
+                                        Positivo en modalidad presencial.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Envía documentación final</b><br><br>
+                                        Ya que cuentes con la carta de aceptación, deberás compartirnos la documentación
+                                        oficial para la asignación de tu matrícula:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Acta de nacimiento.</li>
+                                        <li>Título profesional.</li>
+                                        <li>Cédula profesional.</li>
+                                        <li>Certificado total de estudios.</li>
+                                        <li>CURP (formato actualizado).</li>
+                                        <li>Solicitud de admisión.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        <b>5. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que nuestro equipo administrativo verifique la información que nos
+                                        proporcionaste, recibirás un correo electrónico confirmándote que ya eres parte
+                                        de la comunidad Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <em><b>NOTA:</b> Los requisitos para Maestría en Liderazgo Positivo en modalidad
+                                             Connect son los
+                                             que aparecen en la sección de Maestrías.</em>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingMasteres"
+                              style="background: linear-gradient(90deg, rgba(38, 208, 124, 0.9) 40%, rgba(0,83,76,0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseMasteres" aria-expanded="false"
+                                        aria-controls="collapseMasteres">
+                                        <span>Másteres</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseMasteres" class="collapse" aria-labelledby="headingMasteres"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Déjanos tus datos de contacto aquí y nuestros(as) asesores(as) se pondrán en
+                                        comunicación contigo para despejar tus dudas y explicarte a detalle lo que
+                                        necesitas para iniciar tu proceso de inscripción en los Másteres de Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Solicitud de admisión completa y firmada en original</li>
+                                        <li>CURP o acta de Nacimiento</li>
+                                        <li>Certificado de estudios de licenciatura (original y copia) o constancia de
+                                             terminación con promedio (El promedio mínimo de admisión es de 70)</li>
+                                        <li>Título profesional</li>
+                                        <li>Cédula profesional</li>
+                                        <li>INE o pasaporte de las personas que firmen la solicitud de admisión. (El/La
+                                             estudiante, el/la asegurado(a) y el/la obligado(a) solidario(a)).</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Recuerda entregar los documentos en Servicios Escolares para formar tu
+                                        expediente escolar.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. Agenda una cita con tu asesor(a)</b><br><br>
+                                        Entrega a tu asesor(a) los documentos que formarán parte de tu expediente
+                                        escolar, estos servirán para dar trámite a tu inscripción en el programa.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Realiza tu pago</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de estas formas:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico a través nuestro portal tecmilenio.mx</li>
+                                        <li>Depósito bancario.</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros programas de Becas y Financiamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>5. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que nuestro equipo administrativo verifique la información que nos
+                                        proporcionaste, recibirás un correo electrónico confirmando que ya eres parte de
+                                        la comunidad Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>6. El horario de tus clases</b><br><br>
+                                        Este lo realizará tu asesor(a) académico(a) y te lo enviará por correo
+                                        electrónico, para que tengas todo listo para iniciar tus clases.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>7. Asiste a tu curso de inducción</b><br><br>
+                                        Acude a tu curso de inducción para que aproveches al máximo tu nueva etapa
+                                        educativa y puedas aclarar todas tus dudas con nuestro personal docente.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>8. Inicio de clases</b><br><br>
+                                        Desde el primer día, un(a) asesor(a) académico(a) te acompañará en tu nueva
+                                        experiencia de aprendizaje.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingEspecialidades"
+                              style="background: linear-gradient(90deg, rgba(38, 208, 124, 0.9) 40%, rgba(0,83,76,0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseEspecialidades"
+                                        aria-expanded="false" aria-controls="collapseEspecialidades">
+                                        <span>Especialidades</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseEspecialidades" class="collapse" aria-labelledby="headingEspecialidades"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Déjanos tus datos de contacto en este formulario y nuestros(as) asesores o
+                                        asesoras se pondrán en comunicación contigo para despejar todas tus dudas y
+                                        comentarte a detalle lo que necesitas para iniciar el proceso de inscripción.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Solicitud de admisión completa y firmada en original.</li>
+                                        <li>CURP o acta de Nacimiento.</li>
+                                        <li>Certificado de estudios de licenciatura (original y copia) o constancia de
+                                             terminación con promedio (el promedio mínimo de admisión es de 70).</li>
+                                        <li>Título profesional.</li>
+                                        <li>Cédula profesional.</li>
+                                        <li>INE o pasaporte de las personas que firmen la solicitud de admisión. (El/La
+                                             estudiante, el/la asegurado(a) y el/la obligado(a) solidario(a)).</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Recuerda entregar los documentos en Servicios Escolares para formar tu
+                                        expediente escolar.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. Agenda una cita con tu asesor(a)</b><br><br>
+                                        Entrega a tu asesor(a) los documentos que formarán parte de tu expediente
+                                        escolar, estos servirán para dar trámite a tu inscripción en el programa.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Realiza tu pago</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de estas formas:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico a través nuestro portal tecmilenio.mx</li>
+                                        <li>Depósito bancario.</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros programas de Becas y Financiamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>5. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que nuestro equipo administrativo verifique la información que nos
+                                        proporcionaste, recibirás un correo electrónico confirmando que ya eres parte de
+                                        la comunidad Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>6. El horario de tus clases</b><br><br>
+                                        Este lo realizará tu asesor(a) académico(a) y te lo enviará por correo
+                                        electrónico, para que tengas todo listo para iniciar tus clases.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>7. Asiste a tu curso de inducción</b><br><br>
+                                        Acude a tu curso de inducción para que aproveches al máximo tu nueva etapa
+                                        educativa y puedas aclarar todas tus dudas con nuestro personal docente.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>8. Inicio de clases</b><br><br>
+                                        Desde el primer día, un(a) asesor(a) académico(a) te acompañará en tu nueva
+                                        experiencia de aprendizaje.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingProfesional"
+                              style="background: linear-gradient(90deg, rgba(205, 25, 62, 0.9) 40%, rgba(0,83,76,1) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseProfesional" aria-expanded="false"
+                                        aria-controls="collapseProfesional">
+                                        <span>Profesional Asociado</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseProfesional" class="collapse" aria-labelledby="headingProfesional"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Proporciona tus datos de contacto</b><br><br>
+                                        Déjanos tus datos de contacto aquí y nuestros(as) asesores(as) se pondrán en
+                                        comunicación contigo para despejar tus dudas y explicarte a detalle lo que
+                                        necesitas para iniciar tu proceso de inscripción en Profesional Asociado.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Entrega los siguientes documentos</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>CURP.</li>
+                                        <li>INE o pasaporte.</li>
+                                        <li>Acta de nacimiento.</li>
+                                        <li>Comprobante de calificaciones de preparatoria.</li>
+                                        <li>Solicitud de admisión completa y firmada en original.</li>
+                                        <li>Carta de conocimiento firmada.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        <b>3. Haz una cita con tu asesor para generar y firmar tu solicitud de admisión
+                                             digital.</b>
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>4. Realiza tu pago y asegura tu lugar</b><br><br>
+                                        Podrás realizar el pago correspondiente en cualquiera de estas formas:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Electrónico</li>
+                                        <li>Depósito bancario.</li>
+                                        <li>En ventanilla única en campus.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Si necesitas un apoyo financiero para realizar tus estudios, consulta aquí
+                                        nuestros programas de Becas y Financiamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>5. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que nuestro equipo administrativo verifique la información que nos
+                                        proporcionaste, recibirás un correo electrónico confirmando que ya eres parte de
+                                        la comunidad Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>6. Presenta tus exámenes diagnósticos de inglés y Lexium</b><br><br>
+                                        Ambos resultados son requisito previo al inicio de clases, ya que son necesarios
+                                        para conocer tu nivel de inglés y las áreas en la que debemos enfocar tu
+                                        experiencia de acompañamiento.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>7. Asiste a tu curso de inducción</b><br><br>
+                                        Acude a tu curso de inducción para que aproveches al máximo tu nueva etapa
+                                        educativa y puedas aclarar todas tus dudas
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>8. Entrevista con tu académico y recibe tu horario de clases</b>
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>9. Inicio de clases</b>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingExtranjerosMexico"
+                              style="background: linear-gradient(90deg, rgba(0, 83, 76, 0.9) 40%, rgba(0,83,76,0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseExtranjerosMexico"
+                                        aria-expanded="false" aria-controls="collapseExtranjerosMexico">
+                                        <span>Extranjeros en México</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseExtranjerosMexico" class="collapse" aria-labelledby="headingExtranjerosMexico"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Carta de invitación de Universidad Tecmilenio</b><br><br>
+                                        La carta de invitación es el documento que Universidad Tecmilenio emite cuando
+                                        ya completaste parte de los pasos de admisión. Esto te permitirá demostrar que,
+                                        efectivamente, estás invitado a realizar tus estudios en el país.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. Inicio del trámite Visa de Residente Temporal de Estudiante</b><br><br>
+                                        Una vez que tengas la carta invitación, deberás acudir al consulado o embajada
+                                        de México en tu país para tramitar la visa de entrada. Este permiso temporal te
+                                        permitirá ingresar a nuestro país para continuar con el trámite de la visa.
+                                        <br><br>
+                                        Para tramitar la Visa de Residente Temporal de Estudiante necesitas cumplir con
+                                        algunos requisitos que podrás encontrar en este enlace. <br><br>
+                                        Estando ya en México deberás presentar tu visa de una sola entrada al personal
+                                        del Instituto Nacional de Migración, que a su vez te dará la Forma Migratoria
+                                        Múltiple (FMM). Es importante que guardes este documento, porque con él
+                                        tramitarás el último paso de tu estancia legal en el país: la emisión de la Visa
+                                        de Residente Temporal de Estudiante. <br><br>
+                                        Recuerda que solo tienes 30 días para tramitarla y deberás acudir a las oficinas
+                                        del Instituto Nacional de Migración con lo siguiente:
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Formato de solicitud.</li>
+                                        <li>Pasaporte o documento de identidad y viaje vigente que sea válido conforme
+                                             al derecho internacional, original y copia.</li>
+                                        <li>Forma Migratoria Múltiple (FMM) válida y vigente, original.</li>
+                                        <li>Comprobante de pago de derechos productos o aprovechamientos, original.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        <em>
+                                             Esta visa de estudiante vence en un año y solo podrás realizar la
+                                             renovación durante el tiempo que estudies en México. <br><br>
+                                             Es de suma importancia que lo hagas antes del vencimiento de la visa actual
+                                             para que no tengas inconvenientes.
+                                        </em>
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>3. ¡Bienvenido/a!</b><br><br>
+                                        Una vez que nuestro equipo administrativo revise la información que nos
+                                        proporcionaste, recibirás un correo electrónico confirmándote que ya eres parte
+                                        de la comunidad Tecmilenio.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <div class="card-header" id="headingExtranjerosPais"
+                              style="background: linear-gradient(90deg, rgba(0, 83, 76, 0.9) 40%, rgba(0,83,76,0.9) 60%);">
+                              <h5 class="mb-0">
+                                   <button
+                                        class="btn btn-link d-flex justify-content-between align-items-center toggle-button"
+                                        data-toggle="collapse" data-target="#collapseExtranjerosPais"
+                                        aria-expanded="false" aria-controls="collapseExtranjerosPais">
+                                        <span>Extranjeros desde su país</span>
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector%2021.png"
+                                             alt="" class="arrow">
+                                   </button>
+                              </h5>
+                         </div>
+                         <div id="collapseExtranjerosPais" class="collapse" aria-labelledby="headingExtranjerosPais"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                   <p class="tec24-p-4">
+                                        <b>1. Documentos que necesitarás para estudiar en Universidad Tecmilenio desde
+                                             tu país.</b>
+                                   </p>
+                                   <ul class="tec24-p-4">
+                                        <li>Acta de nacimiento.</li>
+                                        <li>Antecedente académico (en caso de aplicar).</li>
+                                        <li>Solicitud de admisión.</li>
+                                   </ul>
+                                   <p class="tec24-p-4">
+                                        Además de esta documentación, necesitarás cumplir con algunos requisitos
+                                        adicionales que te compartirán nuestros(as) asesores(as). <br><br>
+                                        <em>*Deberás demostrar tu residencia fuera de México.</em>
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        <b>2. ¡Bienvenido(a)!</b><br><br>
+                                        Una vez que nuestro equipo administrativo revise la información que nos
+                                        proporcionaste, recibirás un correo electrónico confirmándote que ya eres parte
+                                        de la comunidad Tecmilenio.
+                                   </p>
+                                   <p class="tec24-p-4">
+                                        Si aún te quedan algunas dudas, o no has decidido qué estudiar, ponte en
+                                        contacto con nosotros para resolverlas.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                         var toggleButtons = document.querySelectorAll('.toggle-button');
+
+                         toggleButtons.forEach(function (button) {
+                              button.addEventListener('click', function () {
+                                   var arrow = button.querySelector('.arrow');
+                                   var isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                                   // Reset all arrows
+                                   document.querySelectorAll('.arrow').forEach(function (arrow) {
+                                        arrow.classList.remove('rotate');
+                                   });
+
+                                   // Rotate the clicked arrow if the card is expanding
+                                   if (!isExpanded) {
+                                        arrow.classList.add('rotate');
+                                   }
+                              });
+                         });
+
+                         // Handle collapse events
+                         var collapseElements = document.querySelectorAll('.collapse');
+                         collapseElements.forEach(function (collapse) {
+                              collapse.addEventListener('shown.bs.collapse', function () {
+                                   var button = document.querySelector('[data-target="#' + collapse.id + '"]');
+                                   var arrow = button.querySelector('.arrow');
+                                   arrow.classList.add('rotate');
+                              });
+
+                              collapse.addEventListener('hidden.bs.collapse', function () {
+                                   var button = document.querySelector('[data-target="#' + collapse.id + '"]');
+                                   var arrow = button.querySelector('.arrow');
+                                   arrow.classList.remove('rotate');
+                              });
+                         });
+                    });
+
+               </script>
+          </section>
+
+          <section class="tec24-becas-financiamiento-block my-4">
+               <style>
+                    .tec24-becas-financiamiento-block {
+                         background: linear-gradient(to bottom, rgba(107, 202, 186, 1), rgba(255, 255, 255, 1));
+                         padding: 50px 0;
+                         text-align: center;
+                    }
+
+                    .tec24-becas-financiamiento-block .row {
+                         display: flex !important;
+                         padding: 5% 5%;
+                    }
+
+                    .tec24-bloque-becas img {
+                         max-width: 100%;
+                    }
+
+                    .tec24-contenido-becas {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         padding: 20px;
+                    }
+
+                    .tec24-boton-personalizado {
+                         background-color: #004d40;
+                         color: white;
+                         font-size: 1em;
+                         padding: 10px 20px;
+                         border-radius: 25px;
+                         text-decoration: none;
+                    }
+
+                    .tec24-boton-personalizado:hover {
+                         background-color: #00332a;
+                    }
+
+                    .tec24-contenido-becas .tec24-h2-1,
+                    .tec24-contenido-becas .tec24-btn-3 {
+                         display: none;
+                    }
+
+                    .tec24-bloque-becas .tec24-h2-1,
+                    .tec24-contenido-becas .tec24-btn-1 {
+                         display: block;
+                    }
+
+                    @media (min-width: 768px) {
+
+                         .tec24-contenido-becas .tec24-h2-1,
+                         .tec24-contenido-becas .tec24-btn-3 {
+                              display: block;
+                         }
+
+                         .tec24-bloque-becas .tec24-h2-1,
+                         .tec24-contenido-becas .tec24-btn-1 {
+                              display: none;
+                         }
+                    }
+
+                    @media (min-width: 992px) {
+                         .tec24-p-1 {
+                              font-size: 22px;
+                              line-height: 27px;
+                              padding: 5% 10%;
+                         }
+                    }
+               </style>
+               <div class="row">
+                    <div class="col-md-6 tec24-bloque-becas">
+                         <h2 class="tec24-h2-1 mb-4">Becas y Financiamientos</h2>
+                         <img src="https://s3-alpha-sig.figma.com/img/212f/6716/cd7e4a207b362fad430b17894ba2a502?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fq2NBIAeR7eFsRCv8ErwGYXZSVnEJmkuMrmezxWTcsTfT4f74LZPEmy3-kK5IkJU3V-Aj1iL7459~-Jp2rbHL1fiuXiklmBBpfI8A187mpe1hrqHM9Pa5XMQhtLEkL7CNEFe3vbSrfL16vKcEwP7jDg~OAK4bxK8lLi03sKM0nUxOoL-3oY0HIHgHyW6PQ~FdAQl5aMgTebtXvnG55UOq2bztRBQQRPkwQ3DkOEEACSL7Wp0WgerJziTTYKBaONea1KvO7V~2NTCO139RvLOBeZjihrZOUYdQ3qEnFmKRaC~6LDd4VKfSVneTYFtHOBqAKhQeAW9~29Xr87QD53kig__"
+                              alt="Estudiante">
+                    </div>
+                    <div class="col-md-6 tec24-contenido-becas">
+                         <h2 class="tec24-h2-1 mb-4">Becas y Financiamientos</h2>
+                         <p class="tec24-p-1 mb-4">Conoce los distintos tipos de apoyos financieros que tenemos
+                              para continuar con tus estudios, seguir tus sueños y lograr tu Propósito de Vida.</p>
+                         <a href="#" class="tec24-btn-3">Leer más</a>
+                         <a href="#" class="tec24-btn-1">Leer más</a>
+                    </div>
+               </div>
+          </section>
+
+          <section class="tec24-contacto-block my-4">
+               <style>
+                    .tec24-contacto-block {
+                         background: linear-gradient(to bottom, rgba(0, 83, 76, 1), rgba(0, 185, 169, 1));
+                         text-align: center;
+                         padding: 50px 0;
+                    }
+
+                    .tec24-contacto-block .col-md-4 {
+                         padding: 0 45px;
+                    }
+
+                    .tec24-contacto-block .btn-outline-light {
+                         border: 4px solid white !important;
+                    }
+
+                    .tec24-contacto-block .tec24-p-3 {
+                         font-size: 16px;
+                         line-height: 20px;
+                         padding: 0 20%;
+                    }
+
+                    .tec24-contacto-block .tec24-p-3 span {
+                         font-size: 40px;
+                         padding: 15px;
+                    }
+
+                    .tec24-contacto-block .btn {
+                         border-radius: 25px;
+                         margin: 10px;
+                         font-size: 14px;
+                         line-height: 18px;
+                    }
+
+                    .btn-content {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                    }
+
+                    .btn-content .material-icons {
+                         font-size: 45px;
+                         margin-right: 20px;
+                    }
+
+                    .btn-content .material-text {
+                         text-align: left;
+                         text-transform: capitalize !important;
+                         line-height: 24px;
+                    }
+
+                    .btn-content .material-text .material-text-title {
+                         font-weight: 600;
+                    }
+
+                    .btn-content .material-text .material-text-title::after {
+                         content: '\A';
+                         white-space: pre;
+                    }
+
+                    @media (min-width: 768px) {
+                         .tec24-contacto-block .col-md-4 {
+                              padding: 0 5px;
+                         }
+                    }
+
+                    @media (min-width: 992px) {
+                         .tec24-contacto-block .row {
+                              margin: 6% 0 5% 0 !important;
+                         }
+
+                         .tec24-contacto-block .tec24-p-3 {
+                              font-size: 22px;
+                              line-height: 24px;
+                         }
+
+                         .tec24-contacto-block .tec24-p-3 span {
+                         font-size: 50px;
+                         padding: 15px;
+                    }
+
+                         .tec24-contacto-block .btn {
+                              font-size: 18px;
+                              line-height: 22px;
+                         }
+
+                         .tec24-contacto-block .col-md-4 {
+                              padding: 0 45px;
+                         }
+                    }
+               </style>
+               <div class="container pt-5 pb-5">
+                    <p class="tec24-p-3 text-white">
+                         <span class="material-symbols-outlined">sms</span><br>
+                         Queremos escucharte.<br>Comunícate y resuelve todas tus dudas.
+                    </p>
+                    <div class="row justify-content-center mt-5">
+                         <div class="col-12 col-md-4">
+                              <a href="https://wa.me/528124133349" target="_blank"
+                                   class="btn btn-outline-light btn-block">
+                                   <div class="btn-content">
+                                        <img class="material-icons"
+                                             src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Vector.png"
+                                             alt="">
+                                        <span class="material-text"><span class="material-text-title">WhatsApp</span>
+                                             (81) 24133349</span>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="col-12 col-md-4">
+                              <a href="tel:8004444020" class="btn btn-outline-light btn-block">
+                                   <div class="btn-content">
+                                        <span class="material-icons material-symbols-outlined">phone</span>
+                                        <span class="material-text"><span class="material-text-title">Teléfono</span>
+                                             800 444 4020</span>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="col-12 col-md-4">
+                              <a href="mailto:info@example.com" class="btn btn-outline-light btn-block">
+                                   <div class="btn-content">
+                                        <span class="material-icons material-symbols-outlined">edit</span>
+                                        <span class="material-text"><span class="material-text-title">Contacto</span>Más
+                                             información</span>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+     </section>
+
+     <!-- END CODE HERE -->
+
+     <script
+          src="//2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/theme/js/main.bundle.min.js"></script>
+     <script src="//cdn2.hubspot.net/hubfs/2429099/landings/landings-javascript/utm.js"></script>
+     <script src="//cdn2.hubspot.net/hubfs/2429099/landings/landings-javascript/validate.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
