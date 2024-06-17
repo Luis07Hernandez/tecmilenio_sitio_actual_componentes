@@ -14,80 +14,97 @@
     }
 </style>
 
-<section id="video-programas-tecmilenio-2024" class="container d-none">
+<section id="video-programas-tecmilenio-2024" class="container">
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="player"></div>
     </div>
 </section>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const currentPath = window.location.pathname;
-        const section = document.querySelector('#video-programas-tecmilenio-2024');
-        const iframe = section.querySelector('iframe');
+    var tag = document.createElement('script');
 
-        // Lista de paginas y videos 
-        // Aqui se debe agregar la url y el video correspondiente a la url.
-        let videos = {
-            // Masteres
-            '/es/master-en-automatizacion-y-robotica': 'https://www.youtube.com/embed/uTb5xa68kZk?si=4V9bCYKqyukB1I2Y',
-            '/es/master-en-direccion-del-capital-humano': 'https://www.youtube.com/embed/xBxH4kaEdkg?si=JFs2AgVNbEE9VU9U',
-            '/es/master-en-inteligencia-artificial': 'https://www.youtube.com/embed/0QQ6jof6M1Y?si=dAZFOR9gv4XXYj57',
-            '/es/master-en-mercadotecnia-digital': 'https://www.youtube.com/embed/38yZZdkT99Q?si=A9eIJK9zdRD_Fldy',
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-            // Maestrias
-            '/es/posgrado/maestria-administracion-negocios-finanzas': 'https://www.youtube.com/embed/oawUvQO0d4k?si=RLG0EG0RzeQggwVc',
-            '/es/maestria-en-administracion-de-negocios-con-finanzas-online': 'https://www.youtube.com/embed/oawUvQO0d4k?si=RLG0EG0RzeQggwVc',
-            '/es/maestria-en-administracion-de-negocios-con-calidad-y-productividad': 'https://www.youtube.com/embed/_YZZQ2f6TTo?si=wsalDXUVS6EvuUP7',
-            '/es/maestria-en-administracion-de-negocios-con-calidad-y-productividad-online-connect': 'https://www.youtube.com/embed/_YZZQ2f6TTo?si=wsalDXUVS6EvuUP7',
-            '/es/maestria-en-administracion-de-negocios-con-logistica': 'https://www.youtube.com/embed/ewWfq7yq0dU?si=GPmm3oygomhUCSsp',
-            '/es/maestria-en-administracion-de-negocios-con-logistica.': 'https://www.youtube.com/embed/ewWfq7yq0dU?si=GPmm3oygomhUCSsp',
-            '/es/maestria-en-administracion-de-negocios-con-recursos-humanos-online.': 'https://www.youtube.com/embed/KIDNK54J_Hw?si=U4C6nflI8KyXZn1_',
-            '/es/maestria-en-administracion-de-negocios-con-recursos-humanos-online': 'https://www.youtube.com/embed/KIDNK54J_Hw?si=U4C6nflI8KyXZn1_',
-            '/es/maestria-en-educacion.': 'https://www.youtube.com/embed/eEVV5QQVpOI?si=z3_P4T8Y6jubskc7',
-            '/es/maestria-en-educacion': 'https://www.youtube.com/embed/eEVV5QQVpOI?si=z3_P4T8Y6jubskc7',
-            '/es/maestria-en-gestion-de-tecnologias-de-la-Informacion.': 'https://www.youtube.com/embed/eZiarzk6UBg?si=C_Io0Gpd-cxi39us',
-            '/es/maestria-en-gestion-de-tecnologias-de-la-Informacion': 'https://www.youtube.com/embed/eZiarzk6UBg?si=C_Io0Gpd-cxi39us',
-            '/es/maestria-en-administracion-de-negocios-con-mercadotecnia-online': 'https://www.youtube.com/embed/-w2c4JSchpg?si=Cqgi54EDqeuI9xfl',
-            '/es/maestria-en-administracion-de-negocios-con-mercadotecnia': 'https://www.youtube.com/embed/-w2c4JSchpg?si=Cqgi54EDqeuI9xfl',
-            
-            // Especialidades
-            '/es/especialidad-en-innovacion': 'https://www.youtube.com/embed/yBhuFHpqITo?si=74-ywhrrd5apd7ox',
-            '/es/especialidad-en-finanzas': 'https://www.youtube.com/embed/qKS_v7PU_OU?si=tC6RrK4wRPI8FxcG',
-            '/es/especialidad-en-recursos-humanos': 'https://www.youtube.com/embed/WTxgN9_KM-g?si=boJbfSiJ4_9nnMf3',
+    const currentPath = window.location.pathname;
+    const section = document.querySelector('#video-programas-tecmilenio-2024');
 
-            // Carreras Ejecutivas
-            '/es/ingenieria-industrial-y-de-sistemas-connect.': 'https://www.youtube.com/embed/LZcvlFHTiUQ?si=LXU9eHSkEL3uFP_y',
-            '/es/ingenieria-Industrial-y-de-sistemas': 'https://www.youtube.com/embed/LZcvlFHTiUQ?si=LXU9eHSkEL3uFP_y',
-            '/es/licenciatura-en-comercio-y-negocios-internacionales.': 'https://www.youtube.com/embed/yjTTB2SH1u4?si=Z_u5k29nQWovNd6l',
-            '/es/licenciatura-en-comercio-y-negocios-internacionales': 'https://www.youtube.com/embed/yjTTB2SH1u4?si=Z_u5k29nQWovNd6l',
-            '/es/licenciatura-en-administracion': 'https://www.youtube.com/embed/HWMyAGSt3KU?si=DffpjC8HYicW0-Ko',
-            '/es/licenciatura-en-administracion.': 'https://www.youtube.com/embed/HWMyAGSt3KU?si=DffpjC8HYicW0-Ko',
-            '/es/licenciatura-en-mercadotecnia-y-publicidad-connect': 'https://www.youtube.com/embed/Ay5JOxTWSuQ?si=tnkY3vNi1gsNtjgm',
-            '/es/licenciatura-en-mercadotecnia-y-publicidad': 'https://www.youtube.com/embed/Ay5JOxTWSuQ?si=tnkY3vNi1gsNtjgm',
-            '/es/ingenieria-en-computacion-administrativa': 'https://www.youtube.com/embed/BTUDmbrv3Kc?si=JLItscGxgb9A-RYd',
-            '/es/ingenieria-en-computacion-administrativa.': 'https://www.youtube.com/embed/BTUDmbrv3Kc?si=JLItscGxgb9A-RYd',
-            '/es/licenciatura-en-derecho': 'https://www.youtube.com/embed/SpwgaNpi3Z4?si=Pw_2HoNBSUZm1gfv',
-            '/es/licenciado-en-derecho': 'https://www.youtube.com/embed/SpwgaNpi3Z4?si=Pw_2HoNBSUZm1gfv',
-            '/es/licenciatura-en-educacion-y-desarrollo.': 'https://www.youtube.com/embed/JqNSAB-GYfA?si=ZBq0egAfoY6qMrpb',
-            '/es/licenciatura-en-educacion-y-desarrollo': 'https://www.youtube.com/embed/JqNSAB-GYfA?si=ZBq0egAfoY6qMrpb',
-            '/es/licenciatura-en-administracion-y-desarrollo-del-talento': 'https://www.youtube.com/embed/saf_66mr0NQ?si=sVK_xt7xWAhShB1u',
-        };
+    // Lista de paginas y videos 
+    // Aqui se debe agregar la url y el video correspondiente a la url.
+    let videos = {
+        // Masteres
+        '/es/master-en-automatizacion-y-robotica': 'uTb5xa68kZk',
+        '/es/master-en-direccion-del-capital-humano': 'xBxH4kaEdkg',
+        '/es/master-en-inteligencia-artificial': '0QQ6jof6M1Y',
+        '/es/master-en-mercadotecnia-digital': '38yZZdkT99Q',
 
-        if (videos[currentPath]) {
-            iframe.src = videos[currentPath];
-            section.classList.remove('d-none');
-        } else {
-            const embedDiv = iframe.closest('.embed-responsive');
-            if (embedDiv) {
-                embedDiv.remove(); // Elimina el div padre del iframe
-                // Elimina el section si está vacío
-                if (!section.querySelector('*')) {
-                    section.remove();
+        // Maestrias
+        '/es/posgrado/maestria-administracion-negocios-finanzas': 'oawUvQO0d4k',
+        '/es/maestria-en-administracion-de-negocios-con-finanzas-online': 'oawUvQO0d4k',
+        '/es/maestria-en-administracion-de-negocios-con-calidad-y-productividad': '_YZZQ2f6TTo',
+        '/es/maestria-en-administracion-de-negocios-con-calidad-y-productividad-online-connect': '_YZZQ2f6TTo',
+        '/es/maestria-en-administracion-de-negocios-con-logistica': 'ewWfq7yq0dU',
+        '/es/maestria-en-administracion-de-negocios-con-logistica.': 'ewWfq7yq0dU',
+        '/es/maestria-en-administracion-de-negocios-con-recursos-humanos-online.': 'KIDNK54J_Hw',
+        '/es/maestria-en-administracion-de-negocios-con-recursos-humanos-online': 'KIDNK54J_Hw',
+        '/es/maestria-en-educacion.': 'eEVV5QQVpOI',
+        '/es/maestria-en-educacion': 'eEVV5QQVpOI',
+        '/es/maestria-en-gestion-de-tecnologias-de-la-Informacion.': 'eZiarzk6UBg',
+        '/es/maestria-en-gestion-de-tecnologias-de-la-Informacion': 'eZiarzk6UBg',
+        '/es/maestria-en-administracion-de-negocios-con-mercadotecnia-online': '-w2c4JSchpg',
+        '/es/maestria-en-administracion-de-negocios-con-mercadotecnia': '-w2c4JSchpg',
+
+        // Especialidades
+        '/es/especialidad-en-innovacion': 'yBhuFHpqITo',
+        '/es/especialidad-en-finanzas': 'qKS_v7PU_OU',
+        '/es/especialidad-en-recursos-humanos': 'WTxgN9_KM-g',
+
+        // Carreras Ejecutivas
+        '/es/ingenieria-industrial-y-de-sistemas-connect.': 'LZcvlFHTiUQ',
+        '/es/ingenieria-Industrial-y-de-sistemas': 'LZcvlFHTiUQ',
+        '/es/licenciatura-en-comercio-y-negocios-internacionales.': 'yjTTB2SH1u4',
+        '/es/licenciatura-en-comercio-y-negocios-internacionales': 'yjTTB2SH1u4',
+        '/es/licenciatura-en-administracion': 'HWMyAGSt3KU',
+        '/es/licenciatura-en-administracion.': 'HWMyAGSt3KU',
+        '/es/licenciatura-en-mercadotecnia-y-publicidad-connect': 'Ay5JOxTWSuQ',
+        '/es/licenciatura-en-mercadotecnia-y-publicidad': 'Ay5JOxTWSuQ',
+        '/es/ingenieria-en-computacion-administrativa': 'BTUDmbrv3Kc',
+        '/es/ingenieria-en-computacion-administrativa.': 'BTUDmbrv3Kc',
+        '/es/licenciatura-en-derecho': 'SpwgaNpi3Z4',
+        '/es/licenciado-en-derecho': 'SpwgaNpi3Z4',
+        '/es/licenciatura-en-educacion-y-desarrollo.': 'JqNSAB-GYfA',
+        '/es/licenciatura-en-educacion-y-desarrollo': 'JqNSAB-GYfA',
+        '/es/licenciatura-en-administracion-y-desarrollo-del-talento': 'saf_66mr0NQ',
+    };
+
+    if (videos[currentPath]) {
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                videoId: videos[currentPath],
+                playerVars: {
+                    'rel' : 0
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
                 }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.ENDED) {
+                event.target.seekTo(0); // Reinicia el video al inicio
+                event.target.pauseVideo(); // Pausa el video
             }
         }
-    });
+    } else {
+        section.remove();
+    }
+
 </script>
