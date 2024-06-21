@@ -1332,7 +1332,8 @@
                                    }
                                    // Scroll to the target element
                                    if (id) {
-                                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                                        console.log('a');
+                                        targetElement.previousElementSibling.scrollIntoView({ behavior: 'smooth' });
                                    }
                               }
                          });
