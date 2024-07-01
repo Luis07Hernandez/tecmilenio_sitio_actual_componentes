@@ -1,0 +1,40 @@
+<style>
+    .modalidad-formatos-btn {
+         font-size: 12px;
+         padding: 4px 10px;
+         background: var(--default-tecmilenio-first);
+         color: white;
+         border-radius: 50px;
+         text-decoration: none;
+    }
+
+    .modalidad-formatos-btn:hover {
+         font-size: 12px;
+         padding: 4px 10px;
+         background: var(--default-tecmilenio-second);
+         color: white;
+         border-radius: 50px;
+         text-decoration: none;
+    }
+</style>
+
+<script>
+    // Espera a que el DOM esté completamente cargado
+    document.addEventListener("DOMContentLoaded", function () {
+
+         setTimeout(() => {
+              // Encuentra el elemento span con las clases 'titleBlock Modalidad'
+              var element = document.querySelector('span.titleBlock.Modalidad');
+
+              // Crea el nuevo botón
+              var newButton = document.createElement('a');
+              newButton.textContent = 'Más información';
+              newButton.classList.add('modalidad-formatos-btn')
+              newButton.href = '/formatos-de-estudio';
+
+              // Agrega el botón como último hijo del padre del elemento
+              element.parentElement.appendChild(newButton);
+         }, 1500)
+    });
+
+</script>
