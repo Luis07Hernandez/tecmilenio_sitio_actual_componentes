@@ -228,11 +228,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <span class="sr-only">Siguiente</span>
                 </a>
             </div>
-        
+
             <script>
                 // Variables para almacenar el estado del tamaño de la pantalla
                 var isDesktop = window.innerWidth >= 768;
-        
+
                 // Función para cargar imágenes dinámicamente basadas en el tamaño de la pantalla
                 function cargarImagenes() {
                     var imagenes = [
@@ -251,7 +251,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                 "https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/1080X1920-PREPA.jpg",
                             link: "https://universidad.tecmilenio.mx/nueva-prepa?_ga=2.50527529.1277558557.1715185484-479477550.1714666577",
                             alt: "El lugar en donde encuentro mi futuro",
-        
+
                         },
                         {
                             desktop:
@@ -318,10 +318,10 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             alt: "QS Star reconoce a Tecmilenio en inclusión y calidad educativa",
                         },
                     ];
-        
+
                     var carouselInner = document.getElementById("carouselImages");
                     carouselInner.innerHTML = ""; // Limpiar contenido previo del carrusel
-        
+
                     imagenes.forEach(function (imagen, index) {
                         var divItem = document.createElement("div");
                         divItem.className = "carousel-item" + (index === 0 ? " active" : ""); // Agregar clase 'active' al primer ítem
@@ -340,23 +340,23 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         carouselInner.appendChild(divItem);
                     });
                 }
-        
+
                 // Llamar a la función para cargar las imágenes al cargar la página
                 cargarImagenes();
-        
+
                 // Agregar un evento de cambio de tamaño de ventana para cargar imágenes dinámicamente solo cuando cambie el tipo de dispositivo
                 window.addEventListener("resize", function () {
                     var isDesktopNow = window.innerWidth >= 768;
-        
+
                     // Verificar si el tipo de dispositivo ha cambiado
                     if (isDesktop !== isDesktopNow) {
                         isDesktop = isDesktopNow;
                         cargarImagenes();
                     }
                 });
-            </script>     
+            </script>
         </section>
-        
+
         <!-- Hero Periods 2024 -->
         <section class="hero-periods-2024">
             <!-- Styles -->
@@ -625,6 +625,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                 .tcard-2024-image {
                     min-height: 176px;
                     width: 100%;
+                    object-fit: cover;
                 }
 
                 a[href="/es/proceso-de-admision"] {
@@ -686,7 +687,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="tcard-2024-title">
                         <h2 class="tec24-h2-1 mb-4">Admisiones</h2>
                     </div>
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/8d7ed50a86b07ceed1bc52f50ca7dc1b.jpeg"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/admisiones.webp"
                         alt="Admisiones Tecmilenio 2024" class="tcard-2024-image img-fluid mb-4 mb-lg-0 ">
                     <div class="tcard-2024-info">
                         <p class="tec24-p-1 mb-4">
@@ -704,7 +705,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="tcard-2024-title">
                         <h2 class="tec24-h2-1 mb-4">Becas</h2>
                     </div>
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/4930bb436f9f3134024ef044b449524c.jpeg"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/becas.webp"
                         alt="Becas Tecmilenio 2024" class="tcard-2024-image img-fluid mb-4 mb-lg-0">
                     <div class="tcard-2024-info">
                         <p class="tec24-p-1 mb-4">
@@ -962,7 +963,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/2fb49981a1c80f166983f7335a88d11d.jpeg"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/prepa.webp"
                                     alt="Prepa Tecmilenio" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(246, 141, 46, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
@@ -981,7 +982,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/d857152c1d1ea194e30c0ea9e4301b88.jpeg"
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/carreras-profesionales.webp"
                                     alt="Carreras Profesionales" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
@@ -999,8 +1000,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/0a6aa9f1d7c9d29e6064881b9d605420.jpeg"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/carreras-ejecutivas.webp"
+                                    alt="Carreras Ejecutivas" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(96, 205, 61, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Carreras Ejecutivas</h2>
@@ -1018,8 +1019,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/9cbd7ae0ad5b7ef1acbd1325d0656913.jpeg"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/profesional-asociado.webp"
+                                    alt="Profesional Asociado" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(205, 25, 62, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Profesional Asociado</h2>
@@ -1037,8 +1038,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/788a76f93622405e700a7c40d70209e7.jpeg"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/maestrias.webp"
+                                    alt="Maestrías" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(38, 208, 124, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Maestrías</h2>
@@ -1056,8 +1057,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/0567a293a6f1ae9b362fdf3271790d91.jpeg"
-                                    alt="Prepa Tecmilenio" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/especialidades.webp"
+                                    alt="Especialidades" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(38, 208, 124, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Especialidades</h2>
@@ -1076,8 +1077,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/9c24e5b3230c94d9fbc2edbb9496eb31.jpeg"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/masteres.webp"
+                                    alt="Másteres" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(38, 208, 124, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Másteres</h2>
@@ -1096,8 +1097,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/5d608e1729d4f045b0fd7fe5d2516154.jpeg"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/skilling-center.webp"
+                                    alt="Skilling Center" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(2, 193, 176, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Skilling Center</h2>
@@ -1117,8 +1118,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/878f8e0958406e4603ec12eb3e2d2263.jpeg"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/programas-en-linea.webp"
+                                    alt="Programas en línea" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(0, 120, 100, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Programas en línea</h2>
@@ -1139,8 +1140,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                         </div>
                         <div class="swiper-slide">
                             <div class="tec24-card-1">
-                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/85bd49721b06bed27c604652046fb227.jpeg"
-                                    alt="Carreras Profesionales" class="tec24-card-1-image">
+                                <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/digital-nao.webp"
+                                    alt="Digital NAO" class="tec24-card-1-image">
                                 <div class="tec24-card-1-description text-left"
                                     style="background: linear-gradient(180deg, rgba(0, 77, 255, 0.9) 0%, rgba(0, 83, 76, 0.9) 100%);">
                                     <h2 class="tec24-h2-1 text-white text-left">Digital NAO</h2>
@@ -1524,7 +1525,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                                 <div class="tec24-cv24i-video">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe width="560" height="315"
-                                        src="https://www.youtube.com/embed/3jjqClXJ0HQ?si=BJDc0yWkZFQpBhm6"
+                                            src="https://www.youtube.com/embed/3jjqClXJ0HQ?si=BJDc0yWkZFQpBhm6"
                                             title="YouTube video player" frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -1798,12 +1799,12 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             </div>
                             <div class="modal-body text-center">
                                 <!--[if lte IE 8]>
-          <script
-            charset="utf-8"
-            type="text/javascript"
-            src="//js.hsforms.net/forms/v2-legacy.js"
-          ></script>
-        <![endif]-->
+              <script
+                charset="utf-8"
+                type="text/javascript"
+                src="//js.hsforms.net/forms/v2-legacy.js"
+              ></script>
+            <![endif]-->
                                 <script charset="utf-8" type="text/javascript"
                                     src="//js.hsforms.net/forms/v2.js"></script>
                                 <script>
@@ -2069,8 +2070,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a
-                                href="http://www.anuies.mx/anuies/instituciones-de-educacion-superior/institucion.php?varIDInstitucion=2533" target="_blank">
+                            <a href="http://www.anuies.mx/anuies/instituciones-de-educacion-superior/institucion.php?varIDInstitucion=2533"
+                                target="_blank">
                                 <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
                                     <div class="tec24-card-5-img">
                                         <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Logo-ANUIES%203-1.png"
@@ -2087,7 +2088,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://www.topuniversities.com/universities/universidad-tecmilenio" target="_blank">
+                            <a href="https://www.topuniversities.com/universities/universidad-tecmilenio"
+                                target="_blank">
                                 <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
                                     <div class="tec24-card-5-img">
                                         <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Sin%20t%C3%ADtulo.png"
@@ -2104,8 +2106,8 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a
-                                href="https://www.timeshighereducation.com/impactrankings#!/length/25/name/tecmilenio/sort_by/rank/sort_order/asc" target="_blank">
+                            <a href="https://www.timeshighereducation.com/impactrankings#!/length/25/name/tecmilenio/sort_by/rank/sort_order/asc"
+                                target="_blank">
                                 <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
                                     <div class="tec24-card-5-img">
                                         <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/Sin%20t%C3%ADtulo(2).png"
@@ -2140,11 +2142,11 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a
-                                href="https://blog.tecmilenio.mx/articulos/tecmilenio-presente-foro-equaa-2023?_ga=2.33661410.2143419266.1717514483-1385467252.1715203988" target="_blank">
+                            <a href="https://blog.tecmilenio.mx/articulos/innovacion-educativa-design-driven-education-equaa-awards/"
+                                target="_blank">
                                 <div class="tec24-card-5" style="border-color: #00534C; background-color: white;">
                                     <div class="tec24-card-5-img">
-                                        <img src="https://s3-alpha-sig.figma.com/img/88f8/d9ab/7300a56b68c3e193409b53e76cbab85f?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l5ZR2euMA2o74tdts8fZxNBdYoJCw8eUjqmiobHH90x23A3y~gQjxmf2wPAggF5hmGhQ71veaoYHHukg0pTaoLFRPAiczgTvZHGGueFi1~p4dMN8oUewLjIrCyXeMVOim04fZq4zO9wgTKt1ySWkPMRV2E0ZWUyDdDFp7QnOTUuRw5K-MmXSD7oAxbxiKxYJvz23A6Dy~2mI7muwlE6c9~VOgvXo1oxVcgWiiplOu0VmSZJ53XVsokort~JaDbfM~U12YzMpsCo0A3TFM8mNgJPe5rqIyKkv74aCM9SULKnGzEAHLCP4iQohtT00KQ9hvheupBbvMSCEoXBFhz~67w__"
+                                        <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/7300a56b68c3e193409b53e76cbab85f.png"
                                             alt="EQUAA" class="img-fluid">
                                     </div>
                                     <div class="tec24-card-5-body">
@@ -2495,7 +2497,7 @@ AGREGA EL CODIGO EN DONDE SE INDICA SIN MOVER LO DEMAS. -->
                     <div class="tcard-2024-title">
                         <h2 class="tec24-h2-1 mb-4">Libro 20 aniversario</h2>
                     </div>
-                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/aa5c488db1c985c6041c1414e73cae20.jpeg"
+                    <img src="https://2429099.fs1.hubspotusercontent-na1.net/hubfs/2429099/Tecmilenio%20Sitio%20Actual/src/images/libro.webp"
                         alt="Libro 20 aniversario" class="tcard-2024-image img-fluid mb-4 mb-lg-0">
                     <div class="tcard-2024-info">
                         <p class="tec24-p-1 mb-4">
